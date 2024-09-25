@@ -1,0 +1,10 @@
+.conteiner-adm{
+    display: flex;
+    flex-direction: column;
+    background-image: url('/public/assets/images/background-preto.png');
+  
+    header{
+        display: flex;
+        background-color: #000;
+    }
+}
