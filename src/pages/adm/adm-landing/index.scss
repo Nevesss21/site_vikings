@@ -1,10 +1,59 @@
 .conteiner-adm{
     display: flex;
     flex-direction: column;
-    background-image: url('/public/assets/images/background-preto.png');
+    background-image: url('./background-preto.png');
   
     header{
         display: flex;
-        background-color: #000;
+        height: 120px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 30px 0px 30px;
+
+        .imagem-logo img{
+            width: 120px;
+        }
+
+        .links-principal  {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            margin-right: 50px;
+
+           a{
+            color: #fff;
+            text-decoration: none;
+           }
+
+        }
+    }
+
+    .corpo{
+        background-image: url('./imagem-escura-dourada.png');
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 80px;
+        height: 350px;
+        margin-bottom: 120px;
+
+        
+        .text{
+            width: 300px;
+            margin-right: 50px;
+        }
+        .texto{
+            width: 500px;
+        }
+
+        .texto h1{
+            padding: 00px;
+            color: #fff;
+        }
+        .text h3{
+            padding: 0px;
+            color: #fff;
+        }
     }
 }
