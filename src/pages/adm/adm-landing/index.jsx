@@ -31,27 +31,45 @@ export default function AdmLanding() {
 
             <div className='imagens'>
 
-            <div className='imagem-cinza'>
-                <div className='relatar'>
-                <h1>Faça o seu relato. Defina como foi sua progressão do dia, semana, mes e ano</h1>
-                <button>Relatar</button>
-                </div>
-            </div>
-
-            <div className='imagem-cinza-claro'>
-                <div className='seguir'>
-                 <h1>Analise as seções pendentes e faça você mesmo o agendamento das seções </h1>
-                 <button>Seguir</button>
-                </div>
-            </div>
-
-            <div className='imagem-preta'>
-                <div className='consulte'>
-                <h1>Consulte  as informações da maneira que quiser, decida o filtro para melhor aproveitamento das informações</h1>
-                <button>Consultar</button>
+                <div className='imagem-cinza'>
+                    <div className='relatar'>
+                        <h1>Faça o seu relato. Defina como foi sua progressão do dia, semana, mes e ano</h1>
+                        <button>Relatar</button>
+                    </div>
                 </div>
 
+                <div className='imagem-cinza-claro'>
+                    <div className='seguir'>
+                        <h1>Analise as seções pendentes e faça você mesmo o agendamento das seções </h1>
+                        <button>Seguir</button>
+                    </div>
+                </div>
+
+                <div className='imagem-preta'>
+                    <div className='consulte'>
+                        <h1>Consulte  as informações da maneira que quiser, decida o filtro para melhor aproveitamento das informações</h1>
+                        <button>Consultar</button>
+                    </div>
+                </div>
+
             </div>
+
+            <div className='duvidas'>
+
+                <hr className='linha' />
+
+                <div className='rodape'>
+                    <img src="/assets/images/valhalla-logo 3.png" alt="" />
+                    <h1>Duvidas</h1>
+                    <p>Caso haver duvidas ou possiveis ocorrências,entre em conato com a  equipe de programadores da Valhalla diretamente no site</p>
+                </div>
+
+
+                <div className='botao-valhalla'>
+                    <button>Ir para Valhalla</button>
+                    <img src="/assets/images/valhalla-logo 3.png" alt="" />
+                </div>
+
             </div>
 
       
