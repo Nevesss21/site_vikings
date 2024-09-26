@@ -56,4 +56,91 @@
             color: #fff;
         }
     }
-}
+
+    .imagens{
+        display: flex;
+        flex-direction: column;
+        
+        
+            .imagem-cinza{
+                background-image: url('./imagem-cinza-adm1.png');
+                height: 500px;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                display: flex;
+                align-items: center;
+
+                .relatar{
+                    width:350px;
+                    margin: 40px;
+
+                    button{
+                        width: 120px;
+                        height: 40px;
+                        border-radius: 100px;
+                        border: none;
+                        background-color: #D9D9D9;
+                        font: 600 16px 'popins';
+                    }
+                    h1{
+                        color: #fff;
+                    }
+                }
+            }
+            .imagem-cinza-claro{
+                background-image: url('./imagem-cinza-claro-adm1.png');
+                background-repeat: no-repeat;
+                background-size: 100%;
+                height: 477px;
+                display: flex;
+                align-items: center;
+
+                .seguir{
+                    width: 600px;
+                    margin: 40px;
+
+                    button{
+                        width: 120px;
+                        height: 40px;
+                        border-radius: 100px;
+                        border: none;
+                        background-color: #2E2B2B;
+                        font: 600 16px 'popins';
+                        color: #fff;
+                    }
+                    h1{
+                        color: #000;
+                    }
+
+                    
+                }
+            }
+            .imagem-preta{
+                background-image: url('./imagem-preta-adm-1.png');
+                height: 500px;
+                background-repeat: no-repeat;
+                background-size: 100%;
+                display: flex;
+                align-items: center;
+
+                .consulte{
+                    width: 500px;
+                    margin: 40px;
+
+                    button{
+                        width: 120px;
+                        height: 40px;
+                        border-radius: 100px;
+                        border: none;
+                        background-color: #fff;
+                        font: 600 16px 'popins';
+                    }
+                    h1{
+                        color: #fff;
+                    }
+
+                }
+            }
+        }
+
+    }
