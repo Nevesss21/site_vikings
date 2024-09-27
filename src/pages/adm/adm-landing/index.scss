@@ -256,7 +256,7 @@
                 text-align: center;
                 gap: 20vh;
                 padding: 40px;
-            
+                margin-bottom: 12vh;         
                 height: 10vh;
               
 
@@ -274,24 +274,70 @@
                     }
             }
             
-        
-            .imagens {
-                .imagem-cinza,
-                .imagem-cinza-claro,
-                .imagem-preta {
-                    height: auto;
-                }
-        
-                .relatar,
-                .seguir,
-                .consulte {
-                    width: 100%;
-                    margin: 20px 0;
+
+            
+    .imagens{
+        margin-bottom: 12vh;
+
+            .imagem-cinza{
+                height: 36vh;
+
+                .relatar{
+                    width: 25vh;
+                    margin: 5vh;
+
+                    button{
+                        width: 15vh;
+                        height: 40px;
+                        font: 700 13px 'vikings';
+                    }
+                    h1{
+                        font: 700 15px 'vikings';
+                    }
                 }
             }
+            .imagem-cinza-claro{
+                height: 36vh;
+
+                .seguir{
+                    width: 45vh;
+                    margin: 5vh;
+
+                    button{
+                        width: 15vh;
+                        height: 40px;
+                        font: 700 13px 'vikings';
+                    }
+                    h1{
+                        font: 700 15px 'vikings';
+                    }
+
+                    
+                }
+            }
+            .imagem-preta{
+                height: 36vh;
+
+                  .consulte{
+                    width: 45vh;
+                    margin: 5vh;
+
+                    button{
+                        width: 15vh;
+                        height: 40px;
+                        font: 700 13px 'vikings';
+                    }
+                    h1{
+                        font: 700 15px 'vikings';
+                    }
+
+                }
+            }
+        }
+
         
             .duvidas .linha {
-                width: 100%;
+                width: 78vh;
             }
         
             
