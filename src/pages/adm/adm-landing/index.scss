@@ -6,20 +6,20 @@
   
     header{
         display: flex;
-        height: 120px;
+        height: 20vh;
         align-items: center;
         justify-content: space-between;
         padding: 0px 30px 0px 30px;
 
         .imagem-logo img{
-            width: 120px;
+            width: 15vh;
         }
 
         .links-principal  {
             display: flex;
-            gap: 50px;
+            gap: 20vh;
             align-items: center;
-            margin-right: 50px;
+            margin-right: 20px;
 
            a{
             color: #fff;
@@ -32,6 +32,8 @@
 
     .corpo{
         background-image: url('./imagem-escura-dourada.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -69,7 +71,7 @@
         
             .imagem-cinza{
                 background-image: url('./imagem-cinza-adm1.png');
-                height: 52vh;
+                height: 72vh;
                 background-repeat: no-repeat;
                 background-size: 100%;
                 display: flex;
@@ -97,7 +99,7 @@
                 background-image: url('./imagem-cinza-claro-adm1.png');
                 background-repeat: no-repeat;
                 background-size: 100%;
-                height: 48vh;
+                height: 72vh;
                 display: flex;
                 align-items: center;
 
@@ -124,7 +126,7 @@
             }
             .imagem-preta{
                 background-image: url('./imagem-preta-adm-1.png');
-                height: 48vh;
+                height: 68vh;
                 background-repeat: no-repeat;
                 background-size: 100%;
                 display: flex;
@@ -215,4 +217,83 @@
 
         }
 
+    }
+
+    @media (max-width: 768px) {
+        .conteiner-adm{
+            
+            header{
+                display: flex;
+                height: 15vh;
+                align-items: center;
+                padding: 0px 10px 0px 10px;
+        
+                .imagem-logo img{
+                    width: 10vh;
+                }
+        
+                .links-principal  {
+                    display: flex;
+                    gap: 4vh;
+                    align-items: center;
+                    margin-right: 0vh;
+        
+                   a{
+                    color: #fff;
+                    text-decoration: none;
+                    font: 500 10px 'vikings';
+                   }
+        
+                }
+            }
+        
+
+            .corpo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                gap: 20vh;
+                padding: 40px;
+            
+                height: 10vh;
+              
+
+                .texto h1{
+                    font-size: 15px;
+                }
+                .text h3{
+                 font-size: 10px;
+                }
+                
+                
+                    .text, .texto {
+                        width: 100px;
+                        margin-right: 0;
+                    }
+            }
+            
+        
+            .imagens {
+                .imagem-cinza,
+                .imagem-cinza-claro,
+                .imagem-preta {
+                    height: auto;
+                }
+        
+                .relatar,
+                .seguir,
+                .consulte {
+                    width: 100%;
+                    margin: 20px 0;
+                }
+            }
+        
+            .duvidas .linha {
+                width: 100%;
+            }
+        
+            
+        }
     }
