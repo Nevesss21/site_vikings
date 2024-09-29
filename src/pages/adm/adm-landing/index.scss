@@ -220,681 +220,696 @@
   // Continue com outros breakpoints (1024px, 768px, 425px) seguindo o mesmo padrão.
   @media(max-width: 1440px) {
     .conteiner-adm {
-      header {
-        height: 20vh;
-  
-        .imagem-logo img {
-          width: 20vh;
-        }
-  
-        .links-principal {
-          margin-right: 10vh;
-  
-          a {
-            font-size: 15px;
-          }
-        }
-      }
-  
-      .corpo {
-        height: 50vh;
-        margin-bottom: 10vh;
-  
-        .texto h1 {
-          font-size: 30px;
-        }
-  
-        .text h3 {
-          font-size: 20px;
-        }
-  
-        .texto {
-          width: 80vh;
-        }
-  
-        .text {
-          width: 50vh;
-        }
-      }
-  
-      .imagens {
-        .imagem-cinza {
-          height: 85vh;
-  
-          .relatar {
-            width: 55vh;
-            margin: 10vh;
-  
-            button {
-              width: 25vh;
-              height: 65px;
-              font-size: 30px;
+        main{
+
+            header {
+              height: 20vh;
+        
+              .imagem-logo img {
+                width: 20vh;
+              }
+        
+              .links-principal {
+                margin-right: 10vh;
+        
+                a {
+                  font-size: 15px;
+                }
+              }
             }
-  
-            h1 {
-              font-size: 35px;
+        
+            .corpo {
+              height: 50vh;
+              margin-bottom: 10vh;
+        
+              .texto h1 {
+                font-size: 30px;
+              }
+        
+              .text h3 {
+                font-size: 20px;
+              }
+        
+              .texto {
+                width: 80vh;
+              }
+        
+              .text {
+                width: 50vh;
+              }
+            }
+        
+            .imagens {
+              .imagem-cinza {
+                height: 85vh;
+        
+                .relatar {
+                  width: 55vh;
+                  margin: 10vh;
+        
+                  button {
+                    width: 25vh;
+                    height: 65px;
+                    font-size: 30px;
+                  }
+        
+                  h1 {
+                    font-size: 35px;
+                  }
+                }
+              }
+        
+              .imagem-cinza-claro {
+                height: 81vh;
+        
+                .seguir {
+                  width: 90vh;
+                  margin: 10vh;
+        
+                  button {
+                    width: 25vh;
+                    height: 65px;
+                    font-size: 30px;
+                  }
+        
+                  h1 {
+                    font-size: 35px;
+                  }
+                }
+              }
+        
+              .imagem-preta {
+                height: 85vh;
+        
+                .consulte {
+                  width: 90vh;
+                  margin: 10vh;
+        
+                  button {
+                    width: 30vh;
+                    height: 65px;
+                    font-size: 30px;
+                  }
+        
+                  h1 {
+                    font-size: 35px;
+                  }
+                }
+              }
+            }
+        
+            .duvidas {
+              .linha {
+                width: 150vh;
+              }
+        
+              .rodape {
+                img {
+                  width: 200px;
+                }
+        
+                h1 {
+                  font-size: 40px;
+                }
+        
+                p {
+                  width: 550px;
+                  font-size: 20px;
+                }
+              }
+        
+              .botao-valhalla {
+                height: 8vh;
+        
+                button {
+                  width: 200px;
+                  height: 8vh;
+                  font-size: 20px;
+                }
+        
+                img {
+                  width: 50px;
+                  height: 8vh;
+                }
+              }
             }
           }
         }
-  
-        .imagem-cinza-claro {
-          height: 81vh;
-  
-          .seguir {
-            width: 90vh;
-            margin: 10vh;
-  
-            button {
-              width: 25vh;
-              height: 65px;
-              font-size: 30px;
-            }
-  
-            h1 {
-              font-size: 35px;
-            }
-          }
-        }
-  
-        .imagem-preta {
-          height: 85vh;
-  
-          .consulte {
-            width: 90vh;
-            margin: 10vh;
-  
-            button {
-              width: 30vh;
-              height: 65px;
-              font-size: 30px;
-            }
-  
-            h1 {
-              font-size: 35px;
-            }
-          }
-        }
-      }
-  
-      .duvidas {
-        .linha {
-          width: 150vh;
-        }
-  
-        .rodape {
-          img {
-            width: 200px;
-          }
-  
-          h1 {
-            font-size: 40px;
-          }
-  
-          p {
-            width: 550px;
-            font-size: 20px;
-          }
-        }
-  
-        .botao-valhalla {
-          height: 8vh;
-  
-          button {
-            width: 200px;
-            height: 8vh;
-            font-size: 20px;
-          }
-  
-          img {
-            width: 50px;
-            height: 8vh;
-          }
-        }
-      }
-    }
   }
   
   @media(max-width: 1024px) {
     .conteiner-adm {
-      header {
-        height: 20vh;
-  
-        .imagem-logo img {
-          width: 20vh;
-        }
-  
-        .links-principal {
-          margin-right: 5vh;
-  
-          a {
-            font-size: 13px;
-          }
-        }
-      }
-  
-      .corpo {
-        height: 40vh;
-        margin-bottom: 20vh;
-  
-        .texto h1 {
-          font-size: 20px;
-        }
-  
-        .text h3 {
-          font-size: 15px;
-        }
-  
-        .texto {
-          width: 70vh;
-        }
-  
-        .text {
-          width: 50vh;
-        }
-      }
-  
-      .imagens {
-        .imagem-cinza {
-          height: 78vh;
-  
-          .relatar {
-            width: 55vh;
-            margin: 10vh;
-  
-            button {
-              width: 20vh;
-              height: 40px;
-              font-size: 15px;
+        main{
+
+            header {
+              height: 20vh;
+        
+              .imagem-logo img {
+                width: 20vh;
+              }
+        
+              .links-principal {
+                margin-right: 5vh;
+        
+                a {
+                  font-size: 13px;
+                }
+              }
             }
-  
-            h1 {
-              font-size: 25px;
+        
+            .corpo {
+              height: 40vh;
+              margin-bottom: 20vh;
+        
+              .texto h1 {
+                font-size: 20px;
+              }
+        
+              .text h3 {
+                font-size: 15px;
+              }
+        
+              .texto {
+                width: 70vh;
+              }
+        
+              .text {
+                width: 50vh;
+              }
             }
-          }
-        }
-  
-        .imagem-cinza-claro {
-          height: 74vh;
-  
-          .seguir {
-            width: 80vh;
-            margin: 10vh;
-  
-            button {
-              width: 20vh;
-              height: 40px;
-              font-size: 15px;
+        
+            .imagens {
+              .imagem-cinza {
+                height: 78vh;
+        
+                .relatar {
+                  width: 55vh;
+                  margin: 10vh;
+        
+                  button {
+                    width: 20vh;
+                    height: 40px;
+                    font-size: 15px;
+                  }
+        
+                  h1 {
+                    font-size: 25px;
+                  }
+                }
+              }
+        
+              .imagem-cinza-claro {
+                height: 74vh;
+        
+                .seguir {
+                  width: 80vh;
+                  margin: 10vh;
+        
+                  button {
+                    width: 20vh;
+                    height: 40px;
+                    font-size: 15px;
+                  }
+        
+                  h1 {
+                    font-size: 25px;
+                  }
+                }
+              }
+        
+              .imagem-preta {
+                height: 74vh;
+        
+                .consulte {
+                  width: 80vh;
+                  margin: 10vh;
+        
+                  button {
+                    width: 20vh;
+                    height: 40px;
+                    font-size: 15px;
+                  }
+        
+                  h1 {
+                    font-size: 25px;
+                  }
+                }
+              }
             }
-  
-            h1 {
-              font-size: 25px;
+        
+            .duvidas {
+              .linha {
+                width: 100vh;
+              }
+        
+              .rodape {
+                img {
+                  width: 150px;
+                }
+        
+                h1 {
+                  font-size: 35px;
+                }
+        
+                p {
+                  width: 550px;
+                  font-size: 20px;
+                }
+              }
+        
+              .botao-valhalla {
+                height: 8vh;
+        
+                button {
+                  width: 200px;
+                  height: 8vh;
+                  font-size: 20px;
+                }
+        
+                img {
+                  width: 40px;
+                  height: 8vh;
+                }
+              }
             }
-          }
         }
-  
-        .imagem-preta {
-          height: 74vh;
-  
-          .consulte {
-            width: 80vh;
-            margin: 10vh;
-  
-            button {
-              width: 20vh;
-              height: 40px;
-              font-size: 15px;
-            }
-  
-            h1 {
-              font-size: 25px;
-            }
-          }
-        }
-      }
-  
-      .duvidas {
-        .linha {
-          width: 100vh;
-        }
-  
-        .rodape {
-          img {
-            width: 150px;
-          }
-  
-          h1 {
-            font-size: 35px;
-          }
-  
-          p {
-            width: 550px;
-            font-size: 20px;
-          }
-        }
-  
-        .botao-valhalla {
-          height: 8vh;
-  
-          button {
-            width: 200px;
-            height: 8vh;
-            font-size: 20px;
-          }
-  
-          img {
-            width: 40px;
-            height: 8vh;
-          }
-        }
-      }
     }
   }
 
   @media(max-width: 900px) {
     .conteiner-adm {
-      header {
-        height: 18vh;
-  
-        .imagem-logo img {
-          width: 18vh;
-        }
-  
-        .links-principal {
-          margin-right: 5vh;
-  
-          a {
-            font-size: 12px;
-          }
-        }
-      }
-  
-      .corpo {
-        height: 40vh;
-        margin-bottom: 10vh;
-  
-        .texto h1 {
-          font-size: 20px;
-        }
-  
-        .text h3 {
-          font-size: 15px;
-        }
-  
-        .texto {
-          width: 70vh;
-        }
-  
-        .text {
-          width: 45vh;
-        }
-      }
-  
-      .imagens {
-        .imagem-cinza {
-          height: 75vh;
-  
-          .relatar {
-            width: 50vh;
-            margin: 8vh;
-  
-            button {
-              width: 20vh;
-              height: 35px;
-              font-size: 15px;
-            }
-  
-            h1 {
-              font-size: 20px;
-            }
-          }
-        }
-  
-        .imagem-cinza-claro {
-          height: 70vh;
-  
-          .seguir {
-            width: 80vh;
-            margin: 8vh;
-  
-            
-            button {
-                width: 20vh;
-                height: 35px;
-                font-size: 15px;
-              }
-  
-            h1 {
-              font-size: 20px;
-            }
-          }
-        }
-  
-        .imagem-preta {
-          height: 70vh;
-  
-          .consulte {
-            width: 80vh;
-            margin: 8vh;
-  
-            
-            button {
-                width: 20vh;
-                height: 35px;
-                font-size: 15px;
-              }
+        main{
 
-            h1 {
-              font-size: 20px;
+            header {
+              height: 18vh;
+        
+              .imagem-logo img {
+                width: 18vh;
+              }
+        
+              .links-principal {
+                margin-right: 5vh;
+        
+                a {
+                  font-size: 12px;
+                }
+              }
             }
-          }
+        
+            .corpo {
+              height: 40vh;
+              margin-bottom: 10vh;
+        
+              .texto h1 {
+                font-size: 20px;
+              }
+        
+              .text h3 {
+                font-size: 15px;
+              }
+        
+              .texto {
+                width: 70vh;
+              }
+        
+              .text {
+                width: 45vh;
+              }
+            }
+        
+            .imagens {
+              .imagem-cinza {
+                height: 75vh;
+        
+                .relatar {
+                  width: 50vh;
+                  margin: 8vh;
+        
+                  button {
+                    width: 20vh;
+                    height: 35px;
+                    font-size: 15px;
+                  }
+        
+                  h1 {
+                    font-size: 20px;
+                  }
+                }
+              }
+        
+              .imagem-cinza-claro {
+                height: 70vh;
+        
+                .seguir {
+                  width: 80vh;
+                  margin: 8vh;
+        
+                  
+                  button {
+                      width: 20vh;
+                      height: 35px;
+                      font-size: 15px;
+                    }
+        
+                  h1 {
+                    font-size: 20px;
+                  }
+                }
+              }
+        
+              .imagem-preta {
+                height: 70vh;
+        
+                .consulte {
+                  width: 80vh;
+                  margin: 8vh;
+        
+                  
+                  button {
+                      width: 20vh;
+                      height: 35px;
+                      font-size: 15px;
+                    }
+      
+                  h1 {
+                    font-size: 20px;
+                  }
+                }
+              }
+            }
+        
+            .duvidas {
+              .linha {
+                width: 120vh;
+              }
+        
+              .rodape {
+                img {
+                  width: 180px;
+                }
+        
+                h1 {
+                  font-size: 35px;
+                }
+        
+                p {
+                  width: 500px;
+                  font-size: 18px;
+                }
+              }
+        
+              .botao-valhalla {
+                height: 8vh;
+        
+                button {
+                  width: 150px;
+                  height: 8vh;
+                  font-size: 18px;
+                }
+        
+                img {
+                  width: 40px;
+                  height: 8vh;
+                }
+              }
+            }
         }
-      }
-  
-      .duvidas {
-        .linha {
-          width: 120vh;
-        }
-  
-        .rodape {
-          img {
-            width: 180px;
-          }
-  
-          h1 {
-            font-size: 35px;
-          }
-  
-          p {
-            width: 500px;
-            font-size: 18px;
-          }
-        }
-  
-        .botao-valhalla {
-          height: 8vh;
-  
-          button {
-            width: 150px;
-            height: 8vh;
-            font-size: 18px;
-          }
-  
-          img {
-            width: 40px;
-            height: 8vh;
-          }
-        }
-      }
-    }
+     }
   }
   
   
   @media(max-width: 768px) {
     .conteiner-adm {
-      header {
-        .imagem-logo img {
-          width: 15vh;
-        }
-  
-        .links-principal {
-  
-          a {
-            font-size: 12px;
-          }
-        }
-      }
-  
-      .corpo {
-        height: 20vh;
-        margin-bottom: 10vh;
-  
-        .texto h1 {
-          font-size: 20px;
-        }
-  
-        .text h3 {
-          font-size: 15px;
-        }
-  
-        .texto {
-          width: 60vh;
-        }
-  
-        .text {
-          width: 40vh;
-        }
-      }
-  
-      .imagens {
-        .imagem-cinza {
-          height: 65vh;
-  
-          .relatar {
-            width: 50vh;
-            margin: 5vh;
-  
-            button {
-              width: 20vh;
-              height: 30px;
-              font-size: 15px;
+        main{
+
+            header {
+              .imagem-logo img {
+                width: 15vh;
+              }
+        
+              .links-principal {
+        
+                a {
+                  font-size: 12px;
+                }
+              }
             }
-  
-            h1 {
-              font-size: 20px;
+        
+            .corpo {
+              height: 20vh;
+              margin-bottom: 10vh;
+        
+              .texto h1 {
+                font-size: 20px;
+              }
+        
+              .text h3 {
+                font-size: 15px;
+              }
+        
+              .texto {
+                width: 60vh;
+              }
+        
+              .text {
+                width: 40vh;
+              }
             }
-          }
-        }
-  
-        .imagem-cinza-claro {
-          height: 60vh;
-  
-          .seguir {
-            width: 70vh;
-            margin: 5vh;
-  
-            button {
-              width: 20vh;
-              height: 30px;
-              font-size: 15px;
+        
+            .imagens {
+              .imagem-cinza {
+                height: 65vh;
+        
+                .relatar {
+                  width: 50vh;
+                  margin: 5vh;
+        
+                  button {
+                    width: 20vh;
+                    height: 30px;
+                    font-size: 15px;
+                  }
+        
+                  h1 {
+                    font-size: 20px;
+                  }
+                }
+              }
+        
+              .imagem-cinza-claro {
+                height: 60vh;
+        
+                .seguir {
+                  width: 70vh;
+                  margin: 5vh;
+        
+                  button {
+                    width: 20vh;
+                    height: 30px;
+                    font-size: 15px;
+                  }
+        
+                  h1 {
+                    font-size: 20px;
+                  }
+                }
+              }
+        
+              .imagem-preta {
+                height: 60vh;
+        
+                .consulte {
+                  width: 70vh;
+                  margin: 5vh;
+        
+                  button {
+                    width: 20vh;
+                    height: 30px;
+                    font-size: 15px;
+                  }
+        
+                  h1 {
+                    font-size: 20px;
+                  }
+                }
+              }
             }
-  
-            h1 {
-              font-size: 20px;
+        
+            .duvidas {
+              .linha {
+                width: 90vh;
+              }
+        
+              .rodape {
+                img {
+                  width: 150px;
+                }
+        
+                h1 {
+                  font-size: 25px;
+                }
+        
+                p {
+                  width: 400px;
+                  font-size: 15px;
+                }
+              }
+        
+              .botao-valhalla {
+                height: 8vh;
+        
+                button {
+                  width: 150px;
+                  height: 8vh;
+                  font-size: 12px;
+                }
+        
+                img {
+                  width: 50px;
+                  height: 8vh;
+                }
+              }
             }
-          }
         }
-  
-        .imagem-preta {
-          height: 60vh;
-  
-          .consulte {
-            width: 70vh;
-            margin: 5vh;
-  
-            button {
-              width: 20vh;
-              height: 30px;
-              font-size: 15px;
-            }
-  
-            h1 {
-              font-size: 20px;
-            }
-          }
-        }
-      }
-  
-      .duvidas {
-        .linha {
-          width: 90vh;
-        }
-  
-        .rodape {
-          img {
-            width: 150px;
-          }
-  
-          h1 {
-            font-size: 25px;
-          }
-  
-          p {
-            width: 400px;
-            font-size: 15px;
-          }
-        }
-  
-        .botao-valhalla {
-          height: 8vh;
-  
-          button {
-            width: 150px;
-            height: 8vh;
-            font-size: 12px;
-          }
-  
-          img {
-            width: 50px;
-            height: 8vh;
-          }
-        }
-      }
     }
   }
   
   @media(max-width: 425px) {
     .conteiner-adm {
-      header {
-        .imagem-logo img {
-          width: 10vh;
-        }
-  
-        .links-principal {
-          gap: 5vh;
-  
-          a {
-            font-size: 8px;
-          }
-        }
-      }
-  
-      .corpo {
-        height: 5vh;
-  
-        .texto h1 {
-          font-size: 10px;
-          margin-left: 2vh;
-        }
-  
-        .text h3 {
-          font-size: 7px;
-        }
-  
-        .texto {
-          width: 50vh;
-        }
-  
-        .text {
-          width: 40vh;
-        }
-      }
-  
-      .imagens {
-        margin-bottom: 5vh;
-  
-        .imagem-cinza {
-          height: 28vh;
-  
-          .relatar {
-            width: 20vh;
-            margin: 5vh;
-  
-            button {
-              width: 10vh;
-              height: 25px;
-              font-size: 12px;
+        main{
+
+            header {
+              .imagem-logo img {
+                width: 10vh;
+              }
+        
+              .links-principal {
+                gap: 5vh;
+        
+                a {
+                  font-size: 8px;
+                }
+              }
             }
-  
-            h1 {
-              font-size: 12px;
+        
+            .corpo {
+              height: 5vh;
+        
+              .texto h1 {
+                font-size: 10px;
+                margin-left: 2vh;
+              }
+        
+              .text h3 {
+                font-size: 7px;
+              }
+        
+              .texto {
+                width: 50vh;
+              }
+        
+              .text {
+                width: 40vh;
+              }
             }
-          }
-        }
-  
-        .imagem-cinza-claro {
-          height: 26vh;
-  
-          .seguir {
-            width: 40vh;
-            margin: 5vh;
-  
-            button {
-              width: 10vh;
-              height: 25px;
-              font-size: 12px;
+        
+            .imagens {
+              margin-bottom: 5vh;
+        
+              .imagem-cinza {
+                height: 28vh;
+        
+                .relatar {
+                  width: 20vh;
+                  margin: 5vh;
+        
+                  button {
+                    width: 10vh;
+                    height: 25px;
+                    font-size: 12px;
+                  }
+        
+                  h1 {
+                    font-size: 12px;
+                  }
+                }
+              }
+        
+              .imagem-cinza-claro {
+                height: 26vh;
+        
+                .seguir {
+                  width: 40vh;
+                  margin: 5vh;
+        
+                  button {
+                    width: 10vh;
+                    height: 25px;
+                    font-size: 12px;
+                  }
+        
+                  h1 {
+                    font-size: 12px;
+                  }
+                }
+              }
+        
+              .imagem-preta {
+                height: 26vh;
+        
+                .consulte {
+                  width: 40vh;
+                  margin: 5vh;
+        
+                  button {
+                    width: 13vh;
+                    height: 25px;
+                    font-size: 12px;
+                  }
+        
+                  h1 {
+                    font-size: 12px;
+                  }
+                }
+              }
             }
-  
-            h1 {
-              font-size: 12px;
+        
+            .duvidas {
+              .linha {
+                width: 50vh;
+              }
+        
+              .rodape {
+                img {
+                  width: 100px;
+                }
+        
+                h1 {
+                  font-size: 20px;
+                }
+        
+                p {
+                  width: 300px;
+                  font-size: 15px;
+                }
+              }
+        
+              .botao-valhalla {
+                height: 8vh;
+        
+                button {
+                  width: 100px;
+                  height: 8vh;
+                  font-size: 10px;
+                }
+        
+                img {
+                  width: 30px;
+                  height: 8vh;
+                }
+              }
             }
-          }
         }
-  
-        .imagem-preta {
-          height: 26vh;
-  
-          .consulte {
-            width: 40vh;
-            margin: 5vh;
-  
-            button {
-              width: 13vh;
-              height: 25px;
-              font-size: 12px;
-            }
-  
-            h1 {
-              font-size: 12px;
-            }
-          }
-        }
-      }
-  
-      .duvidas {
-        .linha {
-          width: 50vh;
-        }
-  
-        .rodape {
-          img {
-            width: 100px;
-          }
-  
-          h1 {
-            font-size: 20px;
-          }
-  
-          p {
-            width: 300px;
-            font-size: 15px;
-          }
-        }
-  
-        .botao-valhalla {
-          height: 8vh;
-  
-          button {
-            width: 100px;
-            height: 8vh;
-            font-size: 10px;
-          }
-  
-          img {
-            width: 30px;
-            height: 8vh;
-          }
-        }
-      }
     }
   }
   
