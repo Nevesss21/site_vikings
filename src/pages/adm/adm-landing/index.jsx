@@ -6,7 +6,7 @@ export default function AdmLanding() {
        
         <header>
             <div className='imagem-logo'>
-                <img src="/assets/images/logo-vikings.png" alt="" />
+                <img src="/assets/images/logo-vikings.png" alt="logo-vikings" />
             </div>
 
             <div className='links-principal'>
@@ -59,7 +59,7 @@ export default function AdmLanding() {
                 <hr className='linha' />
 
                 <div className='rodape'>
-                    <img src="/assets/images/valhalla-logo 3.png" alt="" />
+                    <img src="/assets/images/valhalla-logo 3.png" alt="logo-valhalla" />
                     <h1>Duvidas</h1>
                     <p>Caso haver duvidas ou possiveis ocorrências,entre em conato com a  equipe de programadores da Valhalla diretamente no site</p>
                 </div>
@@ -67,7 +67,7 @@ export default function AdmLanding() {
 
                 <div className='botao-valhalla'>
                     <button>Ir para Valhalla</button>
-                    <img src="/assets/images/valhalla-logo 3.png" alt="" />
+                    <img src="/assets/images/valhalla-logo 3.png" alt="logo-valhalla" />
                 </div>
 
             </div>
