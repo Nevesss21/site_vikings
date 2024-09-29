@@ -4,7 +4,9 @@ export default function AdmLanding() {
   return (
     <div className="conteiner-adm">
        
+            <main>
         <header>
+                
             <div className='imagem-logo'>
                 <img src="/assets/images/logo-vikings.png" alt="logo-vikings" />
             </div>
@@ -71,6 +73,7 @@ export default function AdmLanding() {
                 </div>
 
             </div>
+            </main>
 
       
     </div>

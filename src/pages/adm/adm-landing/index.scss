@@ -3,214 +3,216 @@
     display: flex;
     flex-direction: column;
     background-image: url('../../../../public/assets/images/background.png');
-  
-    header{
-        display: flex;
-        height: 20vh;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0px 30px 0px 30px;
+  main{
+}
+  header{
+      display: flex;
+      height: 20vh;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0px 30px 0px 30px;
 
-        .imagem-logo img{
-            width: 15vh;
-        }
+      .imagem-logo img{
+          width: 15vh;
+      }
 
-        .links-principal  {
-            display: flex;
-            gap: 15vh;
-            align-items: center;
-            margin-right: 20px;
+      .links-principal  {
+          display: flex;
+          gap: 15vh;
+          align-items: center;
+          margin-right: 20px;
 
-           a{
-            color: #fff;
-            text-decoration: none;
-            font: 500 16px 'vikings';
-           }
+         a{
+          color: #fff;
+          text-decoration: none;
+          font: 500 16px 'vikings';
+         }
 
-        }
-    }
+      }
+  }
 
-    .corpo{
-        background-image: url('../../../../public/assets/images/imagem-escura-dourada.png');
-        background-size: 100%;
-        background-repeat: no-repeat;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 80px;
-        height: 350px;
-        margin-bottom: 120px;
+  .corpo{
+      background-image: url('../../../../public/assets/images/imagem-escura-dourada.png');
+      background-size: 100%;
+      background-repeat: no-repeat;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 80px;
+      height: 350px;
+      margin-bottom: 120px;
 
-        
-        .text{
-            width: 300px;
-            margin-right: 50px;
-        }
-        .texto{
-            width: 500px;
-        }
+      
+      .text{
+          width: 300px;
+          margin-right: 50px;
+      }
+      .texto{
+          width: 500px;
+      }
 
-        .texto h1{
-            padding: 00px;
-            color: #fff;
-            font: 700 'vikings';
-        }
-        .text h3{
-            padding: 0px;
-            color: #fff;
-            font: 500 20px 'vikings';
-        }
-    }
+      .texto h1{
+          padding: 00px;
+          color: #fff;
+          font: 700 'vikings';
+      }
+      .text h3{
+          padding: 0px;
+          color: #fff;
+          font: 500 20px 'vikings';
+      }
+  }
 
-    .imagens{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 120px;
-        
-        
-            .imagem-cinza{
-                background-image: url('../../../../public/assets/images/imagem-cinza-adm1.png');
-                height: 72vh;
-                background-repeat: no-repeat;
-                background-size: 100%;
-                display: flex;
-                align-items: center;
+  .imagens{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 120px;
+      
+      
+          .imagem-cinza{
+              background-image: url('../../../../public/assets/images/imagem-cinza-adm1.png');
+              height: 72vh;
+              background-repeat: no-repeat;
+              background-size: 100%;
+              display: flex;
+              align-items: center;
 
-                .relatar{
-                    width:350px;
-                    margin: 40px;
+              .relatar{
+                  width:350px;
+                  margin: 40px;
 
-                    button{
-                        width: 120px;
-                        height: 40px;
-                        border-radius: 100px;
-                        border: none;
-                        background-color: #D9D9D9;
-                        font: 700 20px 'vikings';
-                    }
-                    h1{
-                        color: #fff;
-                        font: 700 30px 'vikings';
-                    }
-                }
-            }
-            .imagem-cinza-claro{
-                background-image: url('../../../../public/assets/images/imagem-cinza-claro-adm1.png');
-                background-repeat: no-repeat;
-                background-size: 100%;
-                height: 72vh;
-                display: flex;
-                align-items: center;
+                  button{
+                      width: 120px;
+                      height: 40px;
+                      border-radius: 100px;
+                      border: none;
+                      background-color: #D9D9D9;
+                      font: 700 20px 'vikings';
+                  }
+                  h1{
+                      color: #fff;
+                      font: 700 30px 'vikings';
+                  }
+              }
+          }
+          .imagem-cinza-claro{
+              background-image: url('../../../../public/assets/images/imagem-cinza-claro-adm1.png');
+              background-repeat: no-repeat;
+              background-size: 100%;
+              height: 72vh;
+              display: flex;
+              align-items: center;
 
-                .seguir{
-                    width: 600px;
-                    margin: 40px;
+              .seguir{
+                  width: 600px;
+                  margin: 40px;
 
-                    button{
-                        width: 120px;
-                        height: 40px;
-                        border-radius: 100px;
-                        border: none;
-                        background-color: #2E2B2B;
-                        font: 700 20px 'vikings';
-                        color: #fff;
-                    }
-                    h1{
-                        color: #000;
-                        font: 700 30px 'vikings';
-                    }
+                  button{
+                      width: 120px;
+                      height: 40px;
+                      border-radius: 100px;
+                      border: none;
+                      background-color: #2E2B2B;
+                      font: 700 20px 'vikings';
+                      color: #fff;
+                  }
+                  h1{
+                      color: #000;
+                      font: 700 30px 'vikings';
+                  }
 
-                    
-                }
-            }
-            .imagem-preta{
-                background-image: url('../../../../public/assets/images/imagem-preta-adm-1.png');
-                height: 68vh;
-                background-repeat: no-repeat;
-                background-size: 100%;
-                display: flex;
-                align-items: center;
+                  
+              }
+          }
+          .imagem-preta{
+              background-image: url('../../../../public/assets/images/imagem-preta-adm-1.png');
+              height: 68vh;
+              background-repeat: no-repeat;
+              background-size: 100%;
+              display: flex;
+              align-items: center;
 
-                .consulte{
-                    width: 500px;
-                    margin: 40px;
+              .consulte{
+                  width: 500px;
+                  margin: 40px;
 
-                    button{
-                        width: 120px;
-                        height: 40px;
-                        border-radius: 100px;
-                        border: none;
-                        background-color: #fff;
-                        font: 700 20px 'vikings';;
-                    }
-                    h1{
-                        color: #fff;
-                        font: 700 30px 'vikings';
-                    }
+                  button{
+                      width: 120px;
+                      height: 40px;
+                      border-radius: 100px;
+                      border: none;
+                      background-color: #fff;
+                      font: 700 20px 'vikings';;
+                  }
+                  h1{
+                      color: #fff;
+                      font: 700 30px 'vikings';
+                  }
 
-                }
-            }
-        }
-        .duvidas{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 70vh;
-            margin-bottom: 60px;
+              }
+          }
+      }
+      .duvidas{
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 70vh;
+          margin-bottom: 60px;
 
-            .linha{
-                width: 900px;
-            }
-            .rodape img{
-                width: 150px;
-                padding: 10px;
-            }
-            .rodape h1{
-                color: #fff;
-                font: 700 40px 'vikings';
-            }
-            .rodape p{
-                color: #fff;
-                font: 500 20px 'vikings';
-                width: 400px;
-                text-align: center;
-            }
-            .rodape{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            }
+          .linha{
+              width: 900px;
+          }
+          .rodape img{
+              width: 150px;
+              padding: 10px;
+          }
+          .rodape h1{
+              color: #fff;
+              font: 700 40px 'vikings';
+          }
+          .rodape p{
+              color: #fff;
+              font: 500 20px 'vikings';
+              width: 400px;
+              text-align: center;
+          }
+          .rodape{
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+          }
 
-            .botao-valhalla{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: center;
-                background-color: #fff;
-                border-radius: 80px;
-                height: 40px;
+          .botao-valhalla{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+              background-color: #fff;
+              border-radius: 80px;
+              height: 40px;
 
-                button{
-                    width: 200px;
-                    height: 40px;
-                    border-top-left-radius: 80px;
-                    border-bottom-left-radius: 80px;
-                    border: none;
-                    font: 700 20px 'vikings';
-                }
-                img{
-                    width: 50px;
-                    height: 40px;
-                    border-top-right-radius: 80px;
-                    border-bottom-right-radius: 80px;
-                    filter: hue-rotate(20deg);
-                    opacity: 0.7;                    
-                }
-            }
-        }
+              button{
+                  width: 200px;
+                  height: 40px;
+                  border-top-left-radius: 80px;
+                  border-bottom-left-radius: 80px;
+                  border: none;
+                  font: 700 20px 'vikings';
+              }
+              img{
+                  width: 50px;
+                  height: 40px;
+                  border-top-right-radius: 80px;
+                  border-bottom-right-radius: 80px;
+                  filter: hue-rotate(20deg);
+                  opacity: 0.7;                    
+              }
+          }
+      }
+    
     }
 
 
