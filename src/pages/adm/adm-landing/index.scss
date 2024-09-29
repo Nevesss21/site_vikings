@@ -3,217 +3,218 @@
     display: flex;
     flex-direction: column;
     background-image: url('../../../../public/assets/images/background.png');
-   main{
-     header{
-         display: flex;
-         height: 20vh;
-         align-items: center;
-         justify-content: space-between;
-         padding: 0px 30px 0px 30px;
-   
-         .imagem-logo img{
-             width: 15vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    main{
+
+       header{
+           display: flex;
+           height: 30vh;
+           align-items: center;
+           justify-content: space-between;
+           padding: 0px 30px 0px 30px;
+     
+           .imagem-logo img{
+               width: 15vh;
+           }
+     
+           .links-principal  {
+               display: flex;
+               gap: 15vh;
+               align-items: center;
+               margin-right: 20px;
+     
+              a{
+               color: #fff;
+               text-decoration: none;
+               font: 500 16px 'vikings' !important; 
+              }
+     
+           }
+       }
+     
+       .corpo{
+           background-image: url('../../../../public/assets/images/imagem-escura-dourada.png');
+           background-size: cover;
+           background-repeat: no-repeat;
+           display: flex;
+           flex-direction: row;
+           align-items: center;
+           justify-content: space-between;
+           height: 350px;
+           margin-bottom: 70vh;
+     
+           .text{
+               width: 400px;
+               margin-right: 50px;
+           }
+           .texto{
+               width: 500px !important;
+               margin-left: 10vh;
+           }
+     
+           .texto h1{
+               color: #fff;
+               font: 700 25px 'vikings' !important;
+           }
+           .text h3{
+               padding: 0px;
+               color: #fff;
+               font: 500 15px 'vikings' !important;
+           }
+       }
+       .imagens{
+           display: flex;
+           flex-direction: column;
+           margin-bottom: 120px;
+           
+           
+               .imagem-cinza{
+                   background-image: url('../../../../public/assets/images/imagem-cinza-adm1.png');
+                   height: 90vh;
+                   background-repeat: no-repeat;
+                   background-size: cover;
+                   display: flex;
+                   align-items: center;
+     
+                   .relatar{
+                       width:350px !important;
+                       margin: 40px !important;
+     
+                       button{
+                           width: 120px;
+                           height: 40px;
+                           border-radius: 100px;
+                           border: none;
+                           background-color: #D9D9D9;
+                           font: 700 20px 'vikings' !important;
+                       }
+                       h1{
+                           color: #fff;
+                           font: 700 30px 'vikings' !important;
+                       }
+                   }
+               }
+               .imagem-cinza-claro{
+                   background-image: url('../../../../public/assets/images/imagem-cinza-claro-adm1.png');
+                   background-repeat: no-repeat;
+                   background-size: cover;
+                   height: 85vh;
+                   display: flex;
+                   align-items: center;
+     
+                   .seguir{
+                       width: 600px !important;
+                       margin: 40px !important;
+     
+                       button{
+                           width: 120px;
+                           height: 40px;
+                           border-radius: 100px;
+                           border: none;
+                           background-color: #2E2B2B;
+                           font: 700 20px 'vikings';
+                           color: #fff;
+                       }
+                       h1{
+                           color: #000;
+                           font: 700 30px 'vikings' !important;
+                       }
+     
+                       
+                   }
+               }
+               .imagem-preta{
+                   background-image: url('../../../../public/assets/images/imagem-preta-adm-1.png');
+                   height: 85vh;
+                   background-repeat: no-repeat;
+                   background-size: cover;
+                   display: flex;
+                   align-items: center;
+     
+                   .consulte{
+                       width: 400px !important;
+                       margin: 40px !important;
+     
+                       button{
+                           width: 120px !important;
+                           height: 40px !important;
+                           border-radius: 100px;
+                           border: none;
+                           background-color: #fff;
+                           font: 700 20px 'vikings' !important;
+                       }
+                       h1{
+                           color: #fff;
+                           font: 700 30px 'vikings' !important;
+                       }
+     
+                   }
+               }
+           }
+           .duvidas{
+               display: flex;
+               flex-direction: column;
+               justify-content: center;
+               align-items: center;
+               height: 70vh !important;
+               margin-bottom: 60px !important;
+     
+               .linha{
+                   width: 700px !important;
+               }
+               .rodape img{
+                   width: 100px !important;
+                   padding: 10px !important;
+               }
+               .rodape h1{
+                   color: #fff;
+                   font: 700 35px 'vikings' !important;
+               }
+               .rodape p{
+                   color: #fff;
+                   font: 500 15px 'vikings' !important;
+                   width: 300px !important;
+                   text-align: center;
+               }
+               .rodape{
+                   display: flex;
+                   flex-direction: column;
+                   align-items: center;
+                   justify-content: center;
+               }
+     
+               .botao-valhalla{
+                   display: flex;
+                   flex-direction: row;
+                   align-items: center;
+                   justify-content: center;
+                   background-color: #fff;
+                   border-radius: 80px !important;
+                   height: 40px !important;
+     
+                   button{
+                       width: 150px !important;
+                       height: 35px !important;
+                       border-top-left-radius: 80px !important;
+                       border-bottom-left-radius: 80px !important;
+                       border: none;
+                       font: 700 15px 'vikings' !important;
+                   }
+                   img{
+                       width: 45px !important;
+                       height: 35px !important;
+                       border-top-right-radius: 80px !important;
+                       border-bottom-right-radius: 80px !important;
+                       filter: hue-rotate(20deg);
+                       opacity: 0.7;                    
+                   }
+               }
+           
          }
-   
-         .links-principal  {
-             display: flex;
-             gap: 15vh;
-             align-items: center;
-             margin-right: 20px;
-   
-            a{
-             color: #fff;
-             text-decoration: none;
-             font: 500 16px 'vikings';
-            }
-   
-         }
-     }
-   
-     .corpo{
-         background-image: url('../../../../public/assets/images/imagem-escura-dourada.png');
-         background-size: 100%;
-         background-repeat: no-repeat;
-         display: flex;
-         flex-direction: row;
-         align-items: center;
-         justify-content: space-between;
-         padding: 80px;
-         height: 350px;
-         margin-bottom: 120px;
-   
-         
-         .text{
-             width: 300px;
-             margin-right: 50px;
-         }
-         .texto{
-             width: 500px;
-         }
-   
-         .texto h1{
-             padding: 00px;
-             color: #fff;
-             font: 700 'vikings';
-         }
-         .text h3{
-             padding: 0px;
-             color: #fff;
-             font: 500 20px 'vikings';
-         }
-     }
-   
-     .imagens{
-         display: flex;
-         flex-direction: column;
-         margin-bottom: 120px;
-         
-         
-             .imagem-cinza{
-                 background-image: url('../../../../public/assets/images/imagem-cinza-adm1.png');
-                 height: 72vh;
-                 background-repeat: no-repeat;
-                 background-size: 100%;
-                 display: flex;
-                 align-items: center;
-   
-                 .relatar{
-                     width:350px;
-                     margin: 40px;
-   
-                     button{
-                         width: 120px;
-                         height: 40px;
-                         border-radius: 100px;
-                         border: none;
-                         background-color: #D9D9D9;
-                         font: 700 20px 'vikings';
-                     }
-                     h1{
-                         color: #fff;
-                         font: 700 30px 'vikings';
-                     }
-                 }
-             }
-             .imagem-cinza-claro{
-                 background-image: url('../../../../public/assets/images/imagem-cinza-claro-adm1.png');
-                 background-repeat: no-repeat;
-                 background-size: 100%;
-                 height: 72vh;
-                 display: flex;
-                 align-items: center;
-   
-                 .seguir{
-                     width: 600px;
-                     margin: 40px;
-   
-                     button{
-                         width: 120px;
-                         height: 40px;
-                         border-radius: 100px;
-                         border: none;
-                         background-color: #2E2B2B;
-                         font: 700 20px 'vikings';
-                         color: #fff;
-                     }
-                     h1{
-                         color: #000;
-                         font: 700 30px 'vikings';
-                     }
-   
-                     
-                 }
-             }
-             .imagem-preta{
-                 background-image: url('../../../../public/assets/images/imagem-preta-adm-1.png');
-                 height: 68vh;
-                 background-repeat: no-repeat;
-                 background-size: 100%;
-                 display: flex;
-                 align-items: center;
-   
-                 .consulte{
-                     width: 500px;
-                     margin: 40px;
-   
-                     button{
-                         width: 120px;
-                         height: 40px;
-                         border-radius: 100px;
-                         border: none;
-                         background-color: #fff;
-                         font: 700 20px 'vikings';;
-                     }
-                     h1{
-                         color: #fff;
-                         font: 700 30px 'vikings';
-                     }
-   
-                 }
-             }
-         }
-         .duvidas{
-             display: flex;
-             flex-direction: column;
-             justify-content: center;
-             align-items: center;
-             height: 70vh;
-             margin-bottom: 60px;
-   
-             .linha{
-                 width: 900px;
-             }
-             .rodape img{
-                 width: 150px;
-                 padding: 10px;
-             }
-             .rodape h1{
-                 color: #fff;
-                 font: 700 40px 'vikings';
-             }
-             .rodape p{
-                 color: #fff;
-                 font: 500 20px 'vikings';
-                 width: 400px;
-                 text-align: center;
-             }
-             .rodape{
-                 display: flex;
-                 flex-direction: column;
-                 align-items: center;
-                 justify-content: center;
-             }
-   
-             .botao-valhalla{
-                 display: flex;
-                 flex-direction: row;
-                 align-items: center;
-                 justify-content: center;
-                 background-color: #fff;
-                 border-radius: 80px;
-                 height: 40px;
-   
-                 button{
-                     width: 200px;
-                     height: 40px;
-                     border-top-left-radius: 80px;
-                     border-bottom-left-radius: 80px;
-                     border: none;
-                     font: 700 20px 'vikings';
-                 }
-                 img{
-                     width: 50px;
-                     height: 40px;
-                     border-top-right-radius: 80px;
-                     border-bottom-right-radius: 80px;
-                     filter: hue-rotate(20deg);
-                     opacity: 0.7;                    
-                 }
-             }
-         }
-}
-    
     }
+}
 
 
 
@@ -239,11 +240,11 @@
             }
         
             .corpo {
-              height: 50vh;
+             
               margin-bottom: 10vh;
         
               .texto h1 {
-                font-size: 30px;
+                font-size: 60px;
               }
         
               .text h3 {
@@ -261,8 +262,6 @@
         
             .imagens {
               .imagem-cinza {
-                height: 88vh;
-        
                 .relatar {
                   width: 55vh;
                   margin: 10vh;
@@ -280,8 +279,6 @@
               }
         
               .imagem-cinza-claro {
-                height: 85vh;
-        
                 .seguir {
                   width: 90vh;
                   margin: 10vh;
@@ -299,8 +296,6 @@
               }
         
               .imagem-preta {
-                height: 85vh;
-        
                 .consulte {
                   width: 90vh;
                   margin: 10vh;
@@ -357,146 +352,6 @@
         }
   }
 
-  @media(max-width:1326px){
-
-    .conteiner-adm{
-      main{
-
-        .imagens {
-          .imagem-cinza {
-            height: 88vh;
-    
-            .relatar {
-              width: 55vh;
-              margin: 10vh;
-    
-              button {
-                width: 20vh;
-                height: 40px;
-                font-size: 15px;
-              }
-    
-              h1 {
-                font-size: 30px;
-              }
-            }
-          }
-    
-          .imagem-cinza-claro {
-            height: 83vh;
-    
-            .seguir {
-              width: 80vh;
-              margin: 10vh;
-    
-              button {
-                width: 20vh;
-                height: 40px;
-                font-size: 15px;
-              }
-    
-              h1 {
-                font-size: 30px;
-              }
-            }
-          }
-    
-          .imagem-preta {
-            height: 74vh;
-    
-            .consulte {
-              width: 80vh;
-              margin: 10vh;
-    
-              button {
-                width: 20vh;
-                height: 40px;
-                font-size: 15px;
-              }
-    
-              h1 {
-                font-size: 30px;
-              }
-            }
-          }
-        }
-
-      }  
-    }  
-
-  }
-
-  
-  @media(max-width:1306px){
-
-    .conteiner-adm{
-      main{
-
-        .imagens {
-          .imagem-cinza {
-            height: 83vh;
-    
-            .relatar {
-              width: 55vh;
-              margin: 10vh;
-    
-              button {
-                width: 20vh;
-                height: 40px;
-                font-size: 15px;
-              }
-    
-              h1 {
-                font-size: 30px;
-              }
-            }
-          }
-    
-          .imagem-cinza-claro {
-            height: 78vh;
-    
-            .seguir {
-              width: 80vh;
-              margin: 10vh;
-    
-              button {
-                width: 20vh;
-                height: 40px;
-                font-size: 15px;
-              }
-    
-              h1 {
-                font-size: 30px;
-              }
-            }
-          }
-    
-          .imagem-preta {
-            height: 74vh;
-    
-            .consulte {
-              width: 80vh;
-              margin: 10vh;
-    
-              button {
-                width: 20vh;
-                height: 40px;
-                font-size: 15px;
-              }
-    
-              h1 {
-                font-size: 30px;
-              }
-            }
-          }
-        }
-
-      }  
-    }  
-
-  }
-
-  
   @media(max-width:1230px){
 
     .conteiner-adm{
@@ -504,8 +359,6 @@
 
         .imagens {
           .imagem-cinza {
-            height: 80vh;
-    
             .relatar {
               width: 55vh;
               margin: 10vh;
@@ -514,8 +367,6 @@
           }
     
           .imagem-cinza-claro {
-            height: 75vh;
-    
             .seguir {
               width: 80vh;
               margin: 10vh;
@@ -524,8 +375,6 @@
           }
     
           .imagem-preta {
-            height: 75vh;
-    
             .consulte {
               width: 80vh;
               margin: 10vh;
@@ -538,178 +387,11 @@
     }  
   }
 
-  
-  @media(max-width:1184px){
-
-    .conteiner-adm{
-      main{
-
-        .imagens {
-          .imagem-cinza {
-            height: 78vh;
-    
-            .relatar {
-              width: 55vh;
-              margin: 10vh;
-            }
-          }
-    
-          .imagem-cinza-claro {
-            height: 70vh;
-    
-            .seguir {
-              width: 80vh;
-              margin: 10vh;
-    
-            }
-          }
-    
-          .imagem-preta {
-            height: 70vh;
-    
-            .consulte {
-              width: 80vh;
-              margin: 10vh;
-    
-            }
-          }
-        }
-
-      }  
-    }  
-}
-
-
-  
-@media(max-width:1154px){
-
-  .conteiner-adm{
-    main{
-
-      .imagens {
-        .imagem-cinza {
-          height: 75vh;
-  
-          .relatar {
-            width: 55vh;
-            margin: 10vh;
-          }
-        }
-  
-        .imagem-cinza-claro {
-          height: 67vh;
-  
-          .seguir {
-            width: 80vh;
-            margin: 10vh;
-  
-          }
-        }
-  
-        .imagem-preta {
-          height: 67vh;
-  
-          .consulte {
-            width: 80vh;
-            margin: 10vh;
-  
-          }
-        }
-      }
-
-    }  
-  }  
-
-}
-
-  @media(max-width:1110px){
-
-    .conteiner-adm{
-      main{
-
-        .imagens {
-          .imagem-cinza {
-            height: 72vh;
-    
-            .relatar {
-              width: 55vh;
-              margin: 10vh;
-            }
-          }
-    
-          .imagem-cinza-claro {
-            height: 67vh;
-    
-            .seguir {
-              width: 80vh;
-              margin: 10vh;
-
-            }
-          }
-    
-          .imagem-preta {
-            height: 67vh;
-    
-            .consulte {
-              width: 80vh;
-              margin: 10vh;
-
-            }
-          }
-        }
-
-      }  
-    }  
-
-  }
-  
-  @media(max-width:1066px){
-
-    .conteiner-adm{
-      main{
-
-        .imagens {
-          .imagem-cinza {
-            height: 68vh;
-    
-            .relatar {
-              width: 55vh;
-              margin: 10vh;
-            }
-          }
-    
-          .imagem-cinza-claro {
-            height: 64vh;
-    
-            .seguir {
-              width: 80vh;
-              margin: 10vh;
-
-            }
-          }
-    
-          .imagem-preta {
-            height: 64vh;
-    
-            .consulte {
-              width: 80vh;
-              margin: 10vh;
-
-            }
-          }
-        }
-
-      }  
-    }  
-
-  }
-  
   @media(max-width: 1024px) {
     .conteiner-adm {
         main{
           
             .corpo {
-              height: 30vh;
               margin-bottom: 15vh;
         
               .texto h1 {
@@ -731,8 +413,6 @@
         
             .imagens {
               .imagem-cinza {
-                height: 60vh;
-        
                 .relatar {
                   width: 50vh;
                   margin: 10vh;
@@ -750,8 +430,6 @@
               }
         
               .imagem-cinza-claro {
-                height: 56vh;
-        
                 .seguir {
                   width: 80vh;
                   margin: 10vh;
@@ -769,8 +447,6 @@
               }
         
               .imagem-preta {
-                height: 56vh;
-        
                 .consulte {
                   width: 80vh;
                   margin: 10vh;
@@ -794,24 +470,19 @@
   @media(max-width: 900px) {
     .conteiner-adm {
         main{
-
-        
             .corpo {
-              height: 40vh;
               margin-bottom: 10vh;
         
               .texto h1 {
                 font-size: 20px;
               }
-        
               .text h3 {
                 font-size: 15px;
               }
-        
               .texto {
                 width: 70vh;
               }
-        
+
               .text {
                 width: 45vh;
               }
@@ -819,8 +490,6 @@
         
             .imagens {
               .imagem-cinza {
-                height: 55vh;
-        
                 .relatar {
                   width: 50vh;
                   margin: 8vh;
@@ -838,8 +507,6 @@
               }
         
               .imagem-cinza-claro {
-                height: 52vh;
-        
                 .seguir {
                   width: 80vh;
                   margin: 8vh;
@@ -858,113 +525,6 @@
               }
         
               .imagem-preta {
-                height: 52vh;
-        
-                .consulte {
-                  width: 80vh;
-                  margin: 8vh;
-        
-                  
-                  button {
-                      width: 20vh;
-                      height: 35px;
-                      font-size: 15px;
-                    }
-      
-                  h1 {
-                    font-size: 20px;
-                  }
-                }
-              }
-            }
-        
-            .duvidas {
-              .linha {
-                width: 120vh;
-              }
-        
-              .rodape {
-                img {
-                  width: 180px;
-                }
-        
-                h1 {
-                  font-size: 35px;
-                }
-        
-                p {
-                  width: 500px;
-                  font-size: 18px;
-                }
-              }
-        
-              .botao-valhalla {
-                height: 8vh;
-        
-                button {
-                  width: 150px;
-                  height: 8vh;
-                  font-size: 18px;
-                }
-        
-                img {
-                  width: 40px;
-                  height: 8vh;
-                }
-              }
-            }
-        }
-     }
-  }
-  
-  
-  @media(max-width: 806px) {
-    .conteiner-adm {
-        main{
-        
-            .imagens {
-              .imagem-cinza {
-                height: 50vh;
-        
-                .relatar {
-                  width: 50vh;
-                  margin: 8vh;
-        
-                  button {
-                    width: 20vh;
-                    height: 35px;
-                    font-size: 15px;
-                  }
-        
-                  h1 {
-                    font-size: 20px;
-                  }
-                }
-              }
-        
-              .imagem-cinza-claro {
-                height: 48vh;
-        
-                .seguir {
-                  width: 80vh;
-                  margin: 8vh;
-        
-                  
-                  button {
-                      width: 20vh;
-                      height: 35px;
-                      font-size: 15px;
-                    }
-        
-                  h1 {
-                    font-size: 20px;
-                  }
-                }
-              }
-        
-              .imagem-preta {
-                height: 48vh;
-        
                 .consulte {
                   width: 80vh;
                   margin: 8vh;
@@ -1040,7 +600,7 @@
             }
         
             .corpo {
-              height: 20vh;
+             
               margin-bottom: 10vh;
         
               .texto h1 {
@@ -1062,7 +622,7 @@
         
             .imagens {
               .imagem-cinza {
-                height: 50vh;
+                
         
                 .relatar {
                   width: 50vh;
@@ -1073,8 +633,7 @@
               }
         
               .imagem-cinza-claro {
-                height: 48vh;
-        
+                
                 .seguir {
                   width: 70vh;
                   margin: 5vh;
@@ -1083,8 +642,6 @@
               }
         
               .imagem-preta {
-                height: 48vh;
-        
                 .consulte {
                   width: 70vh;
                   margin: 5vh;
@@ -1098,417 +655,12 @@
             
             .duvidas {
               .linha {
-                width: 90vh;
-              }
-            }
-        }
-    }
-  }
-  
-  @media(max-width: 740px) {
-    .conteiner-adm {
-        main{
-          
-          header {
-            .imagem-logo img {
-              width: 15vh;
-            }
-      
-            .links-principal {
-      
-              a {
-                font-size: 12px;
-              }
-            }
-          }
-
-            .imagens {
-              .imagem-cinza {
-                height: 46vh;
-        
-                .relatar {
-                  width: 50vh;
-                  margin: 5vh;
-        
-                  
-                }
-              }
-        
-              .imagem-cinza-claro {
-                height: 42vh;
-        
-                .seguir {
-                  width: 70vh;
-                  margin: 5vh;
-        
-                }
-              }
-        
-              .imagem-preta {
-                height: 42vh;
-        
-                .consulte {
-                  width: 70vh;
-                  margin: 5vh;
-                  h1 {
-                    font-size: 20px;
-                  }
-        
-                }
-              }
-            }
-            
-        }
-    }
-  }
-  
-  @media(max-width: 682px) {
-    .conteiner-adm {
-        main{
-          
-          header {
-            .imagem-logo img {
-              width: 12vh;
-            }
-      
-            .links-principal {
-      
-              a {
-                font-size: 10px;
-              }
-            }
-          }
-
-            .imagens {
-              .imagem-cinza {
-                height: 42vh;
-        
-                .relatar {
-                  width: 40vh;
-                  margin: 5vh;
-                  h1 {
-                    font-size: 20px;
-                  }
-        
-                  
-                }
-              }
-        
-              .imagem-cinza-claro {
-                height: 38vh;
-        
-                .seguir {
-                  width: 60vh;
-                  margin: 5vh;
-                  h1 {
-                    font-size: 20px;
-                  }
-        
-                }
-              }
-        
-              .imagem-preta {
-                height: 38vh;
-        
-                .consulte {
-                  width: 60vh;
-                  margin: 5vh;
-
-                  h1 {
-                    font-size: 17px;
-                  }
-        
-                }
-              }
-            }
-            
-        }
-    }
-  }
-  
-  @media(max-width: 620px) {
-    .conteiner-adm {
-        main{
-          
-            .imagens {
-              .imagem-cinza {
-                height: 40vh;
-        
-                .relatar {
-                  width: 40vh;
-                  margin: 5vh;
-                  h1 {
-                    font-size: 20px;
-                  }
-        
-                  
-                }
-              }
-        
-              .imagem-cinza-claro {
-                height: 35vh;
-        
-                .seguir {
-                  width: 60vh;
-                  margin: 5vh;
-                  h1 {
-                    font-size: 20px;
-                  }
-        
-                }
-              }
-        
-              .imagem-preta {
-                height: 35vh;
-        
-                .consulte {
-                  width: 60vh;
-                  margin: 5vh;
-
-                  h1 {
-                    font-size: 17px;
-                  }
-        
-                }
-              }
-            }
-            
-        }
-    }
-  }
- 
-  @media(max-width: 594px) {
-    .conteiner-adm {
-        main{
-          
-
-            .imagens {
-              .imagem-cinza {
-                height: 38vh;
-        
-                .relatar {
-                  width: 30vh;
-                  margin: 5vh;
-                  h1 {
-                    font-size: 15px;
-                  }
-        
-                }
-              }
-        
-              .imagem-cinza-claro {
-                height: 35vh;
-        
-                .seguir {
-                  width: 40vh;
-                  margin: 5vh;
-                  h1 {
-                    font-size: 15px;
-                  }
-        
-                }
-              }
-        
-              .imagem-preta {
-                height: 35vh;
-        
-                .consulte {
-                  width: 40vh;
-                  margin: 5vh;
-
-                  h1 {
-                    font-size: 15px;
-                  }
-        
-                }
-              }
-            }
-            
-        }
-    }
-  }
- 
-  
-  @media(max-width: 560px) {
-    .conteiner-adm {
-        main{
-
-            header {
-              .imagem-logo img {
-                width: 10vh;
-              }
-        
-              .links-principal {
-                gap: 5vh;
-        
-                a {
-                  font-size: 8px;
-                }
-              }
-            }
-        
-            .corpo {
-              height: 5vh;
-        
-              .texto h1 {
-                font-size: 12px;
-                margin-left: 2vh;
-              }
-        
-              .text h3 {
-                font-size: 8px;
-              }
-        
-              .texto {
                 width: 50vh;
               }
-        
-              .text {
-                width: 30vh;
-              }
-            }
-        
-            .imagens {
-              margin-bottom: 5vh;
-        
-              .imagem-cinza {
-                height: 32vh;
-        
-                .relatar {
-                  width: 20vh;
-                  margin: 5vh;
-        
-                  button {
-                    width: 10vh;
-                    height: 25px;
-                    font-size: 12px;
-                  }
-        
-                  h1 {
-                    font-size: 12px;
-                  }
-                }
-              }
-        
-              .imagem-cinza-claro {
-                height: 30vh;
-        
-                .seguir {
-                  width: 40vh;
-                  margin: 5vh;
-        
-                  button {
-                    width: 10vh;
-                    height: 25px;
-                    font-size: 12px;
-                  }
-        
-                  h1 {
-                    font-size: 12px;
-                  }
-                }
-              }
-        
-              .imagem-preta {
-                height: 30vh;
-        
-                .consulte {
-                  width: 40vh;
-                  margin: 5vh;
-        
-                  button {
-                    width: 13vh;
-                    height: 25px;
-                    font-size: 12px;
-                  }
-        
-                  h1 {
-                    font-size: 12px;
-                  }
-                }
-              }
-            }
-        
-            .duvidas {
-              .linha {
-                width: 50vh;
-              }
-        
-              .rodape {
-                img {
-                  width: 100px;
-                }
-        
-                h1 {
-                  font-size: 20px;
-                }
-        
-                p {
-                  width: 300px;
-                  font-size: 15px;
-                }
-              }
-        
-              .botao-valhalla {
-                height: 8vh;
-        
-                button {
-                  width: 100px;
-                  height: 8vh;
-                  font-size: 10px;
-                }
-        
-                img {
-                  width: 30px;
-                  height: 8vh;
-                }
-              }
             }
         }
     }
   }
-  
-  
-  @media(max-width: 474px) {
-    .conteiner-adm {
-        main{
-
-            .imagens {
-              margin-bottom: 5vh;
-        
-              .imagem-cinza {
-                height: 25vh;
-        
-                .relatar {
-                  width: 20vh;
-                  margin: 5vh;
-                }
-              }
-        
-              .imagem-cinza-claro {
-                height: 22vh;
-        
-                .seguir {
-                  width: 40vh;
-                  margin: 5vh;
-                }
-              }
-        
-              .imagem-preta {
-                height: 22vh;
-        
-                .consulte {
-                  width: 40vh;
-                  margin: 5vh;
-                }
-              }
-            }
-        
-        }
-    }
-  }
-  
-  
   
   
   @media(max-width: 425px) {
@@ -1528,10 +680,7 @@
                 }
               }
             }
-        
             .corpo {
-              height: 5vh;
-        
               .texto h1 {
                 font-size: 10px;
                 margin-left: 2vh;
@@ -1554,8 +703,6 @@
               margin-bottom: 5vh;
         
               .imagem-cinza {
-                height: 28vh;
-        
                 .relatar {
                   width: 20vh;
                   margin: 5vh;
@@ -1573,8 +720,6 @@
               }
         
               .imagem-cinza-claro {
-                height: 26vh;
-        
                 .seguir {
                   width: 40vh;
                   margin: 5vh;
@@ -1592,8 +737,6 @@
               }
         
               .imagem-preta {
-                height: 26vh;
-        
                 .consulte {
                   width: 40vh;
                   margin: 5vh;
