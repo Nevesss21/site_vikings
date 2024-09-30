@@ -88,7 +88,7 @@
                            border-radius: 100px;
                            border: none;
                            background-color: #D9D9D9;
-                           font: 700 20px 'vikings' !important;
+                           font: 700 15px 'vikings' !important;
                        }
                        h1{
                            color: #fff;
@@ -138,12 +138,12 @@
                        margin: 40px !important;
      
                        button{
-                           width: 120px !important;
+                           width: 100px !important;
                            height: 40px !important;
                            border-radius: 100px;
                            border: none;
                            background-color: #fff;
-                           font: 700 20px 'vikings' !important;
+                           font: 700 15px 'vikings' !important;
                        }
                        h1{
                            color: #fff;
@@ -186,21 +186,17 @@
                }
      
                .botao-valhalla{
-                   display: flex;
-                   flex-direction: row;
-                   align-items: center;
-                   justify-content: center;
-                   background-color: #fff;
-                   border-radius: 80px !important;
-                   height: 40px !important;
-     
                    button{
-                       width: 150px !important;
+                       width: 200px !important;
                        height: 35px !important;
-                       border-top-left-radius: 80px !important;
-                       border-bottom-left-radius: 80px !important;
+                       border-radius: 80px;
                        border: none;
                        font: 700 15px 'vikings' !important;
+                       display: flex;
+                       flex-direction: row;
+                       justify-content: space-between;
+                       align-items: center;
+                       padding: 0px 0px 0px 30px;
                    }
                    img{
                        width: 45px !important;
@@ -216,98 +212,104 @@
     }
 }
 
-
-
   // Continue com outros breakpoints (1024px, 768px, 425px) seguindo o mesmo padrão.
   @media(max-width: 1440px) {
     .conteiner-adm {
         main{
 
             header {
-              height: 20vh;
+              height: 20vh !important;
         
               .imagem-logo img {
-                width: 20vh;
+                width: 20vh !important;
               }
         
               .links-principal {
-                margin-right: 10vh;
+                margin-right: 10vh !important;
         
                 a {
-                  font-size: 15px;
+                  font-size: 15px !important;
                 }
               }
             }
         
             .corpo {
+              background-image: url('../../../../public/assets/images/imagem-escura-dourada.png');
+              background-size: cover;
+              background-repeat: no-repeat;
+              height: 70vh !important;
              
-              margin-bottom: 10vh;
+              margin-bottom: 20vh !important;
         
               .texto h1 {
-                font-size: 60px;
+                font-size: 35px !important;
               }
         
               .text h3 {
-                font-size: 20px;
+                font-size: 25px !important;
               }
         
               .texto {
-                width: 80vh;
+                width: 80vh !important;
+                margin-right: 50vh !important;
               }
         
               .text {
-                width: 50vh;
+                width: 50vh !important;
+                margin-left: 20vh !important;
               }
             }
         
             .imagens {
               .imagem-cinza {
+                height: 90vh !important;
                 .relatar {
-                  width: 55vh;
-                  margin: 10vh;
+                  width: 55vh !important;
+                  margin: 10vh !important;
         
                   button {
-                    width: 25vh;
-                    height: 65px;
-                    font-size: 30px;
+                    width: 25vh !important;
+                    height: 65px !important;
+                    font-size: 30px !important;
                   }
         
                   h1 {
-                    font-size: 35px;
+                    font-size: 35px !important;
                   }
                 }
               }
         
               .imagem-cinza-claro {
+                height: 85vh;
                 .seguir {
-                  width: 90vh;
-                  margin: 10vh;
+                  width: 90vh !important;
+                  margin: 10vh!important;
         
                   button {
-                    width: 25vh;
-                    height: 65px;
-                    font-size: 30px;
+                    width: 25vh !important;
+                    height: 65px !important;
+                    font-size: 30px !important;
                   }
         
                   h1 {
-                    font-size: 35px;
+                    font-size: 35px !important;
                   }
                 }
               }
-        
               .imagem-preta {
+                height: 85vh;
                 .consulte {
-                  width: 90vh;
-                  margin: 10vh;
+                  width: 90vh !important;
+                  margin: 10vh !important;
         
                   button {
-                    width: 30vh;
-                    height: 65px;
-                    font-size: 30px;
+                    width: 30vh !important;
+                    height: 65px !important;
+                    font-size: 30px !important;
                   }
         
                   h1 {
-                    font-size: 35px;
+                    font-size: 35px !important;
                   }
                 }
               }
@@ -315,36 +317,36 @@
         
             .duvidas {
               .linha {
-                width: 150vh;
+                width: 150vh !important;
               }
         
               .rodape {
                 img {
-                  width: 200px;
+                  width: 200px !important;
                 }
         
                 h1 {
-                  font-size: 40px;
+                  font-size: 40px !important;
                 }
         
                 p {
-                  width: 550px;
-                  font-size: 20px;
+                  width: 550px !important;
+                  font-size: 20px !important;
                 }
               }
         
               .botao-valhalla {
-                height: 8vh;
         
                 button {
-                  width: 200px;
-                  height: 8vh;
-                  font-size: 20px;
+                  width: 250px !important;
+                  height: 8vh !important;
+                  font-size: 20px !important;
+                  padding: 0px 0px 0px 30px;
                 }
         
                 img {
-                  width: 50px;
-                  height: 8vh;
+                  width: 50px !important;
+                  height: 8vh !important;
                 }
               }
             }

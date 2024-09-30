@@ -68,8 +68,8 @@ export default function AdmLanding() {
 
 
                 <div className='botao-valhalla'>
-                    <button>Ir para Valhalla</button>
-                    <img src="/assets/images/valhalla-logo 3.png" alt="logo-valhalla" />
+                    <button>Ir para Valhalla <img src="/assets/images/valhalla-logo 3.png" alt="logo-valhalla" /></button>
+                   
                 </div>
 
             </div>
