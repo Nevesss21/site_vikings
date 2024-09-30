@@ -263,6 +263,8 @@
             .imagens {
               .imagem-cinza {
                 height: 90vh !important;
+                background-image: url('../../../../public/assets/images/imagem-cinza-adm1.png');
+                background-size: cover;
                 .relatar {
                   width: 55vh !important;
                   margin: 10vh !important;
@@ -281,6 +283,8 @@
         
               .imagem-cinza-claro {
                 height: 85vh;
+                background-image: url('../../../../public/assets/images/imagem-cinza-claro-adm1.png');
+                background-size: cover;
                 .seguir {
                   width: 90vh !important;
                   margin: 10vh!important;
@@ -298,6 +302,8 @@
               }
               .imagem-preta {
                 height: 85vh;
+                background-image: url('../../../../public/assets/images/imagem-preta-adm-1.png');
+                background-size: cover;
                 .consulte {
                   width: 90vh !important;
                   margin: 10vh !important;
@@ -547,7 +553,7 @@
         
             .duvidas {
               .linha {
-                width: 120vh;
+                width: 100vh !important;
               }
         
               .rodape {
