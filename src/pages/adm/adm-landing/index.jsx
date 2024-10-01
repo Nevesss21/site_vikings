@@ -12,10 +12,10 @@ export default function AdmLanding() {
             </div>
 
             <div className='links-principal'>
-                <a href="">HOME</a>
+                <a href="/">HOME</a>
                 <a href="">RELATÓRIOS</a>
                 <a href="">SEÇÕES</a>
-                <a href="">AGENDAMENTO</a>
+                <a href="/adm-agendamento">AGENDAMENTO</a>
             </div>
         </header>
 
