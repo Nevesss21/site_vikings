@@ -393,6 +393,7 @@
         
               .text h3 {
                 font-size: 18px  !important;
+                margin: 0px 20px 0px 0px !important;
               }
         
               .texto {
@@ -400,7 +401,7 @@
               }
         
               .text {
-                width: 50vh !important;
+                width: 30vh !important;
               }
             }
         
@@ -512,7 +513,7 @@
       
             .links-principal {
               margin-right: 8vh !important;
-              gap: 10vh;
+              gap: 8vh !important;
       
               a {
                 font-size: 12px !important;
@@ -528,13 +529,14 @@
               }
               .text h3 {
                 font-size: 15px !important;
+                margin: 0px !important;
               }
               .texto {
                 width: 70vh !important;
               }
 
               .text {
-                width: 50vh !important;
+                width: 35vh !important;
               }
             }
         
@@ -654,51 +656,80 @@
             }
         
             .corpo {
-              margin-bottom: 10vh;
+              margin-bottom: 10vh !important;
               .texto h1 {
-                font-size: 20px;
+                font-size: 15px !important;
               }
         
               .text h3 {
-                font-size: 15px;
+                font-size: 13px !important;
+                margin: 0px !important;
               }
         
               .texto {
-                width: 60vh;
+                width: 60vh !important;
               }
         
               .text {
-                width: 40vh;
+                width: 30vh !important;
               }
             }
         
             .imagens {
               .imagem-cinza {
-                
-        
+                height: 40vh !important;
+
                 .relatar {
-                  width: 50vh;
-                  margin: 5vh;
+                  width: 35vh !important;
+                  margin: 5vh !important;
+
+                  button {
+                    width: 18vh !important;
+                    height: 30px !important;
+                    font-size: 18px !important;
+                  }
         
+                  h1 {
+                    font-size: 20px !important;
+                  }
                   
                 }
               }
         
               .imagem-cinza-claro {
-                
+                height: 38vh !important;  
+
                 .seguir {
-                  width: 70vh;
-                  margin: 5vh;
+                  width: 50vh !important;
+                  margin: 5vh !important;
+
+                  button {
+                    width: 18vh !important;
+                    height: 30px !important;
+                    font-size: 18px !important;
+                  }
+        
+                  h1 {
+                    font-size: 20px !important;
+                  }
         
                 }
               }
         
               .imagem-preta {
+                height: 38vh !important;
                 .consulte {
-                  width: 70vh;
-                  margin: 5vh;
+                  width: 45vh !important;
+                  margin: 5vh!important;
+
+                  button {
+                    width: 18vh !important;
+                    height: 30px !important;
+                    font-size: 18px !important;
+                  }
+        
                   h1 {
-                    font-size: 20px;
+                    font-size: 18px !important;
                   }
         
                 }
@@ -707,99 +738,218 @@
             
             .duvidas {
               .linha {
-                width: 40vh !important;
+                width: 60vh !important;
+              }
+            }
+        }
+    }
+  }
+
+  @media(max-width: 600px) {
+    .conteiner-adm {
+        main{
+
+            header {
+              .imagem-logo img {
+                width: 10vh !important;
+              }
+        
+              .links-principal {
+                gap: 3vh !important;
+        
+                a {
+                  font-size: 12px !important;
+                }
+              }
+            }
+        
+            .corpo {
+              margin-bottom: 10vh !important;
+              .texto h1 {
+                font-size: 15px !important;
+              }
+        
+              .text h3 {
+                font-size: 13px !important;
+              }
+        
+              .texto {
+                width: 60vh !important;
+              }
+        
+              .text {
+                width: 30vh !important;
+                margin: 0px !important;
+                padding-right: 30px;
+              }
+            }
+        
+            .imagens {
+              .imagem-cinza {
+                height: 32vh !important;
+
+                .relatar {
+                  width: 25vh !important;
+                  margin: 5vh !important;
+
+                  button {
+                    width: 15vh !important;
+                    height: 25px !important;
+                    font-size: 15px !important;
+                  }
+        
+                  h1 {
+                    font-size: 18px !important;
+                  }
+                  
+                }
+              }
+        
+              .imagem-cinza-claro {
+                height: 30vh !important;  
+
+                .seguir {
+                  width: 45vh !important;
+                  margin: 5vh !important;
+
+                  button {
+                    width: 15vh !important;
+                    height: 25px !important;
+                    font-size: 15px !important;
+                  }
+        
+                  h1 {
+                    font-size: 18px !important;
+                  }
+        
+                }
+              }
+        
+              .imagem-preta {
+                height: 30vh !important;
+                .consulte {
+                  width: 38vh !important;
+                  margin: 5vh!important;
+
+                  button {
+                    width: 15vh !important;
+                    height: 25px !important;
+                    font-size: 15px !important;
+                  }
+        
+                  h1 {
+                    font-size: 16px !important;
+                  }
+        
+                }
+              }
+            }
+            
+            .duvidas {
+              .linha {
+                width: 45vh !important;
               }
             }
         }
     }
   }
   
-  @media(max-width: 425px) {
+  @media(max-width: 450px) {
     .conteiner-adm {
         main{
 
             header {
               .imagem-logo img {
-                width: 10vh;
+                width: 8vh !important;
               }
         
               .links-principal {
-                gap: 5vh;
+                gap: 2vh !important;
         
                 a {
-                  font-size: 8px;
+                  font-size: 8px !important;
                 }
               }
             }
             .corpo {
+              height: 20vh !important;
+              margin: 0px !important;
+              margin-bottom: 5vh !important;
+             
               .texto h1 {
-                font-size: 10px;
-                margin-left: 2vh;
+                font-size: 10px !important;
+                margin: 0px !important;
+               
               }
         
               .text h3 {
-                font-size: 7px;
+                font-size: 7px !important;
               }
         
               .texto {
-                width: 50vh;
+                width: 30vh !important;
               }
         
               .text {
-                width: 40vh;
+                width: 20vh !important;
+                margin: 0px !important;
+                padding-right: 30px !important;
               }
             }
         
             .imagens {
-              margin-bottom: 5vh;
+              margin-bottom: 5vh !important;
         
               .imagem-cinza {
+                height: 20vh !important;
                 .relatar {
-                  width: 20vh;
-                  margin: 5vh;
+                  width: 15vh !important;
+                  margin: 5vh !important;
         
                   button {
-                    width: 10vh;
-                    height: 25px;
-                    font-size: 12px;
+                    width: 10vh !important;
+                    height: 25px !important;
+                    font-size: 12px !important;
                   }
         
                   h1 {
-                    font-size: 12px;
+                    font-size: 12px !important;
                   }
                 }
               }
         
               .imagem-cinza-claro {
+                height: 18vh !important;
                 .seguir {
-                  width: 40vh;
-                  margin: 5vh;
+                  width: 25vh !important;
+                  margin: 5vh !important;
         
                   button {
-                    width: 10vh;
-                    height: 25px;
-                    font-size: 12px;
+                    width: 10vh !important;
+                    height: 25px !important;
+                    font-size: 12px !important;
                   }
         
                   h1 {
-                    font-size: 12px;
+                    font-size: 12px !important;
                   }
                 }
               }
         
               .imagem-preta {
+                height: 18vh !important;
                 .consulte {
-                  width: 40vh;
-                  margin: 5vh;
+                  width: 20vh !important;
+                  margin: 5vh !important;
         
                   button {
-                    width: 13vh;
-                    height: 25px;
-                    font-size: 12px;
+                    width: 10vh !important;
+                    height: 25px !important;
+                    font-size: 12px !important;
                   }
         
                   h1 {
-                    font-size: 12px;
+                    font-size: 10px !important;
                   }
                 }
               }
@@ -807,41 +957,38 @@
         
             .duvidas {
               .linha {
-                width: 50vh;
+                width: 35vh !important;
               }
         
               .rodape {
                 img {
-                  width: 100px;
+                  width: 100px !important;
                 }
         
                 h1 {
-                  font-size: 20px;
+                  font-size: 20px !important;
                 }
         
                 p {
-                  width: 300px;
-                  font-size: 15px;
+                  width: 300px !important;
+                  font-size: 15px !important;
                 }
               }
         
               .botao-valhalla {
-                height: 8vh;
-        
                 button {
-                  width: 100px;
-                  height: 8vh;
-                  font-size: 10px;
+                  width: 20vh !important;
+                  height: 5vh !important;
+                  font-size: 12px !important;
                 }
         
                 img {
-                  width: 30px;
-                  height: 8vh;
+                  width: 40px !important;
+                  height: 5vh !important;
                 }
               }
             }
         }
     }
   }
-  
   
