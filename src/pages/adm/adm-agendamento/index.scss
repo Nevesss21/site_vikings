@@ -2,6 +2,8 @@
     display: block;
     
     background-color: #161616;
+    margin: 0px;
+    border: 0px;
     
    
 
@@ -35,86 +37,109 @@
               }
      
            }
-}
+    }
     }
 
-    .principal{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: #fff;
-        height: 100%;
-        height: 1000px;
-        
+            .principal{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #fff;
+                height: 100%;
+                height: 1000px;
+                
 
-        h1{
-            color: #9E8080;
-        }
-        
+                h1{
+                    color: #9E8080;
+                }
+                
 
-        .filtro{
-            background-color: #575555;
-            color: #9E8080;
-            text-decoration: none;
-            height: 5vh;
-            width: 100vh;
-            font: 500 16px 'vikings';
-            border-style: none;
-            border-radius: 7px;
-            text-align:justify;
-            gap: 50px;
-            margin-top: 50px;
-
-       
+                .filtro{
+                    background-color: #575555;
+                    color: #9E8080;
+                    text-decoration: none;
+                    height: 6vh;
+                    width: 100vh;
+                    font: 500 19px 'vikings';
+                    border-style: none;
+                    border-radius: 7px;
+                    text-align:justify;
+                    gap: 50px;
+                    margin-top: 50px;
+                    
+                    }
             
-        }
+            }
 
-      
-    }
+  
     
-        .cima1{
-            background-color: #353333;
-            display: flex;
-            flex-direction: row;
-            gap: 15px;
-            font: 500 16px 'vikings' !important;
-            padding: 20px 60px 20px 60px;
-            align-items: center;
-            border-radius: 5px;
-            
-            height: 50px;
+                .bloco{
+                    background-color: #353333;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 50vh;
+                    font: 500 16px 'vikings' !important;
+                    padding: 20px 80px 20px 80px;
+                    align-items: center;
+                    border-radius: 5px;
+                    
+                    
+                    
+                    height: 100px;
 
-            
-
-
-            .icones{
-                height: 40px;
-                width: 40px;
-                align-items: center;
-                align-self: center;
-            }
+                    
 
 
-           
-           
-        }
-        .cima2{
-            background-color: #9b9797;
-            display: flex;
-            flex-direction: row;
-            gap: 15px;
-            font: 500 16px 'vikings' !important;
-            padding: 20px 60px 20px 60px;
-            align-items: center;
-            border-radius: 5px;
+                    .icones{
+                        height: 15px;
+                        width: 15px;
+                        align-items: center;
+                        align-self: center;
+                        
+                    }
 
-            .icones{
-                height: 40px;
-                width: 40px;
-                align-items: center;
-                align-self: center;
-            }
-        }
+                    .parte1{
+                        display: flex;
+                        flex-direction: column;
+                        gap: px;
+                        align-items: center;
+                    
+                        
+                    
+
+
+                    
+                    }
+                    .parte2{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 15px;
+                        align-items: center;
+                        
+
+                        .linha1{
+                            display: flex;
+                            flex-direction: row;
+                            gap:10px;
+                            font: 500 14px 'vikings' !important;
+                            word-spacing: 5px;
+                            
+                        
+                        }
+
+                        .linha2{
+                            display: flex;
+                            flex-direction: row;
+                            gap:25px;
+                            font: 500 14px 'vikings' !important;
+                            word-spacing: 5px;
+                        }
+                    
+                        
+                    }  
+                
+                }
+
       
     
 }
