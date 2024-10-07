@@ -1,0 +1,60 @@
+.conteiner-admmarcar{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    margin: 0px;
+    border: 0px;
+    height: 100%;
+    
+   
+
+    main{
+
+       header{
+        background-color: #000000;
+           display: flex;
+           height: 30vh;
+           align-items: center;
+           justify-content: space-between;
+           padding: 0px 30px 0px 300px;
+     
+           .imagem-logo img{
+               width: 25vh;
+               margin-right:50vh ;
+               margin-left: -30vh;
+
+           }
+     
+           .links-principal  {
+               display: flex;
+               gap: 15vh;
+               align-items: center;
+               margin-right: 20px;
+     
+              a{
+               color: #fff;
+               text-decoration: none;
+               font: 500 16px 'vikings' !important; 
+              }
+     
+           }
+
+        }
+    }
+
+
+    .principal{
+        background-color: #3b3535;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        h1{
+            color: #9E8080;
+            font: 500 36px 'vikings' !important; 
+        }
+        
+    }
+    
+}

@@ -11,14 +11,14 @@ export default function AdmAgendamento() {
 
           <div className="links-principal">
             <a href="/">Home</a>
-            <a href="">Marcar</a>
+            <a href="../adm-marcar">Marcar</a>
             <a href="">Arquivadas</a>
           </div>
         </header>
       </main>
       <div className="principal">
         
-        <input   className=" filtro" ></input>
+        <input   className=" filtro" placeholder="Pesqauisar Sessão por CPF ou Nome..."></input>
         <h1>Sessões Marcadas</h1>
 
         <div className="bloquinhos-pretos">
