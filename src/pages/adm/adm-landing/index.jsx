@@ -1,21 +1,23 @@
 import './index.scss';
 import './fonts.scss';
+import Cabecalho from '../../components';
 export default function AdmLanding() {
   return (
     <div className="conteiner-adm">
+
        
             <main>
         <header>
                 
             <div className='imagem-logo'>
-                <img src="/assets/images/logo-vikings.png" alt="logo-vikings" />
+                <img src="/public/assets/images/logo-vikings.png" alt="logo-vikings" />
             </div>
 
             <div className='links-principal'>
-                <a href="/">HOME</a>
-                <a href="">RELATÓRIOS</a>
-                <a href="">SEÇÕES</a>
-                <a href="/adm-agendamento">AGENDAMENTO</a>
+                <a href="/" className='animacao'>HOME</a>
+                <a href=""className='animacao'>RELATÓRIOS</a>
+                <a href=""className='animacao'>SEÇÕES</a>
+                <a href="/adm-agendamento"className='animacao'>AGENDAMENTO</a>
             </div>
         </header>
 
@@ -36,21 +38,21 @@ export default function AdmLanding() {
                 <div className='imagem-cinza'>
                     <div className='relatar'>
                         <h1>Faça o seu relato. Defina como foi sua progressão do dia, semana, mes e ano</h1>
-                        <button>Relatar</button>
+                        <button className='oi1'>Relatar <span className='contorno1'></span></button>
                     </div>
                 </div>
 
                 <div className='imagem-cinza-claro'>
                     <div className='seguir'>
                         <h1>Analise as seções pendentes e faça você mesmo o agendamento das seções </h1>
-                        <button>Seguir</button>
+                        <button className='oi2'>Seguir <span className='contorno2'></span></button>
                     </div>
                 </div>
 
                 <div className='imagem-preta'>
                     <div className='consulte'>
                         <h1>Consulte  as informações da maneira que quiser, decida o filtro para melhor aproveitamento das informações</h1>
-                        <button>Consultar</button>
+                        <button className='oi1'>Consultar <span className='contorno1'></span></button>
                     </div>
                 </div>
 

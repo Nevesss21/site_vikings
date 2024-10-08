@@ -10,13 +10,14 @@ export default function Cabecalho(){
     <main>
         <header>
           <div className="imagem-logo">
-            <img src="/assets/images/logo-vikings.png" alt="logo-vikings" />
+            <img src="/public/assets/images/logo-vikings.png" alt="logo-vikings" />
+            
           </div>
 
           <div className="links-principal">
             <a href="/">Home</a>
             <a href="../adm-marcar">Marcar</a>
-            <a href="">Arquivadas</a>
+            <a href="/">Arquivadas</a>
           </div>
         </header>
       </main>
