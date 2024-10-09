@@ -10,7 +10,7 @@ export default function AdmLanding() {
         <header>
                 
             <div className='imagem-logo'>
-                <img src="/public/assets/images/logo-vikings.png" alt="logo-vikings" />
+                <img src="/public/assets/images/logovikings.webp" alt="logo-vikings" />
             </div>
 
             <div className='links-principal'>

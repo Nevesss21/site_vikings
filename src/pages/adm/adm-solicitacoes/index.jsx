@@ -12,6 +12,14 @@ export default function AdmSolicitacoes(){
 
         <Cabecalho/>
 
+        <div className="botao">
+
+        <a href="/adm-agendamento"> <button className='botao1'>Sessões Marcadas</button></a>
+           
+        </div>
+
+       
+
         <h1 className='titulo'>Solicitações</h1>
 
         <div className='solicitacoesped'>
@@ -39,12 +47,16 @@ export default function AdmSolicitacoes(){
 
 
         </div>
+
+        <br/>
         
 
         <div className="botao">
 
+            <a href="/adm-marcar">
         <button>Marcar Consulta</button>
-            
+       </a>
+     
             </div>
        
 
