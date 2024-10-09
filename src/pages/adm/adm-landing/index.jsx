@@ -15,8 +15,8 @@ export default function AdmLanding() {
 
             <div className='links-principal'>
                 <a href="/" className='animacao'>HOME</a>
-                <a href=""className='animacao'>RELATÓRIOS</a>
-                <a href=""className='animacao'>SEÇÕES</a>
+                <a href="" className='animacao'>RELATÓRIOS</a>
+                <a href="/adm-solicitacoes" className='animacao'>SEÇÕES</a>
                 <a href="/adm-agendamento"className='animacao'>AGENDAMENTO</a>
             </div>
         </header>

@@ -1,23 +1,16 @@
 import "./index.scss";
 import "./fonts.scss";
+import Cabecalho from "../../components";
+import { Bloco } from "../../components";
 
 export default function AdmMarcar() {
   return (
     <div className="conteiner-admmarcar">
-      <main>
-        <header>
-          <div className="imagem-logo">
-            <img src="/assets/images/logo-vikings.png" alt="logo-vikings" />
-          </div>
+      
+      
 
-          <div className="links-principal">
-            <a href="../adm-agendamento">Voltar</a>
-            <a href="/">Home</a>
-            <a href="">Arquivadas</a>
-          </div>
-        </header>
-      </main>
-
+          <Cabecalho/>
+        
       <div className="principal">
         <h1 className="Marcar">Marcar Consulta</h1>
 
