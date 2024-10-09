@@ -105,8 +105,10 @@
         /// 
         /// /* From Uiverse.io by Kabak */ 
             button {
-              color: #000;
-              background-color: #d9d9d9;
+              color: #2b2525;
+              font: 700 25px "vikings" !important;
+              color: #000000;
+              background-color: #acacac;
               text-decoration: none;
               border: none;
               border-radius: 20px;
@@ -118,6 +120,7 @@
             button:hover {
               background-color: rgb(255, 255, 255);
               transition: all 1s;
+              color: #000;
              
             }
 
@@ -165,56 +168,29 @@
 
           
           ///animacao
-
-        .oi2 {
+          button {
+          color: #ffffff;
+          background-color: #2e2b2b;
+          text-decoration: none;
           border: none;
-          display: block;
-          position: relative;
-     
-          font-size: 18px;
-          background: transparent;
-          cursor: pointer;
-          user-select: none;
-          overflow: hidden;
-          color: rgb(0, 0, 0);
-          z-index: 1;
-          font-family: inherit;
-          font-weight: 500;
+          border-radius: 20px;
+          padding: 0px 20px 0px 20px;
+          height: 800px;
+          
         }
-        
-      .oi2 .contorno2 {
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          background: transparent;
-          z-index: -1;
-          border: 4px solid rgb(0, 0, 0);
+
+        button:hover {
+          background-color: rgb(90, 89, 89);
+          transition: all 1s;
+         
         }
-        
-        .oi2 .contorno2::before {
-          content: "";
-          display: block;
-          position: absolute;
-          width: 8%;
-          height: 500%;
-          background: var(--lightgray);
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%) rotate(-60deg);
-          transition: all 0.3s;
+
+        button:active {
+          background-color: rgb(155, 155, 155);
+          
+          
         }
-        
-        .oi2:hover .contorno2::before {
-          transform: translate(-50%, -50%) rotate(-90deg);
-          width: 100%;
-          background: rgb(0, 0, 0);
-        }
-        
-        .oi2:hover {
-          color: white;
-        }
+
         
           h1 {
             color: #000;
@@ -234,63 +210,38 @@
           width: 400px !important;
           margin: 40px !important;
 
+          h1{
+            color: #fff;
+          }
+
         ///animacao
 
-        .oi1 {
+        button {
+          color: #000000;
+          font: 700 25px "vikings" !important;
+          color: #000000;
+          background-color: #ffffff;
+          text-decoration: none;
           border: none;
-          display: block;
-          position: relative;
-     
-          font-size: 18px;
-          background: transparent;
-          cursor: pointer;
-          user-select: none;
-          overflow: hidden;
-          color: rgb(255, 255, 255);
-          z-index: 1;
-          font-family: inherit;
-          font-weight: 500;
+          border-radius: 20px;
+          padding: 0px 20px 0px 20px;
+          height: 800px;
+          
         }
-        
-      .oi1 .contorno1 {
-          position: absolute;
-          left: 0;
-          top: 0;
-          width: 100%;
-          height: 100%;
-          background: transparent;
-          z-index: -1;
-          border: 4px solid rgb(116, 116, 116);
+
+        button:hover {
+          background-color: rgb(94, 92, 92);
+          transition: all 1s;
+          color: #f1f1f1;
+         
         }
-        
-        .oi1 .contorno1::before {
-          content: "";
-          display: block;
-          position: absolute;
-          width: 8%;
-          height: 500%;
-          background: var(--lightgray);
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%) rotate(-60deg);
-          transition: all 0.3s;
+
+        button:active {
+          background-color: rgb(77, 77, 77);
+          
+          
         }
-        
-        .oi1:hover .contorno1::before {
-          transform: translate(-50%, -50%) rotate(-90deg);
-          width: 100%;
-          background: rgb(82, 80, 80);
-        }
-        
-        .oi1:hover {
-          color: rgb(22, 16, 16);
-        }
-        
-          h1 {
-            color: #fff;
-            font: 700 30px "vikings" !important;
-          }
-        }
+      }
       }
     }
     .duvidas {
@@ -337,6 +288,7 @@
           justify-content: space-between;
           align-items: center;
           padding: 0px 0px 0px 30px;
+
         }
         img {
           width: 45px !important;
