@@ -1,10 +1,8 @@
-
-
-import { BlocoPreto } from '../../components';
-import { Bloco } from '../../components';
-import Cabecalho from '../../components';
 import './index.scss';
 import './fonts.scss';
+import Cabecalho from '../../../components/Cabecalho';
+import Bloco from '../../../components/bloco';
+import BlocoPreto from '../../../components/bloco-preto';
 
 export default function AdmSolicitacoes(){
     return(

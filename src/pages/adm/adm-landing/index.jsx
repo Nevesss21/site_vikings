@@ -1,12 +1,12 @@
 import './index.scss';
 import './fonts.scss';
-import Cabecalho from '../../components';
+
 export default function AdmLanding() {
   return (
     <div className="conteiner-adm">
 
        
-            <main>
+        <main>
         <header>
                 
             <div className='imagem-logo'>

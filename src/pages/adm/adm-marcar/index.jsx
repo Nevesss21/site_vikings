@@ -1,7 +1,7 @@
 import "./index.scss";
 import "./fonts.scss";
-import Cabecalho from "../../components";
-import { Bloco } from "../../components";
+
+import Cabecalho from "../../../components/Cabecalho";
 
 export default function AdmMarcar() {
   return (

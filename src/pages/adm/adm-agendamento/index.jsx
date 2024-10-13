@@ -1,6 +1,7 @@
 import "./index.scss";
 import "./fonts.scss";
-import Cabecalho, { Bloco } from "../../components";
+import Cabecalho from "../../../components/Cabecalho";
+import Bloco from "../../../components/bloco";
 export default function AdmAgendamento() {
   return (
     <div className="conteiner-admagendamento">
