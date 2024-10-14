@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100vw;
+    width: 100%;
     padding: 1vh 3vw;
     align-items: center;
 
@@ -34,6 +34,103 @@
         a:hover {
             cursor: pointer;
             text-decoration: underline;
+        }
+    }
+}
+
+@media (max-width:1280px) {
+    .Nav {
+
+        img {
+            width: 15vw;
+            height: 15vw;
+        }
+
+    }
+}
+
+@media (max-width:1024px) {
+    .Nav {
+
+        img {
+            width: 13vw;
+            height: 13vw;
+        }
+
+        .links {
+            a {
+                img {
+                    width: 2.2vw;
+                    height: 2.2vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:912px) {
+    .Nav {
+        img {
+            width: 17vw;
+            height: 17vw;
+        }
+
+        .links {
+            gap: 0vh 3vw;
+
+            a {
+                font-size: 0.8rem;
+
+                img {
+                    width: 2.7vw;
+                    height: 2.7vw;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:540px) {
+    .Nav {
+
+        .links {
+            gap: 0vh 3vw;
+
+            a {
+                font-size: 0.6rem;
+
+                img {
+                    width: 3vw;
+                    height: 3vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:430px) {
+    .Nav {
+
+        .links {
+            gap: 0vh 3vw;
+
+            a {
+                font-size: 0.5rem;
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .Nav {
+
+        .links {
+            gap: 0vh 3vw;
+
+            a {
+                font-size: 0.4rem;
+            }
         }
     }
 }
