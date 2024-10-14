@@ -91,10 +91,19 @@
         .mapbox {
             display: flex;
             height: 50vh;
+            border: solid 2px #000000;
+            border-radius: 12px;
 
             iframe {
                 width: 35vw;
+                border-radius: 12px;
             }
+        }
+
+        .mapbox:hover {
+            border: solid 2px #a7811b;
+            box-shadow: 0px 0px 25px 0px #a7811b;
+            transition: 0.3s;
         }
     }
 }
@@ -241,7 +250,7 @@
             .mapbox {
                 display: flex;
                 height: 40vh;
-    
+
                 iframe {
                     width: 35vw;
                 }
@@ -299,7 +308,7 @@
             .mapbox {
                 display: flex;
                 height: 25vh;
-    
+
                 iframe {
                     width: 35vw;
                 }
