@@ -3,14 +3,12 @@ import './fonts.scss';
 
 export default function AdmLanding() {
     return (
-        <div className="conteiner-adm">
-
-
+        <div className="conteiner-adm"> 
             <main>
                 <header>
 
                     <div className='imagem-logo'>
-                        <img src="/public/assets/images/logovikings.webp" alt="logo-vikings" />
+                        <img src="/assets/images/logovikings.webp" alt="logo-vikings" />
                     </div>
 
                     <div className='links-principal'>
