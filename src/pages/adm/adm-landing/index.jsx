@@ -22,7 +22,7 @@ export default function AdmLanding() {
                 <div className='corpo'>
 
                     <div className='texto'>
-                        <h1>CONSULTE AQUI OS HORARIOS AGENADADOS</h1>
+                        <h1>CONSULTE AQUI OS HORARIOS AGENDADOS</h1>
                     </div>
 
                     <div className='text'>
