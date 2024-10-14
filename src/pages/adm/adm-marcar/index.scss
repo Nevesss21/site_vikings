@@ -44,17 +44,220 @@
 
 
     .principal{
-        background-color: #3b3535;
+        align-self: center;
+        align-items: center;
+        width: 65%;
+        background-color: #2c2c2c;
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 100%;
+        margin-bottom: 20px;
+        padding-bottom: 50px;
 
 
         h1{
+            margin-top:50px;
             color: #9E8080;
             font: 500 36px 'vikings' !important; 
         }
-        
-    }
+
+        .filtro1{
+
+            color: #ffffff;
+            font: 500 10px 'vikings' !important; 
+
+
+            .Nome{
+                background-color: #3f3f3f ;
+                color: #000000;
+                border: none;
+                height: 30px;
+                width: 85vh;
+                text-align: justify;
+                font: 900 15px 'vikings' !important; 
+                border-radius: 2px;
     
-}
+            }
+
+        }
+
+        
+        }
+
+        .ConjuntoFiltros1{
+            font: 500 10px 'vikings' !important; 
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 50px;
+
+
+            h2{
+                font: 500 15px 'vikings' !important; 
+
+            }
+
+            
+            input{
+                color: #fff;
+                background-color: #9E8080;
+                border: none;
+                border-radius: 2px;
+                height: 20px;
+                font: 600 10px 'vikings' !important; 
+                width: 40vh;
+ 
+
+            }
+
+           
+    
+            
+
+            .Conjunto1{
+
+                display: flex;
+                flex-direction: column;
+               justify-content: center;
+               font: 600 10px 'vikings' !important; 
+
+                
+
+            }
+
+            .Conjunto2{
+
+                display: flex;
+                flex-direction: column;
+               justify-content: center;
+
+                
+
+            }
+
+
+            
+        }
+
+        .ConjuntoFiltros2{
+            display: flex;
+            flex-direction: column;
+
+            .Conjunto3{
+
+
+
+                h2{
+                    font: 500 15px 'vikings' !important; 
+                    text-align: justify;
+
+
+                }
+
+                input{
+                    color: #fff;
+                    background-color: #4b4b4b;
+                    border: none;
+                    border-radius: 2px;
+                    height: 20px;
+                    font: 600 10px 'vikings' !important; 
+                    width: 80vh;
+
+                }
+              
+            }
+
+            .Conjunto4{
+                display: flex;
+                flex-direction:row;
+
+            }
+        }
+
+        .ConjuntoFiltros3{
+            display: flex;
+            flex-direction: row;
+            align-items:end;
+            align-content: space-around;
+            gap: 10px;
+
+            .fitro1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+
+                input{
+                    
+                    height: 24px;
+                    width: 40vh;
+                    border-radius: 3px;
+                    border: none;
+                    background-color: #9E8080;
+                }
+
+                h2{
+                    font: 500 15px 'vikings' !important;
+                    margin-right: 130px; 
+                    
+                    
+
+                }
+            }
+
+            button{
+                text-decoration: none;
+                height: 26px;
+                align-items: center;
+                width: 40vh;
+                border-radius: 3px;
+                    border: none;
+                    background-color: #9E8080;
+                    color: #ffffff;
+            }
+
+            button:hover {
+                background-color: #9e7272;
+                transition: all 1s;
+                color: #000;
+               
+              }
+  
+            /*
+            button {
+                color: #2b2525;
+                font: 700 25px "vikings" !important;
+                color: #000000;
+                background-color: #acacac;
+                text-decoration: none;
+                border: none;
+                border-radius: 20px;
+                padding: 0px 20px 0px 20px;
+                height: 800px;
+                
+              }
+  
+              button:hover {
+                background-color: rgb(255, 255, 255);
+                transition: all 1s;
+                color: #000;
+               
+              }
+  
+              button:active {
+                background-color: rgb(155, 155, 155);
+                
+                
+              }
+              */
+        }
+
+    
+        }
+
+      
+        
+    
+    
