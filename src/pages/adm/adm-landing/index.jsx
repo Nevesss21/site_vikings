@@ -4,7 +4,7 @@ import './fonts.scss';
 export default function AdmLanding() {
     return (
         <div className="conteiner-adm"> 
-            <main>
+
                 <header>
 
                     <div className='imagem-logo'>
@@ -73,8 +73,6 @@ export default function AdmLanding() {
                     </div>
 
                 </div>
-            </main>
-
 
         </div>
     );
