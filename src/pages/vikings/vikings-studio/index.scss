@@ -86,11 +86,16 @@
                 font: 500 2rem "vikings";
             }
 
-            img {
+        }
+
+        .mapbox {
+            display: flex;
+            height: 50vh;
+
+            iframe {
                 width: 35vw;
             }
         }
-
     }
 }
 
@@ -114,10 +119,6 @@
                 p {
                     font-size: 1.7rem;
                 }
-            }
-
-            img {
-                width: 30vw;
             }
         }
     }
@@ -236,6 +237,15 @@
                     width: 40vw;
                 }
             }
+
+            .mapbox {
+                display: flex;
+                height: 40vh;
+    
+                iframe {
+                    width: 35vw;
+                }
+            }
         }
     }
 }
@@ -283,6 +293,15 @@
 
                 p {
                     font-size: 0.6rem;
+                }
+            }
+
+            .mapbox {
+                display: flex;
+                height: 25vh;
+    
+                iframe {
+                    width: 35vw;
                 }
             }
         }
