@@ -1,12 +1,10 @@
 import "./index.scss";
 import "./fonts.scss";
-import Cabecalho from "../../../components/Cabecalho";
 
 
 export default function AdmMarcar() {
   return (
     <div className="conteiner-admmarcar">
-      <Cabecalho />
 
       <div className="principal">
         <h1 className="Marcar">Marcar Consulta</h1>
