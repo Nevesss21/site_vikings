@@ -37,7 +37,8 @@
           margin-left: auto;
         }
 
-        .animacao::after, .animacao::before {
+        .animacao::after,
+        .animacao::before {
           content: '';
           width: 0%;
           height: 2px;
@@ -46,7 +47,8 @@
           transition: 0.5s;
         }
 
-        .animacao:hover::after, .animacao:hover::before {
+        .animacao:hover::after,
+        .animacao:hover::before {
           width: 100%;
         }
 
@@ -73,6 +75,7 @@
         width: 400px;
         margin-right: 20px;
       }
+
       .texto {
         width: 500px !important;
         margin-left: 10vh;
@@ -82,12 +85,14 @@
         color: #fff;
         font: 700 25px "vikings" !important;
       }
+
       .text h3 {
         padding: 0px;
         color: #fff;
         font: 500 15px "vikings" !important;
       }
     }
+
     .imagens {
       display: flex;
       flex-direction: column;
@@ -104,38 +109,38 @@
         ////animação
         /// 
         /// /* From Uiverse.io by Kabak */ 
-            button {
-              color: #2b2525;
-              font: 700 25px "vikings" !important;
-              color: #000000;
-              background-color: #acacac;
-              text-decoration: none;
-              border: none;
-              border-radius: 20px;
-              padding: 0px 20px 0px 20px;
-              height: 800px;
-              
-            }
+        button {
+          color: #2b2525;
+          font: 700 25px "vikings" !important;
+          color: #000000;
+          background-color: #acacac;
+          text-decoration: none;
+          border: none;
+          border-radius: 20px;
+          padding: 0px 20px 0px 20px;
+          height: 800px;
 
-            button:hover {
-              background-color: rgb(255, 255, 255);
-              transition: all 1s;
-              color: #000;
-             
-            }
+        }
 
-            button:active {
-              background-color: rgb(155, 155, 155);
-              
-              
-            }
+        button:hover {
+          background-color: rgb(255, 255, 255);
+          transition: all 1s;
+          color: #000;
 
-                  
-                  
+        }
 
-                    .relatar {
-                      width: 350px !important;
-                      margin: 40px !important;
+        button:active {
+          background-color: rgb(155, 155, 155);
+
+
+        }
+
+
+
+
+        .relatar {
+          width: 350px !important;
+          margin: 40px !important;
 
           /*
           button {
@@ -154,6 +159,7 @@
           }
         }
       }
+
       .imagem-cinza-claro {
         background-image: url("../../../../public/assets/images/imagem-cinza-claro-adm1.png");
         background-repeat: no-repeat;
@@ -166,38 +172,39 @@
           width: 600px !important;
           margin: 40px !important;
 
-          
+
           ///animacao
           button {
-          color: #ffffff;
-          background-color: #2e2b2b;
-          text-decoration: none;
-          border: none;
-          border-radius: 20px;
-          padding: 0px 20px 0px 20px;
-          height: 800px;
-          
-        }
+            color: #ffffff;
+            background-color: #2e2b2b;
+            text-decoration: none;
+            border: none;
+            border-radius: 20px;
+            padding: 0px 20px 0px 20px;
+            height: 800px;
 
-        button:hover {
-          background-color: rgb(90, 89, 89);
-          transition: all 1s;
-         
-        }
+          }
 
-        button:active {
-          background-color: rgb(155, 155, 155);
-          
-          
-        }
+          button:hover {
+            background-color: rgb(90, 89, 89);
+            transition: all 1s;
 
-        
+          }
+
+          button:active {
+            background-color: rgb(155, 155, 155);
+
+
+          }
+
+
           h1 {
             color: #000;
             font: 700 30px "vikings" !important;
           }
         }
       }
+
       .imagem-preta {
         background-image: url("../../../../public/assets/images/imagem-preta-adm-1.png");
         height: 85vh;
@@ -210,40 +217,41 @@
           width: 400px !important;
           margin: 40px !important;
 
-          h1{
+          h1 {
             color: #fff;
           }
 
-        ///animacao
+          ///animacao
 
-        button {
-          color: #000000;
-          font: 700 25px "vikings" !important;
-          color: #000000;
-          background-color: #ffffff;
-          text-decoration: none;
-          border: none;
-          border-radius: 20px;
-          padding: 0px 20px 0px 20px;
-          height: 800px;
-          
-        }
+          button {
+            color: #000000;
+            font: 700 25px "vikings" !important;
+            color: #000000;
+            background-color: #ffffff;
+            text-decoration: none;
+            border: none;
+            border-radius: 20px;
+            padding: 0px 20px 0px 20px;
+            height: 800px;
 
-        button:hover {
-          background-color: rgb(94, 92, 92);
-          transition: all 1s;
-          color: #f1f1f1;
-         
-        }
+          }
 
-        button:active {
-          background-color: rgb(77, 77, 77);
-          
-          
+          button:hover {
+            background-color: rgb(94, 92, 92);
+            transition: all 1s;
+            color: #f1f1f1;
+
+          }
+
+          button:active {
+            background-color: rgb(77, 77, 77);
+
+
+          }
         }
-      }
       }
     }
+
     .duvidas {
       display: flex;
       flex-direction: column;
@@ -255,20 +263,24 @@
       .linha {
         width: 700px;
       }
+
       .rodape img {
         width: 100px !important;
         padding: 10px !important;
       }
+
       .rodape h1 {
         color: #fff;
         font: 700 35px "vikings" !important;
       }
+
       .rodape p {
         color: #fff;
         font: 500 15px "vikings" !important;
         width: 300px !important;
         text-align: center;
       }
+
       .rodape {
         display: flex;
         flex-direction: column;
@@ -290,6 +302,7 @@
           padding: 0px 0px 0px 30px;
 
         }
+
         img {
           width: 45px !important;
           height: 35px !important;
@@ -356,6 +369,7 @@
           height: 60vh !important;
           background-image: url("../../../../public/assets/images/imagem-cinza-adm1.png");
           background-size: cover;
+
           .relatar {
             width: 45vh !important;
             margin: 10vh !important;
@@ -376,6 +390,7 @@
           height: 57vh;
           background-image: url("../../../../public/assets/images/imagem-cinza-claro-adm1.png");
           background-size: cover;
+
           .seguir {
             width: 80vh !important;
             margin: 10vh !important;
@@ -391,10 +406,12 @@
             }
           }
         }
+
         .imagem-preta {
           height: 60vh;
           background-image: url("../../../../public/assets/images/imagem-preta-adm-1.png");
           background-size: cover;
+
           .consulte {
             width: 70vh !important;
             margin: 10vh !important;
@@ -495,6 +512,7 @@
       .imagens {
         .imagem-cinza {
           height: 55vh !important;
+
           .relatar {
             width: 35vh !important;
             margin: 8vh !important;
@@ -513,6 +531,7 @@
 
         .imagem-cinza-claro {
           height: 52vh !important;
+
           .seguir {
             width: 65vh !important;
             margin: 8vh !important;
@@ -531,6 +550,7 @@
 
         .imagem-preta {
           height: 52vh !important;
+
           .consulte {
             width: 80vh;
             margin: 10vh;
@@ -547,6 +567,7 @@
           }
         }
       }
+
       .duvidas {
         .linha {
           width: 70vh !important;
@@ -604,6 +625,7 @@
           }
         }
       }
+
       .corpo {
         margin-bottom: 10vh !important;
         height: 40vh !important;
@@ -611,10 +633,12 @@
         .texto h1 {
           font-size: 20px !important;
         }
+
         .text h3 {
           font-size: 15px !important;
           margin: 0px !important;
         }
+
         .texto {
           width: 70vh !important;
         }
@@ -627,6 +651,7 @@
       .imagens {
         .imagem-cinza {
           height: 48vh !important;
+
           .relatar {
             width: 35vh !important;
             margin: 8vh !important;
@@ -645,6 +670,7 @@
 
         .imagem-cinza-claro {
           height: 45vh !important;
+
           .seguir {
             width: 60vh !important;
             margin: 8vh !important;
@@ -663,6 +689,7 @@
 
         .imagem-preta {
           height: 45vh !important;
+
           .consulte {
             width: 50vh !important;
             margin: 8vh !important;
@@ -738,6 +765,7 @@
 
       .corpo {
         margin-bottom: 10vh !important;
+
         .texto h1 {
           font-size: 15px !important;
         }
@@ -797,6 +825,7 @@
 
         .imagem-preta {
           height: 38vh !important;
+
           .consulte {
             width: 45vh !important;
             margin: 5vh !important;
@@ -842,6 +871,7 @@
 
       .corpo {
         margin-bottom: 10vh !important;
+
         .texto h1 {
           font-size: 15px !important;
         }
@@ -902,6 +932,7 @@
 
         .imagem-preta {
           height: 30vh !important;
+
           .consulte {
             width: 38vh !important;
             margin: 5vh !important;
@@ -944,6 +975,7 @@
           }
         }
       }
+
       .corpo {
         height: 20vh !important;
         margin: 0px !important;
@@ -974,6 +1006,7 @@
 
         .imagem-cinza {
           height: 20vh !important;
+
           .relatar {
             width: 15vh !important;
             margin: 5vh !important;
@@ -992,6 +1025,7 @@
 
         .imagem-cinza-claro {
           height: 18vh !important;
+
           .seguir {
             width: 25vh !important;
             margin: 5vh !important;
@@ -1010,6 +1044,7 @@
 
         .imagem-preta {
           height: 18vh !important;
+
           .consulte {
             width: 20vh !important;
             margin: 5vh !important;

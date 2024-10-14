@@ -1,17 +1,17 @@
-.principal-solicitacoes{
+.principal-solicitacoes {
     margin: 0px;
     border: 0px;
     background-color: #000;
 
-    .titulo{
+    .titulo {
         color: #9E8080;
-          text-decoration: none;
-          font: 500 30px "vikings" !important;
-          text-align: center;
-          background-color: #000;
+        text-decoration: none;
+        font: 500 30px "vikings" !important;
+        text-align: center;
+        background-color: #000;
     }
 
-    .solicitacoesped{
+    .solicitacoesped {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -20,62 +20,62 @@
         margin-top: 50px;
         width: 75%;
         margin-bottom: 50px;
-       
+
     }
 
-    .botao{
-
-    display: flex;
- 
-    align-items: center;
-    justify-items: stretch;
-    margin-left: 75%;
-    background-color: #000;
-    padding-bottom: 50px;
-    
-    
-
-
-
-    
-    button{
-        background-color: #fff;
-        text-decoration: none;
-        border-radius: 20px;
-        color: #000;
-        align-items: center;
-        height: 50px;
-        width: 200px;
-        border: none;
-        font: 700 18px "vikings" !important;
-        
-        
-        
-    }
-
-    button:hover{
-        background-color: #8f8e8e;
-        transition: 1s;
-    }
-    }
-
-
-    .botao{
+    .botao {
 
         display: flex;
-     
+
         align-items: center;
         justify-items: stretch;
         margin-left: 75%;
         background-color: #000;
         padding-bottom: 50px;
-        
-        
-    
-    
-    
-        
-        .botao1{
+
+
+
+
+
+
+        button {
+            background-color: #fff;
+            text-decoration: none;
+            border-radius: 20px;
+            color: #000;
+            align-items: center;
+            height: 50px;
+            width: 200px;
+            border: none;
+            font: 700 18px "vikings" !important;
+
+
+
+        }
+
+        button:hover {
+            background-color: #8f8e8e;
+            transition: 1s;
+        }
+    }
+
+
+    .botao {
+
+        display: flex;
+
+        align-items: center;
+        justify-items: stretch;
+        margin-left: 75%;
+        background-color: #000;
+        padding-bottom: 50px;
+
+
+
+
+
+
+        .botao1 {
             background-color: #ffffff;
             text-decoration: none;
             border-radius: 20px;
@@ -85,18 +85,18 @@
             width: 200px;
             border: none;
             font: 700 18px "vikings" !important;
-            
-            
-            
+
+
+
         }
-    
-        .botao1:hover{
+
+        .botao1:hover {
             background-color: #726f6f;
             transition: 2s;
             color: #793b3b;
         }
-        }
-    
+    }
+
 
 
 }

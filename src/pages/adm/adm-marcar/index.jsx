@@ -1,7 +1,7 @@
 import "./index.scss";
 import "./fonts.scss";
-import Cabecalho from "../../components";
-import { Bloco } from "../../components";
+import Cabecalho from "../../../components/Cabecalho";
+
 
 export default function AdmMarcar() {
   return (
@@ -64,18 +64,30 @@ export default function AdmMarcar() {
             <h2>Telefone</h2>
             <input type="text" placeholder="00 0000-0000" />
           </div>
-        </div>
 
-        <div className="ConjuntoFiltros3">
           
-          <div className="fitro1">
-            <h2>Preço Base</h2>
+
+          </div>
+
+          <div className="ConjuntoFiltros3">
+
+            <div className="fitro1"><h2>Preço Base</h2>
             <input type="text" placeholder="R$ 00,00" />
           </div>
 
-          <button className="botao">Concluido</button>
+          
+            <button className="botao">
+              Concluido
+            </button>
+          </div>
+
+          
+            
+
         </div>
+
       </div>
-    </div>
+
+
   );
 }
