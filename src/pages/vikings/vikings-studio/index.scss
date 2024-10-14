@@ -1,3 +1,290 @@
-.Studio {
-    background-color: none;
+.Estudio {
+
+    .sessaoInicial {
+        background-image: url('../../../../public/assets/images/imagemSessaoInicialEstudio.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+
+
+        h1 {
+            margin-left: 5vw;
+            color: #fff;
+            font: 700 4rem "vikings";
+        }
+    }
+
+    .segundaSessao {
+        background-image: url('../../../../public/assets/images/background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        padding: 7vh 5vw;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh 0vw;
+
+        h2 {
+            font: 500 3rem "vikings";
+            width: 80vw;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: row;
+            gap: 0vh 5vw;
+
+            .column {
+                display: flex;
+                flex-direction: column;
+                gap: 3vh 0vw;
+
+                h3 {
+                    font: 700 2rem "vikings";
+
+                }
+
+                p {
+                    font: 700 1rem "vikings";
+                    width: 35vw;
+                }
+            }
+        }
+    }
+
+    .sessaoImagem {
+        background-image: url('../../../../public/assets/images/imagem-escura-dourada.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .sessaoSobre {
+        background-image: url('../../../../public/assets/images/background.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #fff;
+        padding: 7vh 5vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            gap: 3vh 0vw;
+
+            h1 {
+                font: 500 4rem "vikings";
+            }
+
+            p {
+                width: 30vw;
+                font: 500 2rem "vikings";
+            }
+
+            img {
+                width: 35vw;
+            }
+        }
+
+    }
+}
+
+
+@media (max-width:1280px) {
+    .Estudio {
+        .segundaSessao {
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        .sessaoSobre {
+
+            .text {
+                h1 {
+                    font-size: 3.5rem;
+                }
+
+                p {
+                    font-size: 1.7rem;
+                }
+            }
+
+            img {
+                width: 30vw;
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .Estudio {
+        .segundaSessao {
+
+            h2 {
+                font-size: 1.6rem;
+            }
+
+            .text {
+
+                .column {
+
+                    h3 {
+                        font-size: 1.6rem;
+                    }
+
+                    p {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+
+        .sessaoSobre {
+
+            .text {
+                h1 {
+                    font-size: 3rem;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:912px) {
+    .Estudio {
+
+        .sessaoInicial {
+            height: 50vh;
+
+            h1 {
+                margin-left: 8vw;
+            }
+        }
+
+        .segundaSessao {
+            gap: 2vh 0vw;
+
+            .text {
+                gap: 0vh 8vw;
+
+                .column {
+
+                    p {
+                        font: 500 1rem "vikings";
+                        width: 40vw;
+                    }
+                }
+            }
+        }
+
+        .sessaoImagem {
+            height: 50vh;
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .Estudio {
+
+        .sessaoInicial {
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+        .segundaSessao {
+
+            h2 {
+                font-size: 1.2rem;
+            }
+
+            .text {
+
+                .column {
+                    h3 {
+                        font-size: 1rem;
+                    }
+
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .sessaoSobre {
+
+            .text {
+                h1 {
+                    font-size: 1.5rem;
+                }
+
+                p {
+                    font-size: 0.8rem;
+                    width: 40vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:430px) {
+    .Estudio {
+
+        .sessaoInicial {
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+
+        .segundaSessao {
+            padding: 4vh 5vw;
+
+            h2 {
+                font-size: 0.8rem;
+            }
+
+            .text {
+                gap: 0vh 5vw;
+
+                .column {
+                    gap: 1vh 0vw;
+
+                    h3 {
+                        font-size: 0.7rem;
+                    }
+
+                    p {
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+
+        .sessaoSobre {
+
+            .text {
+                h1 {
+                    font-size: 1.2rem;
+                }
+
+                p {
+                    font-size: 0.6rem;
+                }
+            }
+        }
+    }
 }
