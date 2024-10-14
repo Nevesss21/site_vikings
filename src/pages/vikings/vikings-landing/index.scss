@@ -1,0 +1,14 @@
+.ladingpage{
+    display: flex;
+    flex-direction: column;
+    background-image: url('../../../../public/assets/images/gif-landing.gif');
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: 100%;
+
+    .secao-inicial-landing{
+        display: flex;
+        flex-direction: column;
+    }
+
+}
