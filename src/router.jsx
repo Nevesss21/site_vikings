@@ -4,6 +4,7 @@ import AdmMarcar from './pages/adm/adm-marcar';
 import AdmRelatorio from './pages/adm/adm-relatorio';
 import AdmSolicitacoes from './pages/adm/adm-solicitacoes';
 import Studio from './pages/vikings/vikings-studio';
+import Landingpage from './pages/vikings/vikings-landing';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -17,7 +18,8 @@ export default function Navegacao() {
         <Route path='/adm-marcar' element={<AdmMarcar />} />
         <Route path='/adm-relatorio' element={<AdmRelatorio />} />
         <Route path='/adm-solicitacoes' element={<AdmSolicitacoes />} />
-        <Route path='/' element={<Studio />} />
+        <Route path='/Estudio' element={<Studio />} />
+        <Route path='/' element={<Landingpage />} />
       </Routes>
     </BrowserRouter>
   )

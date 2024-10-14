@@ -10,7 +10,7 @@ export default function Nav() {
 
       <div className="links">
         <Link to={'/'}>HOME</Link>
-        <Link to={'/studio'}>ESTÚDIO</Link>
+        <Link to={'/Estudio'}>ESTÚDIO</Link>
         <Link to={'/'}>SERVIÇOS</Link>
         <Link to={'/'}>AGENDAMENTO</Link>
         <Link to={'/'}>CONTATO</Link>
