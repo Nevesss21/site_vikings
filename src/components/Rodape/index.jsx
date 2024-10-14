@@ -13,9 +13,9 @@ export default function Rodape() {
         <div className="links">
           <h1>ONDE ESTAMOS</h1>
           <div className="text">
-            <p>Avenida Ibirapuera, 3478</p>
-            <p>Moema, São Paulo - SP</p>
-            <p>CEP 04028-003</p>
+            <p>R. Prof. João de Oliveira Torres, 405 </p>
+            <p>Jardim Analia Franco, São Paulo - SP</p>
+            <p>CEP 03337-010</p>
           </div>
         </div>
         <div className="links">
