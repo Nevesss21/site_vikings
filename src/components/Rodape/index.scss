@@ -1,0 +1,143 @@
+.Rodape {
+    background-image: url('../../../public/assets/images/background.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+
+    .line {
+        background-color: #8b8b8b;
+        width: 90vw;
+        height: 0.1vh;
+    }
+
+    .align {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0vh 10vw;
+        padding: 10vh 0vw;
+
+        img {
+            width: 20vw;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            align-self: first baseline;
+            gap: 2vh 0vw;
+
+            h1 {
+                font: 700 2rem "vikings";
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                gap: 1vh 0vw;
+
+                p {
+                    font: 500 1rem "vikings";
+                }
+            }
+
+            .alinharImagens {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: start;
+                gap: 0vh 1vw;
+
+                img {
+                    width: 2vw;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:912px) {
+    .Rodape {
+
+        .align {
+
+            .links {
+
+                h1 {
+                    font-size: 1.5rem;
+                }
+
+                .text {
+
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+
+                .alinharImagens {
+
+                    img {
+                        width: 4vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:540px) {
+    .Rodape {
+
+        .align {
+
+            img {
+                width: 25vw;
+            }
+
+            .links {
+
+                h1 {
+                    font-size: 1rem;
+                }
+
+                .text {
+
+                    p {
+                        font-size: 0.5rem;
+                    }
+                }
+
+                .alinharImagens {
+
+                    img {
+                        width: 6vw;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:430px) {
+    .Rodape {
+
+        .align {
+            gap: 0vh 6vw;
+
+            img {
+                width: 30vw;
+            }
+
+            .links {
+
+                h1 {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}

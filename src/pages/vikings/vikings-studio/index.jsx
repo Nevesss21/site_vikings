@@ -1,6 +1,7 @@
 import './index.scss'
 import './fonts.scss'
 import Nav from '../../../components/Nav';
+import Rodape from '../../../components/Rodape';
 
 
 export default function Estudio() {
@@ -35,6 +36,7 @@ export default function Estudio() {
                 </div>
                 <img src="/assets/images/Mapa.png" alt="mapa" />
             </div>
+            <Rodape />
         </div>
     );
 }
