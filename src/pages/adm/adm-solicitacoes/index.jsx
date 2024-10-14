@@ -4,60 +4,60 @@ import Cabecalho from '../../../components/Cabecalho';
 import Bloco from '../../../components/bloco';
 import BlocoPreto from '../../../components/bloco-preto';
 
-export default function AdmSolicitacoes(){
-    return(
-    <div className='principal-solicitacoes'>
+export default function AdmSolicitacoes() {
+    return (
+        <div className='principal-solicitacoes'>
 
-        <Cabecalho/>
+            <Cabecalho />
 
-        <div className="botao">
+            <div className="botao">
 
-        <a href="/adm-agendamento"> <button className='botao1'>Sessões Marcadas</button></a>
-           
-        </div>
+                <a href="/adm-agendamento"> <button className='botao1'>Sessões Marcadas</button></a>
 
-       
+            </div>
 
-        <h1 className='titulo'>Solicitações</h1>
 
-        <div className='solicitacoesped'>
 
-            <br/>
+            <h1 className='titulo'>Solicitações</h1>
 
-            <Bloco/>
+            <div className='solicitacoesped'>
 
-            <br/>
+                <br />
 
-            <BlocoPreto />
-            <br/>
+                <Bloco />
 
-            <Bloco/>
+                <br />
 
-            <br/>
+                <BlocoPreto />
+                <br />
 
-            <BlocoPreto />
+                <Bloco />
 
-            <br/>
+                <br />
 
-            <Bloco/>
+                <BlocoPreto />
+
+                <br />
+
+                <Bloco />
+
+                <br />
+
+
+            </div>
 
             <br />
 
 
-        </div>
+            <div className="botao">
 
-        <br/>
-        
+                <a href="/adm-marcar">
+                    <button>Marcar Consulta</button>
+                </a>
 
-        <div className="botao">
-
-            <a href="/adm-marcar">
-        <button>Marcar Consulta</button>
-       </a>
-     
             </div>
-       
 
-    </div> 
+
+        </div>
     );
 }

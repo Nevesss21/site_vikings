@@ -1,34 +1,33 @@
-
 ///Cabeçalho
-main{
+main {
 
-    header{
-     background-color: #000000;
+    header {
+        background-color: #000000;
         display: flex;
         height: 30vh;
         align-items: center;
         justify-content: space-between;
         padding: 0px 30px 0px 300px;
-  
-        .imagem-logo img{
+
+        .imagem-logo img {
             width: 25vh;
-            margin-right:50vh ;
+            margin-right: 50vh;
             margin-left: -30vh;
 
         }
-  
-        .links-principal  {
+
+        .links-principal {
             display: flex;
             gap: 15vh;
             align-items: center;
             margin-right: 20px;
-  
-           a{
-            color: #fff;
-            text-decoration: none;
-            font: 500 16px 'vikings' !important; 
-           }
-  
+
+            a {
+                color: #fff;
+                text-decoration: none;
+                font: 500 16px 'vikings' !important;
+            }
+
         }
- }
+    }
 }

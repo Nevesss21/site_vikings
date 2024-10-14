@@ -7,7 +7,7 @@ import Navegacao from './router.jsx';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Navegacao/>
+    <Navegacao />
   </React.StrictMode>
 );
 

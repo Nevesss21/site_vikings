@@ -6,11 +6,11 @@ import Cabecalho from "../../../components/Cabecalho";
 export default function AdmMarcar() {
   return (
     <div className="conteiner-admmarcar">
-      
-      
 
-          <Cabecalho/>
-        
+
+
+      <Cabecalho />
+
       <div className="principal">
         <h1 className="Marcar">Marcar Consulta</h1>
 
@@ -48,21 +48,21 @@ export default function AdmMarcar() {
         </div>
 
         <div className="ConjuntoFiltros2">
-            <div className="Conjunto3"> 
+          <div className="Conjunto3">
             <h2> E-mail</h2>
-            <input type="text" placeholder="Insira o e-mail do cliente"/>
-            
+            <input type="text" placeholder="Insira o e-mail do cliente" />
+
             <h2>Telefone</h2>
-            <input type="text" placeholder="00 0000-0000"/>
+            <input type="text" placeholder="00 0000-0000" />
 
-            </div>
+          </div>
 
-            <div className="Conjunto3">
-                <h2>Preço Base</h2>
+          <div className="Conjunto3">
+            <h2>Preço Base</h2>
 
-                <button className="botao">Concluido</button>
-            </div>
-           
+            <button className="botao">Concluido</button>
+          </div>
+
         </div>
       </div>
     </div>
