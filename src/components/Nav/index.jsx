@@ -13,7 +13,7 @@ export default function Nav() {
         <Link to={'/Estudio'}>ESTÚDIO</Link>
         <Link to={'/'}>SERVIÇOS</Link>
         <Link to={'/'}>AGENDAMENTO</Link>
-        <Link to={'/'}>CONTATO</Link>
+        <Link to={'/Contato'}>CONTATO</Link>
         <Link to={'/'}><img src="/assets/images/instagram.png" alt="instagram" /></Link>
         <Link to={'/'}><img src="/assets/images/facebook.png" alt="facebook" /></Link>
       </div>

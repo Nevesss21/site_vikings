@@ -1,0 +1,129 @@
+.Whats {
+    position: fixed;
+    bottom: 5vh;
+    right: 5vw;
+    border-radius: 50px;
+    padding: 0vh 0vw;
+    cursor: pointer;
+
+    a {
+        all: unset;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font: 500 1rem "vikings";
+
+        img {
+            width: 3vw;
+        }
+
+        p {
+            display: none;
+        }
+    }
+
+}
+
+.Whats:hover {
+    background-color: #33D33A;
+    border-radius: 50px;
+    padding: 0vh 1vw;
+    transition: all 0.4s;
+
+    a {
+
+
+        p {
+            display: flex;
+        }
+    }
+}
+
+@media (max-width:1280px) {
+    .Whats {
+
+        a {
+
+            img {
+                width: 4vw;
+            }
+        }
+    }
+}
+
+@media (max-width:1024px) {
+    .Whats {
+
+        a {
+
+            img {
+                width: 5vw;
+            }
+        }
+    }
+}
+
+@media (max-width:912px) {
+    .Whats {
+
+        a {
+
+            img {
+                width: 8vw;
+            }
+
+            p {
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+
+@media (max-width:540px) {
+    .Whats {
+
+        a {
+
+            img {
+                width: 9vw;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width:430px) {
+    .Whats {
+
+        a {
+
+            img {
+                width: 12vw;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .Whats {
+
+        a {
+
+            img {
+                width: 12vw;
+            }
+
+            p {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,187 @@
+.Contato {
+    background-image: url('../../../../public/assets/images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    .sessaoInicial {
+        background-image: url('../../../../public/assets/images/imagemSessaoContato.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        height: 100vh;
+        align-items: center;
+
+        h1 {
+            margin-left: 5vw;
+            color: #fff;
+            font: 700 4rem "vikings";
+        }
+    }
+
+    .sessaoInputs {
+        padding: 15vh 10vw;
+        display: flex;
+        flex-direction: column;
+        gap: 5vh 0vw;
+
+        .separacao {
+            display: flex;
+            flex-direction: column;
+            gap: 5vh 0vw;
+
+            .inline {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .porInput {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 0vh 7vw;
+
+                h2 {
+                    font: 700 2rem "vikings";
+                    width: 15vw;
+                }
+
+                input {
+                    all: unset;
+                    font: 500 1rem "vikings";
+                    caret-color: #9E8080;
+                    color: #9E8080;
+                    background: rgba(255, 255, 255, 0.1);
+                    height: 5vh;
+                    width: 100%;
+                    padding: 0vh 1vw;
+                }
+
+                select {
+                    all: unset;
+                    font: 500 1rem "vikings";
+                    caret-color: #9E8080;
+                    color: #9E8080;
+                    background: rgba(255, 255, 255, 0.1);
+                    height: 5vh;
+                    width: 100%;
+                    padding: 0vh 1vw;
+                    align-items: center;
+
+                    option {
+                        all: unset;
+                    }
+                }
+            }
+        }
+
+        button {
+            outline: none;
+            border: none;
+            border-radius: 5px;
+            padding: 1vh 4vw;
+            background: rgba(255, 255, 255, 0.1);
+            font: 500 1.4rem "vikings";
+            color: #fff;
+            align-self: flex-end;
+            cursor: pointer;
+        }
+
+        button:hover {
+            box-shadow: 0px 0px 20px 0px #a7811b;
+            background: rgba(167, 129, 27, 0.7);
+            transition: 0.3s;
+        }
+    }
+
+    .sessaoMapa {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 5vh 5vw;
+        gap: 5vh 0vw;
+
+        p {
+            font: 500 1.4rem "vikings";
+        }
+
+        .alinhar {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+            align-self: self-start;
+            gap: 0vh 1vw;
+
+            p {
+                margin-bottom: 0vh;
+            }
+        }
+
+        .mapbox {
+            display: flex;
+            height: 50vh;
+            border: solid 2px #000000;
+            border-radius: 12px;
+
+            iframe {
+                width: 80vw;
+                border-radius: 12px;
+            }
+        }
+
+        .mapbox:hover {
+            border: solid 2px #a7811b;
+            box-shadow: 0px 0px 25px 0px #a7811b;
+            transition: 0.3s;
+        }
+    }
+}
+
+
+
+@media (max-width:1280px) {
+    .Contato {}
+}
+
+@media (max-width:1024px) {
+    .Contato {}
+}
+
+@media (max-width:912px) {
+    .Contato {
+
+        .sessaoInicial {
+            height: 50vh;
+
+            h1 {
+                margin-left: 8vw;
+            }
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .Contato {
+
+        .sessaoInicial {
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media (max-width:430px) {
+    .Contato {
+
+        .sessaoInicial {
+
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+}

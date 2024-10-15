@@ -2,12 +2,14 @@ import './index.scss'
 import './fonts.scss'
 import Nav from '../../../components/Nav';
 import Rodape from '../../../components/Rodape';
+import Whats from '../../../components/Whats';
 
 
 export default function Estudio() {
     return (
         <div className="Estudio">
             <Nav />
+            <Whats />
             <div className="sessaoInicial">
                 <h1>O ESTÚDIO</h1>
             </div>
