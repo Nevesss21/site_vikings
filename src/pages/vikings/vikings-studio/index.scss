@@ -1,4 +1,7 @@
 .Estudio {
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-size: cover;
 
     .sessaoInicial {
         background-image: url('../../../../public/assets/images/imagemSessaoInicialEstudio.png');
@@ -17,9 +20,6 @@
     }
 
     .segundaSessao {
-        background-image: url('../../../../public/assets/images/background.png');
-        background-repeat: no-repeat;
-        background-size: cover;
         color: #fff;
         padding: 7vh 5vw;
         display: flex;
@@ -62,9 +62,6 @@
     }
 
     .sessaoSobre {
-        background-image: url('../../../../public/assets/images/background.png');
-        background-repeat: no-repeat;
-        background-size: cover;
         color: #fff;
         padding: 7vh 5vw;
         display: flex;
