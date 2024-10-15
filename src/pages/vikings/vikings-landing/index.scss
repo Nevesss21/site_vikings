@@ -1,5 +1,4 @@
 .ladingpage{
-    background-color: #000;
 
     .secao-inicial-landing{
         background-image: url('../../../../public/assets/images/braco.svg.svg');
@@ -44,9 +43,12 @@
         flex-direction: column;
         height: 150vh;
         align-items: center;
+        padding: 15vh 10vw;
 
-        h1{
+        .titulo{
             color: #fff;
+            font: 500 2rem "vikings";
+            text-align: center;
         }
         .flex{
             display: flex;
@@ -56,6 +58,12 @@
             .coluna{
                 display: flex;
                 flex-direction: column;
+                
+                p{
+                    
+                }
+                
+            
             }
         }
     }
