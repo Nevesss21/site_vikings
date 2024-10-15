@@ -1,5 +1,5 @@
 .Contato {
-    background-color: #000000;
+    background-image: linear-gradient(210deg, #000000, #1f1f0b, #000000, #1f1f0b);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
@@ -25,15 +25,12 @@
         flex-direction: column;
         gap: 5vh 0vw;
 
+
         .separacao {
             display: flex;
             flex-direction: column;
             gap: 5vh 0vw;
 
-            .inline {
-                display: flex;
-                flex-direction: row;
-            }
 
             .porInput {
                 display: flex;
@@ -53,7 +50,7 @@
                     color: #9E8080;
                     background: rgba(255, 255, 255, 0.1);
                     height: 5vh;
-                    width: 100%;
+                    width: 70%;
                     padding: 0vh 1vw;
                 }
 
@@ -64,7 +61,7 @@
                     color: #9E8080;
                     background: rgba(255, 255, 255, 0.1);
                     height: 5vh;
-                    width: 100%;
+                    width: 70%;
                     padding: 0vh 1vw;
                     align-items: center;
 
@@ -140,13 +137,26 @@
 }
 
 
-
-@media (max-width:1280px) {
-    .Contato {}
-}
-
 @media (max-width:1024px) {
-    .Contato {}
+    .Contato {
+
+        .sessaoInputs {
+        
+                .separacao {
+
+                .porInput {
+
+                    input {
+                        height: 7vh;
+                    }
+
+                    select {
+                        height: 7vh;
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:912px) {

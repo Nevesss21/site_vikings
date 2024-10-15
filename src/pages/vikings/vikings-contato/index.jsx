@@ -15,19 +15,19 @@ export default function Contato() {
             </div>
 
             <div className="sessaoInputs">
-
                 <div className="separacao">
                     <div className="porInput">
                         <h2>NOME</h2>
                         <input type="text" placeholder='Digite seu nome...' />
                     </div>
-                    <div className="inline">
-                        <div className="porInput">
-                            <h2>EMAIL</h2>
-                            <input type="email" placeholder='Informe o seu e-mail ' />
-                            <h2>TELEFONE</h2>
-                            <input type="tel" placeholder='(00)00000-0000' />
-                        </div>
+                    <div className="porInput">
+                        <h2>EMAIL</h2>
+                        <input type="email" placeholder='Informe o seu e-mail ' />
+
+                    </div>
+                    <div className="porInput">
+                        <h2>TELEFONE</h2>
+                        <input type="tel" placeholder='(00)00000-0000' />
                     </div>
                     <div className="porInput">
                         <h2>ASSUNTO</h2>
