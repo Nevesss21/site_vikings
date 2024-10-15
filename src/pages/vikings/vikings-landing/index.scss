@@ -35,4 +35,28 @@
      
     }
 
+    .secao-estudio{
+        background-image: url('../../../../public/assets/images/imagem-estudio-escura.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        height: 150vh;
+        align-items: center;
+
+        h1{
+            color: #fff;
+        }
+        .flex{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .coluna{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
 }
