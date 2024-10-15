@@ -41,30 +41,57 @@
         background-size: cover;
         display: flex;
         flex-direction: column;
-        height: 150vh;
+        height: 130vh;
         align-items: center;
-        padding: 15vh 10vw;
+        justify-content: center;
+        padding: 15vh 10vw 0vh 10vw;
+
+        button{
+            margin-left: 5vw;
+            background-color: #A68D7A;
+            color: #fff;
+            font: 500 1rem "vikings";
+            width: 20vw;
+            height: 6vh;
+            border: none;
+        }
 
         .titulo{
             color: #fff;
-            font: 500 2rem "vikings";
+            font: 500 2.5rem "vikings";
             text-align: center;
         }
         .flex{
             display: flex;
             flex-direction: row;
             align-items: center;
+            justify-content: center;
+            gap: 0vh 30vw;
+            padding: 8vh 0vw;
+            width: 100vw;
 
             .coluna{
                 display: flex;
                 flex-direction: column;
+                width: 20vw;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                gap: 8vh 0vw;
                 
                 p{
-                    
+                    font: 500 1.5rem "vikings";
+                    color: #fff;
+                    width: 30vw;
+                }
+                h1{
+                    color: #fff;
+                    font: 500 2rem "vikings";
                 }
                 
             
             }
+            
         }
     }
 
