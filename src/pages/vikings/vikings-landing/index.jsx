@@ -45,7 +45,7 @@ export default function Landingpage() {
                 </div>
                 
                 </div>
-               <Link to= '/Estudio'><button>CONHEÇA NOSSO ESTÚDIO</button></Link> 
+               <button>CONHEÇA NOSSO ESTÚDIO</button>
             </div>
 
             <div className='images-servicos'>
