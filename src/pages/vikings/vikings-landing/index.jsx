@@ -43,7 +43,7 @@ export default function Landingpage() {
                 </div>
                 
                 </div>
-                <button>CONHEÇA NOSSO ESTÚDIO</button>
+               <Link to= '/Estudio'><button>CONHEÇA NOSSO ESTÚDIO</button></Link> 
             </div>
 
             <Rodape/>
