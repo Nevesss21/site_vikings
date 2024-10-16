@@ -105,14 +105,17 @@
         .img-tattoo{
             background-image: url('../../../../public/assets/images/tatuagem.png');
             background-repeat: no-repeat;
+            background-size: cover;
         }
         .img-laser{
             background-image: url('../../../../public/assets/images/laser.png');
             background-repeat: no-repeat;
+            background-size: cover;
         }
         .img-piercing{
             background-image: url('../../../../public/assets/images/piercing.png');
             background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .img-tattoo, .img-laser, .img-piercing{
