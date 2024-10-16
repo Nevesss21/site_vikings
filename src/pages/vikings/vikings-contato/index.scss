@@ -114,7 +114,8 @@
             p {
                 margin-bottom: 0vh;
             }
-            img{
+
+            img {
                 width: 2vw;
             }
         }
@@ -144,8 +145,8 @@
     .Contato {
 
         .sessaoInputs {
-        
-                .separacao {
+
+            .separacao {
 
                 .porInput {
 
@@ -159,7 +160,31 @@
                 }
             }
         }
-    } 
+
+        .sessaoInputs {
+
+            .separacao {
+
+                .porInput {
+
+                    input {
+                        height: 7vh;
+                    }
+
+                    select {
+                        height: 7vh;
+                    }
+                }
+            }
+        }
+
+        .sessaoMapa {
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    }
 }
 
 @media (max-width:912px) {
@@ -171,6 +196,47 @@
             h1 {
                 margin-left: 8vw;
             }
+        }
+
+        .sessaoInputs {
+            padding: 7vh 7vw;
+
+            .separacao {
+
+                .porInput {
+
+                    h2 {
+                        font-size: 1.5rem;
+                    }
+
+                    input {
+                        height: 4vh;
+                        font-size: 0.8rem;
+                    }
+
+                    select {
+                        height: 4vh;
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+
+        .sessaoMapa {
+
+            p {
+                font-size: 1rem;
+            }
+
+            .mapbox {
+                height: 25vh;
+
+                iframe {
+                    width: 80vw;
+                    border-radius: 12px;
+                }
+            }
+
         }
     }
 }
@@ -184,6 +250,41 @@
                 font-size: 3rem;
             }
         }
+
+        .sessaoInputs {
+
+            .separacao {
+
+                .porInput {
+
+                    h2 {
+                        font-size: 1rem;
+                    }
+
+                    input {
+                        height: 4vh;
+                        font-size: 0.5rem;
+                    }
+
+                    select {
+                        height: 4vh;
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+
+            button {
+                font-size: 1rem;
+            }
+        }
+
+        .sessaoMapa {
+
+            p {
+                font-size: 0.6rem;
+            }
+
+        }
     }
 }
 
@@ -195,6 +296,58 @@
             h1 {
                 font-size: 2rem;
             }
+        }
+
+
+        .sessaoInputs {
+            padding: 4vh 5vw;
+            gap: 3vh 0vw;
+
+            .separacao {
+                gap: 3vh 0vw;
+
+                .porInput {
+
+                    h2 {
+                        font-size: 0.8rem;
+                    }
+
+                    input {
+                        height: 3vh;
+                        font-size: 0.4rem;
+                    }
+
+                    select {
+                        height: 3vh;
+                        font-size: 0.4rem;
+                    }
+                }
+            }
+
+            button {
+                font-size: 1rem;
+            }
+        }
+
+        .sessaoMapa {
+
+            p {
+                font-size: 0.5rem;
+            }
+
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .Contato {
+
+        .sessaoMapa {
+
+            p {
+                font-size: 0.4rem;
+            }
+
         }
     }
 }
