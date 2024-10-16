@@ -6,7 +6,9 @@ import Rodape from '../../../components/Rodape';
 import Whats from '../../../components/Whats';
 
 
+
 export default function Landingpage() {
+
     return (
         <div className="ladingpage">
             <Nav/>
@@ -44,6 +46,36 @@ export default function Landingpage() {
                 
                 </div>
                <Link to= '/Estudio'><button>CONHEÇA NOSSO ESTÚDIO</button></Link> 
+            </div>
+
+            <div className='images-servicos'>
+
+                <div className='img-tattoo'>
+                    <Link to = '/'>
+                    <h1>TATUAGEM</h1></Link>
+                </div>
+                <div className='img-laser'>
+                    <Link to = '/'>
+                    <h1>LASER</h1></Link>
+                </div>
+                <div className='img-piercing'>
+                    <Link to = '/'>
+                    <h1>PIERCING</h1></Link>
+                </div>
+
+            </div>
+
+            <div className='secao-carrossel'>
+                <h1>NOSSAS ARTES</h1>
+                <div className='carrossel'>
+                <img src="/assets/images/leao-tattoo.jpg" alt="" /> 
+                <img src="/assets/images/olho-tattoo.jpg" alt="" /> 
+                <img src="/assets/images/rosto-tattoo.jpg" alt="" /> 
+                <img src="/assets/images/indio-tattoo.jpg" alt="" /> 
+                </div>
+                <div className='bot'>
+                    <button>CONHECER MAIS</button>
+                </div>
             </div>
 
             <Rodape/>
