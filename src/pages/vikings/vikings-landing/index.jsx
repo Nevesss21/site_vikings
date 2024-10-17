@@ -68,10 +68,10 @@ export default function Landingpage() {
             <div className='secao-carrossel'>
                 <h1>NOSSAS ARTES</h1>
                 <div className='carrossel'>
-                <img src="/assets/images/leao-tattoo.jpg" alt="" /> 
-                <img src="/assets/images/olho-tattoo.jpg" alt="" /> 
-                <img src="/assets/images/rosto-tattoo.jpg" alt="" /> 
-                <img src="/assets/images/indio-tattoo.jpg" alt="" /> 
+                <img src="/assets/images/leao-tattoo.jpg" alt="leao-tatuagem" /> 
+                <img src="/assets/images/olho-tattoo.jpg" alt="olho-tatuagem" /> 
+                <img src="/assets/images/rosto-tattoo.jpg" alt="rosto-tatuagem" /> 
+                <img src="/assets/images/indio-tattoo.jpg" alt="indio-tatuagem" /> 
                 </div>
                 <div className='bot'>
                     <button>CONHECER MAIS</button>

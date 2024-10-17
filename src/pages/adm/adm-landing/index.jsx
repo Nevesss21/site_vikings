@@ -61,7 +61,7 @@ export default function AdmLanding() {
                     <hr className='linha' />
 
                     <div className='rodape'>
-                        <img src="/assets/images/valhalla-logo 3.png" alt="logo-valhalla" />
+                        <img src="/assets/images/Logo-valhalla.png" alt="logo-valhalla" />
                         <h1>Duvidas</h1>
                         <p>Caso haver duvidas ou possiveis ocorrências,entre em conato com a  equipe de programadores da Valhalla diretamente no site</p>
                     </div>
