@@ -1,0 +1,143 @@
+
+.conteiner-login{
+    background-image: url('../../../../public/assets/images/fundopadrao.png');
+   
+    display: flex;
+    flex-direction: column;
+
+    margin: 0vh;
+    border: 0vh;
+    height: 101vh;;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+
+
+    .caixa{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+  
+        margin-top: 10vh;
+        border-radius: 5vw;
+        border: none;
+        gap : 4vh;
+        margin-bottom: 10vh;
+
+
+
+        h1{
+            color: #fff;
+            color: #fff;
+          text-decoration: none;
+          font: 500 1.2rem 'vikings';
+
+        }
+
+        h2{
+            color: #fff;
+            color: #fff;
+          text-decoration: none;
+          font: 500 1.2rem 'vikings';
+            
+        }
+
+        .parte1{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          img{
+            width: 15vw;
+            height: 25vh;
+          }
+          
+
+
+          margin-bottom: 4vh;
+
+        }
+
+        .parte2{
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          gap: 2vh;
+
+          input{
+            text-decoration: none;
+            border-radius: 1vh;
+            background-color: #ffffff;
+            
+          }
+          
+        }
+
+        .parte3{
+          gap: 2vh;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          
+
+         
+
+          .entrar{
+            color: #fff;
+            background-color: #A68D7A;
+            height: 4vh;
+            width: 7vw;
+            border: none;
+            border-radius: 5px;
+          }
+
+          .entrar:hover {
+            background-color: rgb(255, 255, 255);
+            transition: all 0.5s;
+            color: #000;
+  
+          }
+  
+          .entrar:active {
+            background-color: rgb(155, 155, 155);
+          }
+
+          .esqueci{
+            color: #fff;
+            background-color: #A68D7A;
+            height: 5vh;
+            width: 7vw;
+            border: none;
+            border-radius: 5px;
+          }
+
+          .esqueci:hover {
+            background-color: rgb(255, 255, 255);
+            transition: all 0.5s;
+            color: #000;
+  
+          }
+  
+          .esqueci:active {
+            background-color: rgb(155, 155, 155);
+          }
+        }
+
+        .primeira{
+          height: 0vh;
+        }
+
+        hr{
+          height: 0vh;
+          width: 100%;
+
+        }
+
+        .segunda{
+          height: 10vh;
+          width: 10vw;
+        }
+       
+        
+    }
+}
