@@ -10,17 +10,13 @@ import "./fonts.scss";
 
                 <div className="parte1">
                     
-                <img src="/assets/images/logo-vikings.png" alt="" />
+                <img src="/assets/images/logo-vikings.png" alt="logo" />
 
                 <h1>Seja Bem-Vindo</h1>
                 <hr className="primeira"/>
 
                 </div>
-
-
-
                 <div className="parte2">
-                    
                     <h2>Informe seu e-mail ou CPF</h2>
                 <input type="text" placeholder="Digite" />
 
@@ -32,16 +28,11 @@ import "./fonts.scss";
                 <div className="parte3">
 
                     <button className="esqueci">Esqueci Minha Senha</button>
-                
-
                     <button className="entrar">Entrar</button>
 
                 </div>
                 
             </div>
-
-            
-            
         </div>
     )
 }

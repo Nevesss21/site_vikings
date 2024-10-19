@@ -16,6 +16,7 @@ export default function Nav() {
         <Link to={'/Contato'}>CONTATO</Link>
         <Link to={'/'}><img src="/assets/images/instagram.png" alt="instagram" /></Link>
         <Link to={'/'}><img src="/assets/images/facebook.png" alt="facebook" /></Link>
+        <Link to={'/adm-landing'}><img src="/assets/images/User.png" alt="user" /></Link>
       </div>
     </div>
   );

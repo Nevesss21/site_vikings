@@ -60,7 +60,6 @@
       align-items: center;
       justify-content: space-between;
       height: 100vh;
-      margin-bottom: 20vh;
 
       .text {
         width: 30vw;
@@ -88,7 +87,7 @@
       flex-direction: column;
 
       .imagem-cinza {
-        background-image: url("../../../../public/assets/images/imagem-cinza-adm1.png");
+        background-image: url("../../../../public/assets/images/imagem-cinza.png");
         height: 90vh;
         background-repeat: no-repeat;
         background-size: cover;
@@ -136,10 +135,10 @@
     }
 
       .imagem-cinza-claro {
-        background-image: url("../../../../public/assets/images/imagem-cinza-claro-adm1.png");
+        background-image: url("../../../../public/assets/images/imagem-cinza-claro.png");
         background-repeat: no-repeat;
         background-size: cover;
-        height: 85vh;
+        height: 90vh;
         display: flex;
         align-items: center;
 
@@ -177,8 +176,8 @@
       }
 
       .imagem-preta {
-        background-image: url("../../../../public/assets/images/imagem-preta-adm-1.png");
-        height: 85vh;
+        background-image: url("../../../../public/assets/images/imagem-preta.png");
+        height: 90vh;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -296,10 +295,10 @@
       height: 70vh;
     }
     .imagem-cinza-claro{
-      height: 66vh;
+      height: 70vh;
     }
     .imagem-preta{
-      height: 66vh;
+      height: 70vh;
     }
 
   }
@@ -308,6 +307,9 @@
 
 @media (max-width:1024px) {
   .conteiner-adm{
+    header{
+      height: 20vh;
+    }
     .corpo{
 
       .text {
@@ -375,10 +377,10 @@
         height: 60vh;
       }
       .imagem-cinza-claro{
-        height: 56vh;
+        height: 60vh;
       }
       .imagem-preta{
-        height: 56vh;
+        height: 60vh;
       }
   
     }
@@ -396,7 +398,7 @@
       }
     }
     .corpo{
-      height: 40vh;
+
 
       .text {
         width: 40vw;
@@ -431,7 +433,7 @@
 
       }
       .imagem-cinza-claro{
-        height: 29vh;
+        height: 32vh;
         .seguir{
           width: 40vw;
           h1{
@@ -445,7 +447,7 @@
         }       
       }
       .imagem-preta{
-        height: 29vh;
+        height: 32vh;
         .consulte{
           width: 40vw;
           h1{
@@ -506,7 +508,7 @@
     }
     .corpo{
       height: 25vh;
-      margin-bottom: 10vh;
+
 
       .text {
         width: 30vw;
@@ -527,7 +529,6 @@
     }
     .imagens{
       .imagem-cinza{
-        height: 20vh;
         .relatar{
           width: 45vw;
           h1{
@@ -542,7 +543,7 @@
 
       }
       .imagem-cinza-claro{
-        height: 15vh;
+
         .seguir{
           width: 55vw;
           h1{
@@ -556,7 +557,7 @@
         }       
       }
       .imagem-preta{
-        height: 15vh;
+   
         .consulte{
           width: 40vw;
           h1{
