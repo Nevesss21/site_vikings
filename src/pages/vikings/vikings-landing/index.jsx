@@ -5,80 +5,108 @@ import Nav from '../../../components/Nav';
 import Rodape from '../../../components/Rodape';
 import Whats from '../../../components/Whats';
 
+// (npm i swiper) todas as importações necessárias 
 
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
+import 'swiper/css/scrollbar'
+
+import { Swiper, SwiperSlide } from 'swiper/react';
 
 export default function Landingpage() {
 
+
+    // define as imagens do carrossel
+    const sliderCarrossel = [
+        { id: '1', image: '/assets/images/leao-tattoo.jpg' },
+        { id: '2', image: '/assets/images/olho-tattoo.jpg' },
+        { id: '3', image: '/assets/images/rosto-tattoo.jpg' },
+        { id: '3', image: '/assets/images/indio-tattoo.jpg' }
+    ]
+
     return (
         <div className="ladingpage">
-            <Nav/>
-            <Whats/>
-            
+            <Nav />
+            <Whats />
+
             <div className='secao-inicial-landing'>
 
                 <div className='texto'>
-                <h1>PIONEIRISMO E MODERNIDADE
-                EM CADA TRAÇO</h1>
-                <button>VEJA NOSSAS TATTOOS</button>
+                    <h1>PIONEIRISMO E MODERNIDADE
+                        EM CADA TRAÇO</h1>
+                    <button>VEJA NOSSAS TATTOOS</button>
                 </div>
             </div>
-            
+
             <div className='secao-estudio'>
                 <h1 className='titulo'>
-                FAZENDO HISTÓRIA <br />
-                NO MUNDO DA TATUAGEM DESDE 1977
+                    FAZENDO HISTÓRIA <br />
+                    NO MUNDO DA TATUAGEM DESDE 1977
                 </h1>
-                
+
                 <div className='flex'>
-                    
-                <div className='coluna'>
-                    <p>Trabalho seguro e responsável na aplicação de piercings, retirada de tatuagens a laser e criação de obras de arte em sua pele.</p>
-                    
-                    <h1>ACESSIBILIDADE</h1>
-                    <p>Somos pioneiros na adequação dos espaços do estúdio para o portador de mobilidade reduzida. Temos acesso adaptado desde a recepção até uma sala exclusiva de atendimento.</p>
+
+                    <div className='coluna'>
+                        <p>Trabalho seguro e responsável na aplicação de piercings, retirada de tatuagens a laser e criação de obras de arte em sua pele.</p>
+
+                        <h1>ACESSIBILIDADE</h1>
+                        <p>Somos pioneiros na adequação dos espaços do estúdio para o portador de mobilidade reduzida. Temos acesso adaptado desde a recepção até uma sala exclusiva de atendimento.</p>
+                    </div>
+
+                    <div className='coluna'>
+                        <p>O maior estúdio de tatuagem da América Latina, com reconhecimento internacional, dezenas de prêmios e equipe especializada.</p>
+                        <h1>BIOSSEGURANÇA</h1>
+                        <p>AO Vikings Tattoo é certificada pela Vigilância Sanitária atuando sob rígidas normas de biossegurança e assepsia. Possui uma sala exclusiva para a esterilização dos equipamentos.</p>
+                    </div>
+
                 </div>
-                
-                <div className='coluna'>
-                    <p>O maior estúdio de tatuagem da América Latina, com reconhecimento internacional, dezenas de prêmios e equipe especializada.</p>
-                    <h1>BIOSSEGURANÇA</h1>
-                    <p>AO Vikings Tattoo é certificada pela Vigilância Sanitária atuando sob rígidas normas de biossegurança e assepsia. Possui uma sala exclusiva para a esterilização dos equipamentos.</p>
-                </div>
-                
-                </div>
-               <button>CONHEÇA NOSSO ESTÚDIO</button>
+                <button>CONHEÇA NOSSO ESTÚDIO</button>
             </div>
 
             <div className='images-servicos'>
 
                 <div className='img-tattoo'>
-                    <Link to = '/'>
-                    <h1>TATUAGEM</h1></Link>
+                    <Link to='/'>
+                        <h1>TATUAGEM</h1></Link>
                 </div>
                 <div className='img-laser'>
-                    <Link to = '/'>
-                    <h1>LASER</h1></Link>
+                    <Link to='/'>
+                        <h1>LASER</h1></Link>
                 </div>
                 <div className='img-piercing'>
-                    <Link to = '/'>
-                    <h1>PIERCING</h1></Link>
+                    <Link to='/'>
+                        <h1>PIERCING</h1></Link>
                 </div>
 
             </div>
 
             <div className='secao-carrossel'>
                 <h1>NOSSAS ARTES</h1>
+
                 <div className='carrossel'>
-                <img src="/assets/images/leao-tattoo.jpg" alt="leao-tatuagem" /> 
-                <img src="/assets/images/olho-tattoo.jpg" alt="olho-tatuagem" /> 
-                <img src="/assets/images/rosto-tattoo.jpg" alt="rosto-tatuagem" /> 
-                <img src="/assets/images/indio-tattoo.jpg" alt="indio-tatuagem" /> 
+                    <Swiper
+                        slidesPerView={3}               // quantidade de itens mostrados por vez
+                        pagination={{ clickable: true }}
+                        navigation                      // setas 
+                    >
+                        {sliderCarrossel.map((item) => (
+                            <SwiperSlide key={item.id}>
+                                <img
+                                    src={item.image}
+                                    alt="Slider"
+                                    className='slideItem'
+                                />
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
                 </div>
                 <div className='bot'>
                     <button>CONHECER MAIS</button>
                 </div>
             </div>
 
-            <Rodape/>
+            <Rodape />
 
         </div>
     );
