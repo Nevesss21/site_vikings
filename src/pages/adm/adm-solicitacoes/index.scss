@@ -1,4 +1,48 @@
-.principal-solicitacoes {
-
-
+.principal-solicitacoes{
+    margin: 0px;
+    border: 0px;
+    background-color: #000;
+    .titulo{
+        color: #9E8080;
+          text-decoration: none;
+          font: 500 30px "vikings" !important;
+          text-align: center;
+          background-color: #000;
+    }
+    .solicitacoesped{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 175px;
+        background-color: #242424;
+        margin-top: 50px;
+        width: 75%;
+        margin-bottom: 50px;
+       
+    }
+    .botao{
+    display: flex;
+ 
+    align-items: center;
+    justify-items: stretch;
+    margin-bottom: 50px;
+    background-color: #000;
+    
+    
+    
+    button{
+        background-color: #fff;
+        text-decoration: none;
+        border-radius: 20px;
+        color: #000;
+        align-items: center;
+        height: 50px;
+        width: 200px;
+        border: none;
+        font: 700 13px "vikings" !important;
+        
+        
+        
+    }
+    }
 }

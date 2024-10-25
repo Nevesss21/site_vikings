@@ -1,11 +1,32 @@
+
+import Bloco from '../../../components/Bloco';
+
 import './index.scss';
 import './fonts.scss';
 
+export default function AdmSolicitacoes(){
+    return(
+    <div className='principal-solicitacoes'>
+        <h1 className='titulo'>Solicitações</h1>
+        <div className='solicitacoesped'>
+            <br/>
+            <Bloco/>
+            <br/>
 
-export default function AdmSolicitacoes() {
-    return (
-        <div className='principal-solicitacoes'>
+            <br/>
+            <Bloco/>
+            <br/>
 
+            <br/>
+            <Bloco/>
+            <br />
         </div>
+        
+        <div className="botao">
+        <button>Marcar Consulta</button>
+            
+            </div>
+       
+    </div> 
     );
 }
