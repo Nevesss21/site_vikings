@@ -7,7 +7,7 @@ import Studio from './pages/vikings/vikings-studio';
 import Landingpage from './pages/vikings/vikings-landing';
 import Contato from './pages/vikings/vikings-contato';
 import AdmLogin  from './pages/adm/adm-login';
-import InformacoesCliente from './pages/adm-infocliente';
+import InformacoesCliente from './pages/adm/adm-infocliente';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
