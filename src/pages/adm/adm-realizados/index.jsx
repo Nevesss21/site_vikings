@@ -22,9 +22,17 @@ export default function AdmRealizados() {
 
         <div className="principal">
 
-      <input type="text"  className="relatorio" value="relatório 01 - 21/05/2024"/>
+      <input type="text"  className="pesquisa" placeholder="
+      Pesquise e veja o seu relatório pela data ou nome.."/>
 
-    
+      <div className="fora">
+        <h1>Relatorios já feitos</h1>
+
+        <div className="bloco">
+          
+        </div>
+  
+      </div>
     </div>
     </div>
   );
