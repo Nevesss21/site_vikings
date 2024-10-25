@@ -1,4 +1,3 @@
-
 import Bloco from '../../../components/Bloco';
 
 import './index.scss';
