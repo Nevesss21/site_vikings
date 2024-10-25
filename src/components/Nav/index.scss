@@ -9,8 +9,13 @@
     align-items: center;
 
     img {
+        width: 3vw;
+        height: 3vw;
+    }
+    .image2{
         width: 10vw;
         height: 10vw;
+
     }
 
     .links {
@@ -20,21 +25,37 @@
         gap: 2vw;
         align-items: center;
 
-        a {
-            all: unset;
+        .animacao {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border: none;
+            background: none;
+          }
+  
+          .animacao::before {
+            margin-left: auto;
+          }
+  
+          .animacao::after,
+          .animacao::before {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #ffffff;
+            display: block;
+            transition: 0.5s;
+          }
+  
+          .animacao:hover::after,
+          .animacao:hover::before {
+            width: 100%;
+          }
+  
+          a {
             color: #fff;
-            font: 500 1rem "vikings";
-
-            img {
-                width: 1.5vw;
-                height: 1.5vw;
-            }
-        }
-
-        a:hover {
-            cursor: pointer;
-            text-decoration: underline;
-        }
+            text-decoration: none;
+            font: 500 1.2rem 'vikings';
+          }
     }
 }
 

@@ -1,0 +1,139 @@
+.conteiner-relatorio{
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+
+
+    header {
+        display: flex;
+        height: 20vh;
+        align-items: center;
+        justify-content: space-around;
+        padding: 0px 5vw 0px 5vw;
+        .imagem-logo img {
+          width: 12vw;
+          margin-left: -10vh;
+
+          
+        }
+
+        .voltar{
+            border-radius: 10px;
+            border:none;
+            height: 4vh;
+            width: 10vw;
+            margin-right: 15px;
+            color: #fff;
+            text-decoration: none;
+            font: 500 1.2rem 'vikings';
+            background-color: #585858;
+          }
+  
+        .links-principal {
+          display: flex;
+          gap: 0vh 5vw;
+          align-items: center;
+          margin-right: 5vw;
+  
+          .animacao {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border: none;
+            background: none;
+          }
+  
+          .animacao::before {
+            margin-left: auto;
+          }
+  
+          .animacao::after,
+          .animacao::before {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #ffffff;
+            display: block;
+            transition: 0.5s;
+          }
+  
+          .animacao:hover::after,
+          .animacao:hover::before {
+            width: 100%;
+          }
+  
+          a {
+            color: #fff;
+            text-decoration: none;
+            font: 500 1.2rem 'vikings';
+          }
+        }
+      }
+
+
+      .principal{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        color: #b6b5b5;
+        gap: 15vh;
+        padding: 125px 15px 15px 15px;
+
+        .relatorio{
+            border: none;
+            border-radius: 5px;
+            color: #000000 !important;
+            width: 40vw;
+            height: 5vh;
+            background-color: #9E8080;
+            
+        }
+
+        .fora{
+
+            background-color: #585858;
+            border: none;
+            border-radius: 5px;
+            height: 85vh;
+            width: 40vw;
+            padding: 20px;
+            padding-left: 90px;
+            font-size: 18px;
+            line-height: 5;
+            margin-bottom: 15px;
+            align-items: center;
+            padding-top: 90px;
+
+            h1 {
+                color: #fff;
+                text-decoration: none;
+                font: 500 1rem 'vikings';
+                margin-bottom: 15px;
+              }
+
+              .obs{
+                border: none;
+                border-radius: 5px;
+                height: 6vh;
+                width: 25vw;
+                margin-top: 50px;
+              }
+
+        }
+
+        .concluido{
+            border-radius: 10px;
+            border:none;
+            height: 4vh;
+            width: 10vw;
+            margin-right: 15px;
+            color: #fff;
+            text-decoration: none;
+            font: 500 1.2rem 'vikings';
+            background-color: #2c2c2c;
+            margin-bottom: 50px;
+            margin-left: 70vw;
+          }
+      }
+}

@@ -9,14 +9,15 @@ export default function Nav() {
       <Link to={'/'}><img src="/assets/images/logovikings.webp" alt="logoVikings" /></Link>
 
       <div className="links">
-        <Link to={'/'}>HOME</Link>
-        <Link to={'/Estudio'}>ESTÚDIO</Link>
-        <Link to={'/'}>SERVIÇOS</Link>
-        <Link to={'/'}>AGENDAMENTO</Link>
-        <Link to={'/Contato'}>CONTATO</Link>
-        <Link to={'/'}><img src="/assets/images/instagram.png" alt="instagram" /></Link>
-        <Link to={'/'}><img src="/assets/images/facebook.png" alt="facebook" /></Link>
-        <Link to={'/adm-landing'}><img src="/assets/images/User.png" alt="user" /></Link>
+      <Link className="animacao" to={'/'}>HOME</Link>
+        <Link  className="animacao" to={'/Estudio'}>ESTÚDIO</Link>
+        <Link  className="animacao" to={'/'}>SERVIÇOS</Link>
+        <Link  className="animacao" to={'/'}>AGENDAMENTO</Link>
+        <Link  className="animacao" to={'/estilo'}>ESTILOS</Link>
+        <Link  className="animacao"to={'/Contato'}>CONTATO</Link>
+        <Link to={'/'}> <img  className="image" src="/assets/images/instagram.png" alt="instagram" /> </Link>
+        <Link to={'/'}><img className="image" src="/assets/images/facebook.png" alt="facebook" /></Link>
+        <Link to={'/adm-landing'}> < img className="image" src="/assets/images/User.png" alt="user" /></Link>
       </div>
     </div>
   );
