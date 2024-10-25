@@ -8,8 +8,21 @@ return  (
 
 
 <div className="conteiner-infocliente">
+ 
 
-   <h1>oi</h1>
+<nav className="cabecalho">
+    
+<img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
+
+<button>Voltar</button>
+
+</nav>
+
+
+
+
+
+   
 </div>
 
 
