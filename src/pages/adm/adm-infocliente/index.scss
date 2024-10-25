@@ -20,6 +20,9 @@ display: flex;
 flex-direction: column;
 margin: 30px;
 gap: 15px ;
+font: 700 0.6em 'vikings';
+
+
 }
 
 
@@ -58,6 +61,7 @@ button{
     margin-left:15vw ;
     margin-top: 3vw;
     margin-bottom: 3vw;
+    font: 700 2em 'vikings';
 }
 
 .blocoPai{
@@ -97,6 +101,9 @@ background-color:#9E8080;
 border-radius:30px ;
 width: 12vw;
 height: 8vh;
+color: #fff;
+text-decoration: none;
+font: 500 1.2em 'vikings';
 }
 }
 

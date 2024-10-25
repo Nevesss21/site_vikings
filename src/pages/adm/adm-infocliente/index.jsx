@@ -2,6 +2,7 @@ import "./index.scss";
 
 
 
+
 export default function informacoescliente() {
 
 return  (
@@ -40,7 +41,7 @@ return  (
 
 </div>  
 
-<h1 className="tituloAnotacao"  >ANOTAÇÔES</h1>
+<h1 className="tituloAnotacao"  >Anotações</h1>
 
 <section className="blocoPai" >
 
@@ -55,7 +56,7 @@ return  (
     <button>Concluir</button>
    </div>
 
-   <img className="imagemLaDeBaixo" src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
+   <img className="imagemLa" src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
 
 
 </div> // DIV PRINCIPAL!!!
