@@ -53,7 +53,7 @@
     .principal{
       display: flex;
       flex-direction: column;
-
+      
       align-items: center;
 
       color: #b6b5b5;
@@ -85,11 +85,17 @@
           align-items: center;
           padding-top: 60px;
           
+          
+         
+          
+          
 
           h1 {
               color: #fff;
               text-decoration: none;
               font: 500 2rem 'vikings';
+              margin-bottom: 8vh;
+              
             }
 
       }
@@ -97,6 +103,64 @@
       .bloco{
           text-decoration: none;
           font: 500 1.2rem 'vikings';
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 5vh;
+
+        .texto{
+          display: flex;
+          flex-direction: row;
+          gap: 17rem;
+          background-color: #585858;
+          height: 10vh;
+          width: 40vw;
+          align-items: center;
+          justify-content: center;
+        }
+
+
+        .icons{
+          display: flex;
+          flex-direction: column;
+          width: 1.2rem;
+          gap: 0.7rem;
+        }
         }
     }
-}
+          .bloco{
+          text-decoration: none;
+          font: 500 1.2rem 'vikings';
+          display: flex;
+          flex-direction: row;
+          margin-bottom: 5vh;
+
+        .texto{
+          display: flex;
+          flex-direction: row;
+          gap: 17rem;
+          background-color: #585858;
+          height: 10vh;
+          width: 40vw;
+          align-items: center;
+          justify-content: center;
+        }
+        .texto1{
+          display: flex;
+          flex-direction: row;
+          gap: 17rem;
+          background-color: #585858;
+          height: 10vh;
+          width: 40vw;
+          align-items: center;
+          justify-content: center;
+        }
+
+
+        .icons{
+          display: flex;
+          flex-direction: column;
+          width: 1.2rem;
+          gap: 0.7rem;
+        }
+        }
+    }

@@ -29,6 +29,46 @@ export default function AdmRealizados() {
         <h1>Relatorios já feitos</h1>
 
         <div className="bloco">
+
+          <div className="texto1">Relatório 01-21/05/2024
+          <div className="icons">
+            <img src="assets/images/lixeirabranca.png" alt="" />
+            <img src="assets/images/canetabranca.png" alt="" />
+          </div>
+          </div>
+          
+        </div>
+
+        <div className="bloco">
+
+          <div className="texto">Relatório 01-21/05/2024
+          <div className="icons">
+            <img src="assets/images/lixeirabranca.png" alt="" />
+            <img src="assets/images/canetabranca.png" alt="" />
+          </div>
+          </div>
+          
+        </div>
+
+        <div className="bloco">
+
+          <div className="texto1">Relatório 01-21/05/2024
+          <div className="icons">
+            <img src="assets/images/lixeirabranca.png" alt="" />
+            <img src="assets/images/canetabranca.png" alt="" />
+          </div>
+          </div>
+          
+        </div>
+
+        <div className="bloco">
+
+          <div className="texto">Relatório 01-21/05/2024
+          <div className="icons">
+            <img src="assets/images/lixeirabranca.png" alt="" />
+            <img src="assets/images/canetabranca.png" alt="" />
+          </div>
+          </div>
           
         </div>
   
