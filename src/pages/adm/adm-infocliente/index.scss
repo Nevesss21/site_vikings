@@ -1,0 +1,110 @@
+.conteiner-infocliente{
+    background-color: black;
+
+
+ .bloco{
+
+color: #ffff;
+display: flex;
+background-color:#2C2727 ;
+width: 700px;
+justify-content: space-between;
+margin-left:16%;
+color: #fff;
+text-decoration: none;
+font: 500;
+
+.subBloco{
+
+display: flex;
+flex-direction: column;
+margin: 30px;
+gap: 15px ;
+}
+
+
+ }
+
+
+
+
+.cabecalho{
+display: flex;
+flex-direction: row;
+background-color: black;
+justify-content: space-between;
+align-items: center;
+img{
+
+width: 200px;
+margin-left: 8%;
+
+}
+
+button{
+
+    width: 150px;
+    height: 50px;
+    border-radius: 25px;
+    margin-right: 8%;
+    background-color: #9E8080;
+}
+
+}
+
+.tituloAnotacao{
+    color: #fff;
+    text-align: justify;
+    margin-left:15vw ;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+}
+
+.blocoPai{
+
+background-color: #2C2727;
+width: 70vw ;
+display: flex;
+justify-content: center;
+align-items:center ;
+text-align: center;
+margin-left: 15vw;
+height: 50vh;
+border-radius:30px ;
+
+
+.anotacao{
+
+    input{
+        width: 65vw;
+        height: 45VH;
+        border-radius: 20px;
+        border: none;
+    }
+
+}
+}
+
+.botaoConcluir{
+
+margin-left: 15vw;
+margin-top: 5vw;
+
+
+button{
+
+background-color:#9E8080;
+border-radius:30px ;
+width: 12vw;
+height: 8vh;
+}
+}
+
+
+.imagemLaDeBaixo{
+
+width: 20vw;
+margin-left:10vw ;
+}
+
+}
