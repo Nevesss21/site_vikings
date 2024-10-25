@@ -2,7 +2,7 @@
 import Bloco from '../../../components/Bloco';
 
 import './index.scss';
-import './fonts.scss';
+
 
 export default function AdmSolicitacoes(){
     return(

@@ -1,5 +1,5 @@
 import './index.scss';
-import './fonts.scss';
+
 
 export default function AdmLanding() {
     return (

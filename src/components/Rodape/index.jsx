@@ -1,5 +1,5 @@
 import './index.scss'
-import './fonts.scss'
+
 import { Link } from 'react-router-dom';
 
 

@@ -1,5 +1,5 @@
 import './index.scss'
-import './fonts.scss'
+
 import { Link } from 'react-router-dom';
 import Nav from '../../../components/Nav';
 import Rodape from '../../../components/Rodape';
