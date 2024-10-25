@@ -60,60 +60,43 @@
       gap: 15vh;
       padding: 125px 15px 15px 15px;
 
-      .relatorio{
+      .pesquisa{
           border: none;
           border-radius: 5px;
-          color: #000000 !important;
-          width: 40vw;
+          color: #ffffff !important;
+          width: 50vw;
           height: 5vh;
-          background-color: #9E8080;
+          background-color: #585858;
           
       }
 
       .fora{
 
-          background-color: #585858;
+          background-color: #808080;
           border: none;
           border-radius: 5px;
           height: 85vh;
-          width: 40vw;
+          width: 50vw;
           padding: 20px;
-          padding-left: 90px;
+          padding-left: 70px;
           font-size: 18px;
           line-height: 5;
           margin-bottom: 15px;
           align-items: center;
-          padding-top: 90px;
+          padding-top: 60px;
+          
 
           h1 {
               color: #fff;
               text-decoration: none;
-              font: 500 1rem 'vikings';
-              margin-bottom: 15px;
-            }
-
-            .obs{
-              border: none;
-              border-radius: 5px;
-              height: 6vh;
-              width: 25vw;
-              margin-top: 50px;
+              font: 500 2rem 'vikings';
             }
 
       }
 
-      .concluido{
-          border-radius: 10px;
-          border:none;
-          height: 4vh;
-          width: 10vw;
-          margin-right: 15px;
-          color: #fff;
+      .bloco{
           text-decoration: none;
           font: 500 1.2rem 'vikings';
-          background-color: #2c2c2c;
-          margin-bottom: 50px;
-          margin-left: 70vw;
         }
     }
 }
