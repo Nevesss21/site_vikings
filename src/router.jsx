@@ -6,7 +6,8 @@ import AdmRealizados from './pages/adm/adm-realizados';
 import Studio from './pages/vikings/vikings-studio';
 import Landingpage from './pages/vikings/vikings-landing';
 import Contato from './pages/vikings/vikings-contato';
-import  AdmLogin  from './pages/adm/adm-login';
+import AdmLogin  from './pages/adm/adm-login';
+import InformacoesCliente from './pages/adm-infocliente';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -25,6 +26,7 @@ export default function Navegacao() {
         <Route path='/' element={<Landingpage />} />
         <Route path='/Contato' element={<Contato />} />
         <Route path='/adm-login' element={<AdmLogin />} />
+        <Route path='/adm-infocliente' element={<InformacoesCliente />} />
 
       </Routes>
     </BrowserRouter>
