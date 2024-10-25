@@ -43,8 +43,8 @@ export default function AdmRealizados() {
 
           <div className="texto">Relatório 01-21/05/2024
           <div className="icons">
-            <img src="assets/images/lixeirabranca.png" alt="" />
-            <img src="assets/images/canetabranca.png" alt="" />
+            <img src="assets/images/lixeira.png" alt="" />
+            <img src="assets/images/caneta.png" alt="" />
           </div>
           </div>
           
@@ -65,8 +65,8 @@ export default function AdmRealizados() {
 
           <div className="texto">Relatório 01-21/05/2024
           <div className="icons">
-            <img src="assets/images/lixeirabranca.png" alt="" />
-            <img src="assets/images/canetabranca.png" alt="" />
+          <img src="assets/images/lixeira.png" alt="" />
+            <img src="assets/images/caneta.png" alt="" />
           </div>
           </div>
           
