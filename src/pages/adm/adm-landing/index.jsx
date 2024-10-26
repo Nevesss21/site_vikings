@@ -37,7 +37,7 @@ export default function AdmLanding() {
                     </div>
 
                     <div className='links-principal'>
-                        <button onClick={sair}>Sair</button>
+                        <button className='animacao' onClick={sair}>SAIR</button>
                         <a href="/" className='animacao'>HOME</a>
                         <a href="" className='animacao'>RELATÓRIOS</a>
                         <a href="/adm-solicitacoes" className='animacao'>SEÇÕES</a>

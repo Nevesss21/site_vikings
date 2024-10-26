@@ -37,21 +37,28 @@ import { useState } from 'react'
 
     return(
         <div className="login">
-            <button onClick={sair}>Sair</button>
+   
 
             <div className="secao-inicial">
-                <div className="image">
-                    <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
-                    <h1>Seja Bem Vindo!</h1>
-                </div>
-                <div className="inputs">
-                    <p>Informe seu CPF</p>
-                    <input id="cpf" type="text" value={cpf}onChange={(e) => setCpf(e.target.value)}/>
-                    <p>Informe sua senha</p>
-                    <input id="senha" type="text" value={senha}onChange={(e) => setSenha(e.target.value)}/>
-                </div>
-                <div className="botoes">
-                    <button onClick={entrar}>Entrar</button>
+                <header>
+                <button  onClick={sair}><img src="/assets/images/seta-esquerda.png" alt="seta-esquerda" /></button>
+                </header>
+
+
+                <div className="coluna">
+                    <div className="image">
+                        <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
+                        <h1>Seja Bem Vindo!</h1>
+                    </div>
+                    <div className="inputs">
+                        <p>Informe seu CPF</p>
+                        <input id="cpf" type="text" value={cpf}onChange={(e) => setCpf(e.target.value)}/>
+                        <p>Informe sua senha</p>
+                        <input id="senha" type="text" value={senha}onChange={(e) => setSenha(e.target.value)}/>
+                    </div>
+                    <div className="botoes">
+                        <button onClick={entrar}>Entrar</button>
+                    </div>
                 </div>
             </div>
         </div>
