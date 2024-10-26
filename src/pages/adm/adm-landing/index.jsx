@@ -1,7 +1,32 @@
-import './index.scss';
+import { useEffect, useState } from 'react'
+import './index.scss'
+
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
+
+
 
 
 export default function AdmLanding() {
+    
+    const [token, setToken] = useState(null)
+    const navigate = useNavigate()
+    async function sair() {
+        localStorage.setItem('USUARIO', null)
+        navigate('/')
+    }
+    
+
+    // funcao que executa assim que a pagina carrega
+    useEffect(() => {
+        let token = localStorage.getItem('USUARIO')
+        setToken(token)
+
+        if (token == 'null') {
+            navigate('/')
+        }
+    }, [])
+    
     return (
         <div className="conteiner-adm"> 
 
@@ -12,6 +37,7 @@ export default function AdmLanding() {
                     </div>
 
                     <div className='links-principal'>
+                        <button onClick={sair}>Sair</button>
                         <a href="/" className='animacao'>HOME</a>
                         <a href="" className='animacao'>RELATÓRIOS</a>
                         <a href="/adm-solicitacoes" className='animacao'>SEÇÕES</a>
