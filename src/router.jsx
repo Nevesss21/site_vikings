@@ -8,6 +8,7 @@ import Landingpage from './pages/vikings/vikings-landing';
 import Contato from './pages/vikings/vikings-contato';
 import AdmLogin  from './pages/adm/adm-login';
 import InformacoesCliente from './pages/adm/adm-infocliente';
+import Estilos from './pages/vikings/vikings-estilo';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -27,6 +28,7 @@ export default function Navegacao() {
         <Route path='/Contato' element={<Contato />} />
         <Route path='/adm-login' element={<AdmLogin />} />
         <Route path='/adm-infocliente' element={<InformacoesCliente />} />
+        <Route path='/estilo' element={<Estilos />} />
 
       </Routes>
     </BrowserRouter>

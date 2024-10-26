@@ -127,7 +127,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 80vh;
+            height: 50vh;
 
             h1 {
                 color: #fff;
@@ -199,6 +199,62 @@
                 color: #ffffff;
             }
 
+        }
+    }
+    .estilo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5vh;
+        button{
+            background-color: #A68D7A;
+            color: #fff;
+            font: 500 1rem "vikings";
+            width: 20vw;
+            height: 6vh;
+            border: none;
+        }
+    }
+    .secao-contato{
+        background-image: url('../../../../public/assets/images/imagemTigre.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        height: 70vh;
+        align-items: center;
+        justify-content: center;
+
+        h1{
+            color: #fff;
+            font: 500 5rem "vikings";
+            width: 80vw;
+            text-align: center;
+        }
+        button{
+            background-color: #A68D7A;
+            color: #fff;
+            font: 500 1rem "vikings";
+            width: 20vw;
+            height: 6vh;
+            border: none;
+        }
+    }
+    
+    
+    .secao-insta{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 70vh;
+        gap: 0vh 2vw;
+        img{
+            width: 4vw;
+        }
+        h1{
+            color: #fff;
+            font: 500 4rem "vikings";
         }
     }
 
