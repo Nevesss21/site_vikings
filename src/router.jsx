@@ -9,6 +9,7 @@ import Contato from './pages/vikings/vikings-contato';
 import AdmLogin  from './pages/adm/adm-login';
 import InformacoesCliente from './pages/adm/adm-infocliente';
 import Estilos from './pages/vikings/vikings-estilo';
+import Agendamento from './pages/vikings/vikings-agendamento';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -28,7 +29,8 @@ export default function Navegacao() {
         <Route path='/Contato' element={<Contato />} />
         <Route path='/adm-login' element={<AdmLogin />} />
         <Route path='/adm-infocliente' element={<InformacoesCliente />} />
-        <Route path='/estilo' element={<Estilos />} />
+        <Route path='/Estilo' element={<Estilos />} />
+        <Route path='/Agendamento' element={<Agendamento />} />
 
       </Routes>
     </BrowserRouter>

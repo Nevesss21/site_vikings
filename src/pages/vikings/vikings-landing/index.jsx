@@ -65,22 +65,7 @@ export default function Landingpage() {
                 <button>CONHEÇA NOSSO ESTÚDIO</button>
             </div>
 
-            <div className='images-servicos'>
 
-                <div className='img-tattoo'>
-                    <Link to='/'>
-                        <h1>TATUAGEM</h1></Link>
-                </div>
-                <div className='img-laser'>
-                    <Link to='/'>
-                        <h1>LASER</h1></Link>
-                </div>
-                <div className='img-piercing'>
-                    <Link to='/'>
-                        <h1>PIERCING</h1></Link>
-                </div>
-
-            </div>
 
             <div className='secao-carrossel'>
                 <h1>NOSSAS ARTES</h1>

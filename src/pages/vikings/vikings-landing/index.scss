@@ -99,47 +99,7 @@
         }
     }
 
-    .images-servicos {
-        display: flex;
-        flex-direction: column;
 
-        .img-tattoo {
-            background-image: url('../../../../public/assets/images/tatuagem.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .img-laser {
-            background-image: url('../../../../public/assets/images/laser.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .img-piercing {
-            background-image: url('../../../../public/assets/images/piercing.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        .img-tattoo,
-        .img-laser,
-        .img-piercing {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 50vh;
-
-            h1 {
-                color: #fff;
-                font: 500 2.5rem "vikings";
-            }
-
-            a {
-                text-decoration: none;
-            }
-        }
-
-    }
 
     .secao-carrossel {
         margin-top: 10vh;
