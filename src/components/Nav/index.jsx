@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default function Nav() {
   return (
     <div className="Nav">
-      <Link to={'/'}><img src="/assets/images/logovikings.webp" alt="logoVikings" /></Link>
+      <Link to={'/'}><img src="/assets/images/logo-vikings.webp" alt="logoVikings" /></Link>
 
       <div className="links">
       <Link className="animacao" to={'/'}>HOME</Link>

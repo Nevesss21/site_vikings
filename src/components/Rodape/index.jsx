@@ -8,7 +8,7 @@ export default function Rodape() {
     <div className="Rodape">
       <div className='line' />
       <div className="align">
-        <Link to={'/'}><img src="/assets/images/logovikings.webp" alt="logo" /></Link>
+        <Link to={'/'}><img src="/assets/images/logo-vikings.webp" alt="logo" /></Link>
 
         <div className="links">
           <h1>ONDE ESTAMOS</h1>

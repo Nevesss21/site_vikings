@@ -5,18 +5,14 @@
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
-    padding: 1vh 3vw;
+    padding: 1vh 2vw;
     align-items: center;
 
     img {
-        width: 3vw;
-        height: 3vw;
-    }
-    .image2{
         width: 10vw;
         height: 10vw;
-
     }
+  
 
     .links {
         display: flex;
@@ -54,7 +50,12 @@
           a {
             color: #fff;
             text-decoration: none;
-            font: 500 1.2rem 'vikings';
+            font: 500 1rem 'vikings';
+
+            img {
+                width: 1.5vw;
+                height: 1.5vw;
+            }
           }
     }
 }
@@ -97,7 +98,7 @@
         }
 
         .links {
-            gap: 0vh 3vw;
+            gap: 0vh 2vw;
 
             a {
                 font-size: 0.8rem;
@@ -116,7 +117,7 @@
     .Nav {
 
         .links {
-            gap: 0vh 3vw;
+            gap: 0vh 2vw;
 
             a {
                 font-size: 0.6rem;
@@ -134,7 +135,7 @@
     .Nav {
 
         .links {
-            gap: 0vh 3vw;
+            gap: 0vh 2vw;
 
             a {
                 font-size: 0.5rem;
@@ -147,7 +148,7 @@
     .Nav {
 
         .links {
-            gap: 0vh 3vw;
+            gap: 0vh 2vw;
 
             a {
                 font-size: 0.4rem;
