@@ -12,6 +12,14 @@ import Estilos from './pages/vikings/vikings-estilo';
 import Agendamento from './pages/vikings/vikings-agendamento';
 import Aquarela from './pages/vikings/vikings-aquarela';
 import Realismo from './pages/vikings/vikings-realismo';
+import Neo from './pages/vikings/vikings-neo';
+import New from './pages/vikings/vikings-new';
+import Macri from './pages/vikings/vikings-macri'; 
+import Black from './pages/vikings/vikings-black';
+import Geometrico from './pages/vikings/vikings-geometrico';
+import Oriental from './pages/vikings/vikings-oriental';
+import FineLine from './pages/vikings/vikings-fine-line';
+import Colorido from './pages/vikings/vikings-colorido';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -35,6 +43,14 @@ export default function Navegacao() {
         <Route path='/Agendamento' element={<Agendamento />} />
         <Route path='/Aquarela' element={<Aquarela/>} />
         <Route path='/Realismo' element={<Realismo/>} />
+        <Route path='/Neo' element={<Neo/>} />
+        <Route path='/New' element={<New/>} />
+        <Route path='/Black' element={<Black/>} />
+        <Route path='/Macri' element={<Macri/>} />
+        <Route path='/Geometrico' element={<Geometrico/>} />
+        <Route path='/Oriental' element={<Oriental/>} />
+        <Route path='/Fine-line' element={<FineLine/>} />
+        <Route path='/Colorida' element={<Colorido/>} />
 
       </Routes>
     </BrowserRouter>
