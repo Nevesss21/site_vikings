@@ -39,11 +39,10 @@ export default function AdmSolicitacoes(){
             <br />
         </div>
         
-        <div className="botao">
+
         <button>Marcar Consulta</button>
             
-            </div>
-       
+     
     </div> 
     );
 }
