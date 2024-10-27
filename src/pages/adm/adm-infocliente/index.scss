@@ -1,5 +1,6 @@
 .conteiner-infocliente{
     background-color: black;
+    align-items: center;
 
 
  .bloco{
@@ -9,7 +10,7 @@ display: flex;
 background-color:#2C2727 ;
 width: 700px;
 justify-content: space-between;
-margin-left:16%;
+margin-left: 25vw;
 color: #fff;
 text-decoration: none;
 font: 500;
@@ -37,15 +38,17 @@ flex-direction: row;
 background-color: black;
 justify-content: space-between;
 align-items: center;
-img{
+.logo1{
 
-width: 200px;
-margin-left: 8%;
+width: 15vw;
+margin-left: 25vh;
 
 }
 
 button{
 
+
+    border: none;
     width: 150px;
     height: 50px;
     border-radius: 25px;
@@ -57,7 +60,7 @@ button{
 
 .tituloAnotacao{
     color: #fff;
-    text-align: justify;
+    text-align:start;
     margin-left:15vw ;
     margin-top: 3vw;
     margin-bottom: 3vw;
@@ -78,12 +81,14 @@ border-radius:30px ;
 
 
 .anotacao{
+   
 
     input{
         width: 65vw;
         height: 45VH;
         border-radius: 20px;
         border: none;
+        text-align: start;
     }
 
 }
@@ -96,6 +101,7 @@ margin-top: 5vw;
 
 
 button{
+
 
 background-color:#9E8080;
 border-radius:30px ;
@@ -113,5 +119,7 @@ font: 500 1.2em 'vikings';
 width: 20vw;
 margin-left:10vw ;
 }
+        
+
 
 }
