@@ -87,11 +87,11 @@ export default function AdmMarcar() {
             <div className="fitro1"><h2>Preço Base</h2>
             <input type="text" placeholder="R$ 00,00" />
           </div>
-
           
-            <button className="botao">
+          
+            <a href="/adm-seções"><button className="botao">
               Concluido
-            </button>
+            </button></a>
           </div>
 
           
