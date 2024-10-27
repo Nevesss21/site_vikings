@@ -10,6 +10,8 @@ import AdmLogin  from './pages/adm/adm-login';
 import InformacoesCliente from './pages/adm/adm-infocliente';
 import Estilos from './pages/vikings/vikings-estilo';
 import Agendamento from './pages/vikings/vikings-agendamento';
+import Aquarela from './pages/vikings/vikings-aquarela';
+import Realismo from './pages/vikings/vikings-realismo';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -31,6 +33,8 @@ export default function Navegacao() {
         <Route path='/adm-infocliente' element={<InformacoesCliente />} />
         <Route path='/Estilo' element={<Estilos />} />
         <Route path='/Agendamento' element={<Agendamento />} />
+        <Route path='/Aquarela' element={<Aquarela/>} />
+        <Route path='/Realismo' element={<Realismo/>} />
 
       </Routes>
     </BrowserRouter>

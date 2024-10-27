@@ -9,7 +9,7 @@ export default function Tattoo(){
     <div className='secao-losango'>
 
         <div className='coluna'>
-            <Link to={'/'}>
+            <Link to={'/Aquarela'}>
                 <div>
                     <img src="/assets/images/pincel.png" alt="" />
                     <p>AQUARELA</p>
@@ -75,7 +75,7 @@ export default function Tattoo(){
                     <p>GEOMETRICO</p>
                 </div>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/Realismo'}>
                 <div>
                     <img src="/assets/images/realismo.png" alt="" />
                     <p>REALISMO</p>
