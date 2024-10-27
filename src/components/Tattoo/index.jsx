@@ -16,7 +16,7 @@ export default function Tattoo(){
                 </div>
             </Link>
 
-            <Link to={'/'}>
+            <Link to={'/Macri'}>
                 <div>
                     <img src="/assets/images/macri.png" alt="" />
                     <p>MACRI</p>
@@ -24,13 +24,13 @@ export default function Tattoo(){
             </Link>
         </div>
         <div className='coluna'>
-            <Link to={'/'}>
+            <Link to={'/Black'}>
                 <div>
                     <img className='bla' src="/assets/images/mao-black.png" alt="" />
                     <p>BLACK</p>
                 </div>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/Neo'}>
                 <div>
                     <img src="/assets/images/neo.png" alt="" />
                     <p>NEO TRADICIONAL</p>
@@ -39,13 +39,13 @@ export default function Tattoo(){
         </div>
 
         <div className='coluna'>
-            <Link to={'/'}>
+            <Link to={'/Fine-line'}>
                 <div>
                     <img src="/assets/images/fine-line.png" alt="" />
                     <p>FINE LINE</p>
                 </div>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/New'}>
                 <div>
                     <img src="/assets/images/new.png" alt="" />
                     <p>NEW SCHOOL</p>
@@ -54,13 +54,13 @@ export default function Tattoo(){
         </div>
 
         <div className='coluna'>
-            <Link to={'/'}>
+            <Link to={'/Colorida'}>
                 <div>
                     <img src="/assets/images/colorida.png" alt="" />
                     <p>COLORIDAS</p>
                 </div>
             </Link>
-            <Link to={'/'}>
+            <Link to={'/Oriental'}>
                 <div>
                     <img src="/assets/images/oriental.png" alt="" />
                     <p>ORIENTAL</p>
@@ -69,7 +69,7 @@ export default function Tattoo(){
         </div>
 
         <div className='coluna'>
-            <Link to={'/'}>
+            <Link to={'/Geometrico'}>
                 <div>
                     <img src="/assets/images/geometrico.png" alt="" />
                     <p>GEOMETRICO</p>

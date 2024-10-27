@@ -1,0 +1,88 @@
+.fine-line{
+    background-image: linear-gradient(210deg, #000000, #1f1f0b, #000000, #1f1f0b);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+
+    .secao-1{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 80vh;
+        padding: 5vh 5vw;
+        gap: 0vh 5vw;
+        
+        .losango{
+            background-image: url('../../../../public/assets/images/losango.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 8.9vh 4.7vw;      
+            gap: 1vh 0vw;
+            p{
+                color: #000;
+                font: 500 0.8rem "vikings";
+                width: 9vw;
+                text-align: center;
+                
+            }
+            img{
+                width: 8vw;
+            }
+
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+            gap: 8vh 0vw;
+
+            h1{
+                font: 500 2rem 'vikings';
+            }
+
+            .texto{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                gap: 0vh 0.5vw;
+
+                h3{
+                    font: 500 1.5rem 'vikings';
+                }
+                p{
+                    font: 500 1rem 'vikings';
+                    color: #DAA41B;
+                }
+            }
+        }
+
+    }
+
+    .secao-2{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        height: 100vh;
+        .line{
+            background-color: #8b8b8b;
+            width: 90vw;
+            height: 0.1vh;
+        }
+        .images{
+            flex-wrap: wrap;
+            display: flex;
+            flex-direction: row;
+            padding: 5vh 5vw;
+            gap: 3vh 5vw;
+            img{
+                width: 15vw;
+            }
+        }
+    }
+}

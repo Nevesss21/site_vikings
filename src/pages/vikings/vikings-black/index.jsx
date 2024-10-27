@@ -5,25 +5,26 @@ import Rodape from '../../../components/Rodape';
 import Whats from '../../../components/Whats';
 import { Link } from 'react-router-dom';
 
-export default function Realismo (){
+export default function Black(){
     return(
-        <div className='realismo'>
+        <div className='black'>
             <Nav/>
             <Whats/>
 
             <div className='secao-1'>
 
                <div className='losango'>
-                    <img src="/assets/images/realismo.png" alt="" />
-                    <p>REALISMO</p>
+                    <img src="/assets/images/mao-black.png" alt="" />
+                    <p>BLACK</p>
                 </div>
                 <div className='text'>
                     <div className='texto'>
                         <h3>Estilos -</h3>
-                        <p>Realismo</p>
+                        <p>Black</p>
                     </div>
-                    <h1>Realismo</h1>
+                    <h1>Black</h1>
                 </div>
+
                 <Link to ='/Estilo'><button>VOLTAR</button></Link>
            
             </div>
@@ -31,6 +32,9 @@ export default function Realismo (){
             <div className='line' />
             
             <div className='images'>
+                <img src="/assets/images/antes-depois-tattoo.jpg" alt="" />
+                <img src="/assets/images/caveira-relogio-tattoo.jpg" alt="" />
+                <img src="/assets/images/aranha-tattoo.jpg" alt="" />
                 <img src="/assets/images/leao-tattoo.jpg" alt="" />
                 <img src="/assets/images/olho-tattoo.jpg" alt="" />
                 <img src="/assets/images/rosto-tattoo.jpg" alt="" />
