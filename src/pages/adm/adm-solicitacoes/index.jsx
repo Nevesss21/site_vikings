@@ -27,7 +27,9 @@ export default function AdmSolicitacoes(){
         <h1 className='titulo'>Solicitações</h1>
         <div className='solicitacoesped'>
             <br/>
-            <Bloco/>
+
+            <a href="/adm-infocliente"><Bloco/></a>
+            
             <br/>
 
             <br/>

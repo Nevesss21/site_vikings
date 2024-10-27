@@ -53,7 +53,7 @@ return  (
     </section>
 
    <div  className="botaoConcluir">
-    <button>Concluir</button>
+    <a href="/adm-seções"><button>Concluir</button></a>
    </div>
 
  

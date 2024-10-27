@@ -1,5 +1,8 @@
 .conteiner-secoes{
   background-color: #000;
+  display: flex;
+  flex-direction: column;
+
   
 
 
@@ -67,12 +70,16 @@ header {
     flex-direction: column;
     align-items: center;
     gap: 10vh;
+    margin-bottom: 50vh;
+ 
 
     h1{
       color: #ffffff;
       text-decoration: none;
       font: 500 1.2rem 'vikings';
-      padding: 10px 10px 10px 10px ;
+      margin-bottom: -1000px;
+   
+  
 
     }
 
@@ -98,21 +105,16 @@ header {
       display: flex;
       flex-direction: row;
       align-items: center;
-      gap: 50vh;
+     
       font: 500 16px 'vikings' !important;
-      padding: 20px 80px 20px 80px;
+    
       align-items: center;
       border-radius: 5px;
+      background-color: #000000;
+      margin-bottom: 15vh;
+ 
       
-      height: 100px;
       
-      .icones{
-          height: 15px;
-          width: 15px;
-          align-items: center;
-          align-self: center;
-          
-      }
       .parte1{
           display: flex;
           flex-direction: column;
@@ -125,30 +127,7 @@ header {
       
       
       }
-      .parte2{
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-          align-items: center;
-          
-      
-          .linha1{
-              display: flex;
-              flex-direction: row;
-              gap:10px;
-              font: 500 14px 'vikings' !important;
-              word-spacing: 5px;
-              
-          
-          }
-          .linha2{
-              display: flex;
-              flex-direction: row;
-              gap:25px;
-              font: 500 14px 'vikings' !important;
-              word-spacing: 5px;
-          }
-      
+     
           
       }  
       }
@@ -159,7 +138,7 @@ header {
       align-items: center;
       gap: 50vh;
       font: 500 16px 'vikings' !important;
-      padding: 20px 80px 20px 80px;
+  
       align-items: center;
       border-radius: 5px;
       
@@ -167,112 +146,22 @@ header {
       margin-left:15vw;
       margin-bottom: 10vh;
 
+
+     
+
     
       
       
-      .parte1{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          margin-top: 10vh;
-
-          
-      }
-      
-      
-      .icones{
-          height: 15px;
-      
-      
-      }
-      
-      
-      
       }
 
-      .bloco2{
-        background-color: #a57171;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        font: 500 16px 'vikings' !important;
-        padding: 20px 80px 20px 80px;
-        align-items: center;
-        border-radius: 5px;
-        
-        height: 16vh;
-        margin-left:15vw;
-        margin-bottom: 10vh;
   
-      
         
-        
-        .parte1{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-top: 10vh;
   
-            
-        }
         
-        
-        .icones{
-            height: 15px;
-        
-        
-        }
-        
-        
-        
-        }
 
-        .icones{
-          height: 15px;
-          width: 15px;
-          align-items: center;
-          align-self: center;
           
-      }
-      .parte1{
-          display: flex;
-          flex-direction: column;
-          gap: 0px;
-          align-items: center;
+       
       
-          
-      
-      height: 100px;
-      
-      
-      }
-      .parte2{
-          display: flex;
-          flex-direction: column;
-          gap: 15px;
-          align-items: center;
-          
-      
-          .linha1{
-              display: flex;
-              flex-direction: row;
-              gap:10px;
-              font: 500 14px 'vikings' !important;
-              word-spacing: 5px;
-              
-          
-          }
-          .linha2{
-              display: flex;
-              flex-direction: row;
-              gap:25px;
-              font: 500 14px 'vikings' !important;
-              word-spacing: 5px;
-          }
-      
-          
-      }  
-      }
     
   
 
