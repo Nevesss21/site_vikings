@@ -6,7 +6,7 @@ export default function AdmRelatorio() {
     <div className="conteiner-relatorio">
       <header>
                     <div className='imagem-logo'>
-                        <img src="/assets/images/logovikings.webp" alt="logo-vikings" />
+                        <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
                     </div>
                     <div className='links-principal'>
                         <a href="/" className='animacao'>HOME</a>

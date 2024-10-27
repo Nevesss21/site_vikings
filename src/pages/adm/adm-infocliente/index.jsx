@@ -13,7 +13,7 @@ return  (
 
 <nav className="cabecalho">
     
-<img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
+<a href="/adm-landing"><img src="/assets/images/logo-vikings.webp" alt="logo-vikings" className="logo1"/></a>
 
 <button>VOLTAR</button>
 
@@ -46,7 +46,7 @@ return  (
 <section className="blocoPai" >
 
 <div className="anotacao">
-    <input type="text"/>
+    <input type="text" className="inputAnotacao"/>
 
 </div>
 
@@ -56,10 +56,10 @@ return  (
     <button>Concluir</button>
    </div>
 
-   <img className="imagemLa" src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
+ 
 
 
-</div> // DIV PRINCIPAL!!!
+</div> 
 
 
     
