@@ -14,9 +14,9 @@ export default function AdmMarcar() {
         </div>
         
         <div className='links-principal'>
-            <a href="/" className='animacao'>Home</a>
-            <a href="/adm-marcar" className='animacao'>Marcar</a>
-            <a href="" className='animacao' >Arquivadas</a>
+            <a href="/adm-solicitacoes" className='animacao'>Voltar</a>
+   
+            <a href="#" className='animacao' >Arquivadas</a>
         
         </div>
         </header>

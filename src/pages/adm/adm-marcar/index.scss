@@ -8,7 +8,7 @@
     
    
 
-    main{
+
 
        header{
         background-color: #000000;
@@ -38,6 +38,39 @@
               }
      
            }
+
+
+           .animacao {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border: none;
+            background: none;
+          }
+  
+          .animacao::before {
+            margin-left: auto;
+          }
+  
+          .animacao::after,
+          .animacao::before {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #ffffff;
+            display: block;
+            transition: 0.5s;
+          }
+  
+          .animacao:hover::after,
+          .animacao:hover::before {
+            width: 100%;
+          }
+  
+          a {
+            color: #fff;
+            text-decoration: none;
+            font: 500 1.2rem 'vikings';
+          }
 
         }
     }
@@ -251,7 +284,7 @@
         }
 
     
-        }
+        
 
       
         

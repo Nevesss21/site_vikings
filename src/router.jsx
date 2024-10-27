@@ -1,6 +1,7 @@
 import AdmLanding from './pages/adm/adm-landing';
 import AdmSolicitacoes from './pages/adm/adm-solicitacoes';
 import AdmMarcar from './pages/adm/adm-marcar';
+import AdmSecoes from './pages/adm/adm-seções';
 import AdmRelatorio from './pages/adm/adm-relatorio';
 import AdmRealizados from './pages/adm/adm-realizados';
 import Studio from './pages/vikings/vikings-studio';
@@ -34,6 +35,7 @@ export default function Navegacao() {
         <Route path='/adm-marcar' element={<AdmMarcar />} />
         <Route path='/adm-relatorio' element={<AdmRelatorio />} />
         <Route path='/adm-solicitacoes' element={<AdmSolicitacoes />} />
+        <Route path='/adm-seções' element={<AdmSecoes />} />
         <Route path='/Estudio' element={<Studio />} />
         <Route path='/' element={<Landingpage />} />
         <Route path='/Contato' element={<Contato />} />

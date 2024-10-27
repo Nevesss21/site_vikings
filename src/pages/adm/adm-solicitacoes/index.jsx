@@ -20,7 +20,7 @@ export default function AdmSolicitacoes(){
         <div className='links-principal'>
             <a href="/" className='animacao'>Home</a>
             <a href="/adm-marcar" className='animacao'>Marcar</a>
-            <a href="" className='animacao' >Arquivadas</a>
+            <a href="#" className='animacao' >Arquivadas</a>
         
         </div>
         </header>
