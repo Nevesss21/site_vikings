@@ -4,7 +4,6 @@ display: flex;
 flex-direction: row;
 align-items: center;
 gap: 50vh;
-font: 500 16px 'vikings' !important;
 padding: 20px 80px 20px 80px;
 align-items: center;
 border-radius: 5px;
@@ -23,6 +22,8 @@ height: 100px;
     flex-direction: column;
     gap: 0px;
     align-items: center;
+    font: 700 1rem 'vikings' !important;
+
 
     
 
@@ -44,13 +45,14 @@ height: 100px;
         font: 500 14px 'vikings' !important;
         word-spacing: 5px;
         
+        
     
     }
     .linha2{
         display: flex;
         flex-direction: row;
         gap:25px;
-        font: 500 14px 'vikings' !important;
+        
         word-spacing: 5px;
     }
 
@@ -58,17 +60,19 @@ height: 100px;
 }  
 }
 .bloco1{
-background-color: #9e9d9d;
+background-color: #ff0000;
 display: flex;
-flex-direction: row;
+
 align-items: center;
 gap: 50vh;
-font: 500 16px 'vikings' !important;
+
 padding: 20px 80px 20px 80px;
-align-items: center;
+
 border-radius: 5px;
+margin-top: 55px;
 
 height: 16vh;
+margin-right: 30vh;
 
 
 .parte1{
@@ -77,7 +81,7 @@ height: 16vh;
     gap: 10px;
     gap: 0px;
     align-items: center;
-    margin-top: 10vh;
+    margin-top: 5vh;
 
 }
 

@@ -15,7 +15,9 @@ return  (
     
 <a href="/adm-landing"><img src="/assets/images/logo-vikings.webp" alt="logo-vikings" className="logo1"/></a>
 
+<a href="/adm-solicitacoes">
 <button>VOLTAR</button>
+</a>
 
 </nav>
 
