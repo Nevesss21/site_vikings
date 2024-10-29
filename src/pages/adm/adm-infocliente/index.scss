@@ -1,19 +1,80 @@
 .conteiner-infocliente{
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    header {
+        display: flex;
+        height: 20vh;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 5vw 0px 5vw;
+        
+        .imagem-logo img {
+          width: 12vw;
+        }
+  
+        .links-principal {
+          display: flex;
+          gap: 0vh 5vw;
+          align-items: center;
+          margin-right: 5vw;
+  
+          .animacao {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            border: none;
+            background: none;
+          }
+  
+          .animacao::before {
+            margin-left: auto;
+          }
+  
+          .animacao::after,
+          .animacao::before {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #ffffff;
+            display: block;
+            transition: 0.5s;
+          }
+  
+          .animacao:hover::after,
+          .animacao:hover::before {
+            width: 100%;
+          }
+  
+          a {
+            color: #fff;
+            text-decoration: none;
+            font: 500 1.2rem 'vikings';
+          }
+        }
+      }
+   
+
+.principal{  
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 
 
  .bloco{
-
 color: #ffff;
 display: flex;
-background-color:#2C2727 ;
+flex-direction: row;
+background-color:#25242493 ;
 width: 100vh;
 justify-content: space-between;
-margin-left: 25vw;
 color: #fff;
 text-decoration: none;
 font: 500;
+border-radius: 10px;
 
 .subBloco{
 
@@ -23,31 +84,10 @@ margin: 30px;
 gap: 15px ;
 font: 700 0.6em 'vikings';
 
-
 }
 
-
- }
-
-
-
-
-.cabecalho{
-display: flex;
-flex-direction: row;
-background-color: black;
-justify-content: space-between;
-align-items: center;
-.logo1{
-
-width: 15vw;
-margin-left: 25vh;
-
-}
 
 button{
-
-
     border: none;
     width: 150px;
     height: 50px;
@@ -61,7 +101,7 @@ button{
 .tituloAnotacao{
     color: #fff;
     text-align:start;
-    margin-left:15vw ;
+    
     margin-top: 3vw;
     margin-bottom: 3vw;
     font: 700 2em 'vikings';
@@ -69,26 +109,27 @@ button{
 
 .blocoPai{
 
-background-color: #2C2727;
-width: 70vw ;
+background-color: #25242493;
+width: 45vw ;
 display: flex;
 justify-content: center;
 align-items:center ;
 text-align: center;
-margin-left: 15vw;
+
 height: 50vh;
-border-radius:30px ;
+border-radius:25px ;
 
 
 .anotacao{
    
 
-    input{
-        width: 65vw;
-        height: 45VH;
+    textarea{
+        width: 40vw !important; 
+        height: 45vh !important;
         border-radius: 20px;
         border: none;
-        text-align: start;
+        text-align: start;  
+        padding: 10px;      
     }
 
 }
@@ -96,7 +137,7 @@ border-radius:30px ;
 
 .botaoConcluir{
 
-margin-left: 15vw;
+
 margin-top: 5vw;
 
 
@@ -120,11 +161,12 @@ width: 20vw;
 margin-left:10vw ;
 }
 }
+}
 
 @media (max-width:1280px) {
     .conteiner-infocliente{
      .subBloco{
-       color: green;
+       
        
      }
     }

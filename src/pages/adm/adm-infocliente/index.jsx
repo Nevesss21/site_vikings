@@ -10,16 +10,24 @@ return  (
 
 <div className="conteiner-infocliente">
  
+<header>
 
-<nav className="cabecalho">
+<div className='imagem-logo'>
+<img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
+</div>
+
+        <div className='links-principal'>
+        <a href="/adm-landing" className='animacao'>HOME</a>
+        <a href="" className='animacao'>RELATÓRIOS</a>
+        <a href="/adm-solicitacoes" className='animacao'>SEÇÕES</a>
+        <a href="/adm-agendamento" className='animacao'>AGENDAMENTO</a>
+</div>
+
+ </header>
+
+<div className="principal">
     
-<a href="/adm-landing"><img src="/assets/images/logo-vikings.webp" alt="logo-vikings" className="logo1"/></a>
 
-<a href="/adm-solicitacoes">
-<button>VOLTAR</button>
-</a>
-
-</nav>
 
 <div className="bloco" >
 
@@ -48,7 +56,7 @@ return  (
 <section className="blocoPai" >
 
 <div className="anotacao">
-    <input type="text" className="inputAnotacao"/>
+    <textarea></textarea>
 
 </div>
 
@@ -63,6 +71,7 @@ return  (
 
 </div> 
 
+</div>
 
     
 );
