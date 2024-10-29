@@ -31,7 +31,7 @@ export default function Tattoo(){
                 </div>
             </Link>
             <Link to={'/Neo'}>
-                <div>
+                <div className='neo'> 
                     <img src="/assets/images/neo.png" alt="" />
                     <p>NEO TRADICIONAL</p>
                 </div>
@@ -46,7 +46,7 @@ export default function Tattoo(){
                 </div>
             </Link>
             <Link to={'/New'}>
-                <div>
+                <div className='new'>
                     <img src="/assets/images/new.png" alt="" />
                     <p>NEW SCHOOL</p>
                 </div>
