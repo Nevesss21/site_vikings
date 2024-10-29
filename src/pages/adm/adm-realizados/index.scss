@@ -1,5 +1,8 @@
 .conteiner-realizados {
     background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 
     header {
       display: flex;
@@ -7,6 +10,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 0px 5vw 0px 5vw;
+      
       .imagem-logo img {
         width: 12vw;
       }
@@ -53,12 +57,15 @@
     .principal{
       display: flex;
       flex-direction: column;
-      
       align-items: center;
-
+      border-radius: 10px;
+      margin-top: 1vh;
+      
+      
       color: #b6b5b5;
       gap: 15vh;
       padding: 125px 15px 15px 15px;
+      
 
       .pesquisa{
           border: none;
@@ -72,7 +79,7 @@
 
       .fora{
 
-          background-color: #808080;
+          background-color: #25242493;
           border: none;
           border-radius: 5px;
           height: 85vh;
@@ -84,10 +91,6 @@
           margin-bottom: 15px;
           align-items: center;
           padding-top: 60px;
-          
-          
-         
-          
           
 
           h1 {
