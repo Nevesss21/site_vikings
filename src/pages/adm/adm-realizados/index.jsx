@@ -6,7 +6,7 @@ export default function AdmRealizados() {
        <header>
 
     <div className='imagem-logo'>
-    <img src="/assets/images/logovikings.webp" alt="logo-vikings" />
+    <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
     </div>
 
     <div className='links-principal'>
@@ -18,7 +18,6 @@ export default function AdmRealizados() {
 
         </header>
 
-        <hr />
 
         <div className="principal">
 
