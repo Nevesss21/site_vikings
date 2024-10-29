@@ -69,9 +69,12 @@ export default function AdmRealizados() {
             <img src="assets/images/caneta.png" alt="" />
           </div>
           </div>
-          
+
         </div>
   
+      </div>
+      <div  className="botaoConcluir">
+      <a href=""><button>Concluir</button></a>
       </div>
     </div>
     </div>
