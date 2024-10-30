@@ -14,7 +14,7 @@ export default function New(){
             <div className='secao-1'>
 
                <div className='losango'>
-                    <img src="/assets/images/new.png" alt="" />
+                    <img src="/assets/images/new.png" alt="img-tattoo" />
                     <p>NEW SCHOOL</p>
                 </div>
                 <div className='text'>
@@ -31,7 +31,7 @@ export default function New(){
             <div className='line' />
             
             <div className='images'>
-                <img src="/assets/images/luffy-tattoo.jpg" alt="" />
+                <img src="/assets/images/luffy-tattoo.jpg" alt="img-tattoo" />
             </div>
 
             </div>

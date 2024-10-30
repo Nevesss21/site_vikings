@@ -14,7 +14,7 @@ export default function Macri(){
             <div className='secao-1'>
 
                <div className='losango'>
-                    <img src="/assets/images/macri.png" alt="" />
+                    <img src="/assets/images/macri.png" alt="img-tattoo" />
                     <p>MACRI</p>
                 </div>
                 <div className='text'>
@@ -31,9 +31,9 @@ export default function Macri(){
             <div className='line' />
             
             <div className='images'>
-                <img src="/assets/images/macri-1-tattoo.jpg" alt="" />
-                <img src="/assets/images/macri-2-tattoo.jpg" alt="" />
-                <img src="/assets/images/macri-3-tattoo.jpg" alt="" />
+                <img src="/assets/images/macri-1-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/macri-2-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/macri-3-tattoo.jpg" alt="img-tattoo" />
             </div>
 
             </div>

@@ -14,7 +14,7 @@ export default function Colorido(){
             <div className='secao-1'>
 
                <div className='losango'>
-                    <img src="/assets/images/colorida.png" alt="" />
+                    <img src="/assets/images/colorida.png" alt="img-tattoo" />
                     <p>COLORIDAS</p>
                 </div>
                 <div className='text'>
@@ -32,9 +32,9 @@ export default function Colorido(){
             <div className='line' />
             
             <div className='images'>
-                <img src="/assets/images/colorido-tattoo.jpg" alt="" />
-                <img src="/assets/images/batman-tattoo.jpg" alt="" />
-                <img src="/assets/images/avatar-tattoo.jpg" alt="" />
+                <img src="/assets/images/colorido-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/batman-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/avatar-tattoo.jpg" alt="img-tattoo" />
             </div>
 
             </div>

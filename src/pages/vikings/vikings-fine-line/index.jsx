@@ -14,7 +14,7 @@ export default function FineLine(){
             <div className='secao-1'>
 
                <div className='losango'>
-                    <img src="/assets/images/fine-line.png" alt="" />
+                    <img src="/assets/images/fine-line.png" alt="img-tattoo" />
                     <p>FINE LINE</p>
                 </div>
                 <div className='text'>
@@ -32,7 +32,7 @@ export default function FineLine(){
             <div className='line' />
             
             <div className='images'>
-                <img src="/assets/images/line-tattoo.jpg" alt="" />
+                <img src="/assets/images/line-tattoo.jpg" alt="img-tattoo" />
             </div>
 
             </div>

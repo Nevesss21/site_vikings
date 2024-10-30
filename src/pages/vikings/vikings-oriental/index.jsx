@@ -14,7 +14,7 @@ export default function Oriental(){
             <div className='secao-1'>
 
                <div className='losango'>
-                    <img src="/assets/images/oriental.png" alt="" />
+                    <img src="/assets/images/oriental.png" alt="img-tattoo" />
                     <p>ORIENTAL</p>
                 </div>
                 <div className='text'>
@@ -31,7 +31,7 @@ export default function Oriental(){
             <div className='line' />
             
             <div className='images'>
-                <img src="/assets/images/ninja-tattoo.jpg" alt="" />
+                <img src="/assets/images/ninja-tattoo.jpg" alt="img-tattoo" />
             </div>
 
             </div>

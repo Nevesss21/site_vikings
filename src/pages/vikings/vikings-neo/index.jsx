@@ -14,7 +14,7 @@ export default function Neo(){
             <div className='secao-1'>
 
                <div className='losango'>
-                    <img src="/assets/images/neo.png" alt="" />
+                    <img src="/assets/images/neo.png" alt="img-tattoo" />
                     <p>NEO TRADICIONAL</p>
                 </div>
                 <div className='text'>
@@ -31,9 +31,9 @@ export default function Neo(){
             <div className='line' />
             
             <div className='images'>
-                <img src="/assets/images/flamengo-tattoo.jpg" alt="" />
-                <img src="/assets/images/time-tattoo.jpg" alt="" />
-                <img src="/assets/images/mudanca-tattoo.jpg" alt="" />
+                <img src="/assets/images/flamengo-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/time-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/mudanca-tattoo.jpg" alt="img-tattoo" />
             </div>
 
             </div>

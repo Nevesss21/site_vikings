@@ -14,7 +14,7 @@ export default function Aquarela (){
             <div className='secao-1'>
 
                 <div className='losango'>
-                    <img src="/assets/images/pincel.png" alt="" />
+                    <img src="/assets/images/pincel.png" alt="img-tattoo" />
                     <p>AQUARELA</p>
                 </div>
 
@@ -33,7 +33,7 @@ export default function Aquarela (){
             <div className='line' />
 
             <div className='images'>
-                <img src="/assets/images/agua-viva.png" alt="" />
+                <img src="/assets/images/agua-viva.png" alt="img-tattoo" />
             </div>
 
             </div>

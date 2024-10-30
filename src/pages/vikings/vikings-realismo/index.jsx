@@ -14,7 +14,7 @@ export default function Realismo (){
             <div className='secao-1'>
 
                <div className='losango'>
-                    <img src="/assets/images/realismo.png" alt="" />
+                    <img src="/assets/images/realismo.png" alt="img-tattoo" />
                     <p>REALISMO</p>
                 </div>
                 <div className='text'>
@@ -31,20 +31,20 @@ export default function Realismo (){
             <div className='line' />
             
             <div className='images'>
-                <img src="/assets/images/leao-tattoo.jpg" alt="" />
-                <img src="/assets/images/olho-tattoo.jpg" alt="" />
-                <img src="/assets/images/rosto-tattoo.jpg" alt="" />
-                <img src="/assets/images/indio-tattoo.jpg" alt="" />
-                <img src="/assets/images/gato-tattoo.jpg" alt="" />
-                <img src="/assets/images/esultura-tattoo.jpg" alt="" />
-                <img src="/assets/images/lobo-tattoo.jpg" alt="" />
-                <img src="/assets/images/tigre-braco-tattoo.jpg" alt="" />
-                <img src="/assets/images/india-tattoo.jpg" alt="" />
-                <img src="/assets/images/mulher-tattoo.jpg" alt="" />
-                <img src="/assets/images/ninja-tattoo.jpg" alt="" />
-                <img src="/assets/images/leao-flor-tattoo.jpg" alt="" />
-                <img src="/assets/images/tigre-mao-tattoo.jpg" alt="" />
-                <img src="/assets/images/leao-coracao-tattoo.jpg" alt="" />
+                <img src="/assets/images/leao-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/olho-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/rosto-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/indio-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/gato-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/esultura-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/lobo-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/tigre-braco-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/india-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/mulher-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/ninja-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/leao-flor-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/tigre-mao-tattoo.jpg" alt="img-tattoo" />
+                <img src="/assets/images/leao-coracao-tattoo.jpg" alt="img-tattoo" />
             </div>
 
             </div>

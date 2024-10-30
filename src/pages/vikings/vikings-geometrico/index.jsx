@@ -14,7 +14,7 @@ export default function Geometrico(){
             <div className='secao-1'>
 
                <div className='losango'>
-                    <img src="/assets/images/geometrico.png" alt="" />
+                    <img src="/assets/images/geometrico.png" alt="img-tattoo" />
                     <p>GEOMETRICO</p>
                 </div>
                 <div className='text'>
@@ -31,7 +31,7 @@ export default function Geometrico(){
             <div className='line' />
             
             <div className='images'>
-                <img src="/assets/images/macri-1-tattoo.jpg" alt="" />
+                <img src="/assets/images/macri-1-tattoo.jpg" alt="img-tattoo" />
             </div>
 
             </div>

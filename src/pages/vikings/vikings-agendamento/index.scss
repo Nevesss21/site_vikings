@@ -110,3 +110,192 @@
       
     }
 }
+
+@media (max-width: 1440px) {
+    .agendar{
+        .secao-dois{
+            .bloco{
+                height: 110vh;
+            }
+        }
+    }
+}
+
+@media (max-width:1280px) {
+    .agendar{
+        .secao-dois{
+            .bloco{
+               .input-1, .input-2 {
+                p{
+                    font-size: 0.8rem;
+                }
+                .espaco{
+                    p{
+                        font-size: 0.8rem;
+                    }
+                }
+               }
+            }
+        }
+    }
+}
+
+
+@media (max-width:912px) {
+    .agendar{
+        .secao-inicial{
+            height: 80vh;
+            h1{
+                font-size: 1.5rem;
+            }
+        }
+        .secao-dois{
+            .bloco{
+                height: 100vh;
+                h1{
+                    font-size: 1rem;
+                }
+                .input-1{
+                    gap: 1vh 6vw;
+                }
+               .input-1, .input-2 {
+                p{
+                    font-size: 0.6rem;
+                }
+                .espaco{
+                    p{
+                        font-size: 0.6rem;
+                        width: 20vw;
+                    }
+                }
+               }
+            }
+        }
+    }
+}
+
+
+@media (max-width:768px) {
+    .agendar{
+        .secao-inicial{
+           height: 70vh;
+        }
+        .secao-dois{
+            .bloco{
+                h1{
+                    font-size: 0.9rem;
+                }
+                .input-1{
+                    gap: 1vh 6vw;
+                }
+               
+               .enviar{
+                button{
+                    font-size: 0.8rem;
+                }
+               }
+            }
+        }
+    }
+}
+
+@media (max-width:540px) {
+    .agendar{
+        .secao-inicial{
+            height: 60vh;
+            h1{
+                font-size: 1.2rem;
+            }
+        }
+        .secao-dois{
+            .bloco{
+                height: 95vh;
+         
+                h1{
+                    font-size: 0.8rem;
+                }
+                .enviar{
+                    button{
+                        font-size: 0.6rem;
+                    }
+                }
+                .input-1{
+                    gap: 1vh 5vw;
+                }
+               .input-1, .input-2 {
+                padding: 1.5vh 0vw;
+                p{
+                    font-size: 0.5rem;
+                }
+                .espaco{
+                    p{
+                        font-size: 0.5rem;
+                    }
+                }
+               }
+            }
+        }
+    }
+}
+
+@media (max-width:430px) {
+    .agendar{
+        .secao-inicial{
+            height: 50vh;
+            h1{
+                font-size: 1rem;
+            }
+        }
+        .secao-dois{
+            .bloco{
+                height: 78vh;
+         
+                h1{
+                    font-size: 0.6rem;
+                }
+                .enviar{
+                    button{
+                        font-size: 0.5rem;
+                    }
+                }
+             
+               .input-1, .input-2 {
+                padding: 1vh 0vw;
+                p{
+                    font-size: 0.4rem;
+                }
+                .espaco{
+                    p{
+                        font-size: 0.4rem;
+                    }
+                }
+               }
+            }
+        }
+    }
+}
+
+@media (max-width:375px) {
+    .agendar{
+        .secao-inicial{
+            height: 40vh;
+            h1{
+                font-size: 0.8rem;
+            }
+        }
+        .secao-dois{
+            .bloco{
+                height: 70vh;
+         
+                h1{
+                    font-size: 0.5rem;
+                }
+                .enviar{
+                    button{
+                        font-size: 0.4rem;
+                    }
+                } 
+            }
+        }
+    }
+}
