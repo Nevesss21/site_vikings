@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './index.scss'
-
+import NavAdm from '../../../components/Nav-adm'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
@@ -29,26 +29,12 @@ export default function AdmLanding() {
     
     return (
         <div className="conteiner-adm"> 
-
-                <header>
-
-                    <div className='imagem-logo'>
-                        <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
-                    </div>
-
-                    <div className='links-principal'>
-                        <button className='animacao' onClick={sair}>SAIR</button>
-                        <a href="/" className='animacao'>HOME</a>
-                        <a href="/adm-relatorio" className='animacao'>RELATÓRIOS</a>
-                        <a href="/adm-secoes" className='animacao'>SEÇÕES</a>
-                        <a href="/adm-agendamento" className='animacao'>AGENDAMENTO</a>
-                    </div>
-                </header>
-
+        <NavAdm/>
                 <div className='corpo'>
 
                     <div className='texto'>
                         <h1>CONSULTE AQUI OS HORARIOS AGENDADOS</h1>
+                        <button className='animacao' onClick={sair}>SAIR</button>
                     </div>
 
                     <div className='text'>

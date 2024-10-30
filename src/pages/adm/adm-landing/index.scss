@@ -1,60 +1,6 @@
 .conteiner-adm {
   background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
 
-    header {
-      display: flex;
-      height: 20vh;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0px 5vw 0px 5vw;
-      .imagem-logo img {
-        width: 12vw;
-      }
-
-      .links-principal {
-        display: flex;
-        gap: 0vh 5vw;
-        align-items: center;
-        margin-right: 5vw;
-        button{
-          background: none;
-          border: none;
-          font: 500 1.2rem 'vikings';
-        }
-
-        .animacao {
-          color: rgb(255, 255, 255);
-          text-decoration: none;
-          border: none;
-          background: none;
-        }
-
-        .animacao::before {
-          margin-left: auto;
-        }
-
-        .animacao::after,
-        .animacao::before {
-          content: '';
-          width: 0%;
-          height: 2px;
-          background: #ffffff;
-          display: block;
-          transition: 0.5s;
-        }
-
-        .animacao:hover::after,
-        .animacao:hover::before {
-          width: 100%;
-        }
-
-        a {
-          color: #fff;
-          text-decoration: none;
-          font: 500 1.2rem 'vikings';
-        }
-      }
-    }
 
     .corpo {
       background-image: url("../../../../public/assets/images/imagem-escura-dourada.png");
@@ -93,7 +39,7 @@
 
       .imagem-cinza {
         background-image: url("../../../../public/assets/images/imagem-cinza.png");
-        height: 90vh;
+        height: 100vh;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -143,7 +89,7 @@
         background-image: url("../../../../public/assets/images/imagem-cinza-claro.png");
         background-repeat: no-repeat;
         background-size: cover;
-        height: 90vh;
+        height: 100vh;
         display: flex;
         align-items: center;
 
@@ -182,7 +128,7 @@
 
       .imagem-preta {
         background-image: url("../../../../public/assets/images/imagem-preta.png");
-        height: 90vh;
+        height: 100vh;
         background-repeat: no-repeat;
         background-size: cover;
         display: flex;
@@ -288,6 +234,27 @@
     }
 }
 
+@media (max-width:1440px) {
+  .conteiner-adm{
+   .corpo{
+     height: 70vh;
+     
+   }
+   .imagens{
+     .imagem-cinza{
+       height: 90vh;
+     }
+     .imagem-cinza-claro{
+       height: 90vh;
+     }
+     .imagem-preta{
+       height: 90vh;
+     }
+ 
+   }
+  }
+ }
+ 
 
 @media (max-width:1280px) {
  .conteiner-adm{
@@ -312,9 +279,6 @@
 
 @media (max-width:1024px) {
   .conteiner-adm{
-    header{
-      height: 20vh;
-    }
     .corpo{
 
       .text {
@@ -395,13 +359,6 @@
 
 @media (max-width:540px) {
   .conteiner-adm{
-    header{
-      .links-principal{
-        a{
-          font-size: 0.8rem;
-        }
-      }
-    }
     .corpo{
 
 
@@ -502,15 +459,6 @@
 
 @media (max-width:430px) {
   .conteiner-adm{
-    header{
-      height: 15vh;
-
-      .links-principal{
-        a{
-          font-size: 0.7rem;
-        }
-      }
-    }
     .corpo{
       height: 25vh;
 
