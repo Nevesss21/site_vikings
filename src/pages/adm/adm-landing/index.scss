@@ -18,8 +18,19 @@
       }
 
       .texto {
+        display: flex;
+        flex-direction: column;
         width: 50vw;
+        gap: 2vh 0vw;
         margin-left: 5vw;
+        button{
+          background-color: #A68D7A;
+          color: #fff;
+          font: 500 1rem "vikings";
+          width: 10vw;
+          height: 6vh;
+          border: none;
+      }
       }
 
       .texto h1 {

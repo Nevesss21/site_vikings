@@ -1,5 +1,4 @@
 import './index.scss'
-
 import { Link } from 'react-router-dom';
 import Nav from '../../../components/Nav';
 import Rodape from '../../../components/Rodape';
@@ -36,7 +35,7 @@ export default function Landingpage() {
                 <div className='texto'>
                     <h1>PIONEIRISMO E MODERNIDADE
                         EM CADA TRAÇO</h1>
-                    <button>VEJA NOSSAS TATTOOS</button>
+              <Link to='/Estilo'><button>VEJA NOSSAS TATTOOS</button></Link>
                 </div>
             </div>
 
@@ -62,7 +61,7 @@ export default function Landingpage() {
                     </div>
 
                 </div>
-                <button>CONHEÇA NOSSO ESTÚDIO</button>
+                <Link to='/Estudio'><button>CONHEÇA NOSSO ESTÚDIO</button></Link>
             </div>
 
 
@@ -88,20 +87,20 @@ export default function Landingpage() {
                     </Swiper>
                 </div>
                 <div className='bot'>
-                    <button>CONHECER MAIS</button>
+                  <Link to='/'><button>CONHECER MAIS</button></Link>
                 </div>
             </div>
             
             <div className='estilo'>
                 <Tattoo/>
-                <button>VEJA TODOS OS ESTILOS</button>
+                <Link to='/Estilo'><button>VEJA TODOS OS ESTILOS</button></Link>
             </div>
             <div className='secao-contato'>
                 <h1>SOLICITE UM ORÇAMENTO E AGENDE SUA TATTOO</h1>
-                <button >ENTRE EM CONTATO</button>
+                <Link to='/Agendamento'><button >ENTRE EM CONTATO</button></Link>
             </div>
             <div className='secao-insta'>
-            <img src="assets/images/instagram.png" alt="" /><h1>SIGA-NOS NO INSTAGRAM</h1>
+            <img src="assets/images/instagram.png" alt="insta" /><h1>SIGA-NOS NO INSTAGRAM</h1>
             </div>
 
             <Rodape />
