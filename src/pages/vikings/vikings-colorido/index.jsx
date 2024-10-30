@@ -23,8 +23,9 @@ export default function Colorido(){
                         <p>Coloridas</p>
                     </div>
                     <h1>Colorido</h1>
+                    <Link to ='/Estilo'><button>VOLTAR</button></Link>
                 </div>
-                <Link to ='/Estilo'><button>VOLTAR</button></Link>
+            
            
             </div>
             <div className='secao-2'>

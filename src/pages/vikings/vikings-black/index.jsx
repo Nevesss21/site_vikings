@@ -23,9 +23,8 @@ export default function Black(){
                         <p>Black</p>
                     </div>
                     <h1>Black</h1>
+                    <Link to ='/Estilo'><button>VOLTAR</button></Link>
                 </div>
-
-                <Link to ='/Estilo'><button>VOLTAR</button></Link>
            
             </div>
             <div className='secao-2'>

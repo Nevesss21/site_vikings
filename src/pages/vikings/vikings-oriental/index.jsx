@@ -23,8 +23,8 @@ export default function Oriental(){
                         <p>Oriental</p>
                     </div>
                     <h1>Oriental</h1>
-                </div>
                 <Link to ='/Estilo'><button>VOLTAR</button></Link>
+                </div>
            
             </div>
             <div className='secao-2'>

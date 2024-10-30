@@ -39,6 +39,17 @@
             display: flex;
             flex-direction: column;
             gap: 8vh 0vw;
+            a{
+                button{
+                    background-color: #A68D7A;
+                    color: #fff;
+                    font: 500 1rem "vikings";
+                    width: 10vw;
+                    height: 6vh;
+                    border: none;
+                }
+            }
+
 
             h1{
                 font: 500 2rem 'vikings';
@@ -86,4 +97,188 @@
             }
         }
     }
+}
+
+@media (max-width:1440px) {
+    .black{
+     .secao-1{
+        .losango{
+            padding: 9vh 4.7vw;  
+        }
+     }
+     .secao-2{
+        height: 275vh;
+     }
+    }
+   
+}
+@media (max-width:1280px) {
+    .black{
+        .secao-1{
+            padding: 22vh 5vw 5vh 5vw;
+            height: 65vh;
+           .losango{
+               padding: 7.5vh 5vw;  
+           }
+        }
+        .secao-2{
+            height: 250vh;
+         }
+    
+       }
+   
+}
+
+@media (max-width:1024px) {
+    .black{
+        .secao-1{
+            padding: 20vh 5vw 5vh 5vw;
+            height: 60vh;
+        }
+        .secao-2{
+            height: 220vh;
+         }
+       }
+   
+}
+
+@media (max-width:912px) {
+    .black{
+        .secao-1{
+           .losango{
+               padding: 6vh 5vw;  
+           }
+        }
+        .secao-2{
+            height: 190vh;
+         }
+    
+       }
+   
+}
+
+@media (max-width: 768px) {
+    .black{
+        .secao-1{
+           .losango{
+               padding: 5.5vh 4.5vw;  
+               img{
+                width: 6vw;
+               }
+           }
+        }
+        .secao-2{
+            height: 160vh;
+         }
+    
+      
+       }
+   
+}
+
+@media (max-width: 660px) {
+    .black{
+        .secao-1{
+           .losango{
+               padding: 5vh 4.5vw;  
+               p{
+                font-size: 0.6rem;
+               }
+           }
+           .text{
+            a{
+                button{
+                    font-size: 0.8rem;
+                }
+            }
+           }
+        }
+        .secao-2{
+            height: 140vh;
+         }
+    
+
+       }
+   
+}
+
+
+
+
+@media (max-width:540px) {
+    .black{
+        .secao-1{
+           .losango{
+               padding: 4.5vh 4.7vw;  
+               p{
+                font-size: 0.5rem;
+               }
+           }
+           .text{
+            a{
+                button{
+                    font-size: 0.6rem;
+                }
+            }
+           }
+        }
+        .secao-2{
+            height: 120vh;
+         }
+
+       }
+   
+}
+
+@media (max-width:430px) {
+    .black{
+        .secao-1{
+           .losango{
+               padding: 3.8vh 6vw;  
+               p{
+                font-size: 0.5rem;
+               }
+           }
+           .text{
+            a{
+                button{
+                    font-size: 0.5rem;
+                }
+            }
+           }
+        }
+        .secao-2{
+            height: 100vh;
+         }
+
+       }
+   
+}
+
+@media (max-width:375px) {
+    .black{
+        .secao-1{
+            height:40vh;
+           .losango{
+               padding: 3vh 4.5vw;  
+               p{
+                font-size: 0.4rem;
+               }
+           }
+           .text{
+            gap: 4vh 0vw;
+            a{
+                button{
+                    font-size: 0.4rem;
+                }
+            }
+           }
+        }
+        .secao-2{
+            height: 70vh;
+         }
+        
+
+       }
+   
 }

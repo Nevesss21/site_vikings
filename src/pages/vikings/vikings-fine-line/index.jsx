@@ -23,8 +23,9 @@ export default function FineLine(){
                         <p>Fine Line</p>
                     </div>
                     <h1>Fine Line</h1>
+                    <Link to ='/Estilo'><button>VOLTAR</button></Link>
                 </div>
-                <Link to ='/Estilo'><button>VOLTAR</button></Link>
+               
            
             </div>
             <div className='secao-2'>

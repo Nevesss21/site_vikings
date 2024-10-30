@@ -128,11 +128,7 @@
 @media (max-width: 768px) {
     .tattoos{
         .secao-losango{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+
             height: 65vh;
             .coluna{
                 div{
@@ -153,11 +149,7 @@
 @media (max-width: 660px) {
     .tattoos{
         .secao-losango{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+      
             height: 60vh;
             .coluna{
                 div{
@@ -177,13 +169,51 @@
 
 
 @media (max-width:540px) {
+    .tattoos{
+        h1{
+            font-size: 1.3rem;
+        }
+        .secao-losango{
+            height: 50vh;
+            .coluna{
+                div{
+                    padding: 4.5vh 4.5vw;
+                }
+               
+            }
+        }
+    }
    
 }
 
 @media (max-width:430px) {
-
+    .tattoos{
+     
+        .secao-losango{
+            height: 45vh;
+            .coluna{
+                div{
+                    padding: 3.5vh 5vw;
+                }
+               
+            }
+        }
+    }
 }
 
 @media (max-width:375px) {
-   
+    .tattoos{
+        .secao-losango{
+            height: 40vh;
+            .coluna{
+                div{
+                    padding: 3vh 4.5vw;
+                }
+                p{
+                    font-size: 0.3rem;
+                }
+               
+            }
+        }
+    }
 }

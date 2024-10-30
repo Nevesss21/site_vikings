@@ -23,8 +23,8 @@ export default function Realismo (){
                         <p>Realismo</p>
                     </div>
                     <h1>Realismo</h1>
-                </div>
                 <Link to ='/Estilo'><button>VOLTAR</button></Link>
+                </div>
            
             </div>
             <div className='secao-2'>

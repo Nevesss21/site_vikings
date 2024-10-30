@@ -23,8 +23,8 @@ export default function Macri(){
                         <p>Macri</p>
                     </div>
                     <h1>Macri</h1>
-                </div>
                 <Link to ='/Estilo'><button>VOLTAR</button></Link>
+                </div>
            
             </div>
             <div className='secao-2'>

@@ -23,8 +23,8 @@ export default function Neo(){
                         <p>Neo Tradicional</p>
                     </div>
                     <h1>Neo Tradicional</h1>
-                </div>
                 <Link to ='/Estilo'><button>VOLTAR</button></Link>
+                </div>
            
             </div>
             <div className='secao-2'>
