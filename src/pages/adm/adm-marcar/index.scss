@@ -1,10 +1,14 @@
-.conteiner-admmarcar{
+.adm-marcar{
     background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
+<<<<<<< HEAD
+=======
+    align-items: center;
+>>>>>>> f1e3a786f7d6b7b26d1c054e9978994a66c73b5e
     display: flex;
     flex-direction: column;
-  
-   
+    height: 200vh;
 
+<<<<<<< HEAD
 
 
        header{
@@ -63,11 +67,29 @@
           }
   
           a {
+=======
+    header{
+        height: 25vh;
+        display: flex;
+        justify-content: space-between;
+        padding: 1vh 5vw;
+        align-items: center;
+        img{
+          width: 10vw;
+        }
+        
+        .links{
+          width: 20vw;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          a{
+>>>>>>> f1e3a786f7d6b7b26d1c054e9978994a66c73b5e
             color: #fff;
+            font: 500 1rem 'vikings';
             text-decoration: none;
-            font: 500 1.2rem 'vikings';
           }
-
+      
         }
     }
 
@@ -84,12 +106,6 @@
         height: 100%;
         margin-bottom: 20px;
         padding-bottom: 50px;
-
-        .ConjuntoFiltros3{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
 
 
         h1{
@@ -113,14 +129,21 @@
             .Nome{
                
                 color: #000000;
+<<<<<<< HEAD
                 border-radius: 2px;
                 font: 600 10px 'vikings' !important;          
                 margin: 3vh 0vw 3vh 1vw;
                 width: 41vw;
                 height: 5vh;
+=======
+>>>>>>> f1e3a786f7d6b7b26d1c054e9978994a66c73b5e
                 border: none;
-                border-radius: 5px;
- 
+                height: 30px;
+                width: 85vh;
+                text-align: justify;
+                font: 600 15px 'vikings' !important; 
+                border-radius: 2px;
+
 
     
             }
@@ -143,48 +166,36 @@
             flex-direction: row;
             justify-content: space-between ;
             margin-top: 5vh;
+<<<<<<< HEAD
             
+=======
+>>>>>>> f1e3a786f7d6b7b26d1c054e9978994a66c73b5e
 
 
             h2{
                 font: 500 15px 'vikings' !important; 
                 margin-left: 10px;
-                line-height: -5px;
 
             }
 
             
             input{
                 color: #000000;
-                border-radius: 2px;
-                font: 600 10px 'vikings' !important; 
-         
-                margin: 3vh 0vw 3vh 1vw;
-                width: 20vw;
-                height: 5vh;
+                
                 border: none;
-                border-radius: 5px;
+                border-radius: 2px;
+                height: 5vh;
+                font: 600 10px 'vikings' !important; 
+                width: 38vh;
+                margin: 3vh 0vw 3vh 1vw;
  
 
             }
 
-            /*.enviar1{
-                display: flex;
-              
-                padding: 3vh 8vw;
-                background-color: #000000;
-                color: #fff;
-                font: 500 1rem "vikings";
-                width: 20vw;
-                height: 6vh;
-                border: none;
-                border-radius: 10px;
-                align-items: center;
-        
-            }
-            */
-
            
+    
+            
+
             .Conjunto1{
 
                 display: flex;
@@ -193,11 +204,13 @@
                font: 600 10px 'vikings' !important; 
               
                text-align: justify;
-               gap: -10px;
+
+                
 
             }
 
             .Conjunto2{
+
 
               display: flex;
               flex-direction: column;
@@ -233,21 +246,116 @@
         
 
 
+                display: flex;
+                flex-direction: column;
+               justify-content: center;
+              margin: 3vh 2vw 3vh 1vw;
+
+                
+
+            }
+
+
+
+            
+        }
+
+        .ConjuntoFiltros2{
+            display: flex;
+            flex-direction: column;
+
+            .Conjunto3{
+
+
+
+                h2{
+                    font: 700 15px 'vikings' !important; 
+                    margin-left: 10px;
+
+
+                }
+
+                input{
+                    color: #000000;
+                    
+                    border: none;
+                    border-radius: 2px;
+                    height: 5vh;
+                    font: 900 10px 'vikings' !important; 
+                    width: 80vh;
+                    margin: 3vh 2vw 3vh 1vw;
+
+                }
+              
+            }
+
+            .Conjunto4{
+                display: flex;
+                flex-direction:row;
+
+            }
+        }
+
+        .ConjuntoFiltros3{
+            display: flex;
+            flex-direction: row;
+            align-items:end;
+            align-content: space-around;
+            gap: 10px;
+            margin: 10px 10px 10px 10px;
+
+            .fitro1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                
+
+                input{
+                    
+                    height: 24px;
+                    width: 40vh;
+                    border-radius: 3px;
+                    border: none;
+                    background-color: #ffffff;
+                }
+
+                h2{
+                    font: 700 15px 'vikings' !important;
+                    margin-right: 13vw; 
+                    gap: 10px;
+                    margin-bottom: 10px;
+                    
+                    
+
+                }
+            }
+
+            button{
+                text-decoration: none;
+                height: 24px;
+                align-items: center;
+                width: 40vh;
+                border-radius: 3px;
+                    border: none;
+                    background-color: #9E8080;
+                    color: #ffffff;
+            }
             
 
+            button:hover {
+              background-color: rgb(0, 0, 0);
+              transition: all 1s;
+              color: #ffffff;
+             
+            }
+
+            button:active {
+              background-color: rgb(155, 155, 155);
+              
+              
+            }
+        }
+
           
-           
-
-           
-
-           
- 
-
-        
-    
-        
-
-      
-        
-    
+}
     

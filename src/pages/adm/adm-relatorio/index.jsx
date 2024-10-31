@@ -11,7 +11,7 @@ export default function AdmRelatorio() {
 
         <div className="links">
           <Link to='/adm-landing'>HOME</Link>
-         <Link to='/adm-realizados'><button>Voltar</button></Link>
+         <Link to='/adm-realizados'>VOLTAR</Link>
         </div>
       </header>
       <div className="bloco">
