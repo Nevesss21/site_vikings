@@ -85,12 +85,7 @@ export default function AdmMarcar() {
             
 
         </div>
-      </header>
-      <div c>
-
-      </div>
-
-
+      
     </div>
   );
 }
