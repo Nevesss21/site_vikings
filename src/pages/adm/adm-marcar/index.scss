@@ -1,6 +1,5 @@
 .conteiner-admmarcar{
     background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
-   
     display: flex;
     flex-direction: column;
   
@@ -14,12 +13,11 @@
            height: 30vh;
            align-items: center;
            justify-content: space-between;
-           padding: 0px 30px 0px 300px;
+           padding: 0px 30px 0px 60px;
      
            .imagem-logo img{
-               width: 25vh;
-               margin-right:50vh ;
-               margin-left: -30vh;
+            
+            width: 12vw;
 
            }
      
@@ -27,7 +25,7 @@
                display: flex;
                gap: 15vh;
                align-items: center;
-               margin-right: 20px;
+              
      
               a{
                color: #fff;
@@ -106,16 +104,19 @@
 
             color: #ffffff;
             font: 500 10px 'vikings' !important; 
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
 
 
             .Nome{
                
                 color: #000000;
                 border-radius: 2px;
-                font: 600 10px 'vikings' !important; 
-         
+                font: 600 10px 'vikings' !important;          
                 margin: 3vh 0vw 3vh 1vw;
-                width: 20vw;
+                width: 41vw;
                 height: 5vh;
                 border: none;
                 border-radius: 5px;
@@ -126,6 +127,9 @@
 
             h2{
                 margin-bottom: 20px;
+                width: 200px;
+                margin-left: 5vw;
+
             }
 
         }
@@ -137,14 +141,13 @@
             font: 500 10px 'vikings' !important; 
             display: flex;
             flex-direction: row;
-            gap: 10px;
-            justify-content: center;
+            justify-content: space-between ;
             margin-top: 5vh;
-     
+            
 
 
             h2{
-                font: 700 15px 'vikings' !important; 
+                font: 500 15px 'vikings' !important; 
                 margin-left: 10px;
                 line-height: -5px;
 
@@ -186,9 +189,9 @@
 
                 display: flex;
                 flex-direction: column;
-               justify-content: space-evenly;
+               justify-content: center;
                font: 600 10px 'vikings' !important; 
-               margin: 3vh 0vw 3vh 1vw;
+              
                text-align: justify;
                gap: -10px;
 
@@ -196,28 +199,38 @@
 
             .Conjunto2{
 
-                display: flex;
-                flex-direction: column;
-               justify-content: space-evenly;
-              margin: 3vh 2vw 3vh 1vw;
-       
-              .oi{
-                margin-bottom: -10px;
-                color: #000000;
-                border-radius: 2px;
-                font: 600 10px 'vikings' !important; 
-         
-                margin: 3vh 0vw 3vh 1vw;
-                width: 20vw;
-                height: 5vh;
-                border: none;
-                border-radius: 5px;
+              display: flex;
+              flex-direction: column;
+              
  
               }
-            
+              
+              .botaoConcluido{
+
+                padding: 1.5vh;
+                margin-top: 4.90vh;
+                margin-left: 1.5vh;
+                border-radius: 5px;
+                background-color: #000000;
+                color: #ffff;
+                border: none;
+                height: 5.1vh;
+                font: 500 1rem "vikings";
+                
+
+              }
+
+              .botaoConcluido:hover{
+
+                background-color: #9E8080;
+                animation-delay: 5ms;
+                color: #000000   ;
+                font: 500 1rem "vikings";
+
+              }
             }
 
-        }
+        
 
 
             

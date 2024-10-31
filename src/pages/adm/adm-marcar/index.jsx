@@ -69,16 +69,14 @@ export default function AdmMarcar() {
         
 
 
-          <h2>Telefone</h2>
+            <h2>Telefone</h2>
             <input type="text" placeholder="00 0000-0000" />
 
             
-          <button className="oi">Concluir</button>
+           <button className="botaoConcluido">CONCLUIDO</button>
 
 
 
-
-  
 
 
           </div>
