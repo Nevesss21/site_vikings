@@ -1,11 +1,33 @@
 import './index.scss'
-
+import { useState } from 'react'
 import Nav from '../../../components/Nav';
 import Rodape from '../../../components/Rodape';
 import Whats from '../../../components/Whats';
+import axios from 'axios';
 
 
 export default function Contato() {
+
+    const [nome, setNome] = useState('')
+    const [telefone, setTelefone] = useState('')
+    const [email, setEmail] = useState('')
+    const [assunto, setAssunto] = useState('')
+    const [mensagem, setMensagem] = useState('')
+
+    async function enviar() {
+        const usuario = {
+            "nome": nome,
+            "telefone": telefone,
+            "email": email,
+            "assunto": assunto,
+            "mensagem": mensagem
+        }
+
+        const url = `http://localhost:5010/contato/`
+        let resp = await axios.post(url, usuario)
+        alert('Pessoa adicionada na tabela contato. Id: ' + resp.data.novoId);
+    }
+
     return (
         <div className="Contato">
             <Nav />
@@ -18,32 +40,32 @@ export default function Contato() {
                 <div className="separacao">
                     <div className="porInput">
                         <h2>NOME</h2>
-                        <input type="text" placeholder='Digite seu nome...' />
+                        <input type="text" placeholder='Digite seu nome...'value={nome} onChange={e => setNome(e.target.value)} />
                     </div>
                     <div className="porInput">
                         <h2>EMAIL</h2>
-                        <input type="email" placeholder='Informe o seu e-mail ' />
+                        <input type="email" placeholder='Informe o seu e-mail 'value={email} onChange={e => setEmail(e.target.value)} />
 
                     </div>
                     <div className="porInput">
                         <h2>TELEFONE</h2>
-                        <input type="tel" placeholder='(00)00000-0000' />
+                        <input type="tel" placeholder='(00)00000-0000' value={telefone} onChange={e => setTelefone(e.target.value)}/>
                     </div>
                     <div className="porInput">
                         <h2>ASSUNTO</h2>
-                        <select name="selecao" id="selecao">
+                        <select name="selecao" id="selecao" value={assunto} onChange={e => setAssunto(e.target.value)}>
                             <option>Selecione...</option>
-                            <option value="opção1">opção1</option>
-                            <option value="opção2">opção2</option>
-                            <option value="opção3">opção3</option>
+                            <option value="Tatuagem">Tatuagem</option>
+                            <option value="Preços">Precos</option>
+                            <option value="Horários">Horarios</option>
                         </select>
                     </div>
                     <div className="porInput">
                         <h2>MENSAGEM</h2>
-                        <input type="text" placeholder='Para orçamentos entrar em contato via whatsapp ou via direct no instaragram...' />
+                        <input type="text" placeholder='Para orçamentos entrar em contato via whatsapp ou via direct no instaragram...'value={mensagem} onChange={e => setMensagem(e.target.value)} />
                     </div>
                 </div>
-                <button>Enviar</button>
+                <button onClick={enviar}>Enviar</button>
             </div>
 
             <div className="sessaoMapa">
