@@ -1,291 +1,49 @@
-.conteiner-admmarcar{
+.adm-marcar{
     background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
-    align-items: center;
     display: flex;
     flex-direction: column;
-  
-   
+    height: 200vh;
 
-
-
-       header{
-       
-           display: flex;
-           height: 30vh;
-           align-items: center;
-           justify-content: space-between;
-           padding: 0px 30px 0px 300px;
-     
-           .imagem-logo img{
-               width: 25vh;
-               margin-right:50vh ;
-               margin-left: -30vh;
-
-           }
-     
-           .links-principal  {
-               display: flex;
-               gap: 15vh;
-               align-items: center;
-               margin-right: 20px;
-     
-              a{
-               color: #fff;
-               text-decoration: none;
-               font: 500 16px 'vikings' !important; 
-              }
-     
-           }
-
-
-           .animacao {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            border: none;
-            background: none;
-          }
-  
-          .animacao::before {
-            margin-left: auto;
-          }
-  
-          .animacao::after,
-          .animacao::before {
-            content: '';
-            width: 0%;
-            height: 2px;
-            background: #ffffff;
-            display: block;
-            transition: 0.5s;
-          }
-  
-          .animacao:hover::after,
-          .animacao:hover::before {
-            width: 100%;
-          }
-  
-          a {
-            color: #fff;
-            text-decoration: none;
-            font: 500 1.2rem 'vikings';
-          }
-
-        }
-    }
-
-
-    .principal{
-        color: #fff;
-        align-self: center;
-        align-items: center;
-        width: 65%;
-        background-color: #2c2c2c;
+    header{
+        height: 25vh;
         display: flex;
-        flex-direction: column;
+        justify-content: space-between;
+        padding: 1vh 5vw;
         align-items: center;
-        height: 100%;
-        margin-bottom: 20px;
-        padding-bottom: 50px;
-
-
-        h1{
-            margin-top:50px;
-            color: #9E8080;
-            font: 500 36px 'vikings' !important; 
-            margin-bottom: 50px;
-            
+        img{
+          width: 10vw;
         }
-
-        .filtro1{
-
-            color: #ffffff;
-            font: 500 10px 'vikings' !important; 
-
-
-            .Nome{
-               
-                color: #000000;
-                border: none;
-                height: 30px;
-                width: 85vh;
-                text-align: justify;
-                font: 600 15px 'vikings' !important; 
-                border-radius: 2px;
-
-
-    
-            }
-
-            h2{
-                margin-bottom: 20px;
-            }
-
-        }
-
         
-        }
-
-        .ConjuntoFiltros1{
-            font: 500 10px 'vikings' !important; 
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            justify-content: center;
-            margin-top: 5vh;
-
-
-            h2{
-                font: 700 15px 'vikings' !important; 
-                margin-left: 10px;
-
-            }
-
-            
-            input{
-                color: #000000;
-                
-                border: none;
-                border-radius: 2px;
-                height: 5vh;
-                font: 600 10px 'vikings' !important; 
-                width: 38vh;
-                margin: 3vh 0vw 3vh 1vw;
- 
-
-            }
-
-           
-    
-            
-
-            .Conjunto1{
-
-                display: flex;
-                flex-direction: column;
-               justify-content: center;
-               font: 600 10px 'vikings' !important; 
-               margin: 3vh 0vw 3vh 1vw;
-               text-align: justify;
-
-                
-
-            }
-
-            .Conjunto2{
-
-                display: flex;
-                flex-direction: column;
-               justify-content: center;
-              margin: 3vh 2vw 3vh 1vw;
-
-                
-
-            }
-
-
-            
-        }
-
-        .ConjuntoFiltros2{
-            display: flex;
-            flex-direction: column;
-
-            .Conjunto3{
-
-
-
-                h2{
-                    font: 700 15px 'vikings' !important; 
-                    margin-left: 10px;
-
-
-                }
-
-                input{
-                    color: #000000;
-                    
-                    border: none;
-                    border-radius: 2px;
-                    height: 5vh;
-                    font: 900 10px 'vikings' !important; 
-                    width: 80vh;
-                    margin: 3vh 2vw 3vh 1vw;
-
-                }
-              
-            }
-
-            .Conjunto4{
-                display: flex;
-                flex-direction:row;
-
-            }
-        }
-
-        .ConjuntoFiltros3{
-            display: flex;
-            flex-direction: row;
-            align-items:end;
-            align-content: space-around;
-            gap: 10px;
-            margin: 10px 10px 10px 10px;
-
-            .fitro1{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                
-
-                input{
-                    
-                    height: 24px;
-                    width: 40vh;
-                    border-radius: 3px;
-                    border: none;
-                    background-color: #ffffff;
-                }
-
-                h2{
-                    font: 700 15px 'vikings' !important;
-                    margin-right: 13vw; 
-                    gap: 10px;
-                    margin-bottom: 10px;
-                    
-                    
-
-                }
-            }
-
-            button{
-                text-decoration: none;
-                height: 24px;
-                align-items: center;
-                width: 40vh;
-                border-radius: 3px;
-                    border: none;
-                    background-color: #9E8080;
-                    color: #ffffff;
-            }
-            
-
-            button:hover {
-              background-color: rgb(0, 0, 0);
-              transition: all 1s;
-              color: #ffffff;
-             
-            }
-
-            button:active {
-              background-color: rgb(155, 155, 155);
-              
-              
-            }
-        }
-
-    
-        
-
+        .links{
+          width: 20vw;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          a{
+            color: #fff;
+            font: 500 1rem 'vikings';
+            text-decoration: none;
+          }
       
-        
-    
-    
+        }
+      }
+      .conteiner{
+        display: flex;
+        justify-content: center;
+
+        .secao-input{
+          background-color: #1A1A1A;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 60vw;
+
+          h1{
+            font: 500 3rem 'vikings';
+            color: #9E8080 ;
+          }
+          
+        }
+      }
+      
+}
