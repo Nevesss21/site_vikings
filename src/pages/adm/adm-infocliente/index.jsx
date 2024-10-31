@@ -1,5 +1,7 @@
 import "./index.scss";
 
+import NavAdm from "../../../components/Nav-adm";
+
 
 
 
@@ -10,20 +12,7 @@ return  (
 
 <div className="conteiner-infocliente">
  
-<header>
-
-<div className='imagem-logo'>
-<img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
-</div>
-
-        <div className='links-principal'>
-        <a href="/adm-landing" className='animacao'>HOME</a>
-        <a href="" className='animacao'>RELATÓRIOS</a>
-        <a href="/adm-solicitacoes" className='animacao'>SEÇÕES</a>
-        <a href="/adm-agendamento" className='animacao'>AGENDAMENTO</a>
-</div>
-
- </header>
+<NavAdm/>
 
 <div className="principal">
     

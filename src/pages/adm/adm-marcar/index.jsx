@@ -1,5 +1,6 @@
 import "./index.scss";
 
+import NavAdm from "../../../components/Nav-adm";
 
 
 export default function AdmMarcar() {
@@ -7,19 +8,7 @@ export default function AdmMarcar() {
     <div className="conteiner-admmarcar">
 
 
-        <header>
-        
-        <div className='imagem-logo'>
-            <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
-        </div>
-        
-        <div className='links-principal'>
-            <a href="/adm-solicitacoes" className='animacao'>Voltar</a>
-   
-            <a href="#" className='animacao' >Arquivadas</a>
-        
-        </div>
-        </header>
+      <NavAdm/>
 
       <div className="principal">
         <h1 className="Marcar">Marcar Consulta</h1>

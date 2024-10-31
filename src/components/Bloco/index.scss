@@ -1,14 +1,5 @@
 .bloquinhos-pretos{
 
-display: flex;
-flex-direction: row;
-align-items: center;
-gap: 50vh;
-padding: 20px 80px 20px 80px;
-align-items: center;
-border-radius: 5px;
-
-height: 100px;
 
 .icones{
     height: 15px;
@@ -19,16 +10,14 @@ height: 100px;
 }
 .parte1{
 
+    height: 100px;
+
 
     .principais{
         color: white;
+        font-size: smaller;
     }
-   
-   
 
-    
-
-height: 100px;
 
 
 }
@@ -42,9 +31,10 @@ height: 100px;
 
     .linha1{
         display: flex;
-        flex-direction: row;
-        gap:10px;
-        font: 500 15px 'vikings' !important;
+       
+      
+        font: 500 12px 'vikings' !important;
+        
         
         
         
@@ -55,7 +45,7 @@ height: 100px;
         flex-direction: row;
         gap:25px;
         
-        word-spacing: 5px;
+       
     }
 
     
@@ -65,15 +55,15 @@ height: 100px;
 background-color: #b89191;
 display: flex;
 
-align-items: center;
-gap: 50vh;
+
+
 
 padding: 20px 80px 20px 80px;
 
 border-radius: 5px;
-margin-top: 55px;
 
-height: 16vh;
+
+
 margin-right: 30vh;
 
 
@@ -84,6 +74,8 @@ margin-right: 30vh;
     gap: 0px;
     align-items: center;
     margin-top: 5vh;
+
+    
 
 }
 
