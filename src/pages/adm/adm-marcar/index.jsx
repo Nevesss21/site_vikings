@@ -5,9 +5,6 @@ export default function AdmMarcar() {
   return (
     <div className="conteiner-admmarcar">
 
-
-      <NavAdm/>
-
       <div className="principal">
         <h1 className="Marcar">Marcar Consulta</h1>
 
