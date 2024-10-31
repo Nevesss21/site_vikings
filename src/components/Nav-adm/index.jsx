@@ -16,7 +16,7 @@ export default function NavAdm(){
             <Link to= '/adm-landing'className='animacao'>HOME</Link>
             <Link to='/adm-relatorio' className='animacao'>RELATÓRIOS</Link>
             <Link to='/adm-secoes' className='animacao'>SEÇÕES</Link>
-            <Link to='/adm-agendamento' className='animacao'>AGENDAMENTO</Link>
+            <Link to='/adm-marcar' className='animacao'>AGENDAMENTO</Link>
         </div>
         </header>
         </div>
