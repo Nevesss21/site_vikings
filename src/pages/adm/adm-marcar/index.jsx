@@ -1,14 +1,9 @@
 import "./index.scss";
-
-import NavAdm from "../../../components/Nav-adm";
-
+import { Link } from "react-router-dom";
 
 export default function AdmMarcar() {
   return (
     <div className="conteiner-admmarcar">
-
-
-      <NavAdm/>
 
       <div className="principal">
         <h1 className="Marcar">Marcar Consulta</h1>
@@ -43,18 +38,7 @@ export default function AdmMarcar() {
               className="personalização1"
               type="text"
               placeholder="Ex: Boyceta"
-
-
-
-              
             />
-
-
-            <h2 className="titulo"> E-mail</h2>
-            <input type="text" placeholder="Insira o e-mail do cliente" />
-
-            <h2>Preço</h2>
-            <input type="text" placeholder="R$00.00" />
           </div>
 
           <div className="Conjunto2">
@@ -66,11 +50,17 @@ export default function AdmMarcar() {
 
             <h2>Ideia Apresentada</h2>
             <input type="text" placeholder="Ex: Tigre no Ante-Braço" />
-        
+          </div>
+        </div>
 
+        <div className="ConjuntoFiltros2">
+          <div className="Conjunto3">
+            <h2 className="titulo"> E-mail</h2>
+            <input type="text" placeholder="Insira o e-mail do cliente" />
 
             <h2>Telefone</h2>
             <input type="text" placeholder="00 0000-0000" />
+
 
             
            <button className="botaoConcluido">CONCLUIDO</button>
@@ -79,31 +69,31 @@ export default function AdmMarcar() {
 
 
 
+=======
+ f1e3a786f7d6b7b26d1c054e9978994a66c73b5e
           </div>
 
-          </div>
-    
-
-
-
-
-        
           
 
-     
+          </div>
 
-        
-            
+          <div className="ConjuntoFiltros3">
+
+            <div className="fitro1"><h2>Preço Base</h2>
+            <input type="text" placeholder="R$ 00,00" />
+          </div>
+          
+          
+            <a href="/adm-seções"><button className="botao">
+              Concluido
+            </button></a>
+          </div>
+
           
             
 
         </div>
-
-      </div>
-
-
-
-
-
+      
+    </div>
   );
 }
