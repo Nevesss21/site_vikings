@@ -18,12 +18,13 @@ height: 100px;
     
 }
 .parte1{
-    display: flex;
-    flex-direction: column;
-    gap: 0px;
-    align-items: center;
-    font: 700 1rem 'vikings' !important;
 
+
+    .principais{
+        color: white;
+    }
+   
+   
 
     
 
@@ -36,14 +37,15 @@ height: 100px;
     flex-direction: column;
     gap: 15px;
     align-items: center;
+    font: 500 1rem 'vikings' !important;
     
 
     .linha1{
         display: flex;
         flex-direction: row;
         gap:10px;
-        font: 500 14px 'vikings' !important;
-        word-spacing: 5px;
+        font: 500 15px 'vikings' !important;
+        
         
         
     
@@ -60,7 +62,7 @@ height: 100px;
 }  
 }
 .bloco1{
-background-color: #ff0000;
+background-color: #b89191;
 display: flex;
 
 align-items: center;

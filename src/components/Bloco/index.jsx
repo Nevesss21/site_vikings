@@ -9,7 +9,7 @@ export default function Bloco(){
 
           <div className="parte1">
             <h3 className="principais">Lucas do Rosário</h3>
-            <p>CPF:582.365.258-56</p>
+            <h3 className="principais">CPF: 504.656.56-96</h3>
           </div>
           
           <div className="parte2">

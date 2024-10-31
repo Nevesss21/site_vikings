@@ -1,17 +1,15 @@
 .conteiner-admmarcar{
+    background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
+    align-items: center;
     display: flex;
     flex-direction: column;
-    background-color: #000000;
-    margin: 0px;
-    border: 0px;
-    height: 100%;
-    
+  
    
 
 
 
        header{
-        background-color: #000000;
+       
            display: flex;
            height: 30vh;
            align-items: center;
@@ -77,6 +75,7 @@
 
 
     .principal{
+        color: #fff;
         align-self: center;
         align-items: center;
         width: 65%;
@@ -104,13 +103,13 @@
 
 
             .Nome{
-                background-color: #3f3f3f ;
+               
                 color: #000000;
                 border: none;
                 height: 30px;
                 width: 85vh;
                 text-align: justify;
-                font: 900 15px 'vikings' !important; 
+                font: 600 15px 'vikings' !important; 
                 border-radius: 2px;
 
 
@@ -132,25 +131,25 @@
             flex-direction: row;
             gap: 10px;
             justify-content: center;
-            margin-top: 50px;
+            margin-top: 5vh;
 
 
             h2{
-                font: 500 15px 'vikings' !important; 
+                font: 700 15px 'vikings' !important; 
                 margin-left: 10px;
 
             }
 
             
             input{
-                color: #fff;
-                background-color: #9E8080;
+                color: #000000;
+                
                 border: none;
                 border-radius: 2px;
-                height: 20px;
+                height: 5vh;
                 font: 600 10px 'vikings' !important; 
-                width: 40vh;
-                margin: 10px 10px 10px 10px;
+                width: 38vh;
+                margin: 3vh 0vw 3vh 1vw;
  
 
             }
@@ -165,7 +164,7 @@
                 flex-direction: column;
                justify-content: center;
                font: 600 10px 'vikings' !important; 
-               margin: 10px 10px 10px 10px;
+               margin: 3vh 0vw 3vh 1vw;
                text-align: justify;
 
                 
@@ -177,7 +176,7 @@
                 display: flex;
                 flex-direction: column;
                justify-content: center;
-               margin: 10px 10px 10px 10px;
+              margin: 3vh 2vw 3vh 1vw;
 
                 
 
@@ -196,21 +195,21 @@
 
 
                 h2{
-                    font: 500 15px 'vikings' !important; 
+                    font: 700 15px 'vikings' !important; 
                     margin-left: 10px;
 
 
                 }
 
                 input{
-                    color: #fff;
-                    background-color: #4b4b4b;
+                    color: #000000;
+                    
                     border: none;
                     border-radius: 2px;
-                    height: 20px;
-                    font: 600 10px 'vikings' !important; 
+                    height: 5vh;
+                    font: 900 10px 'vikings' !important; 
                     width: 80vh;
-                    margin: 10px 10px 10px 10px;
+                    margin: 3vh 2vw 3vh 1vw;
 
                 }
               
@@ -243,12 +242,12 @@
                     width: 40vh;
                     border-radius: 3px;
                     border: none;
-                    background-color: #9E8080;
+                    background-color: #ffffff;
                 }
 
                 h2{
-                    font: 500 15px 'vikings' !important;
-                    margin-right: 150px; 
+                    font: 700 15px 'vikings' !important;
+                    margin-right: 13vw; 
                     gap: 10px;
                     margin-bottom: 10px;
                     
@@ -270,9 +269,9 @@
             
 
             button:hover {
-              background-color: rgb(255, 255, 255);
+              background-color: rgb(0, 0, 0);
               transition: all 1s;
-              color: #000;
+              color: #ffffff;
              
             }
 
