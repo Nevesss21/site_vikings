@@ -35,7 +35,7 @@ export default function Landingpage() {
                 <div className='texto'>
                     <h1>PIONEIRISMO E MODERNIDADE
                         EM CADA TRAÇO</h1>
-              <Link to='/Estilo'><button>VEJA NOSSAS TATTOOS</button></Link>
+                    <Link to='/Estilo'><button>VEJA NOSSAS TATTOOS</button></Link>
                 </div>
             </div>
 
@@ -87,12 +87,12 @@ export default function Landingpage() {
                     </Swiper>
                 </div>
                 <div className='bot'>
-                  <Link to='/'><button>CONHECER MAIS</button></Link>
+                    <Link to='/'><button>CONHECER MAIS</button></Link>
                 </div>
             </div>
-            
+
             <div className='estilo'>
-                <Tattoo/>
+                <Tattoo />
                 <Link to='/Estilo'><button>VEJA TODOS OS ESTILOS</button></Link>
             </div>
             <div className='secao-contato'>
@@ -100,7 +100,7 @@ export default function Landingpage() {
                 <Link to='/Agendamento'><button >ENTRE EM CONTATO</button></Link>
             </div>
             <div className='secao-insta'>
-            <img src="assets/images/instagram.png" alt="insta" /><h1>SIGA-NOS NO INSTAGRAM</h1>
+                <img src="assets/images/instagram.png" alt="insta" /><h1>SIGA-NOS NO INSTAGRAM</h1>
             </div>
 
             <Rodape />
