@@ -1,138 +1,104 @@
-.conteiner-relatorio{
-    background-color: #000000;
+.relatorio{
+  background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
+  display: flex;
+  flex-direction: column;
+  height: 200vh;
+
+  header{
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 5vw;
+    align-items: center;
+    border-bottom: #a19b9b solid 0.3vh;
+    img{
+      width: 10vw;
+    }
+    
+    .links{
+      width: 20vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      a{
+        color: #fff;
+        font: 500 1rem 'vikings';
+        text-decoration: none;
+      }
+      button{
+        background-color: #000;
+        font: 500 1.5rem 'vikings';
+        border-radius: 30px;
+        height: 8vh;
+        width: 8vw;
+        border: none;
+        color: #fff;
+      }
+
+    }
+
+  }
+  .bloco{
+    margin-top: 20vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 8vh 0vw;
+    button{
+      background-color: #2C2929;
+      font: 500 1.5rem 'vikings';
+      border-radius: 30px;
+      height: 8vh;
+      width: 15vw;
+      border: none;
+      color: #fff;
+      margin-left: 40vw;
+    }
 
-
-    header {
-        display: flex;
-        height: 20vh;
-        align-items: center;
-        justify-content: space-around;
-        padding: 0px 5vw 0px 5vw;
-        .imagem-logo img {
-          width: 12vw;
-          margin-left: -10vh;
-
-          
-        }
-
-        .voltar{
-            border-radius: 10px;
-            border:none;
-            height: 4vh;
-            width: 10vw;
-            margin-right: 15px;
-            color: #fff;
-            text-decoration: none;
-            font: 500 1.2rem 'vikings';
-            background-color: #585858;
-          }
-  
-        .links-principal {
-          display: flex;
-          gap: 0vh 5vw;
-          align-items: center;
-  
-          .animacao {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            border: none;
-            background: none;
-          }
-  
-          .animacao::before {
-            margin-left: auto;
-          }
-  
-          .animacao::after,
-          .animacao::before {
-            content: '';
-            width: 0%;
-            height: 2px;
-            background: #ffffff;
-            display: block;
-            transition: 0.5s;
-          }
-  
-          .animacao:hover::after,
-          .animacao:hover::before {
-            width: 100%;
-          }
-  
-          a {
-            color: #fff;
-            text-decoration: none;
-            font: 500 1.2rem 'vikings';
-          }
-        }
+    .espaco{
+      background-color: #9E8080;
+      width: 60vw;
+      height: 10vh;
+      display: flex;
+      align-items: center;
+      padding: 1vh 4vw;
+      border-radius: 10px;
+      h3{
+        font: 500 1rem 'vikings';
+        color: #3F3333;
       }
-
-
-      .principal{
+    }
+    .area-cinza{
+      height: 110vh;
+      width: 60vw;
+      gap: 20vh 0vw;
+      background-color: #313131;
+      border-radius: 20px;
+      border: #1A1A1A 3vh solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2vh 3vw;
+      .text{
         display: flex;
         flex-direction: column;
-
-        align-items: center;
-
-        color: #b6b5b5;
-        gap: 15vh;
-        padding: 125px 15px 15px 15px;
-
-        .relatorio{
-            border: none;
-            border-radius: 5px;
-            color: #000000 !important;
-            width: 40vw;
-            height: 5vh;
-            background-color: #9E8080;
-            
+        gap: 3vh 0vw;
+        p{
+          font: 500 1.2rem 'vikings';
+          color: #9E8080;
         }
-
-        .fora{
-
-            background-color: #585858;
-            border: none;
-            border-radius: 5px;
-            height: 85vh;
-            width: 40vw;
-            padding: 20px;
-            padding-left: 90px;
-            font-size: 18px;
-            line-height: 5;
-            margin-bottom: 15px;
-            align-items: center;
-            padding-top: 90px;
-
-            h1 {
-                color: #fff;
-                text-decoration: none;
-                font: 500 1rem 'vikings';
-                margin-bottom: 15px;
-              }
-
-              .obs{
-                border: none;
-                border-radius: 5px;
-                height: 6vh;
-                width: 25vw;
-                margin-top: 50px;
-              }
-
-        }
-
-        .concluido{
-            border-radius: 10px;
-            border:none;
-            height: 4vh;
-            width: 10vw;
-            margin-right: 15px;
-            color: #fff;
-            text-decoration: none;
-            font: 500 1.2rem 'vikings';
-            background-color: #2c2c2c;
-            margin-bottom: 50px;
-            margin-left: 70vw;
-          }
       }
+      input{
+        width: 40vw;
+        height: 10vh;
+        border-radius: 10px;
+        background-color: #9E8080;
+        font-size: 500 1rem 'vikings';
+        padding: 0vh 3vw;
+        margin-left: 5vw;
+      }
+    }
+  }
+
+
 }

@@ -1,59 +1,39 @@
 import "./index.scss";
+import { Link } from "react-router-dom";
 
 
 export default function AdmRelatorio() {
-  return (
-    <div className="conteiner-relatorio">
+  return(
+    <div className="relatorio">
       <header>
-                    <div className='imagem-logo'>
-                        <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
-                    </div>
-                    <div className='links-principal'>
-                        <a href="/" className='animacao'>HOME</a>
-                    </div>
+        <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
 
-                    <button className="voltar">Voltar</button>
-                </header>
+        <div className="links">
+          <Link to='/adm-landing'>HOME</Link>
+         <Link to='/adm-realizados'><button>Voltar</button></Link>
+        </div>
+      </header>
+      <div className="bloco">
 
-      <hr />
-
-      <div className="principal">
-
-      <input type="text"  className="relatorio" value="relatório 01 - 21/05/2024"/>
-
-      <div className="fora">
-     
-
-            <h1>Total de pessoas no mês: 83</h1>
-
-            <h1>Renda final: R$ 12.000,00</h1>
-
-            <h1>Vlientes do gênero masculino: 38</h1>
-
-            <h1>Clientes do gênero feminino: 30</h1>
-
-            <h1>Clientes do gênero igual a outro : não sei</h1>
-
-            <h1>Clientes com idade superior a 30 anos: 20</h1>
-
-            <h1>Clientes maior que 18 anos ou igual : 49</h1>
-
-            <h1>Clientes com Idade menor que 18 ano : 14</h1>
-
-            <h1>Percentual de crescimento: 30%</h1>
-
-
-            <input  className="obs" type="text" placeholder="Observações..." />
-        
+        <div className="espaco"><h3>Relatório01-21/05/2024</h3></div>
+        <div className="area-cinza">
+          <div className="text">
+            <p>Total de pessoas no mes: 83</p>
+            <p>Renda final : R$ 12.000,00</p>
+            <p>Clientes do gênero masculino: 38</p>
+            <p>Clientes do gênero feminino : 30</p>
+            <p>Clientes do genero igua a outro : 15</p>
+            <p>Clientes com idade superior a 30 anos:  20</p>
+            <p>Clientes com idade superior igual  a 18 anos:  49</p>
+            <p>Clientes com idade menor que 18 anos:  14</p>
+            <p>Percentual de crescimento : 30%</p>
+          </div>
+          <input type="text" placeholder="Observações" />
+        </div>
+        <button>Concluido</button>
       </div>
 
-      <button className="concluido"> Concluído</button>
-
-
-      </div>
-
-
-     
     </div>
-  );
+  )
+
 }

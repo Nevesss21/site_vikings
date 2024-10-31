@@ -5,9 +5,6 @@ import Bloco from "../../../components/Bloco"
 
 
 
-
-
-
 export default function AdmSecoes() {
 
     return (

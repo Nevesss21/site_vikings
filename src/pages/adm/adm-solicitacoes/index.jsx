@@ -15,7 +15,7 @@ export default function AdmSolicitacoes(){
         </div>
         
         <div className='links-principal'>
-            <a href="/" className='animacao'>Home</a>
+            <a href="/adm-landing" className='animacao'>Home</a>
             <a href="/adm-marcar" className='animacao'>Marcar</a>
             <a href="#" className='animacao' >Arquivadas</a>
         
