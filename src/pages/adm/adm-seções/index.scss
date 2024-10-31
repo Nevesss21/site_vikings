@@ -1,6 +1,6 @@
 .conteiner-secoes{
   background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
-  align-items: center;
+
   display: flex;
   flex-direction: column;
 
@@ -121,19 +121,64 @@ header {
    
       }
       .bloco1{
-      background-color: #a57171;
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 50vh;
-      font: 700 16px 'vikings' !important;
-  
-      align-items: center;
-      border-radius: 5px;
-      
-      height: 16vh;
-      margin-left:15vw;
-      margin-bottom: 10vh;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+        color: #000;
+        height: 20vh; 
+        width: 50vw;
+        padding: 50px 50px;
+        align-content: space-around;
+
+
+
+
+        .parte1{
+          line-height: 3vh;
+        }
+
+
+        .parte2{
+          margin-left: 15vw;
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+
+          .linha1{
+
+            color: #fff;
+            text-decoration: none;
+            font: 800 3rem 'vikings';
+            
+
+            img{
+              margin-left: 2.75vw;
+            }
+
+            
+          }
+
+          
+          .linha2{
+
+            color: #fff;
+            text-decoration: none;
+            font: 500 1rem 'vikings';
+
+            img{
+              height: 2vh;
+              width: 1.5vw;
+            }
+
+           
+
+            
+            
+          }
+        }
+
+        
 
 
      
