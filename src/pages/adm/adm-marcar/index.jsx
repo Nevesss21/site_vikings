@@ -43,7 +43,18 @@ export default function AdmMarcar() {
               className="personalização1"
               type="text"
               placeholder="Ex: Boyceta"
+
+
+
+              
             />
+
+
+            <h2 className="titulo"> E-mail</h2>
+            <input type="text" placeholder="Insira o e-mail do cliente" />
+
+            <h2>Preço</h2>
+            <input type="text" placeholder="R$00.00" />
           </div>
 
           <div className="Conjunto2">
@@ -55,40 +66,45 @@ export default function AdmMarcar() {
 
             <h2>Ideia Apresentada</h2>
             <input type="text" placeholder="Ex: Tigre no Ante-Braço" />
-          </div>
-        </div>
+        
 
-        <div className="ConjuntoFiltros2">
-          <div className="Conjunto3">
-            <h2 className="titulo"> E-mail</h2>
-            <input type="text" placeholder="Insira o e-mail do cliente" />
 
-            <h2>Telefone</h2>
+          <h2>Telefone</h2>
             <input type="text" placeholder="00 0000-0000" />
+
+            
+          <button className="oi">Concluir</button>
+
+
+
+
+  
+
+
           </div>
 
+          </div>
+    
+
+
+
+
+        
           
 
-          </div>
+     
 
-          <div className="ConjuntoFiltros3">
-
-            <div className="fitro1"><h2>Preço Base</h2>
-            <input type="text" placeholder="R$ 00,00" />
-          </div>
-          
-          
-            <a href="/adm-seções"><button className="botao">
-              Concluido
-            </button></a>
-          </div>
-
+        
+            
           
             
 
         </div>
 
       </div>
+
+
+
 
 
   );
