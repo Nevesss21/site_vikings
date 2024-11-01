@@ -155,6 +155,7 @@
         .secao{
   
           .secao-inserir{
+ 
 
             h1{
                 font-size: 2.5rem;
@@ -199,7 +200,9 @@
         }
     }
     .secao{
+
       .secao-inserir{
+        padding: 5vh 5vw;
         .direcao-lado{
           .input-2{        
               h3{
@@ -257,25 +260,42 @@
     }
     .secao{
       .secao-inserir{
+        .direcao-lado{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 1vh 5vw;
+
+          button{
+              margin-top: 3.2vh;
+              width: 20vw;
+              height: 5.7vh;
+          }
+          }
         h1{
             font-size: 1.2rem;
+        }
+        .input{
+         height: 8.7vh;
+          h3{
+            font-size: 0.6rem;
+          }
+
         }
         .direcao-lado{
           button{ 
               font-size: 0.9rem;
-          }
+          }     
 
-          .input-2{
-              gap: 1vh 0vw;
+            .input-2{
+              height: 8.7vh;
+
               h3{
-                  font-size: 0.9rem;
+                  font-size: 0.6rem;
 
               }
-              input{
-                  height: 6vh;
-                  width: 20vw;
-                  padding: 0vh 2vw;
-              }
+           
           }
       }
 
@@ -299,9 +319,7 @@
         }
     }
     .secao{
-  
       .secao-inserir{
-
         h1{
             font-size: 2.5rem;
         }
@@ -309,15 +327,19 @@
           button{ 
               font-size: 0.9rem;
           }
+          h3{
+            font-size: 0.3rem;
+          }
 
           .input-2{
               gap: 1vh 0vw;
               h3{
-                  font-size: 0.9rem;
+                  font-size: 0.1rem;
 
               }
               input{
-                  height: 6vh;
+
+                  height: 5vh;
                   width: 20vw;
                   padding: 0vh 2vw;
               }
