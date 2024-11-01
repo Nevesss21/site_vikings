@@ -153,54 +153,34 @@
         }
       }
         .secao{
+  
           .secao-inserir{
+
             h1{
                 font-size: 2.5rem;
             }
             .direcao-lado{
-    
-                .input-2{
+              button{ 
+                  font-size: 0.9rem;
+              }
+  
+              .input-2{
+                  gap: 1vh 0vw;
+                  h3{
+                      font-size: 0.9rem;
 
-                    h3{
-                        font: 500 1rem 'vikings';
-                        color: #fff;
-                    }
-                    input{
-                        height: 6vh;
-                        border: none;
-                        border-radius: 5px;
-                        width: 20vw;
-                        background-color: #9E8080;
-                        padding: 0vh 2vw;
-                    }
-                }
-            }
-            .input{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 1vh 0vw;
-    
-                h3{
-                    font: 500 1rem 'vikings';
-                    color: #fff;
-                }
-                input{
-                    height: 6vh;
-                    border: none;
-                    border-radius: 5px;
-                    width: 45vw;
-                    background-color: #313131;
-                    padding: 0vh 2vw;
-                }
-    
-            }
+                  }
+                  input{
+                      height: 6vh;
+                      width: 20vw;
+                      padding: 0vh 2vw;
+                  }
+              }
           }
-        
+    
         }
-   
-
-
+        
+      }
 }
 }
 
@@ -218,6 +198,27 @@
 
         }
     }
+    .secao{
+      .secao-inserir{
+        .direcao-lado{
+          .input-2{        
+              h3{
+                  font-size: 0.8rem;   
+              }
+              input{
+                  font-size: 0.7rem; 
+              }
+          }
+      }
+        .input{
+
+          input{
+          font-size: 0.7rem;
+        
+          }
+      }
+    }    
+  }
 }
 }
 
@@ -228,8 +229,15 @@
         .imagem-logo img {
             width: 16vw;
           }
-
     }
+
+    .secao{
+      .secao-inserir{
+        h1{
+            font-size: 2.2rem;
+        }
+    } 
+  }
 }
 }
 
@@ -247,6 +255,33 @@
 
         }
     }
+    .secao{
+      .secao-inserir{
+        h1{
+            font-size: 1.2rem;
+        }
+        .direcao-lado{
+          button{ 
+              font-size: 0.9rem;
+          }
+
+          .input-2{
+              gap: 1vh 0vw;
+              h3{
+                  font-size: 0.9rem;
+
+              }
+              input{
+                  height: 6vh;
+                  width: 20vw;
+                  padding: 0vh 2vw;
+              }
+          }
+      }
+
+    }
+    
+  }
 }
 }
 
@@ -263,6 +298,35 @@
 
         }
     }
+    .secao{
+  
+      .secao-inserir{
+
+        h1{
+            font-size: 2.5rem;
+        }
+        .direcao-lado{
+          button{ 
+              font-size: 0.9rem;
+          }
+
+          .input-2{
+              gap: 1vh 0vw;
+              h3{
+                  font-size: 0.9rem;
+
+              }
+              input{
+                  height: 6vh;
+                  width: 20vw;
+                  padding: 0vh 2vw;
+              }
+          }
+      }
+
+    }
+    
+  }
 }
 }
 
@@ -276,5 +340,34 @@
 
         }
     }
+    .secao{
+  
+      .secao-inserir{
+
+        h1{
+            font-size: 2.5rem;
+        }
+        .direcao-lado{
+          button{ 
+              font-size: 0.9rem;
+          }
+
+          .input-2{
+              gap: 1vh 0vw;
+              h3{
+                  font-size: 0.9rem;
+
+              }
+              input{
+                  height: 6vh;
+                  width: 20vw;
+                  padding: 0vh 2vw;
+              }
+          }
+      }
+
+    }
+    
+  }
 }
 }
