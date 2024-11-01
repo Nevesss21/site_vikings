@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 
 export default function AdmLanding() {
     
-    const [token, setToken] = useState(null)
+    const [setToken] = useState(null)
     const navigate = useNavigate()
     async function sair() {
         localStorage.setItem('USUARIO', null)
@@ -18,7 +18,7 @@ export default function AdmLanding() {
 
     // funcao que executa assim que a pagina carrega
     useEffect(() => {
-        token = localStorage.getItem('USUARIO')
+       let token = localStorage.getItem('USUARIO')
         setToken(token)
 
         if (token == 'null') {
