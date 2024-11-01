@@ -1,4 +1,4 @@
-import Bloco from '../../../components/Bloco';
+
 import NavAdm from '../../../components/Nav-adm'
 import { Link } from 'react-router-dom';
 
