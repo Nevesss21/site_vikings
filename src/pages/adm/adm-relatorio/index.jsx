@@ -1,6 +1,6 @@
 import "./index.scss";
 import { Link } from "react-router-dom";
-import NavAdm from "../../../components/Nav-adm";
+
 
 
 export default function AdmRelatorio() {
