@@ -1,72 +1,45 @@
 import "./index.scss";
-
+import { Link } from "react-router-dom";
 import NavAdm from '../../../components/Nav-adm'
 
 
-export default function informacoescliente() {
+export default function informacoesCliente() {
+    return(
+        <div className="informacao">
+            <header>
+                <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
+                <Link to='/adm-secoes'><button>VOLTAR</button></Link>
+            </header>
 
-return  (
-
-
-<div className="conteiner-infocliente">
-
-            <NavAdm/>
-        
-
-
-    <div className="principal">
-            
-
-
-        <div className="bloco" >
-
-        <div className="subBloco" >
-
-            <h2>LUCAS DO ROSARIO</h2>
-
-            <h2>CPF:543.889.42-90</h2>
-
-        
-
-        </div>
-
-        <div className="subBloco">
-
-        <h2>DATA:17/08/1994</h2>
-
-        <h2>Horário:17:27</h2>
-
-        
-
-        </div>
-
-
-
-</div>  
-
-    < h1 className="tituloAnotacao" >Anotações</h1>
-
-        <section className="blocoPai" >
-
-        <div className="anotacao">
-            <textarea></textarea>
-
-        </div>
-
-        </section>
-
-        <div  className="botaoConcluir">
-            <a href="/adm-seções"><button>Concluir</button></a>
-        </div>
-
- 
-
-
-    </div> 
-
-</div>
-
+            <div className="conteiner">
+            <div className="secao">
+                <div className="bloco-escuro">
+                <div className='coluna'>
+                    <h1>ABNER JOSÉ</h1>
+                    <h3>CPF: 600.761.488-31</h3>
+                </div>
     
-);
+                <div className='coluna'>
+                    <h3>Data: 16/05/2024</h3>
+                    <h3>Horário: 17:37</h3>
+                </div>             
+                </div>
+
+                <div className="anotacao">
+                    <h1>ANOTAÇÕES</h1>
+                    <textarea name="anotacaoes" id="anotacao"></textarea>
+
+                    <button>CONCLUIR</button>
+                </div>
+
+            </div>
+
+            </div>
+
+           
+
+        </div>
+    )
+
 
 }

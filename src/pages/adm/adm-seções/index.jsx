@@ -1,69 +1,74 @@
 import "./index.scss"
-
+import { Link } from "react-router-dom"
 import NavAdm from "../../../components/Nav-adm"
-
-
-
-
 
 
 export default function AdmSecoes() {
 
     return (
-<div className="conteiner-secoes">
-       <NavAdm/>
+      <div className="sessao">
+      <NavAdm/>
+      <div className="bloco">
 
-      <div className="principal1">
+     <input type="text" placeholder="Pesquise e veja o a sessão por cpf ou nome.." />
 
-        <input type="text" placeholder="Pesquise pelo nome da seção..."  />
+        <div className="area-cinza">
+          <h1>SESSÕES MARCADAS</h1>
 
+          <Link to='/adm-infocliente'>
+            <div className="bloco-escuro">
+              <div className='coluna'>
+                <h1>ABNER JOSÉ</h1>
+                <h3>CPF: 600.761.488-31</h3>
+              </div>
 
-        <h1>Sessões Marcadas</h1>
+              <div className='flex'> 
+              <div className='coluna'>
+                <h3>Data: 16/05/2024</h3>
+                <h3>Horário: 17:37</h3>
+              </div>
+              <div className="coluna">
+                <img src="/assets/images/lixeirabranca.png" alt="apagar" />
+                <img src="/assets/images/canetabranca.png" alt="editar" />
+              </div>
+              </div>
+            </div>
+          </Link>
 
-       <div className="bloquinhos-pretos">
+          <Link>
+            <div className="bloco-claro">
+            <div className='coluna'>
+                <h1>ABNER JOSÉ</h1>
+                <h3>CPF: 600.761.488-31</h3>
+              </div>
 
-        <div className="bloco1">
+              <div className='flex'> 
+              <div className='coluna'>
+                <h3>Data: 16/05/2024</h3>
+                <h3>Horário: 17:37</h3>
+              </div>
+              <div className="coluna">
+                <img src="/assets/images/lixeirabranca.png" alt="apagar" />
+                <img src="/assets/images/canetabranca.png" alt="editar" />
+              </div>
+              </div>
+            </div>
+          </Link>
 
-          <div className="parte1">
-            <p className="principais">Lucas do Rosário</p>
+          <Link>   
+            <div className="bloco-escuro">
             
-            <h3 className="principais">CPF: 504.656.56-96</h3>
-          </div>
-          
-          <div className="parte2">
-            <div className="linha1">
-              <p>Data: 17/08/1994</p>
-              <img
-                className="icones"
-                src="/assets/images/canetabranca.png"
-                alt="as"/>
             </div>
-            <div className="linha2">
-              <p>Horário: 17:27 </p>
-              <img
-                className="icones"
-                src="/assets/images/lixeirabranca.png"
-                alt=""
-              />
+          </Link>
+          <Link>
+            <div className="bloco-claro">
+            
             </div>
-          </div>
+          </Link>
         </div>
-        </div>
-
-        
-
-       
-       
-
-                    
-                </div>
-            </div>
-
-      
-
-
-
-
-
-     )
+       <Link to='/adm-solicitacoes'><button>IR PARA SOLICITAÇÕES</button></Link>
+      </div>
+    </div>
+ 
+    )
 }

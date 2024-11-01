@@ -10,29 +10,21 @@ export default function AdmSolicitacoes(){
       <div className="solicitacao">
       <NavAdm/>
       <div className="bloco">
-
-     <input type="text" placeholder="Pesquise e veja o a sessão por cpf ou nome.." />
-
+        
         <div className="area-cinza">
-          <h1>SESSÕES MARCADAS</h1>
+          <h1>SOLICITAÇÕES</h1>
 
-          <Link to='/adm-infocliente'>
+          <Link>
             <div className="bloco-escuro">
               <div className='coluna'>
                 <h1>ABNER JOSÉ</h1>
                 <h3>CPF: 600.761.488-31</h3>
               </div>
-
-              <div className='flex'> 
+ 
               <div className='coluna'>
                 <h3>Data: 16/05/2024</h3>
                 <h3>Horário: 17:37</h3>
-              </div>
-              <div className="coluna">
-                <img src="/assets/images/lixeirabranca.png" alt="apagar" />
-                <img src="/assets/images/canetabranca.png" alt="editar" />
-              </div>
-              </div>
+              </div>             
             </div>
           </Link>
 
@@ -43,16 +35,12 @@ export default function AdmSolicitacoes(){
                 <h3>CPF: 600.761.488-31</h3>
               </div>
 
-              <div className='flex'> 
+       
               <div className='coluna'>
                 <h3>Data: 16/05/2024</h3>
                 <h3>Horário: 17:37</h3>
               </div>
-              <div className="coluna">
-                <img src="/assets/images/lixeirabranca.png" alt="apagar" />
-                <img src="/assets/images/canetabranca.png" alt="editar" />
-              </div>
-              </div>
+             
             </div>
           </Link>
 
@@ -67,7 +55,12 @@ export default function AdmSolicitacoes(){
             </div>
           </Link>
         </div>
-      
+        <div className='botoes'> 
+
+        <Link to='/adm-secoes'><button>VER SESSÕES MARCADAS</button></Link>
+        <Link to='/adm-marcar'><button>MARCAR NOVA SESSÃO</button></Link>
+
+        </div>
       </div>
     </div>
  

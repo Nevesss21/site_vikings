@@ -1,246 +1,94 @@
-.conteiner-infocliente{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.informacao{
+  background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
+  display: flex;
+  flex-direction: column;
+  height: 160vh;
 
-
-  
-   
-
-.principal{  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-
- .bloco{
-color: #ffff;
-display: flex;
-flex-direction: row;
-background-color:#25242493 ;
-width: 100vh;
-justify-content: space-between;
-color: #fff;
-text-decoration: none;
-font: 500;
-border-radius: 10px;
-
-.subBloco{
-
-display: flex;
-flex-direction: column;
-margin: 5vh;
-gap: 3vh ;
-font: 700 0.6em 'vikings';
-
-}
-
-
-
-
-}
-
-.tituloAnotacao{
-    color: #fff;
-    text-align:start;
-    
-    margin-top: 3vw;
-    margin-bottom: 3vw;
-    font: 700 2em 'vikings';
-}
-
-.blocoPai{
-
-background-color: #25242493;
-width: 45vw ;
-display: flex;
-justify-content: center;
-align-items:center ;
-text-align: center;
-
-height: 50vh;
-border-radius:25px ;
-
-
-.anotacao{
-   
-
-    textarea{
-        width: 40vw !important; 
-        height: 45vh !important;
-        border-radius: 20px;
-        border: none;
-        text-align: start;  
-        padding: 10px;      
-    }
-
-}
-}
-
-.botaoConcluir{
-
-
-margin-top: 5vw;
-
-
-button{
-
-
-background-color:#9E8080;
-border-radius:30px ;
-width: 12vw;
-height: 8vh;
-color: #fff;
-text-decoration: none;
-font: 500 1.2em 'vikings';
-margin-bottom: 5vh;
-border: none;
-}
-
-button:hover{
-    box-shadow: 0px 0px 20px 0px #a7811b;
-    background: rgba(167, 129, 27, 0.7);
-    transition: 0.3s;
-}
-}
-
-
-.imagemLaDeBaixo{
-
-width: 20vw;
-margin-left:10vw ;
-}
-}
-}
-
-@media (max-width:1440px) {
-  .conteiner-adm{
-   .corpo{
-     height: 70vh;
-     
-   }
-   .imagens{
-     .imagem-cinza{
-       height: 90vh;
-     }
-     .imagem-cinza-claro{
-       height: 90vh;
-     }
-     .imagem-preta{
-       height: 90vh;
-     }
- 
-   }
-  }
- }
- 
-
-@media (max-width:1280px) {
- .conteiner-infocliente{
-  
- 
-  .principal{
-    margin-bottom: 30vh;
-    
-
-    .bloco{
-      .subBloco{
-        h2{
-          
-        }
+    header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1vh 3vw;
+      img{
+        width: 10vw;
       }
-    }
-
-   
-
-    
-  }
-  
-
-  
- }
-}
-
-@media (max-width:1024px) {
-  .conteiner-infocliente{
-  
- 
-    .principal{
-    
-      
-  
-      .bloco{
-        .subBloco{
-          h2{
-
-            color: #ffffff;
-            text-decoration: none;
-            font: 500 1.2em 'vikings';
-            
-          }
-        }
-      }
-
-      .tituloAnotacao{
-        
-          color: #ffffff;
-            text-decoration: none;
-            font: 500 1.2em 'vikings'
-
-      }
-
-      
-      }
-    }
-  }
-
-
-@media (max-width:912px) {
- 
- 
-}
-
-@media (max-width:540px) {
-  .conteiner-infocliente{
-  
- 
-    .principal{
-    
-      
-  
-      .bloco{
-
-        height: 20vh;
-        width: 50vw;
-
-        .subBloco{
-          display: flex;
-          align-items: center;
-          h2{
-
-            color: #ffffff;
-            text-decoration: none;
-            font: 500 1em 'vikings';
-            
-          }
-        }
-      }
-
-     
-
-      .botaoConcluir{
-
+      a{
         button{
-          width: 20vw;
-          height: 5vh;
-          font: 500 1em 'vikings';
+          background-color: #2C2929;
+          font: 700 1rem 'vikings';
+          border-radius: 30px;
+          height: 8vh;
+          width: 15vw;
+          border: none;
+          color: #fff;
+        }
       }
     }
-  }
+    .conteiner{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .secao{
+        margin-top: 10vh;
+        display: flex;
+        gap: 10vh 0vw;
+        flex-direction: column;
+        justify-content: center;
 
-
-
-  }
+        .bloco-escuro{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          height: 15vh;
+          width: 80vw;
+          justify-content: space-between;
+          padding: 0.5vh 2vw;
+          background-color: #2C2929;
+          h3{
+              font: 500 0.8rem 'vikings';
+                color: #fff
+          }
+          h1{
+            font: 500 1rem 'vikings';
+            color: #fff;
+          }
+          .coluna{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1vh 0vw;
+            img{
+                width: 1.5vw;
+          }
+        }
+      }
+      .anotacao{
+        display: flex;
+        flex-direction: column;
+        gap: 3vh 0vw;
+  
+        h1{
+          font: 500 3rem 'vikings';
+          color: #fff;
+        }
+        textarea{
+          height: 60vh;
+          border: #2C2929 solid 3vh;
+          border-radius: 15px;
+        }
+        button{
+          background-color: #2C2929;
+          font: 700 1rem 'vikings';
+          border-radius: 30px;
+          height: 8vh;
+          width: 15vw;
+          border: none;
+          color: #fff;
+        }
+  
+    }
+  
+    }
+    }
 }

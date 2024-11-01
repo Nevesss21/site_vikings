@@ -12,7 +12,7 @@ export default function AdmMarcar() {
                 </div>
 
                 <div className='links-principal'>
-                    <Link to='/adm-realizados' className='animacao'>VOLTAR</Link>
+                    <Link to='/adm-solicitacoes' className='animacao'>VOLTAR</Link>
                     <Link to= '/adm-landing'className='animacao'>HOME</Link>
                     <Link to='/adm-secoes' className='animacao'>ARQUIVADAS</Link>
                 </div>
