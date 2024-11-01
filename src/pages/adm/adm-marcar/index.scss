@@ -138,4 +138,143 @@
     
     }
 }
-         
+
+@media (max-width:1280px) {
+  .adm-marcar{
+    header{
+        .imagem-logo img {
+            width: 10vw;
+          }
+        .links-principal{
+            a{
+                font-size: 1rem;
+            }
+
+        }
+      }
+        .secao{
+          .secao-inserir{
+            h1{
+                font-size: 2.5rem;
+            }
+            .direcao-lado{
+    
+                .input-2{
+
+                    h3{
+                        font: 500 1rem 'vikings';
+                        color: #fff;
+                    }
+                    input{
+                        height: 6vh;
+                        border: none;
+                        border-radius: 5px;
+                        width: 20vw;
+                        background-color: #9E8080;
+                        padding: 0vh 2vw;
+                    }
+                }
+            }
+            .input{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1vh 0vw;
+    
+                h3{
+                    font: 500 1rem 'vikings';
+                    color: #fff;
+                }
+                input{
+                    height: 6vh;
+                    border: none;
+                    border-radius: 5px;
+                    width: 45vw;
+                    background-color: #313131;
+                    padding: 0vh 2vw;
+                }
+    
+            }
+          }
+        
+        }
+   
+
+
+}
+}
+
+
+@media (max-width:912px) {
+  .adm-marcar{
+    header{
+        .imagem-logo img {
+            width: 12vw;
+          }
+        .links-principal{
+            a{
+                font-size: 0.9rem;
+            }
+
+        }
+    }
+}
+}
+
+
+@media (max-width:768px) {
+  .adm-marcar{
+    header{
+        .imagem-logo img {
+            width: 16vw;
+          }
+
+    }
+}
+}
+
+@media (max-width:540px) {
+  .adm-marcar{
+    header{
+        height: 15vh;
+        .imagem-logo img {
+            width: 18vw;
+          }
+        .links-principal{
+            a{
+                font-size: 0.8rem;
+            }
+
+        }
+    }
+}
+}
+
+@media (max-width:430px) {
+  .adm-marcar{
+    header{
+        .imagem-logo img {
+            width: 22vw;
+          }
+        .links-principal{
+            a{
+                font-size: 0.7rem;
+            }
+
+        }
+    }
+}
+}
+
+@media (max-width:375px) {
+  .adm-marcar{
+    header{
+        .links-principal{
+            a{
+                font-size: 0.5rem;
+            }
+
+        }
+    }
+}
+}
