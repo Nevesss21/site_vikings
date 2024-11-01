@@ -1,335 +1,113 @@
-.conteiner-realizados {
+.relatorio-realizado{
     background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
     display: flex;
     flex-direction: column;
+    height: 200vh;
+
     a{
         text-decoration: none;
+        color: #000;
     }
 
-    .principal{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-radius: 10px;
-      color: #b6b5b5;
-      gap: 15vh;
-      padding: 125px 15px 15px 15px;
-      
-
-      .pesquisa{
+    .bloco{
+        margin-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 8vh 0vw;
+        button{
+          background-color: #fff;
+          font: 700 1rem 'vikings';
+          border-radius: 30px;
+          height: 8vh;
+          width: 20vw;
           border: none;
-          border-radius: 5px;
-          color: #ffffff !important;
-          width: 50vw;
-          height: 5vh;
-          background-color: #585858;
-          
-      }
-
-      .fora{
-
-          background-color: #25242493;
-          border: none;
-          border-radius: 5px;
-          height: 85vh;
-          width: 50vw;
-          padding: 20px;
-          padding-left: 70px;
-          font-size: 18px;
-          line-height: 5;
-          margin-bottom: 15px;
-          align-items: center;
-          padding-top: 2vh;
-          
-
-          h1 {
-              color: #fff;
-              text-decoration: none;
-              font: 500 2rem 'vikings';
-              margin-bottom: 8vh;
-              
-            }
-
-      }
-
-      .bloco{
-          text-decoration: none;
-          font: 500 1.2rem 'vikings';
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 5vh;
-
-        .texto{
-          display: flex;
-          flex-direction: row;
-          gap: 17rem;
-          background-color: #b9b7b7;
-          height: 10vh;
-          width: 40vw;
-          align-items: center;
-          justify-content: center;
-          color: #000;
+          color: #2C2929;
+          margin-left: 40vw;
         }
-
-
-        .icons{
-          display: flex;
-          flex-direction: column;
-          width: 1.2rem;
-          gap: 0.7rem;
-        }
-        }
-    }
-          .bloco{
-          text-decoration: none;
-          font: 500 1.2rem 'vikings';
-          display: flex;
-          flex-direction: row;
-          margin-bottom: 5vh;
-
-      
-        .texto1{
-          display: flex;
-          flex-direction: row;
-          gap: 17rem;
+        input{
           background-color: #9E8080;
-          color: #000;
+          width: 60vw;
           height: 10vh;
-          width: 40vw;
+          display: flex;
           align-items: center;
-          justify-content: center;
+          padding: 1vh 4vw;
+          border-radius: 10px;
+          color: #fff;
         }
-
-
-        .icons{
+    
+        
+        .area-cinza{
+          height: 110vh;
+          width: 60vw;
+          gap: 8vh 0vw;
+          background-color: #25242493;
+          border-radius: 20px;
           display: flex;
           flex-direction: column;
-          width: 1.2rem;
-          gap: 0.7rem;
-        }
-        }
-        .botaoConcluir{
+          justify-content: center;
+          padding: 2vh 3vw;
 
-            margin-bottom: 5vw;
-            
-            button{
-            background-color:#ffffff;
-            border-radius:30px ;
-            width: 12vw;
-            height: 8vh;
+          h1{
+            font: 500 2rem 'vikings';
+            color: #9E8080;
+          }
+          a{
+            .bloco-escuro, .bloco-claro{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                height: 12vh;
+                justify-content: space-between;
+                padding: 0.5vh 2vw;
+                h3{
+                    font: 500 1rem 'vikings';
+                }
+    
+                .coluna{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 1vh 0vw;
+                    img{
+                        width: 1.5vw;
+    
+                    }
+                }
+              }
+              .bloco-escuro{
+                background-color: #2C2929;
+              }
+              .bloco-claro{
+                background-color: #c9c2c2;
+              }
+          }
 
-            color: #000000;
-            text-decoration: none;
-            font: 500 1.2em 'vikings';
-            }
+          
+         
         }
+      }
+    
 
-    }
+
+}
 
     @media (max-width:1280px) {
-      .Estudio {
-          .segundaSessao {
-  
-              h2 {
-                  font-size: 2rem;
-              }
-          }
-  
-          .sessaoSobre {
-  
-              .text {
-                  h1 {
-                      font-size: 3.5rem;
-                  }
-  
-                  p {
-                      font-size: 1.7rem;
-                  }
-              }
-          }
-      }
+      
   }
   
   @media (max-width:1024px) {
-      .Estudio {
-          .segundaSessao {
-  
-              h2 {
-                  font-size: 1.6rem;
-              }
-  
-              .text {
-  
-                  .column {
-  
-                      h3 {
-                          font-size: 1.6rem;
-                      }
-  
-                      p {
-                          font-size: 0.7rem;
-                      }
-                  }
-              }
-          }
-  
-          .sessaoSobre {
-  
-              .text {
-                  h1 {
-                      font-size: 3rem;
-                  }
-  
-                  p {
-                      font-size: 1.4rem;
-                  }
-              }
-          }
-      }
+      
   }
   
   @media (max-width:912px) {
-      .Estudio {
-  
-          .sessaoInicial {
-              height: 50vh;
-  
-              h1 {
-                  margin-left: 8vw;
-              }
-          }
-  
-          .segundaSessao {
-              gap: 2vh 0vw;
-  
-              .text {
-                  gap: 0vh 8vw;
-  
-                  .column {
-  
-                      p {
-                          font: 500 1rem "vikings";
-                          width: 40vw;
-                      }
-                  }
-              }
-          }
-  
-          .sessaoImagem {
-              height: 50vh;
-          }
-      }
+    
   }
   
   @media (max-width:540px) {
-      .Estudio {
-  
-          .sessaoInicial {
-  
-              h1 {
-                  font-size: 3rem;
-              }
-          }
-  
-          .segundaSessao {
-  
-              h2 {
-                  font-size: 1.2rem;
-              }
-  
-              .text {
-  
-                  .column {
-                      h3 {
-                          font-size: 1rem;
-                      }
-  
-                      p {
-                          font-size: 0.8rem;
-                      }
-                  }
-              }
-          }
-  
-          .sessaoSobre {
-  
-              .text {
-                  h1 {
-                      font-size: 1.5rem;
-                  }
-  
-                  p {
-                      font-size: 0.8rem;
-                      width: 40vw;
-                  }
-              }
-  
-              .mapbox {
-                  display: flex;
-                  height: 40vh;
-  
-                  iframe {
-                      width: 35vw;
-                  }
-              }
-          }
-      }
+      
   }
   
   @media (max-width:430px) {
-      .Estudio {
-  
-          .sessaoInicial {
-  
-              h1 {
-                  font-size: 2rem;
-              }
-          }
-  
-          .segundaSessao {
-              padding: 4vh 5vw;
-  
-              h2 {
-                  font-size: 0.8rem;
-              }
-  
-              .text {
-                  gap: 0vh 5vw;
-  
-                  .column {
-                      gap: 1vh 0vw;
-  
-                      h3 {
-                          font-size: 0.7rem;
-                      }
-  
-                      p {
-                          font-size: 0.5rem;
-                      }
-                  }
-              }
-          }
-  
-          .sessaoSobre {
-  
-              .text {
-                  h1 {
-                      font-size: 1.2rem;
-                  }
-  
-                  p {
-                      font-size: 0.6rem;
-                  }
-              }
-  
-              .mapbox {
-                  display: flex;
-                  height: 25vh;
-  
-                  iframe {
-                      width: 35vw;
-                  }
-              }
-          }
-      }
+      
   }

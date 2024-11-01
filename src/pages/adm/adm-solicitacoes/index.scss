@@ -1,151 +1,114 @@
-
-
-.principal-solicitacoes{
+.solicitacao{
   background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
-
   display: flex;
   flex-direction: column;
+  height: 200vh;
 
- 
-  h1 {
-    color: #9E8080;
-    margin-bottom: 3vh;
-    font: 700 2.7rem 'vikings';
-    text-align: center;
+  a{
+      text-decoration: none;
+      color: #000;
   }
 
-  .principal{
-    color: #b6b5b5;
-    gap: 15vh;
-    padding: 95px 15px 15px 15px;
-    border-radius: 10px;
-    
-
-    .pesquisa{
-        border: none;
-        border-radius: 5px;
-        color: #ffffff !important;
-        width: 50vw;
-        height: 5vh;
-        background-color: #585858;
-        
-    }
-
-    .fora{
-
-        background-color: #25242493;
-        border: none;
-        border-radius: 5px;
-        height: 85vh;
-        width: 50vw;
-        padding: 20px;
-        padding-left: 70px;
-        font-size: 18px;
-        line-height: 5;
-        margin-bottom: 15px;
-        align-items: center;
-        padding-top: 8vh;
-        
-
-        h1 {
-            color: #fff;
-            text-decoration: none;
-            font: 500 2rem 'vikings';
-            margin-bottom: 8vh;
-            
-          }
-
-    }
-
-    .bloco{
-        text-decoration: none;
-        font: 500 1.2rem 'vikings';
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 5vh;
-
-      .texto{
-        display: flex;
-        flex-direction: row;
-        gap: 17rem;
-        background-color: #b9b7b7;
-        height: 10vh;
-        width: 40vw;
-        align-items: center;
-        justify-content: center;
-        color: #000;
-      }
-
-
-      .icons{
-        display: flex;
-        flex-direction: column;
-        width: 1.2rem;
-        gap: 0.7rem;
-      }
-      }
-  }
-        .bloco{
-        text-decoration: none;
-        font: 500 1.2rem 'vikings';
-        display: flex;
-        flex-direction: row;
-        margin-bottom: 5vh;
-
-    
-      .texto1{
-        display: flex;
-        flex-direction: row;
-        gap: 17rem;
+  .bloco{
+      margin-top: 10vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8vh 0vw;
+      input{
         background-color: #9E8080;
-        color: #000;
+        width: 60vw;
         height: 10vh;
-        width: 40vw;
+        display: flex;
         align-items: center;
-        justify-content: center;
+        padding: 1vh 4vw;
+        border-radius: 10px;
+        color: #fff;
       }
-
-
-      .icons{
+  
+      
+      .area-cinza{
+        height: 110vh;
+        width: 60vw;
+        gap: 8vh 0vw;
+        background-color: #25242493;
+        border-radius: 20px;
         display: flex;
         flex-direction: column;
-        width: 1.2rem;
-        gap: 0.7rem;
-      }
-      }
-    
-    button{
-        background-color: #fff;
-        text-decoration: none;
-        border-radius: 20px;
-        color: #000;
-        align-items: center;
-        height: 50px;
-        width: 15vw;
-        border: none;
-        font: 700 13px "vikings" !important;
-        margin-bottom: 10vh ;
-        margin-left: 15vh;
-        
-        
-        
-    
-    }
+        justify-content: center;
+        padding: 2vh 3vw;
 
-    @media (max-width:1024px) {
-      .principal-solicitacoes{
-        height: 80vh;
-       .Bloco{
-
-        .texto{
-          color: #fff;
+        h1{
+          font: 500 2rem 'vikings';
+          color: #9E8080;
         }
-        
+        a{
+          .bloco-escuro, .bloco-claro{
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              height: 12vh;
+              justify-content: space-between;
+              padding: 0.5vh 2vw;
+              h3{
+                  font: 500 0.8rem 'vikings';
+                   color: #fff
+              }
+              h1{
+                font: 500 1rem 'vikings';
+                color: #fff;
+              }
+              .flex{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                gap: 0vh 2vw;
+              }
+  
+              .coluna{
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  gap: 1vh 0vw;
+                  img{
+                      width: 1.5vw;
+  
+                  }
+              }
+            }
+            .bloco-escuro{
+              background-color: #2C2929;
+            }
+            .bloco-claro{
+              background-color: #c9c2c2;
+            }
+        }
 
+        
        
-         
-         
-       }
       }
+    }
+  
+
+
 }
+
+  @media (max-width:1280px) {
+    
+}
+
+@media (max-width:1024px) {
+    
+}
+
+@media (max-width:912px) {
+  
+}
+
+@media (max-width:540px) {
+    
+}
+
+@media (max-width:430px) {
+    
 }

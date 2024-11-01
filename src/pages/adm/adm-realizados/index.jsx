@@ -4,66 +4,50 @@ import { Link } from "react-router-dom";
 
 export default function AdmRealizados() {
   return (
-    <div className="conteiner-realizados">
-        <NavAdm/>
-        <div className="principal">
+    <div className="relatorio-realizado">
+      <NavAdm/>
+      <div className="bloco">
 
-      <input type="text"  className="pesquisa" placeholder="
-      Pesquise e veja o seu relatório pela data ou nome.."/>
+     <input type="text" placeholder="Pesquise e veja o seu relatório pela data ou nome.." />
 
-      <div className="fora">
-        <h1>Relatorios já feitos</h1>
+        <div className="area-cinza">
+          <h1>RELATÓRIOS JA REALIZADOS</h1>
 
-        <Link to='/adm-relatorio'>
-          <div className="bloco">
-          <div className="texto1">Relatório 01-21/05/2024
-              <div className="icons">
-                <img src="assets/images/lixeirabranca.png" alt="" />
-                <img src="assets/images/canetabranca.png" alt="" />
+          <Link to='/adm-relatorio'>
+            <div className="bloco-escuro">
+              <h3>Relatório01-21/03/2024</h3>
+              <div className="coluna">
+                <img src="/assets/images/lixeirabranca.png" alt="apagar" />
+                <img src="/assets/images/canetabranca.png" alt="editar" />
               </div>
             </div>
-          </div>
-        </Link>
+          </Link>
 
-        <div className="bloco">
+          <Link>
+            <div className="bloco-claro">
+              <h3>Relatório02-21/03/2024</h3>
+              <div className="coluna">
+              <img src="assets/images/lixeira.png" alt="apagar" />
+              <img src="assets/images/caneta.png" alt="editar" />
+              </div>
+            </div>
+          </Link>
 
-          <div className="texto">Relatório 01-21/05/2024
-          <div className="icons">
-            <img src="assets/images/lixeira.png" alt="" />
-            <img src="assets/images/caneta.png" alt="" />
-          </div>
-          </div>
-          
+          <Link>   
+            <div className="bloco-escuro">
+            
+            </div>
+          </Link>
+          <Link>
+            <div className="bloco-claro">
+            
+            </div>
+          </Link>
         </div>
-
-        <div className="bloco">
-
-          <div className="texto1">Relatório 01-21/05/2024
-          <div className="icons">
-            <img src="assets/images/lixeirabranca.png" alt="" />
-            <img src="assets/images/canetabranca.png" alt="" />
-          </div>
-          </div>
-          
-        </div>
-
-        <div className="bloco">
-
-          <div className="texto">Relatório 01-21/05/2024
-          <div className="icons">
-          <img src="assets/images/lixeira.png" alt="" />
-            <img src="assets/images/caneta.png" alt="" />
-          </div>
-          </div>
-
-        </div>
-  
-      </div>
-      <div  className="botaoConcluir">
-      <a href=""><button>Concluir</button></a>
+        <button>REALIZAR NOVO RELATO</button>
       </div>
     </div>
-    </div>
+ 
   );
 }
 
