@@ -2,7 +2,7 @@
     background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
     display: flex;
     flex-direction: column;
-    height: 200vh;
+    height: 150vh;
 
     header {
         display: flex;
@@ -138,4 +138,133 @@
     
     }
 }
+
+@media (max-width:1440px) {
+  
+   }
+   
+  
+  @media (max-width:1280px) {
+   .conteiner-infocliente{
+    
+   
+    .principal{
+      margin-bottom: 10vh;
+      
+  
+      .bloco{
+        .subBloco{
+          
+        }
+      }
+  
+     
+  
+      
+    }
+    
+  
+    
+   }
+  }
+  
+  @media (max-width:1024px) {
+    .adm-marcar{
+    
+   
+      .secao-dois{
+      
+        
+    
+        .bloco{
+
+            h1{
+                font: 500 1rem "vikings";
+                width: 50vw;
+                padding: 3vh 2vw;
+                text-align: center;
+            }
+        
+        }
+  
+       
+  
+        
+        }
+      }
+    }
+  
+  
+  @media (max-width:912px) {
+   
+   
+  }
+  
+  @media (max-width:540px) {
+    .adm-marcar{
+    
+   
+        .secao-dois{
+           
+
+           .bloco{
+       
+
+            .input-1{
+               
+
+
+                .espaco{
+                    gap: 3vh;
+                    
+
+                    input{
+                        color: #fff;
+                        font: 700 0.75rem "vikings";
+                   
+             
+                        text-align: center;
+                    }
+
+                    p{
+                        font: 500 1rem 'vikings';
+                        color: #fff;
+                    }
+
+                    
+                }
+            }
+           }
+
+
+           .botao{
+            
+            button{
+                height: 10vh;
+                font: 500 1rem 'vikings';
+                color: #fff;
+
+            }
+           }
+        
+          
+      
+         
+    
+          
+          }
+        }
+      }
+    
+
+  
+       
+  
+       
+  
+  
+  
+    
+  
+  
          
