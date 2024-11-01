@@ -5,69 +5,79 @@ import NavAdm from "../../../components/Nav-adm";
 export default function AdmMarcar() {
   return (
     <div className="adm-marcar">
+             
+            <header>
+                <div className='imagem-logo'>
+                    <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
+                </div>
 
+                <div className='links-principal'>
+                    <Link to='/adm-realizados' className='animacao'>VOLTAR</Link>
+                    <Link to= '/adm-landing'className='animacao'>HOME</Link>
+                    <Link to='/adm-secoes' className='animacao'>ARQUIVADAS</Link>
+                </div>
+            </header>
 
-      <NavAdm/>
+            <div className="secao">
 
-      <div className="secao-dois">
+              <div className="secao-inserir">
+                  <h1>MARCAR CONSULTA </h1>
 
-                <div className="bloco">
+                  <div className="input">
+                    <h3>NOME DO CLIENTE</h3>
+                    <input type="text" placeholder="EX: JOAO DA SILVA" />
+                  </div>
 
-                <h1>Marcar Consulta</h1>
-
-                <div className="input-1">
-                    <div className="espaco">
-                        <p>Nome do Paciente</p>
-                        <input className="in"  type="text" placeholder="Ex:Lucas" />
-
-                        <p>Gênero</p>
-                        <input className="in"  placeholder="Ex:Boyceta" />
-
-                        <p>Telefone</p>
-                        <input type="text" className="in" placeholder="Ex: (99) 99999-9999"/>
-
-                        <p>Preço</p>
-                        <input type="text"  className="in"  placeholder="Ex: R$ 100,00"/>
-                    
-                    
+                  <div className="direcao-lado">
+                    <div className="input-2">
+                      <h3>IDADE</h3>
+                      <input type="number" placeholder="EX: 18"  />
                     </div>
-
-                    <div className="espaco">
-                        <p>Idade </p>
-                        <input className="in" type="text" placeholder="Ex: 30" />
-
-                        <p>E-mail</p>
-                        <input type="text" className="in" placeholder="Ex: 9KwXs@example.com"/>
-
-                        <p>Ideia de tatuagem</p>
-                        <input className="in" type="text"  placeholder="Ex: Tigre"/>
-
-                        <p>CPF</p>
-                        <input className="in"type="text"  placeholder="Ex: 999.999.999-99"/>
+                    <div className="input-2">
+                      <h3>CPF DO CLIENTE</h3>
+                      <input type="text"placeholder="EX: 000.000.000-00"  />
                     </div>
-                </div>
+                  </div>
 
+                  <div className="direcao-lado">
+                    <div className="input-2">
+                      <h3>HORARIO DA SESSÃO</h3>
+                      <input type="text" placeholder="EX: 10H00"  />
+                    </div>
+                    <div className="input-2">
+                      <h3>DATA DA SESSÃO</h3>
+                      <input type="text" placeholder="EX: DD/MM/AA" />
+                    </div>
+                  </div>
+                  <div className="direcao-lado">
+                    <div className="input-2">
+                      <h3>GÊNERO</h3>
+                      <input type="text" placeholder="EX: MASCULINO" />
+                    </div>
+                    <div className="input-2">
+                      <h3>IDEIA</h3>
+                      <input type="text" placeholder="EX: LOBO NAS COSTAS"  />
+                    </div>
+                  </div>
 
-                <div className="botao">
-                  <button>Concluir</button>
-                </div>
+                  <div className="input">
+                    <h3>E-MAIL</h3>
+                    <input type="email"  placeholder="EX: SEUEMAIL@GMAIL.COM" />
+                  </div>
+                  <div className="input">
+                    <h3>TELEFONE</h3>
+                    <input type="text" placeholder="EX: (00) 00000-0000"  />
+                  </div>
 
-                
-              
-            
-
-            
-               
-                
-            
-                       
-                </div>
-               
-                </div>
-
+                  <div className="direcao-lado">
+                    <div className="input-2">
+                      <h3>PREÇO BASE</h3>
+                      <input type="text" placeholder=" R$ 00,00"  />
+                    </div>
+                    <button>CONCLUIDO</button>
+                  </div>
+              </div>
             </div>
-
-      
-   
+    </div>
   );
 }

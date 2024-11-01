@@ -35,7 +35,7 @@ export default function Navegacao() {
         <Route path='/adm-marcar' element={<AdmMarcar />} />
         <Route path='/adm-relatorio' element={<AdmRelatorio />} />
         <Route path='/adm-solicitacoes' element={<AdmSolicitacoes />} />
-        <Route path='/adm-seções' element={<AdmSecoes />} />
+        <Route path='/adm-secoes' element={<AdmSecoes />} />
         <Route path='/Estudio' element={<Studio />} />
         <Route path='/' element={<Landingpage />} />
         <Route path='/Contato' element={<Contato />} />
