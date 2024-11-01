@@ -43,7 +43,6 @@ export default function Agendamento(){
                 <div className="bloco">
 
                 <h1>INSIRA SEUS DADOS <br />PARA O AGENDAMENTO DA SEÇÃO</h1>
-
                 <div className="input-1">
                     <div className="espaco">
                         <p>INFORME SEU NOME</p>
