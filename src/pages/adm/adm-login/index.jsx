@@ -26,7 +26,7 @@ import { useState } from 'react'
         const url = `http://4.172.207.208:5021/entrar/`
         let resp = await axios.post(url, usuario)
 
-        if (resp.data.erro != undefined) {
+        if (resp.data.erro !== undefined) {
             alert(resp.data.erro)
         } else {
             localStorage.setItem('USUARIO', resp.data.token)
