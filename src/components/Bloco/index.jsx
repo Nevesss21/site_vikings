@@ -27,7 +27,7 @@ export default function Bloco(){
               <img
                 className="icones"
                 src="/assets/images/lixeirabranca.png"
-                alt=""
+                alt="image"
               />
             </div>
           </div>
