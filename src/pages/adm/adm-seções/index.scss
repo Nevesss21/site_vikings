@@ -3,6 +3,7 @@
 
   display: flex;
   flex-direction: column;
+ 
 
 
   
@@ -109,6 +110,7 @@ header {
       display: flex;
       flex-direction: row;
       align-items: center;
+      border-radius: 10px;
      
       font: 700 16px 'vikings' !important;
     
@@ -135,10 +137,11 @@ header {
 
 
         .parte1{
-          line-height: 4vh;
-          word-spacing: 4px;
+          
+          word-spacing: 1vh;
           font: 700 1.2rem 'vikings' !important ;
-          gap: 10px;
+          gap: 4vh;
+          margin-top: 5vh;
         }
 
 
@@ -152,6 +155,7 @@ header {
 
             color: #fff;
             text-decoration: none;
+            margin-top: 1vh;
 
             h2{
               font: 800 5rem 'vikings' !important ;
@@ -162,6 +166,9 @@ header {
 
             img{
               margin-left: 2.75vw;
+              width: 2vw;
+              height: 2vw;
+              margin-bottom: 10px;
             }
 
             
@@ -176,7 +183,11 @@ header {
             gap: 3.5vw;
 
             img{
-              height: 2vh;
+              img{
+                margin-left: 2.75vw;
+                width: 2vw;
+                height: 2vw;
+              }
               width: 1.5vw;
             }
 
@@ -198,6 +209,141 @@ header {
       }
 
     }
+
+
+    @media (max-width:1440px) {
+
+      .conteiner-secoes{
+
+        align-items: center;
+        img{
+          margin-right: 50px;
+        }
+        
+
+        .princpal1{
+        
+
+          .bloquinhos-pretos{
+           
+          }
+        }
+      }
+    
+     }
+     
+    
+    @media (max-width:1280px) {
+      
+      .conteiner-secoes{
+
+        align-items: center;
+        img{
+          margin-right: 50px;
+        }
+        
+
+        .princpal1{
+        
+
+          .bloquinhos-pretos{
+
+            .bloco1{
+
+
+              .parte1{
+                
+                  color: #000;
+                
+
+                h3{
+                  color: #000;
+                }
+              }
+              }
+           
+          }
+        }
+      }
+    
+     }
+   
+    
+    
+    @media (max-width:1024px) {
+      
+      .conteiner-secoes{
+        margin-left: 10px;
+
+        align-items: center;
+        img{
+          margin-right: 50px;
+        }
+        
+
+        .princpal1{
+        
+
+          .bloquinhos-pretos{
+           
+          }
+        }
+      }
+    
+     }
+    
+    
+    
+    @media (max-width:912px) {
+      
+      .conteiner-secoes{
+
+        align-items: center;
+        img{
+          margin-right: 50px;
+        }
+        
+
+        .princpal1{
+        
+
+          .bloquinhos-pretos{
+           
+          }
+        }
+      }
+    
+     
+     
+     
+    }
+    
+    @media (max-width:540px) {
+      
+      .conteiner-secoes{
+
+        align-items: center;
+        img{
+          margin-right: 50px;
+        }
+        
+
+        .princpal1{
+        
+
+          .bloquinhos-pretos{
+           
+          }
+        }
+      }
+    
+     
+    
+    
+    
+      }
+
+    
 
   
         
