@@ -1,15 +1,13 @@
-import { useEffect, useState } from 'react'
+
 import './index.scss'
 import NavAdm from '../../../components/Nav-adm'
-import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 
 
 
 
 export default function AdmLanding() {
-    
-    const [token, setToken] = useState(null)
+
     const navigate = useNavigate()
     async function sair() {
         localStorage.setItem('USUARIO', null)
@@ -18,14 +16,6 @@ export default function AdmLanding() {
     
 
     // funcao que executa assim que a pagina carrega
-    useEffect(() => {
-        let token = localStorage.getItem('USUARIO')
-        setToken(token)
-
-        if (token == 'null') {
-            navigate('/')
-        }
-    }, [])
     
     return (
         <div className="conteiner-adm"> 

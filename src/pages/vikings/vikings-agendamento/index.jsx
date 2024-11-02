@@ -25,7 +25,7 @@ export default function Agendamento(){
             "ideia": ideia
         }
 
-        const url = `http://localhost:5010/cliente/`
+        const url = `http://4.172.207.208:5021/cliente/`
         let resp = await axios.post(url, usuario)
         alert('Pessoa adicionada na tabela cliente. Id: ' + resp.data.novoId);
     }

@@ -138,4 +138,258 @@
     
     }
 }
-         
+
+@media (max-width:1280px) {
+  .adm-marcar{
+    header{
+        .imagem-logo img {
+            width: 10vw;
+          }
+        .links-principal{
+            a{
+                font-size: 1rem;
+            }
+
+        }
+      }
+        .secao{
+  
+          .secao-inserir{
+ 
+
+            h1{
+                font-size: 2.5rem;
+            }
+            .direcao-lado{
+              button{ 
+                  font-size: 0.9rem;
+              }
+  
+              .input-2{
+                  gap: 1vh 0vw;
+                  h3{
+                      font-size: 0.9rem;
+
+                  }
+                  input{
+                      height: 6vh;
+                      width: 20vw;
+                      padding: 0vh 2vw;
+                  }
+              }
+          }
+    
+        }
+        
+      }
+}
+}
+
+
+@media (max-width:912px) {
+  .adm-marcar{
+    header{
+        .imagem-logo img {
+            width: 12vw;
+          }
+        .links-principal{
+            a{
+                font-size: 0.9rem;
+            }
+
+        }
+    }
+    .secao{
+
+      .secao-inserir{
+        padding: 5vh 5vw;
+        .direcao-lado{
+          .input-2{        
+              h3{
+                  font-size: 0.8rem;   
+              }
+              input{
+                  font-size: 0.7rem; 
+              }
+          }
+      }
+        .input{
+
+          input{
+          font-size: 0.7rem;
+        
+          }
+      }
+    }    
+  }
+}
+}
+
+
+@media (max-width:768px) {
+  .adm-marcar{
+    header{
+        .imagem-logo img {
+            width: 16vw;
+          }
+    }
+
+    .secao{
+      .secao-inserir{
+        h1{
+            font-size: 2.2rem;
+        }
+    } 
+  }
+}
+}
+
+@media (max-width:540px) {
+  .adm-marcar{
+    header{
+        height: 15vh;
+        .imagem-logo img {
+            width: 18vw;
+          }
+        .links-principal{
+            a{
+                font-size: 0.8rem;
+            }
+
+        }
+    }
+    .secao{
+      .secao-inserir{
+        .direcao-lado{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 1vh 5vw;
+
+          button{
+              margin-top: 3.2vh;
+              width: 20vw;
+              height: 5.7vh;
+          }
+          }
+        h1{
+            font-size: 1.2rem;
+        }
+        .input{
+         height: 8.7vh;
+          h3{
+            font-size: 0.6rem;
+          }
+
+        }
+        .direcao-lado{
+          button{ 
+              font-size: 0.9rem;
+          }     
+
+            .input-2{
+              height: 8.7vh;
+
+              h3{
+                  font-size: 0.6rem;
+
+              }
+           
+          }
+      }
+
+    }
+    
+  }
+}
+}
+
+@media (max-width:430px) {
+  .adm-marcar{
+    header{
+        .imagem-logo img {
+            width: 22vw;
+          }
+        .links-principal{
+            a{
+                font-size: 0.7rem;
+            }
+
+        }
+    }
+    .secao{
+      .secao-inserir{
+        h1{
+            font-size: 2.5rem;
+        }
+        .direcao-lado{
+          button{ 
+              font-size: 0.9rem;
+          }
+          h3{
+            font-size: 0.3rem;
+          }
+
+          .input-2{
+              gap: 1vh 0vw;
+              h3{
+                  font-size: 0.1rem;
+
+              }
+              input{
+
+                  height: 5vh;
+                  width: 20vw;
+                  padding: 0vh 2vw;
+              }
+          }
+      }
+
+    }
+    
+  }
+}
+}
+
+@media (max-width:375px) {
+  .adm-marcar{
+    header{
+        .links-principal{
+            a{
+                font-size: 0.5rem;
+            }
+
+        }
+    }
+    .secao{
+  
+      .secao-inserir{
+
+        h1{
+            font-size: 2.5rem;
+        }
+        .direcao-lado{
+          button{ 
+              font-size: 0.9rem;
+          }
+
+          .input-2{
+              gap: 1vh 0vw;
+              h3{
+                  font-size: 0.9rem;
+
+              }
+              input{
+                  height: 6vh;
+                  width: 20vw;
+                  padding: 0vh 2vw;
+              }
+          }
+      }
+
+    }
+    
+  }
+}
+}

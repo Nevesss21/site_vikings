@@ -23,7 +23,7 @@ export default function Contato() {
             "mensagem": mensagem
         }
 
-        const url = `http://localhost:5010/contato/`
+        const url = `http://4.172.207.208:5021/contato/`
         let resp = await axios.post(url, usuario)
         alert('Pessoa adicionada na tabela contato. Id: ' + resp.data.novoId);
     }
