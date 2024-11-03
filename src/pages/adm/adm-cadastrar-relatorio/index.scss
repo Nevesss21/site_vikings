@@ -1,93 +1,131 @@
-.cadastrar-relatorio{
-    background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
+.cadastrar-relatorio {
+  background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
+  display: flex;
+  flex-direction: column;
+  height: 150vh;
+
+  .secao-cadastro {
     display: flex;
     flex-direction: column;
-    height: 150vh;
+    align-items: center;
+    .botoes {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      //   padding: 5vh 0vw;
+      gap: 15px;
 
-    .secao-cadastro{
+      button {
+        background-color: #fff;
+        font: 700 1rem "vikings";
+        border-radius: 5px;
+        padding: 15px 20px;
+        border: none;
+        color: #2c2929;
+        cursor: pointer;
+      }
+    }
+
+    .cadastrar {
+      height: 110vh;
+      width: 60vw;
+      gap: 5vh 0vw;
+      background-color: #313131;
+      border-radius: 20px;
+      border: #1a1a1a 3vh solid;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 2vh 3vw;
+      .espaco {
         display: flex;
         flex-direction: column;
         align-items: center;
-        .botoes{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-            gap: 0vh 20vw;
-            padding: 5vh 0vw;
-
-            button{
-                background-color: #fff;
-                font: 700 1rem 'vikings';
-                border-radius: 30px;
-                height: 8vh;
-                width: 20vw;
-                border: none;
-                color: #2C2929;
-
-            }
+        justify-content: center;
+        .input {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          gap: 2vh 0vw;
+          h3 {
+            font: 500 1.5rem "vikings";
+            color: #fff;
+          }
+          input {
+            border: none;
+            min-width: 50px;
+            border-radius: 5px;
+            background-color: white;
+            padding: 1vh 2vw;
+            font: 500 1rem "vikings";
+          }
         }
-       
-        .cadastrar{
-            height: 110vh;
-            width: 60vw;
-            gap: 10vh 0vw;
-            background-color: #313131;
-            border-radius: 20px;
-            border: #1A1A1A 3vh solid;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 2vh 3vw;
-            .espaco{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                .input{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    gap: 2vh 0vw;
-                    h3{
-                        font: 500 1.5rem 'vikings';
-                        color: #fff;
-                    }
-                    input{
-                      height: 6vh;
-                      border: none;
-                      width: 50vw;
-                      border-radius: 5px;
-                      background-color: #9E8080;
-                      padding: 0vh 2vw;
-                      font: 500 1rem 'vikings';
-                    }
-    
-                }
-            }
-            .escolha{
-                display: flex;
-                flex-direction: column;
-                gap: 3vh 0vw;
-                justify-content: center;
-                h1{
-                    font: 500 1.5rem 'vikings';
-                    color: #fff;
-                    padding: 2vh 0vw;
-                }
-                div{
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    gap: 0vh 1vw;
-
-                    h3{
-                        font: 500 1rem 'vikings';
-                        color: #8a8a8a;
-                    }
-                }
-            }
+      }
+      .escolha {
+        display: flex;
+        flex-direction: column;
+        gap: 3vh 0vw;
+        justify-content: center;
+        h1 {
+          font: 500 1.5rem "vikings";
+          color: #fff;
+          padding: 2vh 0vw;
         }
+        div {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 0vh 1vw;
+
+          h3 {
+            font: 500 1rem "vikings";
+            color: #8a8a8a;
+          }
+        }
+      }
     }
-   
+  }
+}
+
+@media (max-width: 760px) {
+  .cadastrar-relatorio {
+    .secao-cadastro {
+      .cadastrar {
+        justify-content: start;
+        width: 90%;
+        border: 0;
+        border-radius: 8px;
+
+        .escolha {
+          h1 {
+            font-size: 17px;
+            text-align: center;
+          }
+
+          div {
+            justify-content: space-between;
+          }
+        }
+
+        .botoes {
+          gap: 15px;
+          justify-content: center;
+
+          button {
+            width: auto;
+            font-size: 14px;
+          }
+        }
+
+        .espaco .input {
+          align-items: normal;
+
+          h3 {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
 }

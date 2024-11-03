@@ -2,7 +2,7 @@
   background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
   display: flex;
   flex-direction: column;
-  height: 200vh;
+  height: 190vh;
 
   a{
       text-decoration: none;
@@ -90,22 +90,55 @@
 
 }
 
-  @media (max-width:1280px) {
-    
-}
 
 @media (max-width:1024px) {
+  .solicitacao{
+    height: 170vh;
+    .bloco{
+      .botoes{
+        button{
+          font-size: 0.8rem;
+          height: 6vh;
+        }
+      }
+    }
+  }
     
 }
 
 @media (max-width:912px) {
-  
+  .solicitacao{
+    height: 170vh;
+    .bloco{
+      .area-cinza{
+        width: 70vw;
+      }
+      .botoes{
+        width: 70vw;
+        button{
+          height: 6vh;
+          width: 25vw;
+        }
+      }
+    }
+  }
 }
 
 @media (max-width:540px) {
-    
+  .solicitacao{
+    height: 170vh;
+    .bloco{
+      .area-cinza{
+        width: 85vw;
+      }
+      .botoes{
+        width: 85vw;
+        button{
+          font-size: 0.7rem;
+          width: 30vw;
+        }
+      }
+    }
+  }
 }
 
-@media (max-width:430px) {
-    
-}
