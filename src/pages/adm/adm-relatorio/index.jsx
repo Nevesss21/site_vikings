@@ -29,7 +29,6 @@ export default function AdmRelatorio() {
             <p>Clientes com idade menor que 18 anos:  14</p>
             <p>Percentual de crescimento : 30%</p>
           </div>
-          <input type="text" placeholder="Observações" />
         </div>
         <button>Concluido</button>
       </div>

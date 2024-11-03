@@ -22,6 +22,7 @@ import Oriental from './pages/vikings/vikings-oriental';
 import FineLine from './pages/vikings/vikings-fine-line';
 import Colorido from './pages/vikings/vikings-colorido';
 import InformacoesSoliciacao from './pages/adm/adm-informacao-cliente';
+import CadastrarRelatorio from './pages/adm/adm-cadastrar-relatorio';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -55,6 +56,7 @@ export default function Navegacao() {
         <Route path='/Fine-line' element={<FineLine/>} />
         <Route path='/Colorida' element={<Colorido/>} />
         <Route path='/adm-informacao-solicitacao' element={<InformacoesSoliciacao/>} />
+        <Route path='/adm-cadastrar-relatorio' element={<CadastrarRelatorio/>} />
 
       </Routes>
     </BrowserRouter>

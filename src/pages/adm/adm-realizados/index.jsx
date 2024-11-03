@@ -44,7 +44,7 @@ export default function AdmRealizados() {
             </div>
           </Link>
         </div>
-        <button>REALIZAR NOVO RELATO</button>
+        <Link to ='/adm-cadastrar-relatorio'><button>REALIZAR NOVO RELATO</button></Link>
       </div>
     </div>
  

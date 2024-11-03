@@ -1,0 +1,93 @@
+.cadastrar-relatorio{
+    background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
+    display: flex;
+    flex-direction: column;
+    height: 150vh;
+
+    .secao-cadastro{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .botoes{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            gap: 0vh 20vw;
+            padding: 5vh 0vw;
+
+            button{
+                background-color: #fff;
+                font: 700 1rem 'vikings';
+                border-radius: 30px;
+                height: 8vh;
+                width: 20vw;
+                border: none;
+                color: #2C2929;
+
+            }
+        }
+       
+        .cadastrar{
+            height: 110vh;
+            width: 60vw;
+            gap: 10vh 0vw;
+            background-color: #313131;
+            border-radius: 20px;
+            border: #1A1A1A 3vh solid;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2vh 3vw;
+            .espaco{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                .input{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2vh 0vw;
+                    h3{
+                        font: 500 1.5rem 'vikings';
+                        color: #fff;
+                    }
+                    input{
+                      height: 6vh;
+                      border: none;
+                      width: 50vw;
+                      border-radius: 5px;
+                      background-color: #9E8080;
+                      padding: 0vh 2vw;
+                      font: 500 1rem 'vikings';
+                    }
+    
+                }
+            }
+            .escolha{
+                display: flex;
+                flex-direction: column;
+                gap: 3vh 0vw;
+                justify-content: center;
+                h1{
+                    font: 500 1.5rem 'vikings';
+                    color: #fff;
+                    padding: 2vh 0vw;
+                }
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 0vh 1vw;
+
+                    h3{
+                        font: 500 1rem 'vikings';
+                        color: #8a8a8a;
+                    }
+                }
+            }
+        }
+    }
+   
+}
