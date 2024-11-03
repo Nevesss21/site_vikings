@@ -1,106 +1,143 @@
-.login{
+.login {
   background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 120vh;
+  height: 100vh;
 
-  .secao-inicial{
-    header{
-      display: flex;
-      flex-direction: row;
-      justify-content: start;
-      padding: 1vh 2vw;
-
-
-      button{
-        background: none;
-        border: none;
-        margin-right: 55vw;
-
-      }
-  
-    }
-    
+  .secao-inicial {
     display: flex;
     flex-direction: column;
     background-color: #111010b2;
     width: 60vw;
-    height: 95vh;
+    height: 90vh;
     align-items: center;
     border-radius: 10px;
 
-    
-    .image{   
+    #a {
+      align-self: flex-start;
+      margin-left: 5vw;
+      background-color: #0000;
+      cursor: pointer;
+    }
+
+    .image {
       display: flex;
       flex-direction: column;
-      align-items: center;   
+      align-items: center;
       padding: 2vh 0vw;
-      img{
+
+      img {
         width: 15vw;
       }
-      h1{
+
+      h1 {
         font: 500 3rem 'vikings';
         color: #fff;
       }
     }
-    .inputs{
-      padding: 2vh 0vw;
 
-      p{
+    .inputs {
+      padding: 2vh 0vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 50vw;
+
+      p {
+        align-self: self-start;
         font: 500 1rem 'vikings';
         color: #fff;
         padding: 2vh 0vw;
       }
-      input{
-        width: 30vw;
+
+      input {
+        outline: none;
+        width: 100%;
         height: 5vh;
       }
     }
-    .botoes{
-      margin-left: 20vw;
 
-      button {
-        background-color: #A68D7A;
-        color: #fff;
-        font: 500 1rem "vikings";
-        width: 10vw;
-        height: 6vh;
-        border: none;
-        border-radius: 10px;
-    }
-
-    }
-
-    
-  }
-}
-
-@media (max-width:1280px) {
-  .login{
-    .secao-inicial{
-      
+    button {
+      margin-top: 3vh;
+      align-self: self-end;
+      background-color: #A68D7A;
+      color: #fff;
+      font: 500 1rem "vikings";
+      padding: 1vh 3vw;
+      border: none;
+      border-radius: 10px;
     }
   }
-}
-
-@media (max-width:1024px) {
-  
 }
 
 @media (max-width:912px) {
-  
+  .login {
+    .secao-inicial {
+      height: 70vh;
+
+      button {
+
+        img {
+          height: 4vh;
+        }
+      }
+
+      .coluna {
+
+        .image {
+
+
+          img {
+            width: 20vw;
+          }
+
+          h1 {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 
 @media (max-width:540px) {
-  
-}
+  .login {
+    .secao-inicial {
+      width: 80vw;
+      height: 55vh;
 
-@media (max-width:430px) {
-  
-}
+      button {
 
-@media (max-width:375px) {
-  
+        img {
+          height: 3vh;
+        }
+      }
+
+      .coluna {
+        
+        .image {
+          
+          h1 {
+            font-size: 1rem;
+          }
+        }
+        
+        .inputs {
+          p {
+            font-size: 0.6rem;
+          }
+
+          input {
+            height: 3vh;
+          }
+
+          button {
+            font-size: 0.5rem;
+          }
+        }
+      }
+    }
+  }
 }
