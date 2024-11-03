@@ -1,0 +1,381 @@
+.informacao{
+    background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+
+    header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1vh 3vw;
+        img{
+          width: 10vw;
+        }
+        a{
+          button{
+            background-color: #2C2929;
+            font: 700 1rem 'vikings';
+            border-radius: 30px;
+            height: 8vh;
+            width: 15vw;
+            border: none;
+            color: #fff;
+          }
+        }
+      }
+     
+
+    .secao{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 10vh;
+
+      .secao-informacao{
+        height: 150vh;
+        width: 70vw;
+        background-color: #25242493;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10vh 5vw;
+        border-radius: 10px;
+        gap: 5vh 0vw;
+
+        h1{
+            font: 500 2.5rem 'vikings';
+            color: #9E8080;
+            padding: 5vh 0vw;
+
+        }
+        .direcao-lado{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 1vh 5vw;
+
+            .info-2{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1vh 0vw;
+                h3{
+                    font: 500 1rem 'vikings';
+                    color: #fff;
+                }
+                div{
+                    height: 6vh;
+                    border: none;
+                    border-radius: 5px;
+                    width: 20vw;
+                    background-color: #9E8080;
+                    padding: 0vh 2vw;
+                    display: flex;
+                    align-items: center;
+                    h3{
+                        font: 500 1rem 'vikings';
+                        color: #BBA6A6 
+                    }
+                }
+            }
+        }
+        button{
+            margin-top: 3.5vh;
+            width: 20vw;
+            font: 700 1rem 'vikings';
+            height: 6vh;
+            background-color: #9E8080;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            margin-left: 25vw;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1vh 0vw;
+
+            h3{
+                font: 500 1rem 'vikings';
+                color: #fff;
+            }
+            div{
+                height: 6vh;
+                border: none;
+                border-radius: 5px;
+                width: 45vw;
+                background-color: #313131;
+                padding: 0vh 2vw;
+                display: flex;
+                align-items: center;
+                h3{
+                    font: 500 1rem 'vikings';
+                    color: #6F6F6F;
+                }
+            }
+
+        }
+      }
+    
+    }
+}
+
+@media (max-width:1280px) {
+  .adm-marcar{
+    header{
+        .imagem-logo img {
+            width: 10vw;
+          }
+        .links-principal{
+            a{
+                font-size: 1rem;
+            }
+
+        }
+      }
+        .secao{
+  
+          .secao-inserir{
+ 
+
+            h1{
+                font-size: 2.5rem;
+            }
+            .direcao-lado{
+              button{ 
+                  font-size: 0.9rem;
+              }
+  
+              .input-2{
+                  gap: 1vh 0vw;
+                  h3{
+                      font-size: 0.9rem;
+
+                  }
+                  input{
+                      height: 6vh;
+                      width: 20vw;
+                      padding: 0vh 2vw;
+                  }
+              }
+          }
+    
+        }
+        
+      }
+}
+}
+
+
+@media (max-width:912px) {
+  .adm-marcar{
+    header{
+        .imagem-logo img {
+            width: 12vw;
+          }
+        .links-principal{
+            a{
+                font-size: 0.9rem;
+            }
+
+        }
+    }
+    .secao{
+
+      .secao-inserir{
+        padding: 5vh 5vw;
+        .direcao-lado{
+          .input-2{        
+              h3{
+                  font-size: 0.8rem;   
+              }
+              input{
+                  font-size: 0.7rem; 
+              }
+          }
+      }
+        .input{
+
+          input{
+          font-size: 0.7rem;
+        
+          }
+      }
+    }    
+  }
+}
+}
+
+
+@media (max-width:768px) {
+  .adm-marcar{
+    header{
+        .imagem-logo img {
+            width: 16vw;
+          }
+    }
+
+    .secao{
+      .secao-inserir{
+        h1{
+            font-size: 2.2rem;
+        }
+    } 
+  }
+}
+}
+
+@media (max-width:540px) {
+  .adm-marcar{
+    header{
+        height: 15vh;
+        .imagem-logo img {
+            width: 18vw;
+          }
+        .links-principal{
+            a{
+                font-size: 0.8rem;
+            }
+
+        }
+    }
+    .secao{
+      .secao-inserir{
+        .direcao-lado{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          gap: 1vh 5vw;
+
+          button{
+              margin-top: 3.2vh;
+              width: 20vw;
+              height: 5.7vh;
+          }
+          }
+        h1{
+            font-size: 1.2rem;
+        }
+        .input{
+         height: 8.7vh;
+          h3{
+            font-size: 0.6rem;
+          }
+
+        }
+        .direcao-lado{
+          button{ 
+              font-size: 0.9rem;
+          }     
+
+            .input-2{
+              height: 8.7vh;
+
+              h3{
+                  font-size: 0.6rem;
+
+              }
+           
+          }
+      }
+
+    }
+    
+  }
+}
+}
+
+@media (max-width:430px) {
+  .adm-marcar{
+    header{
+        .imagem-logo img {
+            width: 22vw;
+          }
+        .links-principal{
+            a{
+                font-size: 0.7rem;
+            }
+
+        }
+    }
+    .secao{
+      .secao-inserir{
+        h1{
+            font-size: 2.5rem;
+        }
+        .direcao-lado{
+          button{ 
+              font-size: 0.9rem;
+          }
+          h3{
+            font-size: 0.3rem;
+          }
+
+          .input-2{
+              gap: 1vh 0vw;
+              h3{
+                  font-size: 0.1rem;
+
+              }
+              input{
+
+                  height: 5vh;
+                  width: 20vw;
+                  padding: 0vh 2vw;
+              }
+          }
+      }
+
+    }
+    
+  }
+}
+}
+
+@media (max-width:375px) {
+  .adm-marcar{
+    header{
+        .links-principal{
+            a{
+                font-size: 0.5rem;
+            }
+
+        }
+    }
+    .secao{
+  
+      .secao-inserir{
+
+        h1{
+            font-size: 2.5rem;
+        }
+        .direcao-lado{
+          button{ 
+              font-size: 0.9rem;
+          }
+
+          .input-2{
+              gap: 1vh 0vw;
+              h3{
+                  font-size: 0.9rem;
+
+              }
+              input{
+                  height: 6vh;
+                  width: 20vw;
+                  padding: 0vh 2vw;
+              }
+          }
+      }
+
+    }
+    
+  }
+}
+}

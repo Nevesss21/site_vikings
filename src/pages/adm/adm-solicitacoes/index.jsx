@@ -14,7 +14,7 @@ export default function AdmSolicitacoes(){
         <div className="area-cinza">
           <h1>SOLICITAÇÕES</h1>
 
-          <Link>
+          <Link to='/adm-informacao-solicitacao'>
             <div className="bloco-escuro">
               <div className='coluna'>
                 <h1>ABNER JOSÉ</h1>
