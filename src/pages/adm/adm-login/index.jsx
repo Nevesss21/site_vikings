@@ -4,13 +4,13 @@ import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 
- export  default function AdmLogin() {
+export default function AdmLogin() {
 
     async function sair() {
         localStorage.setItem('USUARIO', null)
         navigate('/')
     }
-    
+
 
     const [cpf, setCpf] = useState('')
     const [senha, setSenha] = useState('')
@@ -35,16 +35,10 @@ import { useState } from 'react'
     }
 
 
-    return(
+    return (
         <div className="login">
-   
-
             <div className="secao-inicial">
-                <header>
-                <button  onClick={sair}><img src="/assets/images/seta-esquerda.png" alt="seta-esquerda" /></button>
-                </header>
-
-
+                <button id="a" onClick={sair}><img src="/assets/images/seta-esquerda.png" alt="seta-esquerda" /></button>
                 <div className="coluna">
                     <div className="image">
                         <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
@@ -52,13 +46,12 @@ import { useState } from 'react'
                     </div>
                     <div className="inputs">
                         <p>Informe seu CPF</p>
-                        <input id="cpf" type="text" value={cpf}onChange={(e) => setCpf(e.target.value)}/>
+                        <input id="cpf" type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} />
                         <p>Informe sua senha</p>
-                        <input id="senha" type="text" value={senha}onChange={(e) => setSenha(e.target.value)}/>
-                    </div>
-                    <div className="botoes">
+                        <input id="senha" type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />
                         <button onClick={entrar}>Entrar</button>
                     </div>
+
                 </div>
             </div>
         </div>
