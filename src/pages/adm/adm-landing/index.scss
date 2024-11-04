@@ -1,6 +1,8 @@
 .conteiner-adm {
   background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
-
+a{
+  text-decoration: none;
+}
   .corpo {
     background-image: url("../../../../public/assets/images/imagem-escura-dourada.png");
     background-size: cover;
@@ -194,6 +196,13 @@
         }
       }
     }
+    .duvidas {
+      .botao-valhalla {
+        button {
+          font-size: 1.2rem;
+        }
+      }
+      }
   }
 }
 
@@ -226,7 +235,24 @@
         }
       }
     }
+    .duvidas {
+      .botao-valhalla {
+        button {
+          width: 22vw;
+          height: 7vh;
+          font-size: 1rem;
+        }
+  
+        img {
+          width: 4vw;
+          height: 7vh;
+      
+        }
+      }
+      }
+    
   }
+  
 }
 
 @media (max-width:912px) {
@@ -249,7 +275,7 @@
     .imagens {
 
       .sessoesInfo {
-        height: 30vh;
+        height: 60vh;
 
         .infos {
 
@@ -264,6 +290,29 @@
         }
       }
     }
+    .duvidas {
+      .botao-valhalla {
+        button {
+          width: 25vw;
+          font-size: 0.9reme;
+        }
+      }
+
+      .rodape img {
+        width: 10vw;
+        margin: 4vh 0vw;
+      }
+  
+      .rodape h1 {
+        font-size: 2.5rem;
+      }
+  
+      .rodape p {
+        font-size: 1rem;
+      }
+  
+      
+      }
   }
 }
 
@@ -293,6 +342,7 @@
     .imagens {
 
       .sessoesInfo {
+        height: 45vh;
 
         .infos {
 
@@ -306,6 +356,20 @@
         }
       }
     }
+    .duvidas{
+      .botao-valhalla {
+        button {
+          width: 35vw;
+          height: 6vh;
+        }
+  
+        img {
+          width: 6vw;
+          height: 6vh;
+      
+        }
+      }
+    }
   }
 }
 
@@ -313,7 +377,7 @@
   .conteiner-adm {
 
     .corpo {
-      height: 25vh;
+      height: 27vh;
 
       .texto {
 
@@ -334,16 +398,35 @@
     .imagens {
       
       .sessoesInfo {
-        height: 25vh;
+        height: 27vh;
 
         .infos {
 
           h1 {
-            font-size: 0.8rem;
+            font-size: 0.9rem;
           }
         }
       }
     }
+    .duvidas {
+      height: 60vh;
+      
+
+      .rodape img {
+        width: 15vw;
+        margin: 3vh 0vw;
+      }
+  
+      .rodape h1 {
+        font-size: 2rem;
+      }
+  
+      .rodape p {
+        font-size: 0.9rem;
+      }
+  
+      
+      }
   }
 }
 
@@ -353,6 +436,7 @@
     .imagens {
       
       .sessoesInfo {
+        height: 28vh;
 
         .infos {
 
@@ -366,5 +450,21 @@
         }
       }
     }
+    .duvidas {
+      .rodape p {
+        font-size: 0.7rem;
+      }
+      .botao-valhalla {
+        button {
+          width: 40vw;
+         
+        }
+  
+        img {
+          width: 7vw;
+      
+        }
+      }
+      }
   }
 }

@@ -582,25 +582,28 @@
 
             .texto {
                 button{
-                    font-size: 0.4rem;
+                    font-size: 0.8rem;
+                    width: 50vw;
                 }
             }
         }
         .secao-estudio{
-            height: 95vh;
+            height: 90vh;
+          
             button{
                 font-size: 0.4rem;
             }
             .titulo{
-                font-size: 1rem;
+                font-size: 1.2rem;
             }
             .flex{
                 .coluna{
+                    gap: 2vh 0vw;
                     h1{
-                        font-size: 0.8rem;
+                        font-size: 1rem;
                     }
                     p{
-                        font-size: 0.5rem;
+                        font-size: 0.8rem;
                     }
                 }
             }
@@ -611,13 +614,15 @@
             .bot {
           
                 button {
-                    font-size: 0.4rem;
+                    font-size: 1rem;
+                    width: 30vw;
                 }
             }
         }
         .estilo{
             button{
-                font-size: 0.4rem;
+                font-size: 1rem;
+                width: 30vw;
             }
         }
         .secao-contato{
@@ -641,7 +646,8 @@
                     font-size: 0.8rem;
                 }
                 button{
-                    width: 22vw;
+                    font-size: 0.8rem;
+                    width: 40vw;
                     height: 4vh;
                 }
             }
@@ -659,9 +665,9 @@
             .bot {
           
                 button {
-                    width: 22vw;
+                    font-size: 0.8rem;
+                    width: 40vw;
                     height: 4vh;
-                    font-size: 0.4rem;
                 }
             }
             .carrossel{
@@ -675,8 +681,11 @@
             }
         }
         .estilo{
+            height: 65vh;
+            padding: 2vh 0vw;
             button{
-                width: 22vw;
+                font-size: 0.8rem;
+                width: 40vw;
                 height: 4vh;
             }
         }
@@ -684,9 +693,9 @@
             height: 30vh;
             a{
                 button{
-                    width: 22vw;
-                    height: 4vh; 
-                    font-size: 0.4rem;
+                    font-size: 0.8rem;
+                    width: 40vw;
+                    height: 4vh;
                 }
             }
         }
