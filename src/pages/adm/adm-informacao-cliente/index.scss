@@ -125,39 +125,45 @@
     }
 }
 
+
 @media (max-width:1280px) {
-  .adm-marcar{
+  .informacao{
     header{
         .imagem-logo img {
             width: 10vw;
           }
-        .links-principal{
+      
             a{
+              button{
+
                 font-size: 1rem;
+              }
             }
 
-        }
+        
       }
         .secao{
   
-          .secao-inserir{
- 
-
+          .secao-informacao{
+            
+            a{
+             button{ 
+               font-size: 0.9rem;
+           }
+            }
+            
             h1{
-                font-size: 2.5rem;
+              font-size: 2.5rem;
             }
             .direcao-lado{
-              button{ 
-                  font-size: 0.9rem;
-              }
-  
-              .input-2{
+              
+              .info-2{
                   gap: 1vh 0vw;
                   h3{
                       font-size: 0.9rem;
 
                   }
-                  input{
+                  div{
                       height: 6vh;
                       width: 20vw;
                       padding: 0vh 2vw;
@@ -173,24 +179,26 @@
 
 
 @media (max-width:912px) {
-  .adm-marcar{
+  .informacao{
     header{
         .imagem-logo img {
             width: 12vw;
           }
-        .links-principal{
+   
             a{
+              button{
                 font-size: 0.9rem;
+              }
             }
 
-        }
+        
     }
     .secao{
 
-      .secao-inserir{
+      .secao-informacao{
         padding: 5vh 5vw;
         .direcao-lado{
-          .input-2{        
+          .info-2{        
               h3{
                   font-size: 0.8rem;   
               }
@@ -199,9 +207,9 @@
               }
           }
       }
-        .input{
+        .info{
 
-          input{
+          div{
           font-size: 0.7rem;
         
           }
@@ -213,7 +221,7 @@
 
 
 @media (max-width:768px) {
-  .adm-marcar{
+  .informacao{
     header{
         .imagem-logo img {
             width: 16vw;
@@ -221,7 +229,12 @@
     }
 
     .secao{
-      .secao-inserir{
+      .secao-informacao{
+        a{
+          button{ 
+            font-size: 0.7rem;
+        }
+         }
         h1{
             font-size: 2.2rem;
         }
@@ -231,21 +244,31 @@
 }
 
 @media (max-width:540px) {
-  .adm-marcar{
+  .informacao{
+    height: 160vh;
     header{
         height: 15vh;
         .imagem-logo img {
             width: 18vw;
           }
-        .links-principal{
+       
             a{
+              button{
                 font-size: 0.8rem;
+              }
             }
 
-        }
+        
     }
     .secao{
-      .secao-inserir{
+      .secao-informacao{
+     a{
+      button{ 
+        font-size: 0.8rem;
+        width: 30vw;
+    } 
+     }  
+        height: 130vh;
         .direcao-lado{
           display: flex;
           flex-direction: row;
@@ -262,23 +285,25 @@
         h1{
             font-size: 1.2rem;
         }
-        .input{
-         height: 8.7vh;
-          h3{
-            font-size: 0.6rem;
+       
+        .info{
+          div{
+            width: 65vw;
           }
-
-        }
+          h3{
+            font-size: 0.8rem;
+          }
+        }  
         .direcao-lado{
-          button{ 
-              font-size: 0.9rem;
-          }     
 
-            .input-2{
-              height: 8.7vh;
+            .info-2{
+            div{
+              width: 30vw;
+            }
+              
 
               h3{
-                  font-size: 0.6rem;
+                  font-size: 0.8rem;
 
               }
            
@@ -291,43 +316,58 @@
 }
 }
 
+
 @media (max-width:430px) {
-  .adm-marcar{
+  .informacao{
+    height: 180vh !important;
     header{
-        .imagem-logo img {
-            width: 22vw;
-          }
-        .links-principal{
+        
             a{
-                font-size: 0.7rem;
+              button{
+
+              width: 30vw;
+              height: 5vh;
+              }
             }
 
-        }
+       
     }
     .secao{
-      .secao-inserir{
+      
+      .secao-informacao{
+     a{
+      button{ 
+        font-size: 0.7rem !important;
+        width: 30vw !important;
+    }
+     }
+        width: 80vw !important;
+        height: 150vh !important;
+        gap: 3vh 0vw !important;
+
         h1{
-            font-size: 2.5rem;
+            font-size: 1.5rem !important;
+        }
+        .info{
+          h3{
+            font-size: 0.8rem !important;
+          }
+          div{
+            width: 60vw !important;
+          }
         }
         .direcao-lado{
-          button{ 
-              font-size: 0.9rem;
-          }
-          h3{
-            font-size: 0.3rem;
-          }
+          display: flex;
+          flex-direction: column !important;
 
-          .input-2{
+          .info-2{
               gap: 1vh 0vw;
               h3{
-                  font-size: 0.1rem;
+                  font-size: 0.8rem !important;
 
               }
-              input{
-
-                  height: 5vh;
-                  width: 20vw;
-                  padding: 0vh 2vw;
+              div{     
+                width: 60vw !important;
               }
           }
       }
@@ -339,40 +379,16 @@
 }
 
 @media (max-width:375px) {
-  .adm-marcar{
-    header{
-        .links-principal{
-            a{
-                font-size: 0.5rem;
-            }
-
-        }
-    }
+  .informacao{
+  
     .secao{
   
-      .secao-inserir{
+      .secao-informacao{
 
         h1{
-            font-size: 2.5rem;
+            font-size: 1rem !important;
         }
-        .direcao-lado{
-          button{ 
-              font-size: 0.9rem;
-          }
-
-          .input-2{
-              gap: 1vh 0vw;
-              h3{
-                  font-size: 0.9rem;
-
-              }
-              input{
-                  height: 6vh;
-                  width: 20vw;
-                  padding: 0vh 2vw;
-              }
-          }
-      }
+        
 
     }
     
