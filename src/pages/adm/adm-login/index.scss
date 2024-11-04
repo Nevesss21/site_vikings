@@ -3,14 +3,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  height: 120vh;
 
   .secao-inicial {
     display: flex;
     flex-direction: column;
     background-color: #111010b2;
     width: 60vw;
-    height: 90vh;
+    height: 100vh;
     align-items: center;
     border-radius: 10px;
 
@@ -74,7 +74,7 @@
 @media (max-width:912px) {
   .login {
     .secao-inicial {
-      height: 70vh;
+      height: 90vh;
 
       button {
 
@@ -106,7 +106,7 @@
   .login {
     .secao-inicial {
       width: 80vw;
-      height: 55vh;
+      height: 70vh;
 
       button {
 
