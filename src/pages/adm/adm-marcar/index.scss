@@ -246,6 +246,7 @@
 
 @media (max-width:540px) {
   .adm-marcar{
+    height: 160vh;
     header{
         height: 15vh;
         .imagem-logo img {
@@ -260,6 +261,7 @@
     }
     .secao{
       .secao-inserir{
+        height: 120vh;
         .direcao-lado{
           display: flex;
           flex-direction: row;
@@ -292,7 +294,7 @@
               height: 8.7vh;
 
               h3{
-                  font-size: 0.6rem;
+                  font-size: 0.8rem;
 
               }
            
@@ -305,43 +307,52 @@
 }
 }
 
+
 @media (max-width:430px) {
   .adm-marcar{
+    height: 180vh !important;
     header{
-        .imagem-logo img {
-            width: 22vw;
-          }
         .links-principal{
             a{
-                font-size: 0.7rem;
+                font-size: 0.5rem;
             }
 
         }
     }
     .secao{
+  
       .secao-inserir{
+        width: 80vw !important;
+        height: 150vh !important;
+        gap: 3vh 0vw !important;
+
         h1{
-            font-size: 2.5rem;
+            font-size: 1.5rem !important;
+        }
+        .input{
+          h3{
+            font-size: 0.8rem !important;
+          }
+          input{
+            width: 60vw !important;
+          }
         }
         .direcao-lado{
+          display: flex;
+          flex-direction: column !important;
           button{ 
-              font-size: 0.9rem;
-          }
-          h3{
-            font-size: 0.3rem;
+              font-size: 0.8rem !important;
+              width: 30vw !important;
           }
 
           .input-2{
               gap: 1vh 0vw;
               h3{
-                  font-size: 0.1rem;
+                  font-size: 0.8rem !important;
 
               }
-              input{
-
-                  height: 5vh;
-                  width: 20vw;
-                  padding: 0vh 2vw;
+              input{     
+                width: 60vw !important;
               }
           }
       }
@@ -354,39 +365,15 @@
 
 @media (max-width:375px) {
   .adm-marcar{
-    header{
-        .links-principal{
-            a{
-                font-size: 0.5rem;
-            }
-
-        }
-    }
+  
     .secao{
   
       .secao-inserir{
 
         h1{
-            font-size: 2.5rem;
+            font-size: 1rem !important;
         }
-        .direcao-lado{
-          button{ 
-              font-size: 0.9rem;
-          }
-
-          .input-2{
-              gap: 1vh 0vw;
-              h3{
-                  font-size: 0.9rem;
-
-              }
-              input{
-                  height: 6vh;
-                  width: 20vw;
-                  padding: 0vh 2vw;
-              }
-          }
-      }
+        
 
     }
     
