@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+
 import NavAdm from "../../../components/Nav-adm";
 import "./index.scss";
 import { Link } from "react-router-dom";
