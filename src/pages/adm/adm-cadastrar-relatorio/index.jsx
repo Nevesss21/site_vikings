@@ -11,7 +11,7 @@ export default function CadastrarRelatorio() {
         <div className="cadastrar">
           <div className="espaco">
             <div className="input">
-              <h3>Informe a data do Relatório</h3>
+              <h3>Informe a data do relatório</h3>
               <input type="date" />
             </div>
           </div>
