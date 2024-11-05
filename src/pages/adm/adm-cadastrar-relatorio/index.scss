@@ -23,6 +23,7 @@
         border: none;
         color: #2c2929;
         cursor: pointer;
+        margin-top: 10vh;
       }
     }
 
@@ -59,6 +60,7 @@
             background-color: white;
             padding: 1vh 2vw;
             font: 500 1rem "vikings";
+
           }
         }
       }
@@ -72,17 +74,17 @@
           color: #fff;
           padding: 2vh 0vw;
         }
-        div {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          gap: 0vh 1vw;
 
-          h3 {
-            font: 500 1rem "vikings";
-            color: #8a8a8a;
-          }
+        select{
+          height: 8vh;
+          color: #524f4f;
+          font: 500 0.8rem 'vikings';
+          border: none;
+          background-color: #1a1a1a;
+          border-radius: 10px;
+          padding: 1vh 2vw;
         }
+        
       }
     }
   }
@@ -95,10 +97,7 @@
         height: 120vh;
    
 
-        .escolha {
-
-
-        }
+     
 
         .botoes {
           gap:  5vw;
@@ -106,12 +105,7 @@
 
         }
 
-        .espaco  {
-          
-     
-
-      
-        }
+    
       }
     }
   }
@@ -121,10 +115,13 @@
 
 @media (max-width: 760px) {
   .cadastrar-relatorio {
+    height: 120vh;
+    
     .secao-cadastro {
       .cadastrar {
         justify-content: start;
         width: 90%;
+        height: 90vh;
         border: 0;
         border-radius: 8px;
 
@@ -134,9 +131,6 @@
             text-align: center;
           }
 
-          div {
-            justify-content: space-between;
-          }
         }
 
         .botoes {

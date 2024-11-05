@@ -18,58 +18,20 @@ export default function CadastrarRelatorio() {
 
           <div className="escolha">
             <h1>Escolha os filtros do seu relatorio</h1>
-            <div>
-              <h3>Total de pessoas</h3>
-              <input type="checkbox" name="Total de pessoas" value="" />
-            </div>
-            <div>
-              <h3>Renda fina</h3>
-              <input type="checkbox" name="Renda fina" value="" />
-            </div>
-            <div>
-              <h3>Clientes do genero masculino</h3>
-              <input
-                type="checkbox"
-                name="Clientes do genero masculino"
-                value=""
-              />
-            </div>
-            <div>
-              <h3>Clientes do genero feminino</h3>
-              <input
-                type="checkbox"
-                name="Clientes do genero feminino"
-                value=""
-              />
-            </div>
-            <div>
-              <h3>Clientes do genero outro</h3>
-              <input type="checkbox" name="Clientes do genero outro" value="" />
-            </div>
-            <div>
-              <h3>Clientes com idade superior a 30</h3>
-              <input
-                type="checkbox"
-                name="Clientes com idade superior a 30"
-                value=""
-              />
-            </div>
-            <div>
-              <h3>Clientes com idade superior igual a 18</h3>
-              <input
-                type="checkbox"
-                name="Clientes com idade superior igual a 18"
-                value=""
-              />
-            </div>
-            <div>
-              <h3>Clientes com idade menor que 18</h3>
-              <input type="checkbox" name="Clientes com idade menor que 18" />
-            </div>
-            <div>
-              <h3>Escolher todas as opções</h3>
-              <input type="checkbox" name="Todas as opcoes" value="" />
-            </div>
+
+            <select name="selecao" id="selecao">
+              <option>Selecione...</option>
+              <option value="Total de pessoas">Total de pessoas</option>
+              <option value="Renda Final">Renda Final</option>
+              <option value="Clientes do gênero masculino">Clientes do gênero masculino</option>
+              <option value="Clientes do gênero feminino">Clientes do gênero feminino</option>
+              <option value="Clientes do genero igua a outro">Clientes do genero igua a outro</option>
+              <option value="Clientes com idade superior a 30">Clientes com idade superior a 30 anos</option>
+              <option value="Clientes com idade superior igual a 18">Clientes com idade superior igual a 18</option>
+              <option value="Clientes com idade menor que 18">Clientes com idade menor que 18</option>
+              <option value="Todas as opcões">Todas as opcões</option>
+            </select>
+           
           </div>
 
           <div className="botoes">
