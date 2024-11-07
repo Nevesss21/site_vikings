@@ -1,121 +1,144 @@
-.solicitacao{
+.solicitacao {
   background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
   display: flex;
   flex-direction: column;
   height: 190vh;
 
-  a{
-      text-decoration: none;
-      color: #000;
+  a {
+    text-decoration: none;
+    color: #000;
   }
 
-  .bloco{
-      margin-top: 10vh;
+  .bloco {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8vh 0vw;
+
+    .botoes {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
-      justify-content: center;
-      gap: 8vh 0vw;
-     
-      .botoes{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        width: 60vw;
-        button{
-          background-color: #fff;
-          font: 700 1rem 'vikings';
-          border-radius: 30px;
-          height: 8vh;
-          width: 20vw;
-          border: none;
-          color: #2C2929;
-        }
-       }
-  
-      
-      .area-cinza{
-        height: 110vh;
-        width: 60vw;
-        gap: 8vh 0vw;
-        background-color: #25242493;
-        border-radius: 20px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 2vh 3vw;
+      justify-content: space-between;
+      width: 60vw;
 
-        h1{
-          font: 500 2rem 'vikings';
-          color: #9E8080;
-        }
-        a{
-          .bloco-escuro, .bloco-claro{
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              height: 12vh;
-              justify-content: space-between;
-              padding: 0.5vh 2vw;
-              h3{
-                  font: 500 0.8rem 'vikings';
-                   color: #fff
-              }
-              h1{
-                font: 500 1rem 'vikings';
-                color: #fff;
-              }
-              .coluna{
-                  display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  gap: 1vh 0vw;
-              }
-            }
-            .bloco-escuro{
-              background-color: #2C2929;
-            }
-            .bloco-claro{
-              background-color: #c9c2c2;
-            }
-        }
-
-        
-       
+      button {
+        background-color: #fff;
+        font: 700 1rem 'vikings';
+        border-radius: 30px;
+        height: 8vh;
+        width: 20vw;
+        border: none;
+        color: #2C2929;
       }
     }
-  
 
 
+    .area-cinza {
+      height: 110vh;
+      width: 60vw;
+      gap: 8vh 0vw;
+      background-color: #25242493;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+
+      padding: 2vh 3vw;
+
+
+      h1 {
+        font: 500 2rem 'vikings';
+        color: #9E8080;
+      }
+
+      .scroll {
+        display: flex;
+        flex-direction: column;
+        gap: 4vh;
+        overflow: hidden;
+        overflow-y: scroll;
+
+        a {
+          .bloco-escuro {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 12vh;
+            justify-content: space-between;
+            padding: 0.5vh 2vw;
+
+
+            h3 {
+              font: 500 0.8rem 'vikings';
+              color: #fff
+            }
+
+            h1 {
+              font: 500 1rem 'vikings';
+              color: #fff;
+            }
+
+            .coluna {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              gap: 1vh 0vw;
+            }
+          }
+
+          .bloco-escuro {
+            background-color: #2C2929;
+          }
+        }
+      }
+
+      .scroll::-webkit-scrollbar {
+        width: 10px;
+        background-color: #ffffff;
+      }
+
+      .scroll::-webkit-scrollbar-thumb {
+        border: solid 1px #000;
+        border-right-style: none;
+        background-color: #818181;
+      }
+
+    }
+  }
 }
 
 
 @media (max-width:1024px) {
-  .solicitacao{
+  .solicitacao {
     height: 170vh;
-    .bloco{
-      .botoes{
-        button{
+
+    .bloco {
+      .botoes {
+        button {
           font-size: 0.8rem;
           height: 6vh;
         }
       }
     }
   }
-    
+
 }
 
 @media (max-width:912px) {
-  .solicitacao{
+  .solicitacao {
     height: 170vh;
-    .bloco{
-      .area-cinza{
+
+    .bloco {
+      .area-cinza {
         width: 70vw;
       }
-      .botoes{
+
+      .botoes {
         width: 70vw;
-        button{
+
+        button {
           height: 6vh;
           width: 25vw;
         }
@@ -125,15 +148,18 @@
 }
 
 @media (max-width:540px) {
-  .solicitacao{
+  .solicitacao {
     height: 170vh;
-    .bloco{
-      .area-cinza{
+
+    .bloco {
+      .area-cinza {
         width: 85vw;
       }
-      .botoes{
+
+      .botoes {
         width: 85vw;
-        button{
+
+        button {
           font-size: 0.7rem;
           width: 30vw;
         }
@@ -141,4 +167,3 @@
     }
   }
 }
-

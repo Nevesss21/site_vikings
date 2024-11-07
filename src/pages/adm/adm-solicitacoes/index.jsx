@@ -6,50 +6,52 @@ import axios from 'axios';
 import './index.scss';
 
 
-export default function AdmSolicitacoes(){
+export default function AdmSolicitacoes() {
   const [solicitar, setSolicitar] = useState([]);
 
+
   async function buscar() {
-    const url = `http://localhost:5010/solicitar-cpf`;
+    const url = `http://localhost:5021/solicitar-cpf`;
     let resp = await axios.get(url);
     setSolicitar(resp.data);
   }
   useEffect(() => {
     buscar()
-}, [])
+  }, [])
 
 
 
-    return(
-      <div className="solicitacao">
-      <NavAdm/>
+  return (
+    <div className="solicitacao">
+      <NavAdm />
       <div className="bloco">
-        
+
         <div className="area-cinza">
           <h1>SOLICITAÇÕES</h1>
 
-          <Link to='/adm-informacao-solicitacao'>
-          <div className="bloco-escuro">
-                {solicitar.map(item=>
-              <div className='coluna' >
-                <h1>{item.nome}</h1>
-                <h3>{item.cpf}</h3>
-              </div>
-            
-          )}
+          <div className="scroll">
+            {solicitar.map(item =>
+              <Link to='/adm-informacao-solicitacao'>
+                <div className="bloco-escuro" >
+                  <div className='coluna' >
+                    <h1>{item.nome}</h1>
+                    <h3>{item.cpf}</h3>
+                  </div>
+                </div>
+              </Link>
+            )}
           </div>
-          </Link>
 
-      
+
         </div>
-        <div className='botoes'> 
+        <div className='botoes'>
 
-        <Link to='/adm-secoes'><button>VER SESSÕES MARCADAS</button></Link>
-        <Link to='/adm-marcar'><button>MARCAR NOVA SESSÃO</button></Link>
+          <Link to='/adm-secoes'><button>VER SESSÕES MARCADAS</button></Link>
+          <Link to='/adm-marcar'><button>MARCAR NOVA SESSÃO</button></Link>
 
         </div>
       </div>
     </div>
- 
-    );
+
+  );
 }
