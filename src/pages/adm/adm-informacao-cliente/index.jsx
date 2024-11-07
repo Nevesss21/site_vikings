@@ -1,9 +1,41 @@
 import "./index.scss";
 import { Link } from "react-router-dom";
+import axios from "axios";
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function InformacoesSoliciacao() {
-  return (
 
+  const location = useLocation()
+  let data = location.state
+
+
+  const [nome, setNome] = useState("")
+  const [cpf, setCpf] = useState("")
+  const [genero, setGenero] = useState("")
+  const [idade, setIdade] = useState("")
+  const [telefone, setTelefone] = useState("")
+  const [email, setEmail] = useState("")
+  const [ideia, setIdeia] = useState("")
+
+  async function buscarInfoCliente() {
+    const url = `http://localhost:5021/solicitar/${data.id}`
+    let resp = await axios.get(url)
+
+    setNome(resp.data.nome)
+    setCpf(resp.data.cpf)
+    setGenero(resp.data.genero)
+    setIdade(resp.data.idade)
+    setTelefone(resp.data.telefone)
+    setEmail(resp.data.email)
+    setIdeia(resp.data.ideia)
+  }
+  
+  useEffect(() => {
+    buscarInfoCliente()
+  }, [])
+
+  return (
     <div className="informacao">
              
             <header>
@@ -21,38 +53,28 @@ export default function InformacoesSoliciacao() {
 
                   <div className="info">
                     <h3>NOME DO CLIENTE</h3>
-                    <div><h3>ABNER JOSE DOS SANTOS</h3></div>
+                    <div><h3>{nome}</h3></div>
                   </div>
 
                   <div className="direcao-lado">
                     <div className="info-2">
                       <h3>IDADE</h3>
-                      <div><h3>18</h3></div>
+                      <div><h3>{idade}</h3></div>
                     </div>
                     <div className="info-2">
                       <h3>CPF DO CLIENTE</h3>
-                      <div><h3>600.761.488-31</h3></div>
+                      <div><h3>{cpf}</h3></div>
                     </div>
                   </div>
 
                   <div className="direcao-lado">
                     <div className="info-2">
-                      <h3>HORARIO DA SESSÃO</h3>
-                      <div><h3>10h00</h3></div>
-                    </div>
-                    <div className="info-2">
-                      <h3>DATA DA SESSÃO</h3>
-                      <div><h3>22/12/2024</h3></div>
-                    </div>
-                  </div>
-                  <div className="direcao-lado">
-                    <div className="info-2">
                       <h3>GÊNERO</h3>
-                      <div><h3>MASCULINO</h3></div>
+                      <div><h3>{genero}</h3></div>
                     </div>
                     <div className="info-2">
                       <h3>IDEIA</h3>
-                      <div><h3>Lobo nas costas</h3></div>
+                      <div><h3>{ideia}</h3></div>
                     </div>
                   </div>
 

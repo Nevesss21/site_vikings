@@ -31,7 +31,7 @@ export default function AdmSolicitacoes() {
 
           <div className="scroll">
             {solicitar.map(item =>
-              <Link to='/adm-informacao-solicitacao'>
+              <Link state={{id: item.id}} to='/adm-informacao-solicitacao'>
                 <div className="bloco-escuro" >
                   <div className='coluna' >
                     <h1>{item.nome}</h1>
