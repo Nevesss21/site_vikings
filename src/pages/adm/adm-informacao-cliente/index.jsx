@@ -80,11 +80,11 @@ export default function InformacoesSoliciacao() {
 
                   <div className="info">
                     <h3>E-MAIL</h3>
-                    <div><h3>abnerjose@gmail.com</h3></div>
+                    <div><h3>{email}</h3></div>
                   </div>
                   <div className="info">
                     <h3>TELEFONE</h3>
-                    <div><h3>11950234647</h3></div>
+                    <div><h3>{telefone}</h3></div>
                   </div>
                  <Link to='/adm-marcar'><button>MARCAR CONSULTA</button></Link>
               </div>
