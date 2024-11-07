@@ -86,7 +86,7 @@ export default function InformacoesSoliciacao() {
                     <h3>TELEFONE</h3>
                     <div><h3>{telefone}</h3></div>
                   </div>
-                 <Link to='/adm-marcar'><button>MARCAR CONSULTA</button></Link>
+                 <Link state={{id:data.id}} to='/adm-marcar'><button>MARCAR CONSULTA</button></Link>
               </div>
             </div>
     </div>
