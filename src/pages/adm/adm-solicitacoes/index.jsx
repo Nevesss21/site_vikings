@@ -1,11 +1,25 @@
-
+import { useState, useEffect } from 'react';
 import NavAdm from '../../../components/Nav-adm'
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 import './index.scss';
 
 
 export default function AdmSolicitacoes(){
+  const [solicitar, setSolicitar] = useState([]);
+
+  async function buscar() {
+    const url = `http://localhost:5010/solicitar-cpf`;
+    let resp = await axios.get(url);
+    setSolicitar(resp.data);
+  }
+  useEffect(() => {
+    buscar()
+}, [])
+
+
+
     return(
       <div className="solicitacao">
       <NavAdm/>
@@ -15,45 +29,18 @@ export default function AdmSolicitacoes(){
           <h1>SOLICITAÇÕES</h1>
 
           <Link to='/adm-informacao-solicitacao'>
-            <div className="bloco-escuro">
-              <div className='coluna'>
-                <h1>ABNER JOSÉ</h1>
-                <h3>CPF: 600.761.488-31</h3>
+          <div className="bloco-escuro">
+                {solicitar.map(item=>
+              <div className='coluna' >
+                <h1>{item.nome}</h1>
+                <h3>{item.cpf}</h3>
               </div>
- 
-              <div className='coluna'>
-                <h3>Data: 16/05/2024</h3>
-                <h3>Horário: 17:37</h3>
-              </div>             
-            </div>
-          </Link>
-
-          <Link>
-            <div className="bloco-claro">
-            <div className='coluna'>
-                <h1>ABNER JOSÉ</h1>
-                <h3>CPF: 600.761.488-31</h3>
-              </div>
-
-       
-              <div className='coluna'>
-                <h3>Data: 16/05/2024</h3>
-                <h3>Horário: 17:37</h3>
-              </div>
-             
-            </div>
-          </Link>
-
-          <Link>   
-            <div className="bloco-escuro">
             
-            </div>
+          )}
+          </div>
           </Link>
-          <Link>
-            <div className="bloco-claro">
-            
-            </div>
-          </Link>
+
+      
         </div>
         <div className='botoes'> 
 
