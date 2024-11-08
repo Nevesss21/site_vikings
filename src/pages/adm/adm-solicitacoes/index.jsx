@@ -11,7 +11,7 @@ export default function AdmSolicitacoes() {
 
 
   async function buscar() {
-    const url = `http://localhost:5010/solicitar-cpf`;
+    const url = `http://localhost:5021/solicitar-cpf`;
     let resp = await axios.get(url);
     setSolicitar(resp.data);
   }
@@ -31,7 +31,7 @@ export default function AdmSolicitacoes() {
 
           <div className="scroll">
             {solicitar.map(item =>
-              <Link state={{id: item.id}} to='/adm-informacao-solicitacao'>
+              <Link state={{ id: item.id }} to='/adm-informacao-solicitacao'>
                 <div className="bloco-escuro" >
                   <div className='coluna' >
                     <h1>{item.nome}</h1>
@@ -47,7 +47,6 @@ export default function AdmSolicitacoes() {
         <div className='botoes'>
 
           <Link to='/adm-secoes'><button>VER SESSÕES MARCADAS</button></Link>
-          <Link to='/adm-marcar'><button>MARCAR NOVA SESSÃO</button></Link>
 
         </div>
       </div>

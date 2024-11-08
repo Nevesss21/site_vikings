@@ -209,21 +209,33 @@
         }
         .secao-dois{
             .bloco{
-                height: 95vh;
+                height: 110vh;
          
                 h1{
                     font-size: 0.8rem;
                 }
                 .enviar{
+                  
                     button{
                         font-size: 0.6rem;
+                        width: 20vw;
                     }
                 }
                 .input-1{
                     gap: 1vh 5vw;
+                    display: flex;
+                    flex-direction: column;
                 }
                .input-1, .input-2 {
                 padding: 1.5vh 0vw;
+                .espaco{
+                    .in{
+                        width: 62vw;
+                    }
+                }
+                input{
+                    width: 62vw;
+                }
                 p{
                     font-size: 0.5rem;
                 }
@@ -248,27 +260,14 @@
         }
         .secao-dois{
             .bloco{
-                height: 78vh;
+               height: 100vh;
          
-                h1{
-                    font-size: 0.6rem;
-                }
-                .enviar{
-                    button{
-                        font-size: 0.5rem;
-                    }
-                }
+                
              
                .input-1, .input-2 {
                 padding: 1vh 0vw;
-                p{
-                    font-size: 0.4rem;
-                }
-                .espaco{
-                    p{
-                        font-size: 0.4rem;
-                    }
-                }
+              
+              
                }
             }
         }
@@ -283,19 +282,6 @@
                 font-size: 0.8rem;
             }
         }
-        .secao-dois{
-            .bloco{
-                height: 70vh;
-         
-                h1{
-                    font-size: 0.5rem;
-                }
-                .enviar{
-                    button{
-                        font-size: 0.4rem;
-                    }
-                } 
-            }
-        }
+      
     }
 }

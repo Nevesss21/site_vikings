@@ -1,9 +1,45 @@
-
+import { useState } from "react";
 import NavAdm from "../../../components/Nav-adm";
 import "./index.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+
 
 export default function CadastrarRelatorio() {
+  const[data, setDate]= useState("")
+  const[fkCliente, setFkCliente]= useState("")
+  const[fkConsulta, setFkConsulta]= useState("")
+  const[fkSecao, setFkSecao]= useState("")
+
+
+  const navigate = useNavigate()
+
+  async function inserirRelato() {
+    const pararm = {
+      "data":data,
+      "fkCliente":fkCliente,
+      "fkConsulta":fkConsulta,
+      "fkSecao":fkSecao
+
+    }
+    try {
+      const url = `http://localhost:5021/relatorio/`
+      let resp = await axios.post(url, pararm)
+  
+      alert("Sessão marcada com sucesso!" + resp.data.novoId)
+      setDate("")
+      setFkCliente("")
+      setFkConsulta("")
+      setFkSecao("")
+      navigate("/adm-realizados")
+    } 
+    catch (error) {
+      alert("Erro")
+    }
+    
+  }
+
+
   return (
     <div className="cadastrar-relatorio">
       <NavAdm />
@@ -12,7 +48,7 @@ export default function CadastrarRelatorio() {
           <div className="espaco">
             <div className="input">
               <h3>Informe a data do relatório</h3>
-              <input type="date" />
+              <input type="date" value={data} onChange={e => setDate(e.target.value)} />
             </div>
           </div>
 
@@ -31,14 +67,14 @@ export default function CadastrarRelatorio() {
               <option value="Clientes com idade menor que 18">Clientes com idade menor que 18</option>
               <option value="Todas as opcões">Todas as opcões</option>
             </select>
-           
+
           </div>
 
           <div className="botoes">
             <Link to="/adm-realizados">
               <button>Ver Relatórios</button>
             </Link>
-            <button>Criar novo Relatório</button>
+            <button onClick={inserirRelato}>Criar novo Relatório</button>
           </div>
         </div>
       </div>

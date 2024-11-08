@@ -47,7 +47,7 @@ export default function AdmMarcar() {
     const url = `http://localhost:5021/marcar/`
     let resp = await axios.post(url, valores)
 
-    alert("Sessão marcada com sucesso!")
+    alert("Sessão marcada com sucesso!" + resp.data.novoId)
     setData("")
     setHorario("")
     setValor("")

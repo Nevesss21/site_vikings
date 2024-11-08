@@ -40,21 +40,21 @@ export default function AdmLanding() {
                 <div className='sessoesInfo'>
                     <div className='infos'>
                         <h1>Faça o seu relato. Defina como foi sua progressão do dia, semana, mes e ano</h1>
-                       <Link> <button className='oi1'>Relatar</button></Link>
+                       <Link to='/adm-cadastrar-relatorio'> <button className='oi1'>Relatar</button></Link>
                     </div>
                 </div>
 
                 <div id='sessaodois' className='sessoesInfo'>
                     <div className='infos'>
                         <h1>Analise as seções pendentes e faça você mesmo o agendamento das seções </h1>
-                       <Link> <button className='oi2'>Seguir</button></Link>
+                       <Link to='/adm-solicitacoes'> <button className='oi2'>Seguir</button></Link>
                     </div>
                 </div>
 
                 <div id='sessaotres' className='sessoesInfo'>
                     <div className='infos'>
                         <h1>Consulte  as informações da maneira que quiser, decida o filtro para melhor aproveitamento das informações</h1>
-                        <Link><button className='oi1'>Consultar</button></Link>
+                        <Link to='/adm-realizados'><button className='oi1'>Consultar</button></Link>
                     </div>
                 </div>
 

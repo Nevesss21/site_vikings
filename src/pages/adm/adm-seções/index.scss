@@ -55,48 +55,63 @@
           font: 500 2rem 'vikings';
           color: #9E8080;
         }
-        a{
-          .bloco-escuro, .bloco-claro{
-              display: flex;
-              flex-direction: row;
-              align-items: center;
-              height: 12vh;
-              justify-content: space-between;
-              padding: 0.5vh 2vw;
-              h3{
-                  font: 500 0.8rem 'vikings';
-                   color: #fff
-              }
-              h1{
-                font: 500 1rem 'vikings';
-                color: #fff;
-              }
-              .flex{
+        .scroll{
+          display: flex;
+          flex-direction: column;
+          gap: 4vh;
+          overflow: hidden;
+          overflow-y: scroll;
+          a{
+            .bloco-escuro{
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                gap: 0vh 2vw;
-              }
-  
-              .coluna{
+                height: 12vh;
+                justify-content: space-between;
+                padding: 0.5vh 2vw;
+                h3{
+                    font: 500 0.8rem 'vikings';
+                     color: #fff
+                }
+                h1{
+                  font: 500 1rem 'vikings';
+                  color: #fff;
+                }
+                .flex{
                   display: flex;
-                  flex-direction: column;
-                  justify-content: center;
-                  gap: 1vh 0vw;
-                  img{
-                      width: 1.5vw;
-  
-                  }
+                  flex-direction: row;
+                  align-items: center;
+                  gap: 0vh 2vw;
+                }
+    
+                .coluna{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    gap: 1vh 0vw;
+                    img{
+                        width: 1.5vw;
+    
+                    }
+                }
               }
-            }
-            .bloco-escuro{
-              background-color: #2C2929;
-            }
-            .bloco-claro{
-              background-color: #c9c2c2;
-            }
+              .bloco-escuro{
+                background-color: #2C2929;
+              }
+            
+          }
+  
         }
-
+        .scroll::-webkit-scrollbar {
+          width: 10px;
+          background-color: #ffffff;
+        }
+  
+        .scroll::-webkit-scrollbar-thumb {
+          border: solid 1px #000;
+          border-right-style: none;
+          background-color: #818181;
+        }
         
        
       }
