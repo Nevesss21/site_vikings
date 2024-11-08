@@ -11,7 +11,7 @@ export default function AdmSolicitacoes() {
 
 
   async function buscar() {
-    const url = `http://localhost:5021/solicitar-cpf`;
+    const url = `http://localhost:5010/solicitar-cpf`;
     let resp = await axios.get(url);
     setSolicitar(resp.data);
   }
