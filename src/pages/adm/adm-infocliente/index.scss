@@ -78,14 +78,32 @@
           border: #2C2929 solid 3vh;
           border-radius: 15px;
         }
-        button{
-          background-color: #2C2929;
-          font: 700 1rem 'vikings';
-          border-radius: 30px;
-          height: 8vh;
-          width: 15vw;
-          border: none;
-          color: #fff;
+        .ulti{
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          button{
+            background-color: #2C2929;
+            font: 700 1rem 'vikings';
+            border-radius: 30px;
+            height: 8vh;
+            width: 15vw;
+            border: none;
+            color: #fff;
+          }
+          .selecao{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 0vh 2vw;
+
+            p{
+              color: #fff;
+              font: 500 1rem 'vikings';
+            }
+          }
+
         }
   
     }
@@ -118,10 +136,12 @@
         textarea{
           height: 55vh;
         }
-        button{
-          font-size: 0.8rem;
-          height: 6vh;
-          width: 12vw;
+        .ulti{
+          button{
+            font-size: 0.8rem;
+            height: 6vh;
+            width: 12vw;
+          }
         }
   
     }
@@ -151,9 +171,12 @@
       .secao{
         margin-top: 3vh;
       .anotacao{
-        button{
-          height: 4vh;
-          width: 15vw;
+        .ulti{
+          button{
+            height: 4vh;
+            width: 15vw;
+          }
+
         }
   
     }
@@ -185,10 +208,12 @@
         .secao{
         margin-top: 2vh;
        .anotacao{
-         button{
-          height: 4vh;
-          width: 15vw;
-          font-size: 0.6rem;
+        .ulti{
+          button{
+           height: 4vh;
+           width: 15vw;
+           font-size: 0.6rem;
+         }
         }
     }
       .bloco-escuro{
@@ -226,10 +251,12 @@
           font-size: 1.4rem;
         }
      
+      .ulti{
         button{
           font-size: 0.6rem;
           width: 20vw;
         }
+      }
   
     }
   

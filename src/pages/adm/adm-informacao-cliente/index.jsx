@@ -30,65 +30,65 @@ export default function InformacoesSoliciacao() {
     setEmail(resp.data.email)
     setIdeia(resp.data.ideia)
   }
-  
+
   useEffect(() => {
     buscarInfoCliente()
   }, [])
 
   return (
     <div className="informacao">
-             
-            <header>
-                <div className='imagem-logo'>
-                    <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
-                </div>
 
-               <Link to='/adm-solicitacoes'><button>VOLTAR</button></Link>
-            </header>
+      <header>
+        <div className='imagem-logo'>
+          <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
+        </div>
 
-            <div className="secao">
+        <Link to='/adm-solicitacoes'><button>VOLTAR</button></Link>
+      </header>
 
-              <div className="secao-informacao">
-                  <h1>INFORMAÇÕES DA SOLICITAÇÃO </h1>
+      <div className="secao">
 
-                  <div className="info">
-                    <h3>NOME DO CLIENTE</h3>
-                    <div><h3>{nome}</h3></div>
-                  </div>
+        <div className="secao-informacao">
+          <h1>INFORMAÇÕES DA SOLICITAÇÃO </h1>
 
-                  <div className="direcao-lado">
-                    <div className="info-2">
-                      <h3>IDADE</h3>
-                      <div><h3>{idade}</h3></div>
-                    </div>
-                    <div className="info-2">
-                      <h3>CPF DO CLIENTE</h3>
-                      <div><h3>{cpf}</h3></div>
-                    </div>
-                  </div>
+          <div className="info">
+            <h3>NOME DO CLIENTE</h3>
+            <div><h3>{nome}</h3></div>
+          </div>
 
-                  <div className="direcao-lado">
-                    <div className="info-2">
-                      <h3>GÊNERO</h3>
-                      <div><h3>{genero}</h3></div>
-                    </div>
-                    <div className="info-2">
-                      <h3>IDEIA</h3>
-                      <div><h3>{ideia}</h3></div>
-                    </div>
-                  </div>
-
-                  <div className="info">
-                    <h3>E-MAIL</h3>
-                    <div><h3>{email}</h3></div>
-                  </div>
-                  <div className="info">
-                    <h3>TELEFONE</h3>
-                    <div><h3>{telefone}</h3></div>
-                  </div>
-                 <Link state={{id:data.id}} to='/adm-marcar'><button>MARCAR CONSULTA</button></Link>
-              </div>
+          <div className="direcao-lado">
+            <div className="info-2">
+              <h3>IDADE</h3>
+              <div><h3>{idade}</h3></div>
             </div>
+            <div className="info-2">
+              <h3>CPF DO CLIENTE</h3>
+              <div><h3>{cpf}</h3></div>
+            </div>
+          </div>
+
+          <div className="direcao-lado">
+            <div className="info-2">
+              <h3>GÊNERO</h3>
+              <div><h3>{genero}</h3></div>
+            </div>
+            <div className="info-2">
+              <h3>IDEIA</h3>
+              <div><h3>{ideia}</h3></div>
+            </div>
+          </div>
+
+          <div className="info">
+            <h3>E-MAIL</h3>
+            <div><h3>{email}</h3></div>
+          </div>
+          <div className="info">
+            <h3>TELEFONE</h3>
+            <div><h3>{telefone}</h3></div>
+          </div>
+          <Link state={{ id: data.id }} to='/adm-marcar'><button>MARCAR CONSULTA</button></Link>
+        </div>
+      </div>
     </div>
   );
 }

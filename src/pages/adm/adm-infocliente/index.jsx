@@ -1,10 +1,50 @@
 import "./index.scss";
-import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 
+export default function InformacoesCliente() {
 
-export default function informacoesCliente() {
-    return(
+    const location = useLocation()
+    const navigate = useNavigate()
+
+    let data = location.state
+    const [informacao, setInformacao] = useState([]);
+    const [anotacao, setAnotacao] = useState("")
+    const [situacao, setSituacao] = useState("")
+
+    async function inseriAnotacao() {
+        const valores = {
+            "anotacao": anotacao,
+            "situacao": situacao
+        }
+
+        try {
+            const url = `http://localhost:5021/info-cliente/`
+            let resp = await axios.post(url, valores)
+
+            alert("Anotacao feita com sucesso!" + resp.data.novoId)
+            setAnotacao("")
+            setSituacao("")
+            navigate("/adm-solicitacoes")
+        }
+        catch (error) {
+            alert("Erro")
+        }
+    }
+
+    async function buscar() {
+        const url = `http://localhost:5021/secao/${data.id}`;
+        let resp = await axios.get(url);
+        setInformacao(resp.data);
+    }
+    useEffect(() => {
+        buscar()
+    }, [])
+
+    return (
         <div className="informacao">
             <header>
                 <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
@@ -12,34 +52,40 @@ export default function informacoesCliente() {
             </header>
 
             <div className="conteiner">
-            <div className="secao">
-                <div className="bloco-escuro">
-                <div className='coluna'>
-                    <h1>ABNER JOSÉ</h1>
-                    <h3>CPF: 600.761.488-31</h3>
-                </div>
-    
-                <div className='coluna'>
-                    <h3>Data: 16/05/2024</h3>
-                    <h3>Horário: 17:37</h3>
-                </div>             
-                </div>
+                <div className="secao">
+                    {informacao.map(item =>
+                        <div className="bloco-escuro">
+                            <div className='coluna'>
+                                <h1>{item.nome}</h1>
+                                <h3>{item.cpf}</h3>
+                            </div>
 
-                <div className="anotacao">
-                    <h1>ANOTAÇÕES</h1>
-                    <textarea name="anotacaoes" id="anotacao"></textarea>
+                            <div className='flex'>
+                                <div className='coluna'>
+                                    <h3>{new Date(item.data_consulta).toLocaleDateString()}</h3>
+                                    <h3>{item.hora}</h3>
+                                </div>
+                            </div>
+                        </div>
+                    )}
 
-                    <button>CONCLUIR</button>
+                    <div className="anotacao">
+                        <h1>ANOTAÇÕES</h1>
+                        <textarea value={anotacao} onChange={e => setAnotacao(e.target.value)} name="anotacaoes" id="anotacao"></textarea>
+
+                        <div className="ulti">
+                            <div className="selecao">
+                                <p>Cliente satisfeito ?</p>
+                                <input type="checkbox" checked={situacao} onChange={e => setSituacao(e.target.checked)} />
+                            </div>
+                            <button onClick={inseriAnotacao}>CONCLUIR</button>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
-
-            </div>
-
-           
-
         </div>
-    )
-
+    );
 
 }
