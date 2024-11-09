@@ -19,7 +19,7 @@ export default function InformacoesSoliciacao() {
   const [ideia, setIdeia] = useState("")
 
   async function buscarInfoCliente() {
-    const url = `http://localhost:5021/solicitar/${data.id}`
+    const url = `http://localhost:5021/cliente/${data.id}`
     let resp = await axios.get(url)
 
     setNome(resp.data.nome)

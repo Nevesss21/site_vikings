@@ -1,7 +1,7 @@
 import "./index.scss";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { useLocation  } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 export default function AdmMarcar() {
@@ -23,7 +23,7 @@ export default function AdmMarcar() {
   const [horario, setHorario] = useState("")
 
   async function buscarInfoCliente() {
-    const url = `http://localhost:5021/solicitar/${info.id}`
+    const url = `http://localhost:5021/cliente/${info.id}`
     let resp = await axios.get(url)
 
     setNome(resp.data.nome)
@@ -42,20 +42,28 @@ export default function AdmMarcar() {
       "preco": valor,
       "id": info.id
     }
-    
-  try {
-    const url = `http://localhost:5021/marcar/`
-    let resp = await axios.post(url, valores)
 
-    alert("Sessão marcada com sucesso!" + resp.data.novoId)
-    setData("")
-    setHorario("")
-    setValor("")
-    navigate("/adm-secoes")
-  } 
-  catch (error) {
-    alert("Erro")
-  }
+    try {
+      const url = `http://localhost:5021/marcar/`
+      let resp = await axios.post(url, valores)
+
+      alert("Sessão marcada com sucesso!" + resp.data.novoId)
+
+      const ids = {
+        "idConsulta": resp.data.novoId,
+        "idCliente": info.id
+      }
+      const segundaUrl = `http://localhost:5021/secao/`
+      let resposta = await axios.post(segundaUrl, ids)
+
+      setData("")
+      setHorario("")
+      setValor("")
+      navigate("/adm-secoes")
+    }
+    catch (error) {
+      alert("Erro")
+    }
   }
 
   useEffect(() => {

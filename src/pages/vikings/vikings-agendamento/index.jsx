@@ -13,7 +13,6 @@ export default function Agendamento() {
     const [email, setEmail] = useState('')
     const [ideia, setIdeia] = useState('')
     const [idade, setIdade] = useState('')
-    const [id, setId] = useState('')
 
     async function enviar() {
         const usuario = {
@@ -25,17 +24,29 @@ export default function Agendamento() {
             "email": email,
             "ideia": ideia
         }
+        const url = `http://localhost:5021/cliente/`
 
-        const url = `http://localhost:5021/marcar/`
-        let resp = await axios.post(url, usuario)
-        alert('Pessoa adicionada na tabela cliente. Id: ' + resp.data.novoId);
-        
-        const pararm = {
-        "id": id
+        try {
+
+            if (genero == "" || genero == "Selecionar") {
+                alert("Informe o gênero.")
+                return
+            }
+
+            let resp = await axios.post(url, usuario)
+            alert('Pessoa adicionada na tabela cliente. Id: ' + resp.data.novoId);
+            setNome("")
+            setGenero("")
+            setCpf("")
+            setTelefone("")
+            setEmail("")
+            setIdeia("")
+            setIdade("")
         }
-        const ur = `http://localhost:5021/solicitar/`
-        let resposta = await axios.post(ur, pararm)
-        alert('id adicionado' + resposta.data.novoId)
+        catch (error) {
+            alert("ERRO")
+            return
+        }
     }
 
     return (
@@ -58,7 +69,13 @@ export default function Agendamento() {
                         </div>
                         <div className="espaco">
                             <p>INFORME SEU GÊNERO </p>
-                            <input className="in" type="text" value={genero} onChange={e => setGenero(e.target.value)} />
+
+                            <select name="genero" id="genero" onChange={e => setGenero(e.target.value)}>
+                                <option>Selecionar</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Feminino">Feminino</option>
+                                <option value="Outro">Outro</option>
+                            </select>
                         </div>
                     </div>
 

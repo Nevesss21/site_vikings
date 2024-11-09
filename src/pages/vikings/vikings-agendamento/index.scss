@@ -1,4 +1,4 @@
-.agendar{
+.agendar {
     background-image: linear-gradient(210deg, #000000, #1f1f0b, #000000, #1f1f0b);
     background-repeat: no-repeat;
     background-size: cover;
@@ -6,7 +6,7 @@
     flex-direction: column;
 
 
-    .secao-inicial{
+    .secao-inicial {
         background-image: url('../../../../public/assets/images/quadro-escada.png');
         background-repeat: no-repeat;
         background-size: cover;
@@ -14,7 +14,7 @@
         height: 100vh;
         align-items: center;
 
-        h1{
+        h1 {
             margin-left: 5vw;
             color: #fff;
             font: 700 2.5rem "vikings";
@@ -23,14 +23,14 @@
 
     }
 
-    .secao-dois{
+    .secao-dois {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: 10vh 0vw 10vh 0vw;
 
-        .bloco{
+        .bloco {
             height: 100vh;
             width: 70vw;
             background-color: #25242493;
@@ -40,7 +40,7 @@
             padding: 5vh 5vw;
             border-radius: 10px;
 
-            h1{
+            h1 {
                 color: #fff;
                 font: 700 2rem "vikings";
                 width: 50vw;
@@ -48,7 +48,7 @@
                 text-align: center;
             }
 
-            .input-1{
+            .input-1 {
                 display: flex;
                 flex-direction: row;
                 gap: 1vh 5vw;
@@ -57,16 +57,18 @@
                 justify-content: center;
                 padding: 2vh 0vw;
 
-                .espaco{
+                .espaco {
                     display: flex;
                     flex-direction: column;
                     gap: 1vh 0vw;
 
-                    p{
+                    p {
                         font: 500 1rem 'vikings';
                         color: #fff;
                     }
-                    .in{
+
+                    .in,
+                    select {
                         width: 20vw;
                         height: 5vh;
                         border: none;
@@ -74,17 +76,19 @@
                     }
                 }
             }
-            .input-2{
+
+            .input-2 {
                 display: flex;
                 flex-direction: column;
                 gap: 1vh 0vw;
                 padding: 2vh 0vw;
 
-                p{
+                p {
                     font: 500 1rem 'vikings';
                     color: #fff;
                 }
-                input{
+
+                input {
                     height: 5vh;
                     border: none;
                     border-radius: 5px;
@@ -92,10 +96,11 @@
                 }
             }
 
-            .enviar{
+            .enviar {
                 margin-left: 35vw;
                 padding: 3vh 0vw;
-                button{
+
+                button {
                     background-color: #000;
                     color: #fff;
                     font: 500 1rem "vikings";
@@ -103,18 +108,18 @@
                     height: 6vh;
                     border: none;
                     border-radius: 10px;
-                    
+
                 }
             }
         }
-      
+
     }
 }
 
 @media (max-width: 1440px) {
-    .agendar{
-        .secao-dois{
-            .bloco{
+    .agendar {
+        .secao-dois {
+            .bloco {
                 height: 110vh;
             }
         }
@@ -122,19 +127,22 @@
 }
 
 @media (max-width:1280px) {
-    .agendar{
-        .secao-dois{
-            .bloco{
-               .input-1, .input-2 {
-                p{
-                    font-size: 0.8rem;
-                }
-                .espaco{
-                    p{
+    .agendar {
+        .secao-dois {
+            .bloco {
+
+                .input-1,
+                .input-2 {
+                    p {
                         font-size: 0.8rem;
                     }
+
+                    .espaco {
+                        p {
+                            font-size: 0.8rem;
+                        }
+                    }
                 }
-               }
             }
         }
     }
@@ -142,33 +150,40 @@
 
 
 @media (max-width:912px) {
-    .agendar{
-        .secao-inicial{
+    .agendar {
+        .secao-inicial {
             height: 80vh;
-            h1{
+
+            h1 {
                 font-size: 1.5rem;
             }
         }
-        .secao-dois{
-            .bloco{
+
+        .secao-dois {
+            .bloco {
                 height: 100vh;
-                h1{
+
+                h1 {
                     font-size: 1rem;
                 }
-                .input-1{
+
+                .input-1 {
                     gap: 1vh 6vw;
                 }
-               .input-1, .input-2 {
-                p{
-                    font-size: 0.6rem;
-                }
-                .espaco{
-                    p{
+
+                .input-1,
+                .input-2 {
+                    p {
                         font-size: 0.6rem;
-                        width: 20vw;
+                    }
+
+                    .espaco {
+                        p {
+                            font-size: 0.6rem;
+                            width: 20vw;
+                        }
                     }
                 }
-               }
             }
         }
     }
@@ -176,112 +191,130 @@
 
 
 @media (max-width:768px) {
-    .agendar{
-        .secao-inicial{
-           height: 70vh;
+    .agendar {
+        .secao-inicial {
+            height: 70vh;
         }
-        .secao-dois{
-            .bloco{
-                h1{
+
+        .secao-dois {
+            .bloco {
+                h1 {
                     font-size: 0.9rem;
                 }
-                .input-1{
+
+                .input-1 {
                     gap: 1vh 6vw;
                 }
-               
-               .enviar{
-                button{
-                    font-size: 0.8rem;
+
+                .enviar {
+                    button {
+                        font-size: 0.8rem;
+                    }
                 }
-               }
             }
         }
     }
 }
 
 @media (max-width:540px) {
-    .agendar{
-        .secao-inicial{
+    .agendar {
+        .secao-inicial {
             height: 60vh;
-            h1{
+
+            h1 {
                 font-size: 1.2rem;
             }
         }
-        .secao-dois{
-            .bloco{
+
+        .secao-dois {
+            .bloco {
                 height: 110vh;
-         
-                h1{
+
+                h1 {
                     font-size: 0.8rem;
                 }
-                .enviar{
-                  
-                    button{
+
+                .enviar {
+
+                    button {
                         font-size: 0.6rem;
                         width: 20vw;
                     }
                 }
-                .input-1{
+
+                .input-1 {
                     gap: 1vh 5vw;
                     display: flex;
                     flex-direction: column;
                 }
-               .input-1, .input-2 {
-                padding: 1.5vh 0vw;
-                .espaco{
-                    .in{
+
+                .input-1,
+                .input-2 {
+                    padding: 1.5vh 0vw;
+
+                    .espaco {
+
+                        .in,
+                        select {
+                            width: 62vw;
+                        }
+                    }
+
+                    input {
                         width: 62vw;
                     }
-                }
-                input{
-                    width: 62vw;
-                }
-                p{
-                    font-size: 0.5rem;
-                }
-                .espaco{
-                    p{
+
+                    p {
                         font-size: 0.5rem;
                     }
+
+                    .espaco {
+                        p {
+                            font-size: 0.5rem;
+                        }
+                    }
                 }
-               }
             }
         }
     }
 }
 
 @media (max-width:430px) {
-    .agendar{
-        .secao-inicial{
+    .agendar {
+        .secao-inicial {
             height: 50vh;
-            h1{
+
+            h1 {
                 font-size: 1rem;
             }
         }
-        .secao-dois{
-            .bloco{
-               height: 100vh;
-         
-                
-             
-               .input-1, .input-2 {
-                padding: 1vh 0vw;
-              
-              
-               }
+
+        .secao-dois {
+            .bloco {
+                height: 100vh;
+
+
+
+                .input-1,
+                .input-2 {
+                    padding: 1vh 0vw;
+
+
+                }
             }
         }
     }
 }
 
 @media (max-width:375px) {
-    .agendar{
-        .secao-inicial{
+    .agendar {
+        .secao-inicial {
             height: 40vh;
-            h1{
+
+            h1 {
                 font-size: 0.8rem;
             }
         }
-      
+
     }
 }
