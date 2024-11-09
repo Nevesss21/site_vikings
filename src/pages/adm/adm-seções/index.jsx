@@ -22,9 +22,6 @@ export default function AdmSecoes() {
     <div className="sessao">
       <NavAdm />
       <div className="bloco">
-
-        <input type="text" placeholder="Pesquise e veja o a sessão por cpf ou nome.." />
-
         <div className="area-cinza">
           <h1>SESSÕES MARCADAS</h1>
 
@@ -45,7 +42,6 @@ export default function AdmSecoes() {
 
                     <div className="coluna">
                       <img src="/assets/images/lixeirabranca.png" alt="apagar" />
-                      <img src="/assets/images/canetabranca.png" alt="editar" />
                     </div>
                   </div>
                 </div>

@@ -13,7 +13,7 @@ export default function Agendamento() {
     const [email, setEmail] = useState('')
     const [ideia, setIdeia] = useState('')
     const [idade, setIdade] = useState('')
-    //const [id, setId] = useState('')
+    const [id, setId] = useState('')
 
     async function enviar() {
         const usuario = {
@@ -29,15 +29,14 @@ export default function Agendamento() {
         const url = `http://localhost:5021/marcar/`
         let resp = await axios.post(url, usuario)
         alert('Pessoa adicionada na tabela cliente. Id: ' + resp.data.novoId);
+        
+        const pararm = {
+        "id": id
+        }
+        const ur = `http://localhost:5021/solicitar/`
+        let resposta = await axios.post(ur, pararm)
+        alert('id adicionado' + resposta.data.novoId)
     }
-   // async function salvarId() {
-        //const pararm = {
-          //  "id": id
-        //}
-        //const ur = `http://localhost:5021/solicitar/`
-        //let resposta = await axios.post(ur, pararm)
-        //alert('id adicionado' + resposta.data.novoId)
-    //}
 
     return (
         <div className="agendar">
