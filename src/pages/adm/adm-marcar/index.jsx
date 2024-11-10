@@ -56,6 +56,9 @@ export default function AdmMarcar() {
       const segundaUrl = `http://localhost:5021/secao/`
       let resposta = await axios.post(segundaUrl, ids)
 
+      const terceiraUrl = `http://localhost:5021/marcar/${info.id}`
+      let finalizar = await axios.put(terceiraUrl)
+
       setData("")
       setHorario("")
       setValor("")

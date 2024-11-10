@@ -13,7 +13,7 @@ export default function InformacoesCliente() {
     let data = location.state
     const [informacao, setInformacao] = useState([]);
     const [anotacao, setAnotacao] = useState("")
-    const [situacao, setSituacao] = useState("")
+    const [situacao, setSituacao] = useState(false)
 
     async function inseriAnotacao() {
         const valores = {
