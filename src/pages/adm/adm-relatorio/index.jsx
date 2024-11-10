@@ -7,13 +7,13 @@ import { useState, useEffect } from "react"
 export default function AdmRelatorio() {
 
   const [relato, setRelato] = useState([]);
-  const [pessoas, setPessoas] = useState();
-  const [renda, setRenda] = useState();
-  const [masculino, setMasculino] = useState();
-  const [feminino, setFeminino] = useState();
-  const [outro, setOutro] = useState();
-  const [maior, setMaior] = useState();
-  const [menor, setMenor] = useState();
+  const [pessoas, setPessoas] = useState(0);
+  const [renda, setRenda] = useState(0);
+  const [masculino, setMasculino] = useState(0);
+  const [feminino, setFeminino] = useState(0);
+  const [outro, setOutro] = useState(0);
+  const [maior, setMaior] = useState(0);
+  const [menor, setMenor] = useState(0);
 
 
   async function buscar() {
@@ -28,8 +28,6 @@ export default function AdmRelatorio() {
     setOutro(resp.data.quantidade_outro)
     setMaior(resp.data.idade_igual_18)
     setMenor(resp.data.idade_18)
-
-    
   }
 
   async function inserirRelato() {
@@ -42,8 +40,6 @@ export default function AdmRelatorio() {
       "maior": maior,
       "menor": menor
     }
-    
-    console.log(valores)
 
     try {
       const url = `http://localhost:5021/relatorio/`
@@ -74,17 +70,16 @@ export default function AdmRelatorio() {
 
         <div className="espaco"><h3>Relatório01-21/05/2024</h3></div>
         <div className="area-cinza">
-          {relato.map(item =>
-            <div className="text">
-              <p value={pessoas} onChange={e => setPessoas(e.target.value)}>{item.total_pessoas}</p>
-              <p value={renda} onChange={e => setRenda(e.target.value)}>{item.renda_final}</p>
-              <p value={masculino} onChange={e => setMasculino(e.target.value)}>{item.quantidade_masculino}</p>
-              <p value={feminino} onChange={e => setFeminino(e.target.value)}>{item.quantidade_feminino}</p>
-              <p value={outro} onChange={e => setOutro(e.target.value)}>{item.quantidade_outro}</p>
-              <p value={maior} onChange={e => setMaior(e.target.value)}>{item.idade_igual_18}</p>
-              <p value={menor} onChange={e => setMenor(e.target.value)}>{item.idade_18}</p>
-            </div>
-          )}
+          <div className="text">
+            <p>{`Teste ${pessoas}`}</p>
+            <p >{`Teste ${renda}`}</p>
+            <p >{`Teste ${masculino}`}</p>
+            <p >{`Teste ${feminino}`}</p>
+            <p >{`Teste ${outro}`}</p>
+            <p >{`Teste ${maior}`}</p>
+            <p >{`Teste ${menor}`}</p>
+          </div>
+
         </div>
         <div className="botao">
           <button>Concluido</button>
