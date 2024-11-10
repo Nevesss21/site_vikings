@@ -6,51 +6,34 @@ import axios from "axios";
 
 
 export default function CadastrarRelatorio() {
-  const[data, setDate]= useState("")
-  const[fkCliente, setFkCliente]= useState("")
-  const[fkConsulta, setFkConsulta]= useState("")
-  const[fkSecao, setFkSecao]= useState("")
-
-
   const navigate = useNavigate()
 
-  async function inserirRelato() {
-    const pararm = {
-      "data":data,
-      "fkCliente":fkCliente,
-      "fkConsulta":fkConsulta,
-      "fkSecao":fkSecao
+  const [criar, setCriar] = useState("")
 
-    }
+  async function Criar() {
+       
     try {
-      const url = `http://localhost:5021/relatorio/`
-      let resp = await axios.post(url, pararm)
-  
-      alert("Sessão marcada com sucesso!" + resp.data.novoId)
-      setDate("")
-      setFkCliente("")
-      setFkConsulta("")
-      setFkSecao("")
-      navigate("/adm-realizados")
-    } 
-    catch (error) {
-      alert("Erro")
-    }
-    
+      const url = `http://localhost:5021/criar/`;
+      let resp = await axios.post(url);
+
+      alert("relatorio criado com sucesso com sucesso!" + resp.data.novoId)
+      setCriar("")
+      navigate("/adm-relatorio")
   }
-
-
+  catch (error) {
+      alert("Erro")
+  }
+    
+}
+  
+  
+ 
   return (
     <div className="cadastrar-relatorio">
       <NavAdm />
       <div className="secao-cadastro">
         <div className="cadastrar">
-          <div className="espaco">
-            <div className="input">
-              <h3>Informe a data do relatório</h3>
-              <input type="date" value={data} onChange={e => setDate(e.target.value)} />
-            </div>
-          </div>
+      
 
           <div className="escolha">
             <h1>Escolha os filtros do seu relatorio</h1>
@@ -74,7 +57,7 @@ export default function CadastrarRelatorio() {
             <Link to="/adm-realizados">
               <button>Ver Relatórios</button>
             </Link>
-            <button onClick={inserirRelato}>Criar novo Relatório</button>
+            <button onClick={Criar}>Criar novo Relatório</button>
           </div>
         </div>
       </div>

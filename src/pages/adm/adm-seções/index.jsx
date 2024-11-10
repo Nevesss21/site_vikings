@@ -20,7 +20,7 @@ export default function AdmSecoes() {
     const url = `http://localhost:5021/secao/${idDelete}`;
     let resp = await axios.get(url);
     setIdDelete("");
-    alert("Deletado!")
+    alert("Deletado!" + resp.data)
   }
 
 
