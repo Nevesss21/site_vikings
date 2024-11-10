@@ -1,0 +1,241 @@
+.relatorio{
+    background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
+    display: flex;
+    flex-direction: column;
+    height: 200vh;
+  
+    header{
+      height: 25vh;
+      display: flex;
+      justify-content: space-between;
+      padding: 1vh 5vw;
+      align-items: center;
+      border-bottom: #a19b9b solid 0.3vh;
+      img{
+        width: 10vw;
+      }
+      
+      .links{
+        width: 20vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        a{
+          color: #fff;
+          font: 500 1rem 'vikings';
+          text-decoration: none;
+        }
+    
+      }
+  
+    }
+    .bloco{
+      margin-top: 20vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8vh 0vw;
+       .botao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap : 0vh 20vw;
+        button{
+          background-color: #2C2929;
+          font: 500 1.2rem 'vikings';
+          border-radius: 30px;
+          height: 8vh;
+          width: 22vw;
+          border: none;
+          color: #fff;
+        }
+       }
+  
+      .espaco{
+        background-color: #9E8080;
+        width: 60vw;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        padding: 1vh 4vw;
+        border-radius: 10px;
+        h3{
+          font: 500 1rem 'vikings';
+          color: #3F3333;
+        }
+      }
+      .area-cinza{
+        height: 110vh;
+        width: 60vw;
+        gap: 20vh 0vw;
+        background-color: #313131;
+        border-radius: 20px;
+        border: #1A1A1A 3vh solid;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 2vh 3vw;
+        .text{
+          display: flex;
+          flex-direction: column;
+          gap: 3vh 0vw;
+          p{
+            font: 500 1.2rem 'vikings';
+            color: #9E8080;
+          }
+        }
+        
+      }
+    }
+  
+  
+  }
+  
+  @media (max-width:1280px) {
+  
+  }
+  
+  
+  @media (max-width:912px) {
+   
+  }
+  
+  
+  @media (max-width:768px) {
+   
+  }
+  
+  @media (max-width:540px) {
+    .relatorio{
+      header{
+        img{
+          height: 20vh;
+          width: 18vw;
+        }
+        .links{
+          gap: 0vh 2vw;
+        }
+      }
+      .bloco{
+        .espaco{
+          h3{
+            font: 700 0.9rem 'vikings';
+  
+          }
+        }
+        .area-cinza{
+          height: 100vh;
+          width: 90vw;
+          padding: 1vh 2vw;
+  
+        }
+        
+        button{
+          height: 6vh;
+          width: 25vw;
+        }
+      }
+  
+    }
+   
+  }
+  
+  
+  @media (max-width:430px) {
+    .relatorio{
+      margin:0px;
+      header{
+        img{
+          height: 20vh;
+          width: 21vw;
+        }
+        .links{
+          margin-right: 5vw;
+  
+         
+        }
+      }
+      .bloco{
+        .espaco{
+          h3{
+            font: 700 0.9rem 'vikings';
+  
+          }
+        }
+       
+        .area-cinza{
+          height: 80vh;
+          width: 90vw;
+          padding: 1vh 2vw;
+  
+          .text{
+            p{
+              font: 500 1rem 'vikings';
+    
+            }
+    
+          }
+  
+        }
+        
+        button{
+          height: 7vh;
+          width: 29vw;
+        }
+      }
+  
+    }
+   
+  }
+  
+  
+  
+  @media (max-width:375px) {
+    .relatorio{
+      margin:0px;
+      header{
+        img{
+          height: 25vh;
+          width: 29vw;
+        }
+        .links{
+          margin-right: 9vw;
+  
+         
+        }
+      }
+      .bloco{
+        .espaco{
+          h3{
+            font: 700 0.9rem 'vikings';
+  
+          }
+        }
+       
+        .area-cinza{
+          height: 70vh;
+          width: 85vw;
+          padding: 1vh 2vw;
+  
+          .text{
+            p{
+              font: 500 0.8rem 'vikings';
+    
+            }
+    
+          }
+  
+        }
+        
+        button{
+          height: 8vh;
+          width: 31vw;
+        }
+      }
+  
+    }
+   
+  }
+  
+  

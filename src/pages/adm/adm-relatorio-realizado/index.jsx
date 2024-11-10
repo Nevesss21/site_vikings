@@ -2,15 +2,11 @@ import "./index.scss";
 import { Link } from "react-router-dom";
 import axios from "axios"
 import { useState, useEffect } from "react"
-import { useLocation } from "react-router-dom";
 
 
-export default function AdmRelatorio() {
-  const location = useLocation()
-  let data = location.state
+export default function AdmRelatorioRealizado() {
 
   const [relato, setRelato] = useState([]);
-  const [id, setId] = useState(0);
   const [pessoas, setPessoas] = useState(0);
   const [renda, setRenda] = useState(0);
   const [masculino, setMasculino] = useState(0);
@@ -24,9 +20,7 @@ export default function AdmRelatorio() {
     const url = `http://localhost:5021/relatorio/`;
     let resp = await axios.get(url);
     setRelato(resp.data);
-    
 
-    setId(resp.data.id)
     setPessoas(resp.data.total_pessoas)
     setRenda(resp.data.renda_final)
     setMasculino(resp.data.quantidade_masculino)
@@ -34,28 +28,6 @@ export default function AdmRelatorio() {
     setOutro(resp.data.quantidade_outro)
     setMaior(resp.data.idade_igual_18)
     setMenor(resp.data.idade_18)
-  }
-
-  async function inserirRelato() {
-    const valores = {
-      "pessoas": pessoas,
-      "renda": renda,
-      "masculino": masculino,
-      "feminino": feminino,
-      "outro": outro,
-      "maior": maior,
-      "menor": menor
-    }
-
-    try {
-      const url = `http://localhost:5021/relatorio/`
-      let resp = await axios.post(url, valores)
-      alert("relatorio guardado com sucesso!" + resp.data.novoId)
-
-    }
-    catch (error) {
-      alert("Erro")
-    }
   }
 
   useEffect(() => {
@@ -87,14 +59,7 @@ export default function AdmRelatorio() {
           </div>
 
         </div>
-
-          <div className="botao">
-            <button>Concluido</button>
-            <Link state={{ id: id }} to='/adm-realizados'>
-              <button onClick={inserirRelato}>GUARDAR RELATO</button>
-            </Link>
-          </div>
-    
+      
       </div>
 
     </div>
