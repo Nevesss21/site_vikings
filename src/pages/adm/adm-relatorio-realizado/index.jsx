@@ -1,33 +1,19 @@
 import "./index.scss";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import axios from "axios"
 import { useState, useEffect } from "react"
 
 
 export default function AdmRelatorioRealizado() {
+  const location = useLocation()
+  let info = location.state
 
-  const [relato, setRelato] = useState([]);
-  const [pessoas, setPessoas] = useState(0);
-  const [renda, setRenda] = useState(0);
-  const [masculino, setMasculino] = useState(0);
-  const [feminino, setFeminino] = useState(0);
-  const [outro, setOutro] = useState(0);
-  const [maior, setMaior] = useState(0);
-  const [menor, setMenor] = useState(0);
-
+  const [relatoid, setrelatoId] = useState([])
 
   async function buscar() {
-    const url = `http://localhost:5021/relatorio/`;
+    const url = `http://localhost:5021/relatorio-id/${info.id}`;
     let resp = await axios.get(url);
-    setRelato(resp.data);
-
-    setPessoas(resp.data.total_pessoas)
-    setRenda(resp.data.renda_final)
-    setMasculino(resp.data.quantidade_masculino)
-    setFeminino(resp.data.quantidade_feminino)
-    setOutro(resp.data.quantidade_outro)
-    setMaior(resp.data.idade_igual_18)
-    setMenor(resp.data.idade_18)
+    setrelatoId(resp.data);
   }
 
   useEffect(() => {
@@ -44,23 +30,28 @@ export default function AdmRelatorioRealizado() {
           <Link to='/adm-realizados'>VOLTAR</Link>
         </div>
       </header>
-      <div className="bloco">
-
-        <div className="espaco"><h3>Relatório01-21/05/2024</h3></div>
-        <div className="area-cinza">
-          <div className="text">
-            <p>{`Total de pessoas no mes: ${pessoas}`}</p>
-            <p >{`Renda final : ${renda}`}</p>
-            <p >{`Clientes do gênero masculino: ${masculino}`}</p>
-            <p >{`Clientes do gênero feminino: ${feminino}`}</p>
-            <p >{`Clientes do gênero outro: ${outro}`}</p>
-            <p >{`Clientes com idade superior igual  a 18 anos: ${maior}`}</p>
-            <p >{`Clientes com idade menor que 18 anos: ${menor}`}</p>
-          </div>
-
-        </div>
+        {relatoid.map(item =>
       
+      <div className="bloco">
+            <div className="espaco"><h3>{new Date(item.data).toLocaleDateString()}</h3></div>
+
+            <div className="area-cinza">
+              <div className="text">
+                <p>{`Total de pessoas no mes: ${item.total_pessoas}`}</p>
+                <p >{`Renda final : ${item.renda}`}</p>
+                <p >{`Clientes do gênero masculino: ${item.masculino}`}</p>
+                <p >{`Clientes do gênero feminino: ${item.feminino}`}</p>
+                <p >{`Clientes do gênero outro: ${item.outro}`}</p>
+                <p >{`Clientes com idade superior igual  a 18 anos: ${item.maior}`}</p>
+                <p >{`Clientes com idade menor que 18 anos: ${item.menor}`}</p>
+              </div>
+            </div>
+         
       </div>
+        )}
+
+
+
 
     </div>
   )

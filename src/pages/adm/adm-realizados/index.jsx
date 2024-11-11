@@ -36,8 +36,6 @@ export default function AdmRealizados() {
       <NavAdm/>
       <div className="bloco">
 
-     <input type="text" placeholder="Pesquise e veja o seu relatório pela data ou nome.." />
-
         <div className="area-cinza">
           <h1>RELATÓRIOS JA REALIZADOS</h1>
 
