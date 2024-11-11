@@ -2,12 +2,11 @@ import "./index.scss";
 import { Link } from "react-router-dom";
 import axios from "axios"
 import { useState, useEffect } from "react"
-import { useLocation } from "react-router-dom";
+
 
 
 export default function AdmRelatorio() {
-  const location = useLocation()
-  let data = location.state
+
 
   const [relato, setRelato] = useState([]);
   const [id, setId] = useState(0);
@@ -24,7 +23,7 @@ export default function AdmRelatorio() {
     const url = `http://localhost:5021/relatorio/`;
     let resp = await axios.get(url);
     setRelato(resp.data);
-    
+
 
     setId(resp.data.id)
     setPessoas(resp.data.total_pessoas)
@@ -88,13 +87,13 @@ export default function AdmRelatorio() {
 
         </div>
 
-          <div className="botao">
-            <button>Concluido</button>
-            <Link state={{ id: id }} to='/adm-realizados'>
-              <button onClick={inserirRelato}>GUARDAR RELATO</button>
-            </Link>
-          </div>
-    
+        <div className="botao">
+          <button>Concluido</button>
+          <Link state={{ id: id }} to='/adm-realizados'>
+            <button onClick={inserirRelato}>GUARDAR RELATO</button>
+          </Link>
+        </div>
+
       </div>
 
     </div>
