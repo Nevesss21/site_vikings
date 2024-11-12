@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 
 export default function AdmMarcar() {
 
@@ -36,21 +37,6 @@ export default function AdmMarcar() {
   }
 
   async function marcarSessao() {
-
-
-    if (data == "") {
-      toast.error("Informe a data.")
-      return
-    }
-    if (horario == "") {
-      toast.error("Informe o horário.")
-      return
-    }
-    if (valor == "") {
-      toast.error("Informe o valor.")
-      return
-    }
-
     const valores = {
       "data": data,
       "hora": horario,
@@ -63,18 +49,17 @@ export default function AdmMarcar() {
 
 
     try {
-
-
+      const url = `http://localhost:5021/marcar/`
       let resp = await axios.post(url, valores)
       toast.success("Sessão marcada com sucesso!" + resp.data.novoId)
 
-      alert("Sessão marcada com sucesso!" + resp.data.novoId)
+      toast.sucess("Sessão marcada com sucesso!" + resp.data.novoId)
 
       const ids = {
         "idConsulta": resp.data.novoId,
         "idCliente": info.id
       }
-
+      const segundaUrl = `http://localhost:5021/secao/`
       let resposta = await axios.post(segundaUrl, ids)
       let finalizar = await axios.put(terceiraUrl)
 
