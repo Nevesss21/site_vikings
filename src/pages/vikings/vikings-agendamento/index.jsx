@@ -36,31 +36,7 @@ export default function Agendamento() {
                 return
             }
             if (genero == "" || genero == "Selecionar") {
-                toast.error("Informe o gênero.")
-                return
-            }
-            if (email.length < 5 || email.length > 50) {
-                toast.error("Verifique o campo email.")
-                return
-            }
-            if (telefone == "") {
-                toast.error("Informe o número de telefone.")
-                return
-            }
-            if (cpf == "") {
-                toast.error("Informe o CPF.")
-                return
-            }
-            if (idade > 122) {
-                toast.error("Você não é tão velho, é?.")
-                return
-            }
-            if (idade < 16) {
-                toast.error("Sua idade não corresponde a idade mínima.")
-                return
-            }
-            if (ideia.length < 5 || ideia.length > 250) {
-                toast.error("Verifique o campo descrição.")
+                alert("Informe o gênero.")
                 return
             }
 
