@@ -37,10 +37,6 @@ export default function AdmMarcar() {
   }
 
   async function marcarSessao() {
-<<<<<<< HEAD
-=======
-
-
     if (data == "") {
       toast.error("Informe a data.")
       return
@@ -54,7 +50,7 @@ export default function AdmMarcar() {
       return
     }
 
->>>>>>> 4cdc5c9 (.)
+
     const valores = {
       "data": data,
       "hora": horario,
@@ -76,8 +72,6 @@ export default function AdmMarcar() {
         "idConsulta": resp.data.novoId,
         "idCliente": info.id
       }
-
->>>>>>> 4cdc5c9 (.)
       let resposta = await axios.post(segundaUrl, ids)
       let finalizar = await axios.put(terceiraUrl)
 
@@ -87,11 +81,9 @@ export default function AdmMarcar() {
       navigate("/adm-secoes")
     }
     catch (error) {
-<<<<<<< HEAD
       alert("Erro")
-=======
       toast.error("Error")
->>>>>>> 4cdc5c9 (.)
+
     }
   }
 
