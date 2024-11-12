@@ -4,6 +4,8 @@ import axios from "axios";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
+import { withMask } from "use-mask-input";
+
 
 export default function AdmMarcar() {
 
@@ -37,23 +39,39 @@ export default function AdmMarcar() {
   }
 
   async function marcarSessao() {
+
     const valores = {
       "data": data,
       "hora": horario,
-      "preco": valor,
+      "preco": valor.replace(",", "."),
       "id": info.id
     }
 
     try {
+
+      if (data = "") {
+        toast.error("Informe a data.")
+        return
+      }
+      if (horario = "") {
+        toast.error("Informe o horário.")
+        return
+      }
+      if (valor = "") {
+        toast.error("Informe o valor.")
+        return
+      }
+
       const url = `http://localhost:5021/marcar/`
       let resp = await axios.post(url, valores)
 
-      toast.sucess("Sessão marcada com sucesso!" + resp.data.novoId)
+      toast.success("Sessão marcada com sucesso!" + resp.data.novoId)
 
       const ids = {
         "idConsulta": resp.data.novoId,
         "idCliente": info.id
       }
+
       const segundaUrl = `http://localhost:5021/secao/`
       let resposta = await axios.post(segundaUrl, ids)
 
@@ -103,7 +121,7 @@ export default function AdmMarcar() {
           <div className="direcao-lado">
             <div className="input-2">
               <h3>IDADE</h3>
-              <input value={idade} type="number" placeholder="EX: 18" />
+              <input value={idade} type="text" placeholder="EX: 18" />
             </div>
             <div className="input-2">
               <h3>CPF DO CLIENTE</h3>
@@ -138,7 +156,7 @@ export default function AdmMarcar() {
           </div>
           <div className="input">
             <h3>TELEFONE</h3>
-            <input value={telefone} type="text" placeholder="EX: (00) 00000-0000" />
+            <input value={telefone} ref={withMask('(99)99999-9999')} type="text" placeholder="EX: (00)00000-0000" />
           </div>
 
           <div className="direcao-lado">
