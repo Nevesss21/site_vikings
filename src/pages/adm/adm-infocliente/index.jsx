@@ -6,8 +6,7 @@ import { useState, useEffect } from "react";
 
 
 export default function InformacoesCliente() {
-
-    const location = useLocation()
+    const location = useLocation() 
     const navigate = useNavigate()
 
     let data = location.state
