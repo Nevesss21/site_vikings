@@ -47,6 +47,10 @@ export default function Agendamento() {
                 toast.error("Informe o número de telefone.")
                 return
             }
+            if (cpf == "") {
+                toast.error("Informe o CPF.")
+                return
+            }
             if (idade > 122) {
                 toast.error("Você não é tão velho, é?.")
                 return
