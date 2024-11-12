@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
 
 export default function AdmMarcar() {
 
@@ -47,7 +48,7 @@ export default function AdmMarcar() {
       const url = `http://localhost:5021/marcar/`
       let resp = await axios.post(url, valores)
 
-      alert("Sessão marcada com sucesso!" + resp.data.novoId)
+      toast.sucess("Sessão marcada com sucesso!" + resp.data.novoId)
 
       const ids = {
         "idConsulta": resp.data.novoId,
@@ -65,7 +66,7 @@ export default function AdmMarcar() {
       navigate("/adm-secoes")
     }
     catch (error) {
-      alert("Erro")
+      toast.error("Erro")
     }
   }
 

@@ -4,7 +4,8 @@ import Nav from '../../../components/Nav';
 import Rodape from '../../../components/Rodape';
 import Whats from '../../../components/Whats';
 import axios from 'axios';
-
+import toast from 'react-hot-toast';
+import { withMask } from 'use-mask-input';
 
 export default function Contato() {
 
@@ -15,17 +16,49 @@ export default function Contato() {
     const [mensagem, setMensagem] = useState('')
 
     async function enviar() {
-        const usuario = {
-            "nome": nome,
-            "telefone": telefone,
-            "email": email,
-            "assunto": assunto,
-            "mensagem": mensagem
-        }
+        try {
 
-        const url = `http://4.172.207.208:5021/contato/`
-        let resp = await axios.post(url, usuario)
-        alert('Pessoa adicionada na tabela contato. Id: ' + resp.data.novoId);
+            if(nome.length < 3 || nome.length > 15){
+                toast.error("Verifique o campo nome.")
+                return
+            }
+            if(email.length < 5 || email.length > 50){
+                toast.error("Verifique o campo email.")
+                return
+            }
+            if(telefone == ""){
+                toast.error("Informe o número de telefone.")
+                return
+            }
+            if (assunto == "" || assunto == "Selecionar") {
+                toast.error("Selecione o Assunto.")
+                return
+            }
+            if(mensagem.length < 5 || mensagem.length > 250){
+                toast.error("Verifique o campo descrição.")
+                return
+            }
+
+            const usuario = {
+                "nome": nome,
+                "telefone": telefone.replace("-", "").replace("(", "").replace(")", ""),
+                "email": email,
+                "assunto": assunto,
+                "mensagem": mensagem
+            }
+
+            const url = `http://localhost:5021/contato/`
+            let resp = await axios.post(url, usuario)
+            toast.success('Pessoa adicionada na tabela contato. Id: ' + resp.data.novoId);
+            setNome("")
+            setTelefone("")
+            setEmail("")
+            setAssunto("")
+            setMensagem("")
+        }
+        catch (error) {
+            toast.error("Erro ao tentar")
+        }
     }
 
     return (
@@ -40,16 +73,16 @@ export default function Contato() {
                 <div className="separacao">
                     <div className="porInput">
                         <h2>NOME</h2>
-                        <input type="text" placeholder='Digite seu nome...'value={nome} onChange={e => setNome(e.target.value)} />
+                        <input type="text" placeholder='Digite seu nome...' value={nome} onChange={e => setNome(e.target.value)} />
                     </div>
                     <div className="porInput">
                         <h2>EMAIL</h2>
-                        <input type="email" placeholder='Informe o seu e-mail 'value={email} onChange={e => setEmail(e.target.value)} />
+                        <input type="email" placeholder='Informe o seu e-mail ' value={email} onChange={e => setEmail(e.target.value)} />
 
                     </div>
                     <div className="porInput">
                         <h2>TELEFONE</h2>
-                        <input type="tel" placeholder='(00)00000-0000' value={telefone} onChange={e => setTelefone(e.target.value)}/>
+                        <input type="tel" ref={withMask('(99)99999-9999')} placeholder='(00)00000-0000' value={telefone} onChange={e => setTelefone(e.target.value)} />
                     </div>
                     <div className="porInput">
                         <h2>ASSUNTO</h2>
@@ -62,7 +95,7 @@ export default function Contato() {
                     </div>
                     <div className="porInput">
                         <h2>MENSAGEM</h2>
-                        <input type="text" placeholder='Para orçamentos entrar em contato via whatsapp ou via direct no instaragram...'value={mensagem} onChange={e => setMensagem(e.target.value)} />
+                        <input type="text" placeholder='Para orçamentos entrar em contato via whatsapp ou via direct no instaragram...' value={mensagem} onChange={e => setMensagem(e.target.value)} />
                     </div>
                 </div>
                 <button onClick={enviar}>Enviar</button>

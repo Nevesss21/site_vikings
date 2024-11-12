@@ -4,6 +4,9 @@ import { useState } from 'react'
 import Nav from '../../../components/Nav';
 import Rodape from '../../../components/Rodape';
 import Whats from '../../../components/Whats'
+import toast from "react-hot-toast";
+import { withMask } from 'use-mask-input';
+
 
 export default function Agendamento() {
     const [nome, setNome] = useState('')
@@ -17,10 +20,10 @@ export default function Agendamento() {
     async function enviar() {
         const usuario = {
             "nome": nome,
-            "cpf": cpf,
+            "cpf": cpf.replace("-", ""),
             "genero": genero,
             "idade": idade,
-            "telefone": telefone,
+            "telefone": telefone.replace("-", "").replace("(", "").replace(")", ""),
             "email": email,
             "ideia": ideia
         }
@@ -28,13 +31,38 @@ export default function Agendamento() {
 
         try {
 
+            if (nome.length < 3 || nome.length > 15) {
+                toast.error("Verifique o campo nome.")
+                return
+            }
             if (genero == "" || genero == "Selecionar") {
-                alert("Informe o gênero.")
+                toast.error("Informe o gênero.")
+                return
+            }
+            if (email.length < 5 || email.length > 50) {
+                toast.error("Verifique o campo email.")
+                return
+            }
+            if (telefone == "") {
+                toast.error("Informe o número de telefone.")
+                return
+            }
+            if (idade > 122) {
+                toast.error("Você não é tão velho, é?.")
+                return
+            }
+            if (idade < 16) {
+                toast.error("Sua idade não corresponde a idade mínima.")
+                return
+            }
+            if (ideia.length < 5 || ideia.length > 250) {
+                toast.error("Verifique o campo descrição.")
                 return
             }
 
+
             let resp = await axios.post(url, usuario)
-            alert('Pessoa adicionada na tabela cliente. Id: ' + resp.data.novoId);
+            toast.success(`Pessoa adicionada na tabela cliente. Id: ${resp.data.novoId}`);
             setNome("")
             setGenero("")
             setCpf("")
@@ -44,7 +72,7 @@ export default function Agendamento() {
             setIdade("")
         }
         catch (error) {
-            alert("ERRO")
+            toast.error("ERRO")
             return
         }
     }
@@ -65,7 +93,7 @@ export default function Agendamento() {
                     <div className="input-1">
                         <div className="espaco">
                             <p>INFORME SEU NOME</p>
-                            <input className="in" type="text" value={nome} onChange={e => setNome(e.target.value)} />
+                            <input className="in" placeholder="Nome" type="text" value={nome} onChange={e => setNome(e.target.value)} />
                         </div>
                         <div className="espaco">
                             <p>INFORME SEU GÊNERO </p>
@@ -81,28 +109,28 @@ export default function Agendamento() {
 
                     <div className="input-2">
                         <p>E-MAIL</p>
-                        <input type="email" value={email} onChange={e => setEmail(e.target.value)} />
+                        <input type="email" placeholder="Email" value={email} onChange={e => setEmail(e.target.value)} />
                     </div>
 
                     <div className="input-1">
                         <div className="espaco">
                             <p>IDADE</p>
-                            <input className="in" type="text" value={idade} onChange={e => setIdade(e.target.value)} />
+                            <input className="in" placeholder="Idade" type="text" value={idade} onChange={e => setIdade(e.target.value)} />
                         </div>
                         <div className="espaco">
                             <p>CPF</p>
-                            <input className="in" type="text" value={cpf} onChange={e => setCpf(e.target.value)} />
+                            <input ref={withMask('99999999-99')} className="in" type="text" value={cpf} onChange={e => setCpf(e.target.value)} />
                         </div>
                     </div>
 
                     <div className="input-2">
                         <p>TELEFONE</p>
-                        <input type="text" value={telefone} onChange={e => setTelefone(e.target.value)} />
+                        <input type="text" placeholder="(00)00000-0000" ref={withMask('(99)99999-9999')} value={telefone} onChange={e => setTelefone(e.target.value)} />
                     </div>
 
                     <div className="input-2">
                         <p>IDEIA DE TATUAGEM</p>
-                        <input className="in" type="text" value={ideia} onChange={e => setIdeia(e.target.value)} />
+                        <input className="in" placeholder="Descreva entre 5 e 250 carácteres" type="text" value={ideia} onChange={e => setIdeia(e.target.value)} />
                     </div>
                     <div className="enviar">
                         <button onClick={enviar} >ENVIAR</button>
