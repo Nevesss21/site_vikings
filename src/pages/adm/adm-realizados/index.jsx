@@ -14,7 +14,7 @@ export default function AdmRealizados() {
   let info = location.state
 
   async function deletarData(id) {
-    const url = `http://localhost:5021/apagar-data/${id}`;
+    const url = `http://4.172.207.208/:5021/apagar-data/${id}`;
     let resp = await axios.delete(url);
     alert("Deletado!" + resp.data)
     await buscar()
@@ -23,7 +23,7 @@ export default function AdmRealizados() {
 
 
   async function buscar() {
-    const url = `http://localhost:5021/relatorio-data/`;
+    const url = `http://4.172.207.208/:5021/relatorio-data/`;
     let resp = await axios.get(url);
     setVerData(resp.data); 
   }

@@ -10,14 +10,14 @@ export default function AdmSecoes() {
   const [idDelete, setIdDelete] = useState("");
 
   async function buscar() {
-    const url = `http://localhost:5021/secao/`;
+    const url = `http://4.172.207.208:5021/secao/`;
     let resp = await axios.get(url);
     setSecao(resp.data);
 
   }
 
   async function deletar() {
-    const url = `http://localhost:5021/secao/${idDelete}`;
+    const url = `http://4.172.207.208:5021/secao/${idDelete}`;
     let resp = await axios.get(url);
     setIdDelete("");
     alert("Deletado!" + resp.data)

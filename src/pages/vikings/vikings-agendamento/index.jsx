@@ -27,7 +27,7 @@ export default function Agendamento() {
             "email": email,
             "ideia": ideia
         }
-        const url = `http://localhost:5021/cliente/`
+        const url = `http://4.172.207.208:5021/cliente/`
 
         try {
 

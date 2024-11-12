@@ -11,7 +11,7 @@ export default function AdmRelatorioRealizado() {
   const [relatoid, setrelatoId] = useState([])
 
   async function buscar() {
-    const url = `http://localhost:5021/relatorio-id/${info.id}`;
+    const url = `http://4.172.207.208:5021/relatorio-id/${info.id}`;
     let resp = await axios.get(url);
     setrelatoId(resp.data);
   }

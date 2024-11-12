@@ -20,7 +20,7 @@ export default function AdmRelatorio() {
 
 
   async function buscar() {
-    const url = `http://localhost:5021/relatorio/`;
+    const url = `http://4.172.207.208:5021/relatorio/`;
     let resp = await axios.get(url);
     setRelato(resp.data);
 
@@ -48,7 +48,7 @@ export default function AdmRelatorio() {
     }
 
     try {
-      const url = `http://localhost:5021/relatorio/`
+      const url = `http://4.172.207.208:5021/relatorio/`
       let resp = await axios.post(url, valores)
       alert("relatorio guardado com sucesso!" + resp.data.novoId)
 

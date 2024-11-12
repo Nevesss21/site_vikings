@@ -11,7 +11,7 @@ export default function AdmSolicitacoes() {
 
 
   async function buscar() {
-    const url = `http://localhost:5021/cliente/`;
+    const url = `http://4.172.207.208:5021/cliente/`;
     let resp = await axios.get(url);
     setSolicitar(resp.data);
   }
