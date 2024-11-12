@@ -40,42 +40,43 @@ export default function AdmMarcar() {
 
   async function marcarSessao() {
 
+
+    if (data == "") {
+      toast.error("Informe a data.")
+      return
+    }
+    if (horario == "") {
+      toast.error("Informe o horário.")
+      return
+    }
+    if (valor == "") {
+      toast.error("Informe o valor.")
+      return
+    }
+
     const valores = {
       "data": data,
       "hora": horario,
       "preco": valor.replace(",", "."),
       "id": info.id
     }
+    const url = `http://localhost:5021/marcar/`
+    const segundaUrl = `http://localhost:5021/secao/`
+    const terceiraUrl = `http://localhost:5021/marcar/${info.id}`
+
 
     try {
 
-      if (data = "") {
-        toast.error("Informe a data.")
-        return
-      }
-      if (horario = "") {
-        toast.error("Informe o horário.")
-        return
-      }
-      if (valor = "") {
-        toast.error("Informe o valor.")
-        return
-      }
 
-      const url = `http://localhost:5021/marcar/`
       let resp = await axios.post(url, valores)
-
       toast.success("Sessão marcada com sucesso!" + resp.data.novoId)
 
-      const ids = {
+      let ids = {
         "idConsulta": resp.data.novoId,
         "idCliente": info.id
       }
 
-      const segundaUrl = `http://localhost:5021/secao/`
       let resposta = await axios.post(segundaUrl, ids)
-
-      const terceiraUrl = `http://localhost:5021/marcar/${info.id}`
       let finalizar = await axios.put(terceiraUrl)
 
       setData("")
@@ -84,7 +85,7 @@ export default function AdmMarcar() {
       navigate("/adm-secoes")
     }
     catch (error) {
-      toast.error("Erro")
+      toast.error("Error")
     }
   }
 
