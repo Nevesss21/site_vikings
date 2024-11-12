@@ -4,8 +4,6 @@ import axios from "axios";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import { withMask } from "use-mask-input";
-
 
 export default function AdmMarcar() {
 
@@ -39,6 +37,8 @@ export default function AdmMarcar() {
   }
 
   async function marcarSessao() {
+<<<<<<< HEAD
+=======
 
 
     if (data == "") {
@@ -54,15 +54,16 @@ export default function AdmMarcar() {
       return
     }
 
+>>>>>>> 4cdc5c9 (.)
     const valores = {
       "data": data,
       "hora": horario,
       "preco": valor.replace(",", "."),
       "id": info.id
     }
-    const url = `http://4.172.207.208/:5021/marcar/`
-    const segundaUrl = `h4.172.207.208/:5021/secao/`
-    const terceiraUrl = `http://4.172.207.208/:5021/marcar/${info.id}`
+    const url = `http://localhost:5021/marcar/`
+    const segundaUrl = `http://localhost:5021/secao/`
+    const terceiraUrl = `http://localhost:5021/marcar/${info.id}`
 
 
     try {
@@ -76,6 +77,7 @@ export default function AdmMarcar() {
         "idCliente": info.id
       }
 
+>>>>>>> 4cdc5c9 (.)
       let resposta = await axios.post(segundaUrl, ids)
       let finalizar = await axios.put(terceiraUrl)
 
@@ -85,7 +87,11 @@ export default function AdmMarcar() {
       navigate("/adm-secoes")
     }
     catch (error) {
+<<<<<<< HEAD
+      alert("Erro")
+=======
       toast.error("Error")
+>>>>>>> 4cdc5c9 (.)
     }
   }
 

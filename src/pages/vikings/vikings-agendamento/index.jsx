@@ -55,6 +55,7 @@ export default function Agendamento() {
                 toast.error("CPF inválido.")
                 return
             }
+
             if (idade > 122) {
                 toast.error("Você não é tão velho, é?.")
                 return
