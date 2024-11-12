@@ -51,6 +51,10 @@ export default function Agendamento() {
                 toast.error("Informe o CPF.")
                 return
             }
+            if (cpf.length < 11) {
+                toast.error("CPF inválido.")
+                return
+            }
             if (idade > 122) {
                 toast.error("Você não é tão velho, é?.")
                 return
@@ -123,7 +127,7 @@ export default function Agendamento() {
                         </div>
                         <div className="espaco">
                             <p>CPF</p>
-                            <input ref={withMask('99999999-99')} className="in" type="text" value={cpf} onChange={e => setCpf(e.target.value)} />
+                            <input ref={withMask('999999999-99')} className="in" type="text" value={cpf} onChange={e => setCpf(e.target.value)} />
                         </div>
                     </div>
 
