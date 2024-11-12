@@ -61,25 +61,6 @@ export default function AdmMarcar() {
       "preco": valor.replace(",", "."),
       "id": info.id
     }
-<<<<<<< HEAD
-    const url = `http://4.172.207.208/:5021/marcar/`
-    const segundaUrl = `h4.172.207.208/:5021/secao/`
-    const terceiraUrl = `http://4.172.207.208/:5021/marcar/${info.id}`
-
-
-    try {
-      const url = `http://localhost:5021/marcar/`
-      let resp = await axios.post(url, valores)
-      toast.success("Sessão marcada com sucesso!" + resp.data.novoId)
-
-      toast.sucess("Sessão marcada com sucesso!" + resp.data.novoId)
-
-      const ids = {
-        "idConsulta": resp.data.novoId,
-        "idCliente": info.id
-      }
-      const segundaUrl = `http://localhost:5021/secao/`
-=======
     const url = `http://localhost:5021/marcar/`
     const segundaUrl = `http://localhost:5021/secao/`
     const terceiraUrl = `http://localhost:5021/marcar/${info.id}`

@@ -47,9 +47,18 @@ export default function Contato() {
                 "mensagem": mensagem
             }
 
-        const url = `http://4.172.207.208:5021/contato/`
-        let resp = await axios.post(url, usuario)
-        alert('Pessoa adicionada na tabela contato. Id: ' + resp.data.novoId);
+            const url = `http://localhost:5021/contato/`
+            let resp = await axios.post(url, usuario)
+            toast.success('Pessoa adicionada na tabela contato. Id: ' + resp.data.novoId);
+            setNome("")
+            setTelefone("")
+            setEmail("")
+            setAssunto("")
+            setMensagem("")
+        }
+        catch (error) {
+            toast.error("Erro ao tentar")
+        }
     }
 
     return (
