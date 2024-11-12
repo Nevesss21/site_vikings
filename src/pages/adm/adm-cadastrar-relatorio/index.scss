@@ -8,83 +8,43 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    .botoes {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      //   padding: 5vh 0vw;
-      gap: 15px;
-      button {
-        background-color: #fff;
-        font: 700 1rem "vikings";
-        border-radius: 5px;
-        padding: 15px 20px;
-        border: none;
-        color: #2c2929;
-        cursor: pointer;
-        margin-top: 10vh;
-      }
-    }
+    
 
     .cadastrar {
-      height: 110vh;
-      width: 60vw;
-      gap: 5vh 0vw;
+      padding: 2vh 2vw;
+      height: 90vh;
+      width: 80vw;
       background-color: #313131;
       border-radius: 20px;
       border: #1a1a1a 3vh solid;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      padding: 2vh 3vw;
-      .espaco {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .input {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          gap: 2vh 0vw;
-          h3 {
-            font: 500 1.5rem "vikings";
-            color: #fff;
-          }
-          input {
-            border: none;
-            min-width: 50px;
-            border-radius: 5px;
-            background-color: white;
-            padding: 1vh 2vw;
-            font: 500 1rem "vikings";
 
-          }
-        }
+      h1{
+        color: #fff;
+        font: 500 2.5rem 'vikings';
+        text-align: center;
       }
-      .escolha {
-        display: flex;
-        flex-direction: column;
-        gap: 3vh 0vw;
-        justify-content: center;
-        h1 {
-          font: 500 1.5rem "vikings";
-          color: #fff;
-          padding: 2vh 0vw;
-        }
+  
 
-        select{
-          height: 8vh;
-          color: #524f4f;
-          font: 500 0.8rem 'vikings';
+      .botoes {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0vh 5vw ;
+        button {
+          background-color: #fff;
+          font: 700 1rem "vikings";
+          border-radius: 5px;
+          padding: 15px 20px;
           border: none;
-          background-color: #1a1a1a;
-          border-radius: 10px;
-          padding: 1vh 2vw;
+          color: #2c2929;
+          cursor: pointer;
+          margin-top: 10vh;
         }
-        
       }
+     
     }
   }
 }

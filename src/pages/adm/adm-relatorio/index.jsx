@@ -33,6 +33,7 @@ export default function AdmRelatorio() {
     setOutro(resp.data.quantidade_outro)
     setMaior(resp.data.idade_igual_18)
     setMenor(resp.data.idade_18)
+    console.log(relato)
   }
 
   async function inserirRelato() {
@@ -88,7 +89,9 @@ export default function AdmRelatorio() {
         </div>
 
         <div className="botao">
-          <button>Concluido</button>
+          <Link to='/adm-cadastrar-relatorio'>
+            <button>VOLTAR</button>
+          </Link>
           <Link state={{ id: id }} to='/adm-realizados'>
             <button onClick={inserirRelato}>GUARDAR RELATO</button>
           </Link>
