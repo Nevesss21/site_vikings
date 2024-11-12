@@ -25,7 +25,7 @@ export default function AdmMarcar() {
   const [horario, setHorario] = useState("")
 
   async function buscarInfoCliente() {
-    const url = `http://http://4.172.207.208/:5021/cliente/${info.id}`
+    const url = `http://http://4.172.207.208:5021/cliente/${info.id}`
     let resp = await axios.get(url)
 
     setNome(resp.data.nome)
@@ -58,9 +58,9 @@ export default function AdmMarcar() {
       "preco": valor.replace(",", "."),
       "id": info.id
     }
-    const url = `http://localhost:5021/marcar/`
-    const segundaUrl = `http://localhost:5021/secao/`
-    const terceiraUrl = `http://localhost:5021/marcar/${info.id}`
+    const url = `http://4.172.207.208:5021/marcar/`
+    const segundaUrl = `http://4.172.207.208:5021/secao/`
+    const terceiraUrl = `http://4.172.207.208:5021/marcar/${info.id}`
 
 
     try {
