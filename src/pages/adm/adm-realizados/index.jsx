@@ -23,7 +23,7 @@ export default function AdmRealizados() {
 
 
   async function buscar() {
-    const url = `http://4.172.207.208/:5021/relatorio-data/`;
+    const url = `http://4.172.207.208:5021/relatorio-data/`;
     let resp = await axios.get(url);
     setVerData(resp.data); 
   }
