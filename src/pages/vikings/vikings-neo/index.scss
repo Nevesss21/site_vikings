@@ -1,18 +1,18 @@
-.neo{
+.neo {
     background-image: linear-gradient(210deg, #000000, #1f1f0b, #000000, #1f1f0b);
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
 
-    .secao-1{
+    .secao-1 {
         display: flex;
         flex-direction: row;
         align-items: center;
         height: 80vh;
         padding: 5vh 5vw;
         gap: 0vh 5vw;
-        
-        .losango{
+
+        .losango {
             background-image: url('../../../../public/assets/images/losango.png');
             background-repeat: no-repeat;
             background-size: cover;
@@ -21,26 +21,30 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            padding: 8.9vh 4.7vw;      
+            padding: 8.9vh 4.7vw;
             gap: 1vh 0vw;
-            p{
+
+            p {
                 color: #000;
                 font: 500 0.8rem "vikings";
                 width: 9vw;
                 text-align: center;
-                
+
             }
-            img{
+
+            img {
                 width: 8vw;
             }
 
         }
-        .text{
+
+        .text {
             display: flex;
             flex-direction: column;
             gap: 8vh 0vw;
-            a{
-                button{
+
+            a {
+                button {
                     background-color: #A68D7A;
                     color: #fff;
                     font: 500 1rem "vikings";
@@ -50,21 +54,22 @@
                 }
             }
 
-            h1{
+            h1 {
                 font: 500 2rem 'vikings';
             }
 
-            .texto{
+            .texto {
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 justify-content: center;
                 gap: 0vh 0.5vw;
 
-                h3{
+                h3 {
                     font: 500 1.5rem 'vikings';
                 }
-                p{
+
+                p {
                     font: 500 1rem 'vikings';
                     color: #DAA41B;
                 }
@@ -73,24 +78,27 @@
 
     }
 
-    .secao-2{
+    .secao-2 {
         display: flex;
         flex-direction: column;
 
         align-items: center;
         height: 100vh;
-        .line{
+
+        .line {
             background-color: #8b8b8b;
             width: 90vw;
             height: 0.1vh;
         }
-        .images{
+
+        .images {
             flex-wrap: wrap;
             display: flex;
             flex-direction: row;
             padding: 5vh 5vw;
             gap: 3vh 5vw;
-            img{
+
+            img {
                 width: 15vw;
             }
         }
@@ -98,164 +106,181 @@
 }
 
 @media (max-width:1440px) {
-    .neo{
-     .secao-1{
-        .losango{
-            padding: 9vh 4.7vw;  
+    .neo {
+        .secao-1 {
+            .losango {
+                padding: 9vh 4.7vw;
+            }
         }
-     }
     }
-   
+
 }
+
 @media (max-width:1280px) {
-    .neo{
-        .secao-1{
+    .neo {
+        .secao-1 {
             padding: 22vh 5vw 5vh 5vw;
             height: 65vh;
-           .losango{
-               padding: 7.5vh 5vw;  
-           }
+
+            .losango {
+                padding: 7.5vh 5vw;
+            }
         }
-        .secao-2{
+
+        .secao-2 {
             height: 45vh;
         }
-       }
-   
+    }
+
 }
 
 @media (max-width:1024px) {
-    .neo{
-        .secao-1{
+    .neo {
+        .secao-1 {
             padding: 20vh 5vw 5vh 5vw;
             height: 60vh;
         }
-       }
-   
+    }
+
 }
 
 @media (max-width:912px) {
-    .neo{
-        .secao-1{
-           .losango{
-               padding: 6vh 5vw;  
-           }
+    .neo {
+        .secao-1 {
+            .losango {
+                padding: 6vh 5vw;
+            }
         }
-        .secao-2{
+
+        .secao-2 {
             height: 50vh;
         }
-       }
-   
+    }
+
 }
 
 @media (max-width: 768px) {
-    .neo{
-        .secao-1{
-           .losango{
-               padding: 5.5vh 4.5vw;  
-               img{
-                width: 6vw;
-               }
-           }
+    .neo {
+        .secao-1 {
+            .losango {
+                padding: 5.5vh 4.5vw;
+
+                img {
+                    width: 6vw;
+                }
+            }
         }
-        .secao-2{
+
+        .secao-2 {
             height: 40vh;
         }
-       }
-   
+    }
+
 }
 
 @media (max-width: 660px) {
-    .neo{
-        .secao-1{
-           .losango{
-               padding: 5vh 4.5vw;  
-               p{
-                font-size: 0.6rem;
-               }
-           }
-           .text{
-            a{
-                button{
-                    font-size: 0.8rem;
+    .neo {
+        .secao-1 {
+            .losango {
+                padding: 5vh 4.5vw;
+
+                p {
+                    font-size: 0.6rem;
                 }
             }
-           }
+
+            .text {
+                a {
+                    button {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
         }
 
-       }
-   
+    }
+
 }
 
 
 
 
 @media (max-width:540px) {
-    .neo{
-        .secao-1{
-           .losango{
-               padding: 4.5vh 4.7vw;  
-               p{
-                font-size: 0.5rem;
-               }
-           }
-           .text{
-            a{
-                button{
-                    font-size: 0.6rem;
-                }
-            }
-           }
-        }
+    .neo {
+        .secao-1 {
+            .losango {
+                padding: 4.5vh 4.7vw;
 
-       }
-   
-}
-
-@media (max-width:430px) {
-    .neo{
-        .secao-1{
-           .losango{
-               padding: 3.8vh 6vw;  
-               p{
-                font-size: 0.5rem;
-               }
-           }
-           .text{
-            a{
-                button{
+                p {
                     font-size: 0.5rem;
                 }
             }
-           }
+
+            .text {
+                a {
+                    button {
+                        font-size: 0.6rem;
+                    }
+                }
+            }
         }
 
-       }
-   
+    }
+
+}
+
+@media (max-width:430px) {
+    .neo {
+        .secao-1 {
+            .losango {
+                padding: 3.8vh 6vw;
+
+                p {
+                    font-size: 0.5rem;
+                }
+            }
+
+            .text {
+                a {
+                    button {
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+
+    }
+
 }
 
 @media (max-width:375px) {
-    .neo{
-        .secao-1{
-            height:40vh;
-           .losango{
-               padding: 3vh 4.5vw;  
-               p{
-                font-size: 0.3rem;
-               }
-           }
-           .text{
-            gap: 3vh 0vw;
-            a{
-                button{
+    .neo {
+        .secao-1 {
+            height: 40vh;
+
+            .losango {
+                padding: 3vh 4.5vw;
+
+                p {
                     font-size: 0.3rem;
                 }
             }
-           }
+
+            .text {
+                gap: 3vh 0vw;
+
+                a {
+                    button {
+                        font-size: 0.3rem;
+                    }
+                }
+            }
         }
-        .secao-2{
+
+        .secao-2 {
             height: 30vh;
         }
 
-       }
-   
+    }
+
 }

@@ -2,14 +2,22 @@ import { Link } from 'react-router-dom'
 import './index.scss'
 import NavAdm from '../../../components/Nav-adm'
 import { useNavigate } from 'react-router-dom'
-
-
-
-
+import { useState, useEffect } from 'react'
 
 export default function AdmLanding() {
 
+    const [token, setToken] = useState(null)
     const navigate = useNavigate()
+
+    useEffect(() => {
+        let token = localStorage.getItem('USUARIO')
+        setToken(token)
+
+        if (token == null) {
+            navigate("/")
+        }
+    }, [])
+
     async function sair() {
         localStorage.setItem('USUARIO', null)
         navigate('/')

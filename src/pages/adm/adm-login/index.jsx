@@ -2,7 +2,8 @@ import "./index.scss";
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
-
+import { withMask } from "use-mask-input";
+import toast from "react-hot-toast";
 
 export default function AdmLogin() {
 
@@ -11,24 +12,35 @@ export default function AdmLogin() {
         navigate('/')
     }
 
-
     const [cpf, setCpf] = useState('')
     const [senha, setSenha] = useState('')
 
     const navigate = useNavigate()
 
     async function entrar() {
+
+
         const usuario = {
-            "cpf": cpf,
+            "cpf": cpf.replace("-", ""),
             "senha": senha
+        }
+
+        if (cpf == "") {
+            toast.error("CPF incompleto ou vazio.")
+            return
+        }
+        if (senha == "") {
+            toast.error("Insira a senha.")
+            return
         }
 
         const url = `http://4.172.207.208:5021/entrar/`
         let resp = await axios.post(url, usuario)
 
         if (resp.data.erro !== undefined) {
-            alert(resp.data.erro)
+            toast.error(resp.data.erro)
         } else {
+            toast.success("Você acessou a administração.")
             localStorage.setItem('USUARIO', resp.data.token)
             navigate('/adm-landing')
         }
@@ -46,9 +58,9 @@ export default function AdmLogin() {
                     </div>
                     <div className="inputs">
                         <p>Informe seu CPF</p>
-                        <input id="cpf" type="text" value={cpf} onChange={(e) => setCpf(e.target.value)} />
+                        <input id="cpf" type="text" placeholder="000000000-00" ref={withMask('999999999-99')} value={cpf} onChange={(e) => setCpf(e.target.value)} />
                         <p>Informe sua senha</p>
-                        <input id="senha" type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />
+                        <input id="senha" placeholder="senha" type="password" value={senha} onChange={(e) => setSenha(e.target.value)} />
                         <button onClick={entrar}>Entrar</button>
                     </div>
 

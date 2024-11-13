@@ -4,12 +4,12 @@ import Rodape from '../../../components/Rodape';
 import Tattoo from '../../../components/Tattoo';
 
 
-export default function Estilos(){
-    return(
-    <div className='estilo'>
-              <Nav />
-              <Tattoo/>
-              <Rodape />
-    </div>
+export default function Estilos() {
+    return (
+        <div className='estilo'>
+            <Nav />
+            <Tattoo />
+            <Rodape />
+        </div>
     )
 }

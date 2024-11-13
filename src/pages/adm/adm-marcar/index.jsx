@@ -8,9 +8,20 @@ import { withMask } from "use-mask-input";
 
 export default function AdmMarcar() {
 
+  const [token, setToken] = useState(null)
   const navigate = useNavigate()
   const location = useLocation()
   let info = location.state
+
+
+  useEffect(() => {
+    let token = localStorage.getItem('USUARIO')
+    setToken(token)
+
+    if (token == null) {
+      navigate("/")
+    }
+  }, [])
 
   const [nome, setNome] = useState("")
   const [cpf, setCpf] = useState("")

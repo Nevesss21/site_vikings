@@ -1,19 +1,18 @@
 import './index.scss'
-
 import Nav from '../../../components/Nav';
 import Rodape from '../../../components/Rodape';
 import Whats from '../../../components/Whats';
 import { Link } from 'react-router-dom';
 
-export default function Colorido(){
-    return(
+export default function Colorido() {
+    return (
         <div className='colorido'>
-            <Nav/>
-            <Whats/>
+            <Nav />
+            <Whats />
 
             <div className='secao-1'>
 
-               <div className='losango'>
+                <div className='losango'>
                     <img src="/assets/images/colorida.png" alt="img-tattoo" />
                     <p>COLORIDAS</p>
                 </div>
@@ -23,23 +22,23 @@ export default function Colorido(){
                         <p>Coloridas</p>
                     </div>
                     <h1>Colorido</h1>
-                    <Link to ='/Estilo'><button>VOLTAR</button></Link>
+                    <Link to='/Estilo'><button>VOLTAR</button></Link>
                 </div>
-            
-           
+
+
             </div>
             <div className='secao-2'>
-            <div className='line' />
-            
-            <div className='images'>
-                <img src="/assets/images/colorido-tattoo.jpg" alt="img-tattoo" />
-                <img src="/assets/images/batman-tattoo.jpg" alt="img-tattoo" />
-                <img src="/assets/images/avatar-tattoo.jpg" alt="img-tattoo" />
-            </div>
+                <div className='line' />
+
+                <div className='images'>
+                    <img src="/assets/images/colorido-tattoo.jpg" alt="img-tattoo" />
+                    <img src="/assets/images/batman-tattoo.jpg" alt="img-tattoo" />
+                    <img src="/assets/images/avatar-tattoo.jpg" alt="img-tattoo" />
+                </div>
 
             </div>
 
-            <Rodape/>
+            <Rodape />
         </div>
     )
 }

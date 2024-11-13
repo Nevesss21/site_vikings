@@ -3,7 +3,7 @@ import NavAdm from "../../../components/Nav-adm";
 import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 
 export default function AdmRealizados() {
@@ -13,19 +13,31 @@ export default function AdmRealizados() {
   const location = useLocation()
   let info = location.state
 
+  const [token, setToken] = useState(null)
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    let token = localStorage.getItem('USUARIO')
+    setToken(token)
+
+    if (token == null) {
+      navigate("/")
+    }
+  }, [])
+
   async function deletarData(id) {
     const url = `http://4.172.207.208/:5021/apagar-data/${id}`;
     let resp = await axios.delete(url);
     alert("Deletado!" + resp.data)
     await buscar()
-    
+
   }
 
 
   async function buscar() {
     const url = `http://4.172.207.208:5021/relatorio-data/`;
     let resp = await axios.get(url);
-    setVerData(resp.data); 
+    setVerData(resp.data);
   }
   useEffect(() => {
     buscar()
@@ -33,7 +45,7 @@ export default function AdmRealizados() {
 
   return (
     <div className="relatorio-realizado">
-      <NavAdm/>
+      <NavAdm />
       <div className="bloco">
 
         <div className="area-cinza">
@@ -41,23 +53,23 @@ export default function AdmRealizados() {
 
           <div className="scroll">
 
-          {verData.map(item=>
-            <div className="bloco-escuro">
-          <Link state={{ id: item.id }}  to='/adm-relatorio-realizado'>
-              <h3>{`Relatorio ${new Date(item.data).toLocaleDateString()}` }</h3>
-          </Link>
-              <div className="coluna">
-                <img onClick={() => deletarData(item.id)}src="/assets/images/lixeirabranca.png" alt="apagar" />
+            {verData.map(item =>
+              <div className="bloco-escuro">
+                <Link state={{ id: item.id }} to='/adm-relatorio-realizado'>
+                  <h3>{`Relatorio ${new Date(item.data).toLocaleDateString()}`}</h3>
+                </Link>
+                <div className="coluna">
+                  <img onClick={() => deletarData(item.id)} src="/assets/images/lixeirabranca.png" alt="apagar" />
+                </div>
               </div>
-            </div>
-          )}
+            )}
           </div>
 
         </div>
-        <Link to ='/adm-cadastrar-relatorio'><button>REALIZAR NOVO RELATO</button></Link>
+        <Link to='/adm-cadastrar-relatorio'><button>REALIZAR NOVO RELATO</button></Link>
       </div>
     </div>
- 
+
   );
 }
 

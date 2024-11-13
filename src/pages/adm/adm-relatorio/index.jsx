@@ -1,10 +1,23 @@
 import "./index.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios"
 import { useState, useEffect } from "react"
 import NavAdm from "../../../components/Nav-adm";
 
 export default function AdmRelatorio() {
+
+  const [token, setToken] = useState(null)
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    let token = localStorage.getItem('USUARIO')
+    setToken(token)
+
+    if (token == null) {
+      navigate("/")
+    }
+  }, [])
+
 
   const [relato, setRelato] = useState([]);
   const [id, setId] = useState(0);
@@ -62,7 +75,7 @@ export default function AdmRelatorio() {
 
   return (
     <div className="relatorio">
-     <NavAdm/>
+      <NavAdm />
       <div className="bloco">
 
         <div className="espaco"><h3>Relatório01-21/05/2024</h3></div>

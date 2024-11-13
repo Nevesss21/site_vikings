@@ -18,15 +18,15 @@ export default function Contato() {
     async function enviar() {
         try {
 
-            if(nome.length < 3 || nome.length > 15){
+            if (nome.length < 3 || nome.length > 15) {
                 toast.error("Verifique o campo nome.")
                 return
             }
-            if(email.length < 5 || email.length > 50){
+            if (email.length < 5 || email.length > 50) {
                 toast.error("Verifique o campo email.")
                 return
             }
-            if(telefone == ""){
+            if (telefone == "") {
                 toast.error("Informe o número de telefone.")
                 return
             }
@@ -34,7 +34,7 @@ export default function Contato() {
                 toast.error("Selecione o Assunto.")
                 return
             }
-            if(mensagem.length < 5 || mensagem.length > 250){
+            if (mensagem.length < 5 || mensagem.length > 250) {
                 toast.error("Verifique o campo descrição.")
                 return
             }

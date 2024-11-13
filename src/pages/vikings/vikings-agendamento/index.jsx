@@ -127,7 +127,7 @@ export default function Agendamento() {
                         </div>
                         <div className="espaco">
                             <p>CPF</p>
-                            <input ref={withMask('999999999-99')} className="in" type="text" value={cpf} onChange={e => setCpf(e.target.value)} />
+                            <input placeholder="000000000-00" ref={withMask('999999999-99')} className="in" type="text" value={cpf} onChange={e => setCpf(e.target.value)} />
                         </div>
                     </div>
 

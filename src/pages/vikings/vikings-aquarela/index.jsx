@@ -1,15 +1,14 @@
 import './index.scss'
-
 import Nav from '../../../components/Nav';
 import Rodape from '../../../components/Rodape';
 import Whats from '../../../components/Whats';
 import { Link } from 'react-router-dom';
 
-export default function Aquarela (){
-    return(
+export default function Aquarela() {
+    return (
         <div className='aquarela'>
-            <Nav/>
-            <Whats/>
+            <Nav />
+            <Whats />
 
             <div className='secao-1'>
 
@@ -24,21 +23,21 @@ export default function Aquarela (){
                         <p>Aquarela</p>
                     </div>
                     <h1>Aquarela</h1>
-                    <Link to ='/Estilo'><button>VOLTAR</button></Link>
+                    <Link to='/Estilo'><button>VOLTAR</button></Link>
                 </div>
-              
-           
+
+
             </div>
             <div className='secao-2'>
-            <div className='line' />
+                <div className='line' />
 
-            <div className='images'>
-                <img src="/assets/images/agua-viva.png" alt="img-tattoo" />
+                <div className='images'>
+                    <img src="/assets/images/agua-viva.png" alt="img-tattoo" />
+                </div>
+
             </div>
 
-            </div>
-
-            <Rodape/>
+            <Rodape />
         </div>
     )
 }

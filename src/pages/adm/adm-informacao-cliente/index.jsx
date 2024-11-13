@@ -1,5 +1,5 @@
 import "./index.scss";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
@@ -8,6 +8,17 @@ export default function InformacoesSoliciacao() {
 
   const location = useLocation()
   let data = location.state
+  const [token, setToken] = useState(null)
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    let token = localStorage.getItem('USUARIO')
+    setToken(token)
+
+    if (token == null) {
+      navigate("/")
+    }
+  }, [])
 
 
   const [nome, setNome] = useState("")
