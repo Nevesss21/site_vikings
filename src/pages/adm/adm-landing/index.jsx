@@ -15,9 +15,6 @@ export default function AdmLanding() {
         navigate('/')
     }
 
-
-    // funcao que executa assim que a pagina carrega
-
     return (
         <div className="conteiner-adm">
             <NavAdm />
@@ -40,14 +37,14 @@ export default function AdmLanding() {
                 <div className='sessoesInfo'>
                     <div className='infos'>
                         <h1>Faça o seu relato. Defina como foi sua progressão do dia, semana, mes e ano</h1>
-                       <Link to='/adm-cadastrar-relatorio'> <button className='oi1'>Relatar</button></Link>
+                        <Link to='/adm-relatorio'> <button className='oi1'>Relatar</button></Link>
                     </div>
                 </div>
 
                 <div id='sessaodois' className='sessoesInfo'>
                     <div className='infos'>
                         <h1>Analise as seções pendentes e faça você mesmo o agendamento das seções </h1>
-                       <Link to='/adm-solicitacoes'> <button className='oi2'>Seguir</button></Link>
+                        <Link to='/adm-solicitacoes'> <button className='oi2'>Seguir</button></Link>
                     </div>
                 </div>
 
@@ -72,7 +69,7 @@ export default function AdmLanding() {
 
 
                 <div className='botao-valhalla'>
-                  <Link><button>Ir para Valhalla <img src="/assets/images/valhalla-logo 3.png" alt="logo-valhalla" /></button></Link>
+                    <Link><button>Ir para Valhalla <img src="/assets/images/valhalla-logo 3.png" alt="logo-valhalla" /></button></Link>
                 </div>
 
             </div>

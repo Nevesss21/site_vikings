@@ -4,31 +4,7 @@
   flex-direction: column;
   height: 200vh;
 
-  header{
-    height: 25vh;
-    display: flex;
-    justify-content: space-between;
-    padding: 1vh 5vw;
-    align-items: center;
-    border-bottom: #a19b9b solid 0.3vh;
-    img{
-      width: 10vw;
-    }
-    
-    .links{
-      width: 20vw;
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      a{
-        color: #fff;
-        font: 500 1rem 'vikings';
-        text-decoration: none;
-      }
-  
-    }
-
-  }
+ 
   .bloco{
     margin-top: 20vh;
     display: flex;
@@ -108,15 +84,6 @@
 
 @media (max-width:540px) {
   .relatorio{
-    header{
-      img{
-        height: 20vh;
-        width: 18vw;
-      }
-      .links{
-        gap: 0vh 2vw;
-      }
-    }
     .bloco{
       .espaco{
         h3{
@@ -145,17 +112,7 @@
 @media (max-width:430px) {
   .relatorio{
     margin:0px;
-    header{
-      img{
-        height: 20vh;
-        width: 21vw;
-      }
-      .links{
-        margin-right: 5vw;
 
-       
-      }
-    }
     .bloco{
       .espaco{
         h3{
@@ -194,17 +151,7 @@
 @media (max-width:375px) {
   .relatorio{
     margin:0px;
-    header{
-      img{
-        height: 25vh;
-        width: 29vw;
-      }
-      .links{
-        margin-right: 9vw;
-
-       
-      }
-    }
+   
     .bloco{
       .espaco{
         h3{

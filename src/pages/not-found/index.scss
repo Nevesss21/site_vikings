@@ -1,0 +1,153 @@
+.not-found{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
+  height: 100vh;
+
+  .centro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    .text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 3vh 0vw;
+      width: 35vw;
+
+      h1{
+        font: 700 3rem 'vikings';
+        color: #fff;
+      }
+      p{
+        font: 500 1.5rem 'vikings';
+        color: #fff;
+      }
+      a{
+        button{
+          background-color: #A68D7A;
+          color: #fff;
+          font: 700 1.5rem "vikings";
+          width: 15vw;
+          height: 6vh;
+          border: none;
+          border-radius: 10px;
+        }
+      }
+
+    }
+  }
+}
+
+
+@media (max-width:1028px) {
+  .not-found{
+    .centro{
+      .text{
+        h1{
+          font-size: 2.5rem;
+        }
+        p{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  
+
+}
+
+
+@media (max-width: 760px) {
+  .not-found{
+    .centro{
+      img{
+        width: 50vw;
+      }
+      .text{
+        width: 40vw;
+        h1{
+          font-size: 2rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+        a{
+          button{
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  
+}
+@media (max-width: 540px) {
+  .not-found{
+    .centro{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      img{
+        width: 50vw;
+      }
+      .text{
+        width: 60vw;
+        text-align: center;
+        h1{
+          font-size: 2.5rem;
+        }
+        p{
+          font-size: 1rem;
+        }
+        a{
+          button{
+            font-size: 1.2rem;
+            width: 20vw;
+          }
+        }
+      }
+    }
+  }
+  
+}
+@media (max-width: 430px) {
+  .not-found{
+    .centro{
+      .text{
+        h1{
+          font-size: 2rem;
+        }
+        a{
+          button{
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+  
+}
+@media (max-width:375px) {
+  .not-found{
+    .centro{
+      .text{
+        h1{
+          font-size: 1.5rem;
+        }
+        a{
+          button{
+            width: 25vw;
+          }
+        }
+      }
+    }
+  }
+  
+}

@@ -2,11 +2,9 @@ import "./index.scss";
 import { Link } from "react-router-dom";
 import axios from "axios"
 import { useState, useEffect } from "react"
-
-
+import NavAdm from "../../../components/Nav-adm";
 
 export default function AdmRelatorio() {
-
 
   const [relato, setRelato] = useState([]);
   const [id, setId] = useState(0);
@@ -64,14 +62,7 @@ export default function AdmRelatorio() {
 
   return (
     <div className="relatorio">
-      <header>
-        <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
-
-        <div className="links">
-          <Link to='/adm-landing'>HOME</Link>
-          <Link to='/adm-realizados'>VOLTAR</Link>
-        </div>
-      </header>
+     <NavAdm/>
       <div className="bloco">
 
         <div className="espaco"><h3>Relatório01-21/05/2024</h3></div>
@@ -89,9 +80,6 @@ export default function AdmRelatorio() {
         </div>
 
         <div className="botao">
-          <Link to='/adm-cadastrar-relatorio'>
-            <button>VOLTAR</button>
-          </Link>
           <Link state={{ id: id }} to='/adm-realizados'>
             <button onClick={inserirRelato}>GUARDAR RELATO</button>
           </Link>
