@@ -252,44 +252,41 @@
             .texto {
                 h1 {
                     font-size: 2.2rem;
-         
                 }
-                button{
+                button {
                     font-size: 0.8rem;
                 }
             }
         }
-        .secao-estudio{
+        .secao-estudio {
             height: 115vh;
-            button{
+            button {
                 font-size: 0.8rem;
             }
-            .flex{
-                .coluna{
-                    p{
+            .flex {
+                .coluna {
+                    p {
                         font-size: 1rem;
                     }
-                    h1{
+                    h1 {
                         font-size: 1.5rem;
                     }
                 }
             }
         }
-        .secao-carrossel{
+        .secao-carrossel {
             margin-top: 8vh;
             height: 90vh;
-            h1{
+            h1 {
                 font-size: 2.5rem;
             }
-
             .bot {
 
                 button {
                     font-size: 0.8rem;
                 }
             }
-    
-            .carrossel{
+            .carrossel {
                 .swiper-slide {
 
                     img {
@@ -300,32 +297,29 @@
 
             }
         }
-        .estilo{
-            button{
+        .estilo {
+            button {
                 font-size: 0.8rem;
             }
         }
-        .secao-contato{
-            h1{
+        .secao-contato {
+            h1 {
                 font-size: 3rem;
             }
         }
-
         .secao-insta {
             height: 50vh;
 
             img {
                 width: 3vw;
             }
-    
             h1 {
                 font-size: 3rem;
             }
-            button{
+            button {
                 font-size: 0.8rem;
             }
         }
-        
     }
 }
 @media (max-width:912px) {
@@ -336,45 +330,42 @@
                 h1 {
                     font-size: 1.8rem;
                 }
-                button{
-                    font-size: 0.7rem;
+                button {
+                    font-size: 0.8rem;
                 }
             }
         }
-        .secao-estudio{
+        .secao-estudio {
             height: 110vh;
-            button{
-                font-size: 0.7rem;
+            button {
+                font-size: 0.8rem;
             }
-            .titulo{
+            .titulo {
                 font-size: 2rem;
             }
-            .flex{
-                .coluna{
-                    p{
-                        font-size: 0.9rem;
+            .flex {
+                .coluna {
+                    p {
+                        font-size: 1rem;
                     }
-                    h1{
+                    h1 {
                         font-size: 1.2rem;
                     }
                 }
             }
         }
-        .secao-carrossel{
+        .secao-carrossel {
             margin-top: 6vh;
             height: 80vh;
-            h1{
+            h1 {
                 font-size: 2rem;
             }
-
             .bot {
-          
                 button {
                     font-size: 0.8rem;
                 }
             }
-    
-            .carrossel{
+            .carrossel {
                 .swiper-slide {
 
                     img {
@@ -384,32 +375,29 @@
                 }
             }
         }
-        .estilo{
-            button{
-                font-size: 0.7rem;
+        .estilo {
+           a{
+            button {
+                font-size: 0.8rem;
             }
            }
         }
-        .secao-contato{
-            h1{
-                font-size: 2.5rem;
-            }
-        }
-
-        .secao-insta {
-            height: 45vh;
-    
+        .secao-contato {
             h1 {
                 font-size: 2.5rem;
             }
-            button{
-                font-size: 0.7rem;
+        }
+        .secao-insta {
+            height: 45vh;
+            h1 {
+                font-size: 2.5rem;
+            }
+            button {
+                font-size: 0.8rem;
             }
         }
-        
     }
 }
-
 @media (max-width:768px) {
     .ladingpage {
         .secao-inicial-landing {
@@ -418,82 +406,68 @@
                 h1 {
                     font-size: 1.5rem;
                 }
-                button{
-                    font-size: 0.6rem;
+                button {
+                    width: 25vw;
                 }
             }
         }
-        .secao-estudio{
-        
-            button{
-                font-size: 0.6rem;
+        .secao-estudio {
+            button {
+              width: 25vw;
             }
-            .titulo{
+            .titulo {
                 font-size: 1.5rem;
             }
-            .flex{
-                .coluna{
-                    p{
-                        font-size: 0.7rem;
-                    }
-                    h1{
-                        font-size: 1rem;
-                    }
-                }
-            }
         }
-        .secao-carrossel{
+        .secao-carrossel {
             height: 75vh;
             margin-top: 4vh;
-            h1{
+            h1 {
                 font-size: 1.5rem;
             }
-
             .bot {
-          
                 button {
                     width: 25vw;
                   }
             }
-    
-            .carrossel{
+            .carrossel {
                 .swiper-slide {
                     img {
                         height: 30vh;
                     }
-    
                 }
             }
         }
-        .estilo{
-            button{
-                font-size: 0.6rem;
+        .estilo {
+            padding: 3vh;
+            a{
+                button {
+                    width: 25vw;
+                }
             }
         }
-        .secao-contato{
+        .secao-contato {
             height: 60vh;
-            h1{
-                font-size: 2rem;
-            }
-            button{
-                font-size: 0.5rem;
-            }
-        }
-
-        .secao-insta {
-            height: 40vh;
-    
             h1 {
                 font-size: 2rem;
             }
-            button{
-                font-size: 0.6rem;
+            a{
+                button {
+                    width: 25vw;
+                }
             }
         }
-        
+        .secao-insta {
+            height: 40vh;
+            h1 {
+                font-size: 2rem;
+            }
+            button {
+                width: 25vw;
+            }
+        }
     }
 }
-
 @media (max-width:660px) {
     .ladingpage {
         .secao-inicial-landing {
@@ -502,125 +476,136 @@
                 h1 {
                     font-size: 1.2rem;
                 }
-                button{
-                    font-size: 0.5rem;
-                }
-            }
-        }
-        .secao-estudio{
-            height: 100vh;
-            button{
-                font-size: 0.5rem;
-            }
-            .titulo{
-                font-size: 1rem;
-            }
-            .flex{
-                .coluna{
-                    h1{
-                        font-size: 0.8rem;
+                a{
+                    button {
+                        width: 30vw;
                     }
                 }
             }
         }
-        .secao-carrossel{
-            height: 70vh;
-            h1{
-                font-size: 1rem;
-            }
-            .bot {
-          
+        .secao-estudio {
+            height: 130vh;
+            a{
                 button {
-                    font-size: 0.5rem;
+                    width: 30vw;
                 }
             }
-    
-            .carrossel{
+            .titulo {
+                font-size: 1.7rem;
+            }
+            .flex {
+                .coluna {
+                    h1 {
+                        font-size: 1.5rem;
+                    }
+                    p{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+        .secao-carrossel {
+            height: 80vh;
+            .bot {
+                a{
+                    button {
+                        width: 30vw;
+                    }
+                }
+            }
+            .carrossel {
                 .swiper-slide {
                     img {
                         width: 25vw;
                     }
-    
                 }
             }
         }
-        .estilo{
-            button{
-                font-size: 0.5rem;
+        .estilo {
+            padding: 2vh;
+            a{
+                button {
+                    width: 30vw;
+                }
             }
         }
-        .secao-contato{
+        .secao-contato {
             height: 50vh;
-            h1{
-                font-size: 1rem;
-            }
-        }
-
-        .secao-insta {
-            height: 35vh;
-    
             h1 {
                 font-size: 1.5rem;
             }
-            button{
-                font-size: 0.5rem;
+            a{
+                button {
+                    width: 30vw;
+            }
             }
         }
-        
+        .secao-insta {
+            height: 35vh;
+            a{
+                button {
+                    width: 30vw;
+                }
+            }
+        }
     }
 }
-
 @media (max-width:540px) {
     .ladingpage {
         .secao-inicial-landing {
             height: 60vh;
             .texto {
-                button{
-                    font-size: 0.8rem;
-                    width: 50vw;
+                h1{
+                    width: 60vw;
+                }
+                a{
+                    button {
+                        width: 35vw;
+                    }
                 }
             }
         }
-        .secao-estudio{
-            height: 90vh;
-          
-            button{
-                font-size: 0.4rem;
+        .secao-estudio {
+            height: 120vh;
+            a{
+                button {
+                    width: 40vw;
+                  }
             }
-            .titulo{
-                font-size: 1.2rem;
+            .titulo {
+                font-size: 1.5rem;
             }
-            .flex{
-                .coluna{
+            .flex {
+                .coluna {
                     gap: 2vh 0vw;
-                    h1{
+                    h1 {
+                        font-size: 1.2rem;
+                    }
+                    p {
                         font-size: 1rem;
                     }
-                    p{
-                        font-size: 0.8rem;
+                }
+            }
+        }
+        .secao-carrossel {
+            padding: 3vh 0vw;
+            .bot {
+                a{
+                    button {
+                        width: 35vw;
                     }
                 }
             }
         }
-        .secao-carrossel{
-            height: 65vh;
-            padding: 3vh 0vw;
-
-            .bot {
-          
+        .estilo {
+            padding: 1vh 0vw;
+            a{
                 button {
-                    font-size: 1rem;
-                    width: 30vw;
+                    width: 35vw;
                 }
             }
         }
-        .estilo{
-            button{
-                font-size: 1rem;
-                width: 30vw;
-            }
-        }
-        .secao-contato{
+        .secao-contato {
             height: 40vh;
             h1{
                 font-size: 1.8rem;
@@ -631,14 +616,11 @@
                 }
             }
         }
-
         .secao-insta {
             height: 25vh;
         }
-        
     }
 }
-
 @media (max-width:430px) {
     .ladingpage {
         .secao-inicial-landing {
@@ -646,59 +628,134 @@
             .texto {
                 gap: 3vh 0vw;
                 h1{
-                    font-size: 0.8rem;
+                    width: 70vw;
                 }
-                button{
-                    font-size: 0.8rem;
-                    width: 40vw;
-                    height: 4vh;
-                }
-            }
-        }
-        .secao-estudio{
-            height: 90vh;
-            button{
-                width: 22vw;
-                height: 4vh;
-            }
-           
-        }
-        .secao-carrossel{
-            margin-top: 2vh;
-            .bot {
-          
-                button {
-                    font-size: 0.8rem;
-                    width: 40vw;
-                    height: 4vh;
-                }
-            }
-            .carrossel{
-                .swiper-slide {
-
-                    img {
-                        height: 20vh;
-                    }
-    
+                a{
+                    button {
+                        width: 45vw;
+                      }
                 }
             }
         }
-        .estilo{
-            height: 65vh;
-            padding: 2vh 0vw;
-            button{
-                font-size: 0.8rem;
-                width: 40vw;
-                height: 4vh;
-            }
-        }
-        .secao-contato{
-            height: 30vh;
+        .secao-estudio {
             a{
-                button{
-                    font-size: 0.8rem;
-                    width: 40vw;
-                    height: 4vh;
+                button {
+                    width: 45vw;
+                  }
+            }
+            .titulo {
+                font-size: 1.5rem;
+            }
+            .flex {
+                .coluna {
+    
+                    h1 {
+                        font-size: 1rem;
+                    }
+                    p {
+                        font-size: 0.9rem;
+                    }
+                }
+            }
+        }
+        .secao-carrossel {
+            .bot {
+                a{
+                    button {
+                        width: 45vw;
+                      }
+                }
+            }
+        }
+        .estilo {
+            a{
+                button {
+                    width: 45vw;
+                  }
+            }
+        }
+        .secao-contato {
+            height: 35vh;
+            h1{
+                font-size: 1.3rem;
+            }
+            a{
+                button {
+                    width: 45vw;
+                  }
+            }
+        }
+        .secao-insta {
+           h1{
+            font-size: 1.5rem;
+           }
+        }
+    }
+}
+@media (max-width:375px) {
+    .ladingpage {
+        .secao-inicial-landing {
+            height: 40vh;
+            .texto {
+                h1{
+                    font-size: 1rem;
+                }
+                a{
+                    button {
+                        width: 45vw;
+                        font-size: 0.7rem;
+                      }
+                }
+            }
+        }
+        .secao-estudio {
+            height: 100vh;
+            a{
+                button {
+                    width: 50vw;
+                    font-size: 0.7rem;
+                  }
+            }
+            .titulo {
+                font-size: 1.2rem;
+            }
+            .flex {
+                .coluna {
+                    p {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+        .secao-carrossel {
+            .bot {
+                a{
+                    button {
+                        width: 45vw;
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+        .estilo {
+            height: 190vh;
+            a{
+                button {
+                    width: 45vw;
+                    font-size: 0.7rem;
+                    margin-top: 2vh;
+                }
+            }
+        }
+        .secao-contato {
+            height: 30vh;
+            h1{
+                font-size: 1.2rem;
+            }
+            a{
+                button {
+                    width: 45vw;
+                    font-size: 0.7rem;
                 }
             }
         }
