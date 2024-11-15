@@ -12,7 +12,7 @@ export default function NavAdm() {
                 <div className='links-principal'>
                     
                     <Link to= '/adm-landing'className='animacao'>HOME</Link>
-                    <Link to='/adm-cadastrar-relatorio' className='animacao'>RELATÓRIOS</Link>
+                    <Link to='/adm-relatorio' className='animacao'>RELATÓRIOS</Link>
                     <Link to='/adm-solicitacoes' className='animacao'>SEÇÕES</Link>
                 </div>
             </header>
