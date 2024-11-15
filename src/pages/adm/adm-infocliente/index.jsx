@@ -6,8 +6,20 @@ import { useState, useEffect } from "react";
 
 
 export default function InformacoesCliente() {
-    const location = useLocation() 
+
+    const location = useLocation()
+    const [token, setToken] = useState(null)
     const navigate = useNavigate()
+
+    useEffect(() => {
+        let token = localStorage.getItem('USUARIO')
+        setToken(token)
+
+        if (token == null) {
+            navigate("/")
+        }
+    }, [])
+
 
     let data = location.state
     const [informacao, setInformacao] = useState([]);

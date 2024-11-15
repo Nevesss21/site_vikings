@@ -1,19 +1,18 @@
 import './index.scss'
-
 import Nav from '../../../components/Nav';
 import Rodape from '../../../components/Rodape';
 import Whats from '../../../components/Whats';
 import { Link } from 'react-router-dom';
 
-export default function Oriental(){
-    return(
+export default function Oriental() {
+    return (
         <div className='oriental'>
-            <Nav/>
-            <Whats/>
+            <Nav />
+            <Whats />
 
             <div className='secao-1'>
 
-               <div className='losango'>
+                <div className='losango'>
                     <img src="/assets/images/oriental.png" alt="img-tattoo" />
                     <p>ORIENTAL</p>
                 </div>
@@ -23,20 +22,20 @@ export default function Oriental(){
                         <p>Oriental</p>
                     </div>
                     <h1>Oriental</h1>
-                <Link to ='/Estilo'><button>VOLTAR</button></Link>
+                    <Link to='/Estilo'><button>VOLTAR</button></Link>
                 </div>
-           
+
             </div>
             <div className='secao-2'>
-            <div className='line' />
-            
-            <div className='images'>
-                <img src="/assets/images/ninja-tattoo.jpg" alt="img-tattoo" />
-            </div>
+                <div className='line' />
+
+                <div className='images'>
+                    <img src="/assets/images/ninja-tattoo.jpg" alt="img-tattoo" />
+                </div>
 
             </div>
 
-            <Rodape/>
+            <Rodape />
         </div>
     )
 }

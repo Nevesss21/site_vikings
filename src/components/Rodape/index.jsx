@@ -1,5 +1,4 @@
 import './index.scss'
-
 import { Link } from 'react-router-dom';
 
 
@@ -7,7 +6,7 @@ export default function Rodape() {
   return (
     <div className="Rodape">
       <div className='line' />
-      
+
       <div className="align">
         <Link to={'/'}><img src="/assets/images/logo-vikings.webp" alt="logo" /></Link>
 

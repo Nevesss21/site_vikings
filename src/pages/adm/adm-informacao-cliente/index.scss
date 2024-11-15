@@ -1,396 +1,431 @@
-.informacao{
-    background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
+.informacao {
+  background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
+  display: flex;
+  flex-direction: column;
+  height: 200vh;
+
+  header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1vh 3vw;
+
+    img {
+      width: 10vw;
+    }
+
+    a {
+      button {
+        background-color: #2C2929;
+        font: 700 1rem 'vikings';
+        border-radius: 30px;
+        height: 8vh;
+        width: 15vw;
+        border: none;
+        color: #fff;
+      }
+    }
+  }
+
+
+  .secao {
     display: flex;
     flex-direction: column;
-    height: 200vh;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10vh;
 
-    header{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
-        padding: 1vh 3vw;
-        img{
-          width: 10vw;
-        }
-        a{
-          button{
-            background-color: #2C2929;
-            font: 700 1rem 'vikings';
-            border-radius: 30px;
-            height: 8vh;
-            width: 15vw;
-            border: none;
-            color: #fff;
-          }
-        }
-      }
-     
-
-    .secao{
+    .secao-informacao {
+      height: 150vh;
+      width: 70vw;
+      background-color: #25242493;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-      margin-top: 10vh;
+      padding: 10vh 5vw;
+      border-radius: 10px;
+      gap: 5vh 0vw;
 
-      .secao-informacao{
-        height: 150vh;
-        width: 70vw;
-        background-color: #25242493;
+      h1 {
+        font: 500 2.5rem 'vikings';
+        color: #9E8080;
+        padding: 5vh 0vw;
+
+      }
+
+      .direcao-lado {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        padding: 10vh 5vw;
-        border-radius: 10px;
-        gap: 5vh 0vw;
+        justify-content: center;
+        gap: 1vh 5vw;
 
-        h1{
-            font: 500 2.5rem 'vikings';
-            color: #9E8080;
-            padding: 5vh 0vw;
+        .info-2 {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 1vh 0vw;
 
-        }
-        .direcao-lado{
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center;
-            gap: 1vh 5vw;
-
-            .info-2{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                gap: 1vh 0vw;
-                h3{
-                    font: 500 1rem 'vikings';
-                    color: #fff;
-                }
-                div{
-                    height: 6vh;
-                    border: none;
-                    border-radius: 5px;
-                    width: 20vw;
-                    background-color: #9E8080;
-                    padding: 0vh 2vw;
-                    display: flex;
-                    align-items: center;
-                    h3{
-                        font: 500 1rem 'vikings';
-                        color: #BBA6A6 
-                    }
-                }
-            }
-        }
-        button{
-            margin-top: 3.5vh;
-            width: 20vw;
-            font: 700 1rem 'vikings';
-            height: 6vh;
-            background-color: #9E8080;
+          h3 {
+            font: 500 1rem 'vikings';
             color: #fff;
+          }
+
+          div {
+            height: 6vh;
             border: none;
             border-radius: 5px;
-            margin-left: 25vw;
-        }
-        .info{
+            width: 20vw;
+            background-color: #9E8080;
+            padding: 0vh 2vw;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 1vh 0vw;
+            align-items: center;
 
-            h3{
-                font: 500 1rem 'vikings';
-                color: #fff;
+            h3 {
+              font: 500 1rem 'vikings';
+              color: #BBA6A6
             }
-            div{
-                height: 6vh;
-                border: none;
-                border-radius: 5px;
-                width: 45vw;
-                background-color: #313131;
-                padding: 0vh 2vw;
-                display: flex;
-                align-items: center;
-                h3{
-                    font: 500 1rem 'vikings';
-                    color: #6F6F6F;
-                }
-            }
-
+          }
         }
       }
-    
+
+      button {
+        margin-top: 3.5vh;
+        width: 20vw;
+        font: 700 1rem 'vikings';
+        height: 6vh;
+        background-color: #9E8080;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        margin-left: 25vw;
+      }
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1vh 0vw;
+
+        h3 {
+          font: 500 1rem 'vikings';
+          color: #fff;
+        }
+
+        div {
+          height: 6vh;
+          border: none;
+          border-radius: 5px;
+          width: 45vw;
+          background-color: #313131;
+          padding: 0vh 2vw;
+          display: flex;
+          align-items: center;
+
+          h3 {
+            font: 500 1rem 'vikings';
+            color: #6F6F6F;
+          }
+        }
+
+      }
     }
+
+  }
 }
 
 
 @media (max-width:1280px) {
-  .informacao{
-    header{
-        .imagem-logo img {
-            width: 10vw;
-          }
-      
-            a{
-              button{
-
-                font-size: 1rem;
-              }
-            }
-
-        
+  .informacao {
+    header {
+      .imagem-logo img {
+        width: 10vw;
       }
-        .secao{
-  
-          .secao-informacao{
-            
-            a{
-             button{ 
-               font-size: 0.9rem;
-           }
-            }
-            
-            h1{
-              font-size: 2.5rem;
-            }
-            .direcao-lado{
-              
-              .info-2{
-                  gap: 1vh 0vw;
-                  h3{
-                      font-size: 0.9rem;
 
-                  }
-                  div{
-                      height: 6vh;
-                      width: 20vw;
-                      padding: 0vh 2vw;
-                  }
-              }
-          }
-    
+      a {
+        button {
+
+          font-size: 1rem;
         }
-        
       }
-}
+
+
+    }
+
+    .secao {
+
+      .secao-informacao {
+
+        a {
+          button {
+            font-size: 0.9rem;
+          }
+        }
+
+        h1 {
+          font-size: 2.5rem;
+        }
+
+        .direcao-lado {
+
+          .info-2 {
+            gap: 1vh 0vw;
+
+            h3 {
+              font-size: 0.9rem;
+
+            }
+
+            div {
+              height: 6vh;
+              width: 20vw;
+              padding: 0vh 2vw;
+            }
+          }
+        }
+
+      }
+
+    }
+  }
 }
 
 
 @media (max-width:912px) {
-  .informacao{
-    header{
-        .imagem-logo img {
-            width: 12vw;
-          }
-   
-            a{
-              button{
-                font-size: 0.9rem;
-              }
+  .informacao {
+    header {
+      .imagem-logo img {
+        width: 12vw;
+      }
+
+      a {
+        button {
+          font-size: 0.9rem;
+        }
+      }
+
+
+    }
+
+    .secao {
+
+      .secao-informacao {
+        padding: 5vh 5vw;
+
+        .direcao-lado {
+          .info-2 {
+            h3 {
+              font-size: 0.8rem;
             }
 
-        
+            input {
+              font-size: 0.7rem;
+            }
+          }
+        }
+
+        .info {
+
+          div {
+            font-size: 0.7rem;
+
+          }
+        }
+      }
     }
-    .secao{
-
-      .secao-informacao{
-        padding: 5vh 5vw;
-        .direcao-lado{
-          .info-2{        
-              h3{
-                  font-size: 0.8rem;   
-              }
-              input{
-                  font-size: 0.7rem; 
-              }
-          }
-      }
-        .info{
-
-          div{
-          font-size: 0.7rem;
-        
-          }
-      }
-    }    
   }
-}
 }
 
 
 @media (max-width:768px) {
-  .informacao{
-    header{
-        .imagem-logo img {
-            width: 16vw;
-          }
+  .informacao {
+    header {
+      .imagem-logo img {
+        width: 16vw;
+      }
     }
 
-    .secao{
-      .secao-informacao{
-        a{
-          button{ 
+    .secao {
+      .secao-informacao {
+        a {
+          button {
             font-size: 0.7rem;
+          }
         }
-         }
-        h1{
-            font-size: 2.2rem;
+
+        h1 {
+          font-size: 2.2rem;
         }
-    } 
+      }
+    }
   }
-}
 }
 
 @media (max-width:540px) {
-  .informacao{
+  .informacao {
     height: 160vh;
-    header{
-        height: 15vh;
-        .imagem-logo img {
-            width: 18vw;
-          }
-       
-            a{
-              button{
-                font-size: 0.8rem;
-              }
-            }
 
-        
+    header {
+      height: 15vh;
+
+      .imagem-logo img {
+        width: 18vw;
+      }
+
+      a {
+        button {
+          font-size: 0.8rem;
+        }
+      }
+
+
     }
-    .secao{
-      .secao-informacao{
-     a{
-      button{ 
-        font-size: 0.8rem;
-        width: 30vw;
-    } 
-     }  
+
+    .secao {
+      .secao-informacao {
+        a {
+          button {
+            font-size: 0.8rem;
+            width: 30vw;
+          }
+        }
+
         height: 130vh;
-        .direcao-lado{
+
+        .direcao-lado {
           display: flex;
           flex-direction: row;
           align-items: center;
           justify-content: center;
           gap: 1vh 5vw;
 
-          button{
-              margin-top: 3.2vh;
-              width: 20vw;
-              height: 5.7vh;
+          button {
+            margin-top: 3.2vh;
+            width: 20vw;
+            height: 5.7vh;
           }
-          }
-        h1{
-            font-size: 1.2rem;
         }
-       
-        .info{
-          div{
+
+        h1 {
+          font-size: 1.2rem;
+        }
+
+        .info {
+          div {
             width: 65vw;
           }
-          h3{
+
+          h3 {
             font-size: 0.8rem;
           }
-        }  
-        .direcao-lado{
+        }
 
-            .info-2{
-            div{
+        .direcao-lado {
+
+          .info-2 {
+            div {
               width: 30vw;
             }
-              
 
-              h3{
-                  font-size: 0.8rem;
 
-              }
-           
+            h3 {
+              font-size: 0.8rem;
+
+            }
+
           }
+        }
+
       }
 
     }
-    
   }
-}
 }
 
 @media (max-width:430px) {
-  .informacao{
+  .informacao {
     height: 180vh !important;
-    header{
-        
-            a{
-              button{
 
-              width: 30vw;
-              height: 5vh;
-              }
-            }
+    header {
 
-       
+      a {
+        button {
+
+          width: 30vw;
+          height: 5vh;
+        }
+      }
+
+
     }
-    .secao{
-      
-      .secao-informacao{
-     a{
-      button{ 
-        font-size: 0.7rem !important;
-        width: 30vw !important;
-    }
-     }
+
+    .secao {
+
+      .secao-informacao {
+        a {
+          button {
+            font-size: 0.7rem !important;
+            width: 30vw !important;
+          }
+        }
+
         width: 80vw !important;
         height: 150vh !important;
         gap: 3vh 0vw !important;
 
-        h1{
-            font-size: 1.5rem !important;
+        h1 {
+          font-size: 1.5rem !important;
         }
-        .info{
-          h3{
+
+        .info {
+          h3 {
             font-size: 0.8rem !important;
           }
-          div{
+
+          div {
             width: 60vw !important;
           }
         }
-        .direcao-lado{
+
+        .direcao-lado {
           display: flex;
           flex-direction: column !important;
 
-          .info-2{
-              gap: 1vh 0vw;
-              h3{
-                  font-size: 0.8rem !important;
+          .info-2 {
+            gap: 1vh 0vw;
 
-              }
-              div{     
-                width: 60vw !important;
-              }
+            h3 {
+              font-size: 0.8rem !important;
+
+            }
+
+            div {
+              width: 60vw !important;
+            }
           }
+        }
+
       }
 
     }
-    
   }
-}
 }
 
 @media (max-width:375px) {
-  .informacao{
-  
-    .secao{
-  
-      .secao-informacao{
+  .informacao {
 
-        h1{
-            font-size: 1rem !important;
+    .secao {
+
+      .secao-informacao {
+
+        h1 {
+          font-size: 1rem !important;
         }
-        
+
+
+      }
 
     }
-    
   }
-}
 }

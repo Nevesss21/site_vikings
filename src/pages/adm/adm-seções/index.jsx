@@ -1,13 +1,24 @@
 import "./index.scss"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import NavAdm from "../../../components/Nav-adm"
 import axios from "axios"
 import { useState, useEffect } from "react"
 
-
 export default function AdmSecoes() {
   const [secao, setSecao] = useState([]);
   const [idDelete, setIdDelete] = useState("");
+
+  const [token, setToken] = useState(null)
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    let token = localStorage.getItem('USUARIO')
+    setToken(token)
+
+    if (token == null) {
+      navigate("/")
+    }
+  }, [])
 
   async function buscar() {
     const url = `http://4.172.207.208:5021/secao/`;
@@ -37,7 +48,7 @@ export default function AdmSecoes() {
 
           <div className="scroll">
             {secao.map(item =>
-                  <Link state={{ id: item.id }} to='/adm-infocliente'>
+              <Link state={{ id: item.id }} to='/adm-infocliente'>
                 <div className="bloco-escuro">
                   <div className='coluna'>
                     <h1>{item.nome}</h1>

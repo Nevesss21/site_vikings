@@ -1,5 +1,4 @@
 import './index.scss'
-
 import Nav from '../../../components/Nav';
 import Rodape from '../../../components/Rodape';
 import Whats from '../../../components/Whats';

@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import './index.scss'
 
-export default function NavAdm(){
-    return(
+export default function NavAdm() {
+    return (
         <div className='nav-adm'>
             <header>
                 <div className='imagem-logo'>
@@ -12,7 +12,7 @@ export default function NavAdm(){
                 <div className='links-principal'>
                     
                     <Link to= '/adm-landing'className='animacao'>HOME</Link>
-                    <Link to='/adm-relatorio' className='animacao'>RELATÓRIOS</Link>
+                    <Link to='/adm-cadastrar-relatorio' className='animacao'>RELATÓRIOS</Link>
                     <Link to='/adm-solicitacoes' className='animacao'>SEÇÕES</Link>
                 </div>
             </header>

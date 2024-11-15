@@ -1,14 +1,24 @@
 import { useState, useEffect } from 'react';
 import NavAdm from '../../../components/Nav-adm'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
-
 import './index.scss';
 
 
 export default function AdmSolicitacoes() {
   const [solicitar, setSolicitar] = useState([]);
 
+  const [token, setToken] = useState(null)
+  const navigate = useNavigate()
+
+  useEffect(() => {
+    let token = localStorage.getItem('USUARIO')
+    setToken(token)
+
+    if (token == null) {
+      navigate("/")
+    }
+  }, [])
 
   async function buscar() {
     const url = `http://4.172.207.208:5021/cliente/`;
