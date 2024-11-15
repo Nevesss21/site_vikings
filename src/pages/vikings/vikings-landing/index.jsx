@@ -31,6 +31,9 @@ export default function Landingpage() {
             <Whats />
 
             <div className='secao-inicial-landing'>
+                <div className='ba'>
+
+                </div>
 
                 <div className='texto'>
                     <h1>PIONEIRISMO E MODERNIDADE
