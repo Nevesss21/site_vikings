@@ -4,6 +4,7 @@ import axios from "axios"
 import { useState, useEffect } from "react"
 
 export default function AdmRelatorioRealizado() {
+  
   const location = useLocation()
   let info = location.state
   const [token, setToken] = useState(null)
@@ -21,7 +22,7 @@ export default function AdmRelatorioRealizado() {
   const [relatoid, setrelatoId] = useState([])
 
   async function buscar() {
-    const url = `http://4.172.207.208:5021/relatorio-id/${info.id}`;
+    const url = `http://4.172.207.208:5021/relatorio-id/${info.id}?x-access-token=${token}`;
     let resp = await axios.get(url);
     setrelatoId(resp.data);
   }

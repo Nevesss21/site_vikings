@@ -6,7 +6,7 @@
 
   a {
     text-decoration: none;
-    color: #000;
+    color: #fff;
   }
 
   .bloco {
@@ -104,16 +104,8 @@
         border-right-style: none;
         background-color: #818181;
       }
-
-
-
-
-
     }
   }
-
-
-
 }
 
 
@@ -220,32 +212,37 @@
   }
 }
 
-@media (max-width:430px) {
-
+@media (max-width:450px) {
   .relatorio-realizado {
-
+    height: 150vh;
     .bloco {
-
+      padding: 2vh 2vw;
+      margin-top: 5vh;
       button {
-        width: 40vw;
-        font-size: 0.7rem;
+        width: 50vw;
+        font-size: 1rem;
         margin-left: 50vw;
       }
 
       .area-cinza {
+        .scroll{
 
-        a {
-
-          .bloco-escuro,
-          .bloco-claro {
+          .bloco-escuro {
+            a{
+              h3{
+                font-size: 1.2rem;
+              }
+            }
             .coluna {
               img {
-                width: 3vw;
-
+                width: 10vw;
+  
               }
             }
           }
+      
         }
+        
       }
 
     }

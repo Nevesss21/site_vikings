@@ -2,7 +2,9 @@ import "./index.scss";
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios"
 import { useState, useEffect } from "react"
-import NavAdm from "../../../components/Nav-adm";
+import NavAdm from '../../../components/Nav-adm'
+
+
 
 export default function AdmRelatorio() {
 
@@ -31,7 +33,7 @@ export default function AdmRelatorio() {
 
 
   async function buscar() {
-    const url = `http://4.172.207.208:5021/relatorio/`;
+    const url = `http://4.172.207.208:5021/relatorio/?x-access-token=${token}`;
     let resp = await axios.get(url);
     setRelato(resp.data);
 
@@ -74,11 +76,11 @@ export default function AdmRelatorio() {
   }, [])
 
   return (
-    <div className="relatorio">
-      <NavAdm />
+    <div className="relato">
+      <NavAdm/>
+  
       <div className="bloco">
 
-        <div className="espaco"><h3>Relatório01-21/05/2024</h3></div>
         <div className="area-cinza">
           <div className="text">
             <p>{`Total de pessoas no mes: ${pessoas}`}</p>
@@ -93,6 +95,9 @@ export default function AdmRelatorio() {
         </div>
 
         <div className="botao">
+          <Link state={{ id: id }} to='/adm-realizados'>
+            <button>REALIZADOS</button>
+          </Link>
           <Link state={{ id: id }} to='/adm-realizados'>
             <button onClick={inserirRelato}>GUARDAR RELATO</button>
           </Link>

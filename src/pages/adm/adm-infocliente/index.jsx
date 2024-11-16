@@ -31,9 +31,8 @@ export default function InformacoesCliente() {
             "anotacao": anotacao,
             "situacao": situacao
         }
-
         try {
-            const url = `http://4.172.207.208:5021/info-cliente/`
+            const url = `http://4.172.207.208:5021/info-cliente/?x-access-token=${token}`
             let resp = await axios.post(url, valores)
 
             alert("Anotacao feita com sucesso!" + resp.data.novoId)
@@ -45,7 +44,6 @@ export default function InformacoesCliente() {
             alert("Erro")
         }
     }
-
     async function buscar() {
         const url = `http://4.172.207.208:5021/secao/${data.id}`;
         let resp = await axios.get(url);

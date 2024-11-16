@@ -107,36 +107,46 @@
 @media (max-width:540px) {
   .login {
     .secao-inicial {
-      width: 80vw;
-      height: 60vh;
+      width: 90vw;
+      height: 80vh;
 
       button {
 
         img {
-          height: 3vh;
+          height: 5vh;
         }
       }
 
       .coluna {
 
         .image {
+          img {
+            width: 28vw;
+          }
+    
 
           h1 {
-            font-size: 1rem;
+            font-size: 1.5rem;
           }
         }
 
         .inputs {
+          width: 70vw;
+          
           p {
-            font-size: 0.6rem;
+            align-self: self-start;
+            font-size: 1rem;
           }
 
           input {
-            height: 3vh;
+            height: 6vh;
+            font-size: 1rem;
+            padding: 0vh 2vw;
+            width: 70vw;
           }
 
           button {
-            font-size: 0.5rem;
+            font-size: 1.5rem;
           }
         }
       }

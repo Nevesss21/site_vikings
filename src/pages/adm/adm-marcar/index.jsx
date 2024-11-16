@@ -36,7 +36,7 @@ export default function AdmMarcar() {
   const [horario, setHorario] = useState("")
 
   async function buscarInfoCliente() {
-    const url = `http://4.172.207.208:5021/cliente/${info.id}`
+    const url = `http://4.172.207.208:5021/cliente/${info.id}?x-access-token=${token}`
     let resp = await axios.get(url)
 
     setNome(resp.data.nome)

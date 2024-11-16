@@ -26,16 +26,15 @@ export default function AdmRealizados() {
   }, [])
 
   async function deletarData(id) {
-    const url = `http://4.172.207.208/:5021/apagar-data/${id}`;
+    const url = `http://4.172.207.208:5021/apagar-data/${id}?x-access-token=${token}`;
     let resp = await axios.delete(url);
     alert("Deletado!" + resp.data)
     await buscar()
-
   }
 
 
   async function buscar() {
-    const url = `http://4.172.207.208:5021/relatorio-data/`;
+    const url = `http://4.172.207.208:5021/relatorio-data/?x-access-token=${token}`;
     let resp = await axios.get(url);
     setVerData(resp.data);
   }
@@ -66,7 +65,7 @@ export default function AdmRealizados() {
           </div>
 
         </div>
-        <Link to='/adm-cadastrar-relatorio'><button>REALIZAR NOVO RELATO</button></Link>
+        <Link to='/adm-relatorio'><button>REALIZAR NOVO RELATO</button></Link>
       </div>
     </div>
 

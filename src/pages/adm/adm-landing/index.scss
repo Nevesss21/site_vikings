@@ -383,20 +383,32 @@
   .conteiner-adm {
 
     .corpo {
-      height: 27vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      height: 40vh;
 
       .texto {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0vh 2vw;
+        margin: 0vh 0vw;
+        padding: 1vh 2vw;
+        width: 100%;
 
         h1 {
-          font-size: 0.8rem;
+          font-size: 1.5rem;
+
         }
 
         button {
-          font-size: 0.8rem;
+          font-size: 1rem;
         }
 
         h3 {
-          font-size: 0.7rem;
+          font-size: 1rem;
         }
       }
     }
@@ -409,8 +421,14 @@
         .infos {
 
           h1 {
-            font-size: 0.9rem;
+            font-size: 1.2rem !important;
+            width: 55vw;
           }
+          
+        button {
+          font-size: 1.2rem !important;
+          width: 30vw;
+        }
         }
       }
     }
@@ -420,7 +438,7 @@
 
 
       .rodape img {
-        width: 15vw;
+        width: 20vw;
         margin: 3vh 0vw;
       }
 
@@ -429,9 +447,14 @@
       }
 
       .rodape p {
-        font-size: 0.9rem;
+        font-size: 1rem !important;
+        width: 50vw;
       }
-
+      .botao-valhalla {
+        img {
+          width: 10vw !important;
+        }
+      }
 
     }
   }
@@ -439,41 +462,35 @@
 
 @media (max-width:390px) {
   .conteiner-adm {
-
     .imagens {
 
       .sessoesInfo {
-        height: 28vh;
+        height: 25vh;
 
         .infos {
 
           h1 {
-            font-size: 0.7rem;
+            font-size: 1rem !important;
+            width: 50vw;
           }
-
-          button {
-            font-size: 0.7rem;
-          }
+        
         }
       }
     }
 
     .duvidas {
       .rodape p {
-        font-size: 0.7rem;
+        width: 55vw;
       }
-
       .botao-valhalla {
-        button {
-          width: 40vw;
-
+        button{
+          width: 45vw;
         }
-
         img {
-          width: 7vw;
-
+          width: 10vw !important;
         }
       }
+
     }
   }
 }
