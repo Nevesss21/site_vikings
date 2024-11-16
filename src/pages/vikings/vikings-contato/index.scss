@@ -287,65 +287,65 @@
         }
     }
 }
-
-@media (max-width:430px) {
+@media (max-width:450px) {
     .Contato {
-
         .sessaoInicial {
-
             h1 {
-                font-size: 2rem;
+                font-size: 2.5rem;
             }
         }
-
-
         .sessaoInputs {
-            padding: 4vh 5vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             gap: 3vh 0vw;
-
             .separacao {
                 gap: 3vh 0vw;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
 
                 .porInput {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    gap: 1vh 0vw;
 
                     h2 {
-                        font-size: 0.8rem;
+                        font-size: 1.2rem;
                     }
 
                     input {
-                        height: 3vh;
-                        font-size: 0.4rem;
+                        height: 6vh;
+                        width: 80vw;
+                    }
+                    input:placeholder-shown{
+                        font-size: 1rem;
                     }
 
                     select {
-                        height: 3vh;
-                        font-size: 0.4rem;
+                        height: 6vh;
+                        width: 80vw;
+                        font-size: 1rem;
                     }
                 }
             }
-
             button {
-                font-size: 1rem;
+                font-size: 1.5rem;
             }
         }
-
         .sessaoMapa {
-
             p {
-                font-size: 0.5rem;
+                font-size: 1.2rem;
             }
-
-        }
-    }
-}
-
-@media (max-width:375px) {
-    .Contato {
-
-        .sessaoMapa {
-
-            p {
-                font-size: 0.4rem;
+            .alinhar {
+               
+                img {
+                    width: 5vw;
+                }
             }
 
         }

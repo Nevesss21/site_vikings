@@ -4,8 +4,6 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
-
-
     .secao-inicial {
         background-image: url('../../../../public/assets/images/quadro-escada.png');
         background-repeat: no-repeat;
@@ -13,16 +11,13 @@
         display: flex;
         height: 100vh;
         align-items: center;
-
         h1 {
             margin-left: 5vw;
             color: #fff;
             font: 700 2.5rem "vikings";
             width: 60vw;
         }
-
     }
-
     .secao-dois {
         display: flex;
         flex-direction: column;
@@ -71,8 +66,10 @@
                     select {
                         width: 20vw;
                         height: 5vh;
+                        padding: 0vh 3vw;
                         border: none;
-                        border-radius: 5px;
+                        border-radius: 10px;
+                        font: 500 1rem 'vikings';
                     }
                 }
             }
@@ -91,8 +88,10 @@
                 input {
                     height: 5vh;
                     border: none;
-                    border-radius: 5px;
+                    padding: 0vh 3vw;
+                    border-radius: 10px;
                     width: 45vw;
+                    font: 500 1rem 'vikings';
                 }
             }
 
@@ -279,27 +278,60 @@
     }
 }
 
-@media (max-width:430px) {
+@media (max-width:450px) {
     .agendar {
         .secao-inicial {
             height: 50vh;
-
             h1 {
-                font-size: 1rem;
+                font-size: 1.5rem;
+                width: 100%;
             }
         }
-
         .secao-dois {
             .bloco {
-                height: 100vh;
-
-
-
+                height: 120vh;
+                width: 90vw;
+                h1{
+                    font-size: 1.5rem;
+                    width: 100%;
+                }
                 .input-1,
                 .input-2 {
                     padding: 1vh 0vw;
-
-
+                }
+                .input-1 {
+                    .espaco {
+                        gap: 1.5vh 0vw;
+                        p {
+                            width: 100%;
+                            font-size: 1rem;
+                        }
+    
+                        .in,
+                        select {
+                            width: 80vw;
+                            height: 6vh;
+                            font-size: 1rem;
+                        }
+                    }
+                }
+                .input-2 {
+                    p {
+                        width: 100%;
+                        font-size: 1rem;
+                    }
+                    input {
+                        width: 80vw;
+                        height: 6vh;
+                        font-size: 1rem;
+                    }
+                }
+            }
+            .enviar {
+                button {
+                    width: 40vw!important;
+                    height: 6vh !important;
+                    font-size: 1.5rem !important;
                 }
             }
         }
@@ -310,10 +342,6 @@
     .agendar {
         .secao-inicial {
             height: 40vh;
-
-            h1 {
-                font-size: 0.8rem;
-            }
         }
 
     }
