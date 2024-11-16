@@ -14,7 +14,6 @@ export default function Macri() {
 
                 <div className='losango'>
                     <img src="/assets/images/macri.png" alt="img-tattoo" />
-                    <p>MACRI</p>
                 </div>
                 <div className='text'>
                     <div className='texto'>

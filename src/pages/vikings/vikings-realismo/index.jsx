@@ -14,7 +14,6 @@ export default function Realismo() {
 
                 <div className='losango'>
                     <img src="/assets/images/realismo.png" alt="img-tattoo" />
-                    <p>REALISMO</p>
                 </div>
                 <div className='text'>
                     <div className='texto'>

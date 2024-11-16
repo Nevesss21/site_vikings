@@ -14,7 +14,6 @@ export default function Aquarela() {
 
                 <div className='losango'>
                     <img src="/assets/images/pincel.png" alt="img-tattoo" />
-                    <p>AQUARELA</p>
                 </div>
 
                 <div className='text'>

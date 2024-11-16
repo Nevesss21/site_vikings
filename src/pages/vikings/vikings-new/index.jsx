@@ -14,7 +14,6 @@ export default function New() {
 
                 <div className='losango'>
                     <img src="/assets/images/new.png" alt="img-tattoo" />
-                    <p>NEW SCHOOL</p>
                 </div>
                 <div className='text'>
                     <div className='texto'>

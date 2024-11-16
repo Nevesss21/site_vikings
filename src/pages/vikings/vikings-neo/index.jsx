@@ -14,7 +14,6 @@ export default function Neo() {
 
                 <div className='losango'>
                     <img src="/assets/images/neo.png" alt="img-tattoo" />
-                    <p>NEO TRADICIONAL</p>
                 </div>
                 <div className='text'>
                     <div className='texto'>

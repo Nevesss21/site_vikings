@@ -14,7 +14,6 @@ export default function Black() {
 
                 <div className='losango'>
                     <img src="/assets/images/mao-black.png" alt="img-tattoo" />
-                    <p>BLACK</p>
                 </div>
                 <div className='text'>
                     <div className='texto'>

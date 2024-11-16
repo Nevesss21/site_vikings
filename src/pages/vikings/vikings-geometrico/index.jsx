@@ -14,7 +14,6 @@ export default function Geometrico() {
 
                 <div className='losango'>
                     <img src="/assets/images/geometrico.png" alt="img-tattoo" />
-                    <p>GEOMETRICO</p>
                 </div>
                 <div className='text'>
                     <div className='texto'>

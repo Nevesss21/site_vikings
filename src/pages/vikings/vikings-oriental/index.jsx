@@ -9,12 +9,9 @@ export default function Oriental() {
         <div className='oriental'>
             <Nav />
             <Whats />
-
             <div className='secao-1'>
-
                 <div className='losango'>
                     <img src="/assets/images/oriental.png" alt="img-tattoo" />
-                    <p>ORIENTAL</p>
                 </div>
                 <div className='text'>
                     <div className='texto'>
@@ -24,17 +21,13 @@ export default function Oriental() {
                     <h1>Oriental</h1>
                     <Link to='/Estilo'><button>VOLTAR</button></Link>
                 </div>
-
             </div>
             <div className='secao-2'>
                 <div className='line' />
-
                 <div className='images'>
                     <img src="/assets/images/ninja-tattoo.jpg" alt="img-tattoo" />
                 </div>
-
             </div>
-
             <Rodape />
         </div>
     )

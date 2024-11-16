@@ -14,7 +14,6 @@ export default function Colorido() {
 
                 <div className='losango'>
                     <img src="/assets/images/colorida.png" alt="img-tattoo" />
-                    <p>COLORIDAS</p>
                 </div>
                 <div className='text'>
                     <div className='texto'>
