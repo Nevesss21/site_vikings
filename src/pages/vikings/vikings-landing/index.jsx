@@ -76,7 +76,12 @@ export default function Landingpage() {
                     <Swiper
                         slidesPerView={3}               // quantidade de itens mostrados por vez
                         pagination={{ clickable: true }}
-                        navigation                      // setas 
+                        breakpoints={{
+                            320: { slidesPerView: 1 }, // Para telas muito pequenas
+                            640: { slidesPerView: 2 }, // Para tablets ou telas pequenas
+                            1024: { slidesPerView: 3 }, // Para telas maiores
+                        }}
+                            // setas 
                     >
                         {sliderCarrossel.map((item) => (
                             <SwiperSlide key={item.id}>
