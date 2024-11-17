@@ -1,4 +1,4 @@
-.informacao {
+.informacao{
   background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
   display: flex;
   flex-direction: column;
@@ -36,7 +36,7 @@
     justify-content: center;
     margin-top: 10vh;
 
-    .secao-informacao {
+    .secao-informacao{
       height: 150vh;
       width: 70vw;
       background-color: #25242493;
@@ -61,7 +61,7 @@
         justify-content: center;
         gap: 1vh 5vw;
 
-        .info-2 {
+        .infor-2 {
           display: flex;
           flex-direction: column;
           justify-content: center;
@@ -102,7 +102,7 @@
         margin-left: 25vw;
       }
 
-      .info {
+      .infor {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -137,7 +137,7 @@
 
 
 @media (max-width:1280px) {
-  .informacao {
+  .informacao{
     header {
       .imagem-logo img {
         width: 10vw;
@@ -155,7 +155,7 @@
 
     .secao {
 
-      .secao-informacao {
+      .secao-informacao{
 
         a {
           button {
@@ -169,7 +169,7 @@
 
         .direcao-lado {
 
-          .info-2 {
+          .infor-2 {
             gap: 1vh 0vw;
 
             h3 {
@@ -193,7 +193,7 @@
 
 
 @media (max-width:912px) {
-  .informacao {
+  .informacao{
     header {
       .imagem-logo img {
         width: 12vw;
@@ -210,11 +210,11 @@
 
     .secao {
 
-      .secao-informacao {
+      .secao-informacao{
         padding: 5vh 5vw;
 
         .direcao-lado {
-          .info-2 {
+          .infor-2 {
             h3 {
               font-size: 0.8rem;
             }
@@ -225,7 +225,7 @@
           }
         }
 
-        .info {
+        .infor {
 
           div {
             font-size: 0.7rem;
@@ -239,7 +239,7 @@
 
 
 @media (max-width:768px) {
-  .informacao {
+  .informacao{
     header {
       .imagem-logo img {
         width: 16vw;
@@ -247,7 +247,7 @@
     }
 
     .secao {
-      .secao-informacao {
+      .secao-informacao{
         a {
           button {
             font-size: 0.7rem;
@@ -263,7 +263,7 @@
 }
 
 @media (max-width:540px) {
-  .informacao {
+  .informacao{
     height: 160vh;
 
     header {
@@ -283,7 +283,7 @@
     }
 
     .secao {
-      .secao-informacao {
+      .secao-informacao{
         a {
           button {
             font-size: 0.8rem;
@@ -311,7 +311,7 @@
           font-size: 1.2rem;
         }
 
-        .info {
+        .infor {
           div {
             width: 65vw;
           }
@@ -323,7 +323,7 @@
 
         .direcao-lado {
 
-          .info-2 {
+          .infor-2 {
             div {
               width: 30vw;
             }
@@ -343,9 +343,9 @@
   }
 }
 
-@media (max-width:430px) {
-  .informacao {
-    height: 180vh !important;
+@media (max-width:450px) {
+  .informacao{
+    height: 160vh !important;
 
     header {
 
@@ -362,29 +362,33 @@
 
     .secao {
 
-      .secao-informacao {
+      .secao-informacao{
+
+        width: 90vw !important;
+        height: 125vh !important;
+        gap: 3vh 0vw !important;
+
         a {
           button {
-            font-size: 0.7rem !important;
-            width: 30vw !important;
+            font-size: 1rem !important;
+            width: 50vw !important;
           }
         }
-
-        width: 80vw !important;
-        height: 150vh !important;
-        gap: 3vh 0vw !important;
 
         h1 {
           font-size: 1.5rem !important;
         }
 
-        .info {
+        .infor {
           h3 {
-            font-size: 0.8rem !important;
+            font-size: 1rem !important;
           }
 
           div {
-            width: 60vw !important;
+            width: 80vw !important;
+            h3 {
+              font-size: 1.2rem !important;
+            }
           }
         }
 
@@ -392,16 +396,19 @@
           display: flex;
           flex-direction: column !important;
 
-          .info-2 {
+          .infor-2 {
             gap: 1vh 0vw;
 
             h3 {
-              font-size: 0.8rem !important;
+              font-size: 1.2rem !important;
 
             }
 
             div {
-              width: 60vw !important;
+              width: 80vw !important;
+              h3 {
+                font-size: 1.2rem;
+              }
             }
           }
         }
@@ -412,20 +419,3 @@
   }
 }
 
-@media (max-width:375px) {
-  .informacao {
-
-    .secao {
-
-      .secao-informacao {
-
-        h1 {
-          font-size: 1rem !important;
-        }
-
-
-      }
-
-    }
-  }
-}

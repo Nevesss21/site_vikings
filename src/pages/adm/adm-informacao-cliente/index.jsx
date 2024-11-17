@@ -30,7 +30,7 @@ export default function InformacoesSoliciacao() {
   const [ideia, setIdeia] = useState("")
 
   async function buscarInfoCliente() {
-    const url = `http://4.172.207.208:5021/cliente/${data.id}?x-access-token=${token}`
+    const url = `http://4.172.207.208:5021/cliente/${data.id}`
     let resp = await axios.get(url)
 
     setNome(resp.data.nome)
@@ -62,38 +62,38 @@ export default function InformacoesSoliciacao() {
         <div className="secao-informacao">
           <h1>INFORMAÇÕES DA SOLICITAÇÃO </h1>
 
-          <div className="info">
+          <div className="infor">
             <h3>NOME DO CLIENTE</h3>
             <div><h3>{nome}</h3></div>
           </div>
 
           <div className="direcao-lado">
-            <div className="info-2">
+            <div className="infor-2">
               <h3>IDADE</h3>
               <div><h3>{idade}</h3></div>
             </div>
-            <div className="info-2">
+            <div className="infor-2">
               <h3>CPF DO CLIENTE</h3>
               <div><h3>{cpf}</h3></div>
             </div>
           </div>
 
           <div className="direcao-lado">
-            <div className="info-2">
+            <div className="infor-2">
               <h3>GÊNERO</h3>
               <div><h3>{genero}</h3></div>
             </div>
-            <div className="info-2">
+            <div className="infor-2">
               <h3>IDEIA</h3>
               <div><h3>{ideia}</h3></div>
             </div>
           </div>
 
-          <div className="info">
+          <div className="infor">
             <h3>E-MAIL</h3>
             <div><h3>{email}</h3></div>
           </div>
-          <div className="info">
+          <div className="infor">
             <h3>TELEFONE</h3>
             <div><h3>{telefone}</h3></div>
           </div>

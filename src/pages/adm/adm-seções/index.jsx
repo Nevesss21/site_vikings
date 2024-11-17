@@ -1,15 +1,15 @@
 import "./index.scss"
-import { Link, useNavigate } from "react-router-dom"
+import { Link,  useLocation, useNavigate } from "react-router-dom"
 import NavAdm from "../../../components/Nav-adm"
 import axios from "axios"
 import { useState, useEffect } from "react"
 
 export default function AdmSecoes() {
   const [secao, setSecao] = useState([]);
-  const [idDelete, setIdDelete] = useState("");
-
-  const [token, setToken] = useState(null)
-  const navigate = useNavigate()
+  const [token, setToken] = useState(null);
+  const navigate = useNavigate();
+  const location = useLocation()
+  let info = location.state
 
   useEffect(() => {
     let token = localStorage.getItem('USUARIO')
@@ -27,11 +27,11 @@ export default function AdmSecoes() {
 
   }
 
-  async function deletar() {
-    const url = `http://4.172.207.208:5021/secao/${idDelete}?x-access-token=${token}`;
-    let resp = await axios.get(url);
-    setIdDelete("");
+  async function deletar(id) {
+    const url = `http://4.172.207.208:5021/secao/${id}?x-access-token=${token}`;
+    let resp = await axios.delete(url);
     alert("Deletado!" + resp.data)
+    await buscar()
   }
 
 
@@ -48,25 +48,25 @@ export default function AdmSecoes() {
 
           <div className="scroll">
             {secao.map(item =>
-              <Link state={{ id: item.id }} to='/adm-infocliente'>
-                <div className="bloco-escuro">
+              <div className="bloco-escuro">
+                <Link state={{ id: item.id }} to='/adm-infocliente'>
                   <div className='coluna'>
                     <h1>{item.nome}</h1>
                     <h3>{item.cpf}</h3>
                   </div>
+                </Link>
 
-                  <div className='flex'>
-                    <div className='coluna'>
-                      <h3>{new Date(item.data_consulta).toLocaleDateString()}</h3>
-                      <h3>{item.hora}</h3>
-                    </div>
+                <div className='flex'>
+                  <div className='coluna'>
+                    <h3>{new Date(item.data_consulta).toLocaleDateString()}</h3>
+                    <h3>{item.hora}</h3>
+                  </div>
 
-                    <div className="coluna">
-                      <img onClick={deletar} src="/assets/images/lixeirabranca.png" alt="apagar" />
-                    </div>
+                  <div className="coluna">
+                    <img onClick={() => deletar(item.id)}  src="/assets/images/lixeirabranca.png" alt="apagar" />
                   </div>
                 </div>
-              </Link>
+              </div>
 
             )}
           </div>

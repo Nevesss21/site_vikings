@@ -1,10 +1,11 @@
 import "./index.scss";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 import { withMask } from "use-mask-input";
+import NavAdm from '../../../components/Nav-adm'
 
 export default function AdmMarcar() {
 
@@ -106,19 +107,9 @@ export default function AdmMarcar() {
 
   return (
     <div className="adm-marcar">
+    <NavAdm/>
 
-      <header>
-        <div className='imagem-logo'>
-          <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
-        </div>
-
-        <div className='links-principal'>
-          <Link to='/adm-solicitacoes' className='animacao'>VOLTAR</Link>
-          <Link to='/adm-landing' className='animacao'>HOME</Link>
-          <Link to='/adm-secoes' className='animacao'>ARQUIVADAS</Link>
-        </div>
-      </header>
-
+     
       <div className="secao">
 
         <div className="secao-inserir">
@@ -175,7 +166,7 @@ export default function AdmMarcar() {
               <h3>PREÇO BASE</h3>
               <input value={valor} type="text" placeholder=" R$ 00,00" onChange={e => setValor(e.target.value)} />
             </div>
-            <button onClick={marcarSessao}>CONCLUIDO</button>
+            <button state={{ id: data.novoId }} onClick={marcarSessao}>CONCLUIDO</button>
           </div>
         </div>
       </div>

@@ -54,7 +54,7 @@ export default function InformacoesCliente() {
     }, [])
 
     return (
-        <div className="informacao">
+        <div className="info">
             <header>
                 <img src="/assets/images/logo-vikings.webp" alt="logo-vikings" />
                 <Link to='/adm-secoes'><button>VOLTAR</button></Link>

@@ -1,4 +1,4 @@
-.informacao {
+.info{
   background-image: linear-gradient(217deg, #000, #251e08, #000, #251e08);
   display: flex;
   flex-direction: column;
@@ -127,7 +127,7 @@
 
 
 @media (max-width:1024px) {
-  .informacao {
+  .info{
     header {
       a {
         button {
@@ -171,7 +171,7 @@
 }
 
 @media (max-width:660px) {
-  .informacao {
+  .info{
     height: 140vh;
 
     header {
@@ -212,7 +212,7 @@
 
 
 @media (max-width:540px) {
-  .informacao {
+  .info{
 
     header {
       a {
@@ -262,27 +262,83 @@
   }
 }
 
-@media (max-width:430px) {
-  .informacao {
+@media (max-width:450px) {
+  .info{
+    height: 110vh;
     header {
+      img {
+        width: 25vw;
+      }
+  
       a {
         button {
-          font-size: 0.5rem;
+          font-size: 1rem;
+          width: 25vw;
         }
       }
     }
 
     .conteiner {
       .secao {
+        margin-top: 3vh;
+        .bloco-escuro {
+          width: 90vw;
+          height: 12vh;
+          h3 {
+            font-size: 1rem;
+          }
+
+          h1 {
+            font-size: 1.2rem;
+          }
+          
+          a {
+            .coluna {
+              h3 {
+                font-size: 1rem;
+              }
+
+              h1 {
+                font-size: 1.2rem;
+              }
+
+            }
+          }
+          .coluna {
+            h3 {
+              font-size: 1rem;
+            }
+
+            h1 {
+              font-size: 1.2rem;
+            }
+
+          }
+          .coluna {
+            img {
+              width: 6vw;
+            }
+          }
+        }
         .anotacao {
           h1 {
-            font-size: 1.4rem;
+            font-size: 1.5rem;
           }
+          textarea {
+            height: 50vh;
+            width: 90vw;;
+          }
+  
 
           .ulti {
             button {
-              font-size: 0.6rem;
-              width: 20vw;
+              font-size: 1em;
+              width: 30vw;
+            }
+            .selecao {  
+              p {
+                font-size: 1.2rem;
+              }
             }
           }
 

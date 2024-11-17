@@ -4,58 +4,6 @@
   flex-direction: column;
   height: 200vh;
 
-  header {
-    display: flex;
-    height: 20vh;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 5vw 0px 5vw;
-
-    .imagem-logo img {
-      width: 12vw;
-    }
-
-    .links-principal {
-      display: flex;
-      gap: 0vh 5vw;
-      align-items: center;
-      margin-right: 5vw;
-
-      .animacao {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        border: none;
-        background: none;
-      }
-
-      .animacao::before {
-        margin-left: auto;
-      }
-
-      .animacao::after,
-      .animacao::before {
-        content: '';
-        width: 0%;
-        height: 2px;
-        background: #ffffff;
-        display: block;
-        transition: 0.5s;
-      }
-
-      .animacao:hover::after,
-      .animacao:hover::before {
-        width: 100%;
-      }
-
-      a {
-        color: #fff;
-        text-decoration: none;
-        font: 500 1.2rem 'vikings';
-      }
-    }
-  }
-
-
   .secao {
     display: flex;
     flex-direction: column;
@@ -148,19 +96,6 @@
 
 @media (max-width:1280px) {
   .adm-marcar {
-    header {
-      .imagem-logo img {
-        width: 10vw;
-      }
-
-      .links-principal {
-        a {
-          font-size: 1rem;
-        }
-
-      }
-    }
-
     .secao {
 
       .secao-inserir {
@@ -200,19 +135,7 @@
 
 @media (max-width:912px) {
   .adm-marcar {
-    header {
-      .imagem-logo img {
-        width: 12vw;
-      }
-
-      .links-principal {
-        a {
-          font-size: 0.9rem;
-        }
-
-      }
-    }
-
+  
     .secao {
 
       .secao-inserir {
@@ -245,12 +168,6 @@
 
 @media (max-width:768px) {
   .adm-marcar {
-    header {
-      .imagem-logo img {
-        width: 16vw;
-      }
-    }
-
     .secao {
       .secao-inserir {
         h1 {
@@ -264,21 +181,6 @@
 @media (max-width:540px) {
   .adm-marcar {
     height: 160vh;
-
-    header {
-      height: 15vh;
-
-      .imagem-logo img {
-        width: 18vw;
-      }
-
-      .links-principal {
-        a {
-          font-size: 0.8rem;
-        }
-
-      }
-    }
 
     .secao {
       .secao-inserir {
@@ -333,25 +235,15 @@
   }
 }
 
-
-@media (max-width:430px) {
+@media (max-width:450px) {
   .adm-marcar {
-    height: 180vh !important;
-
-    header {
-      .links-principal {
-        a {
-          font-size: 0.5rem;
-        }
-
-      }
-    }
+    height: 175vh !important;
 
     .secao {
-
+      margin-top: 5vh;
       .secao-inserir {
-        width: 80vw !important;
-        height: 150vh !important;
+        width: 90vw !important;
+        height: 145vh !important;
         gap: 3vh 0vw !important;
 
         h1 {
@@ -360,11 +252,13 @@
 
         .input {
           h3 {
-            font-size: 0.8rem !important;
+            font-size: 1.2rem !important;
           }
 
           input {
-            width: 60vw !important;
+            width: 80vw !important;
+            height: 6vh !important;
+            font-size: 1rem !important;
           }
         }
 
@@ -373,44 +267,25 @@
           flex-direction: column !important;
 
           button {
-            font-size: 0.8rem !important;
-            width: 30vw !important;
+            font-size: 1rem !important;
+            width: 50vw !important;
           }
 
           .input-2 {
             gap: 1vh 0vw;
 
             h3 {
-              font-size: 0.8rem !important;
-
+              font-size: 1.2rem !important;
             }
 
             input {
-              width: 60vw !important;
+              width: 80vw !important;
+              height: 6vh !important;
+              font-size: 1rem !important;
             }
           }
         }
-
       }
-
-    }
-  }
-}
-
-@media (max-width:375px) {
-  .adm-marcar {
-
-    .secao {
-
-      .secao-inserir {
-
-        h1 {
-          font-size: 1rem !important;
-        }
-
-
-      }
-
     }
   }
 }
