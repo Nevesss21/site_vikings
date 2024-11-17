@@ -25,8 +25,8 @@ export default function Rodape() {
             <p>contato@vikingsstudio.com.br</p>
           </div>
           <div className="alinharImagens">
-            <Link to={'/'}><img src="/assets/images/facebook.png" alt="facebook" /></Link>
-            <Link to={'/'}><img src="/assets/images/instagram.png" alt="instagram" /></Link>
+            <Link to={'https://www.facebook.com/andre.talentonasmaos?mibextid=ZbWKwL'}><img src="/assets/images/facebook.png" alt="facebook" /></Link>
+            <Link to={'https://www.instagram.com/andre_artes_visuais?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='}><img src="/assets/images/instagram.png" alt="instagram" /></Link>
           </div>
         </div>
       </div>
