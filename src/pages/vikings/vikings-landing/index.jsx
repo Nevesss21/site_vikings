@@ -95,7 +95,7 @@ export default function Landingpage() {
                     </Swiper>
                 </div>
                 <div className='bot'>
-                    <Link to='/'><button>CONHECER MAIS</button></Link>
+                    <Link to='https://www.instagram.com/andre_artes_visuais?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='><button>CONHECER MAIS</button></Link>
                 </div>
             </div>
 
@@ -108,7 +108,7 @@ export default function Landingpage() {
                 <Link to='/Agendamento'><button >ENTRE EM CONTATO</button></Link>
             </div>
             <div className='secao-insta'>
-                <img src="assets/images/instagram.png" alt="insta" /><h1>SIGA-NOS NO INSTAGRAM</h1>
+               <Link to={'https://www.instagram.com/andre_artes_visuais?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='}> <img src="assets/images/instagram.png" alt="insta" /><h1>SIGA-NOS NO INSTAGRAM</h1></Link>
             </div>
 
             <Rodape />

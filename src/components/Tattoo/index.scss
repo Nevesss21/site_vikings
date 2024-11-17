@@ -9,9 +9,10 @@
     }
     .secao-losango{
         display: flex;
-        height: 100vh;
+        height: 200vh;
         align-items: center;
         justify-content: center;
+        flex-wrap: wrap;
         gap: 0vh 1vw;
         padding: 0vh 0vw 0vh 0vw;
 
@@ -33,7 +34,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                padding: 10vh 10vw;      
+                padding: 15vh 6vw;      
                 gap: 1vh 0vw;
                 p{
                     color: #000;
@@ -56,6 +57,7 @@
 @media (max-width:1440px) {
     .tattoos{
         .secao-losango{
+            height: 100vh;
             .coluna{
                 div{
                     padding: 9.9vh 4vw;

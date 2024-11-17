@@ -77,7 +77,7 @@ export default function AdmLanding() {
 
 
                 <div className='botao-valhalla'>
-                    <Link><button>Ir para Valhalla <img src="/assets/images/valhalla-logo 3.png" alt="logo-valhalla" /></button></Link>
+                    <Link to={'http://4.172.207.208:3043'}><button>Ir para Valhalla <img src="/assets/images/valhalla-logo 3.png" alt="logo-valhalla" /></button></Link>
                 </div>
 
             </div>

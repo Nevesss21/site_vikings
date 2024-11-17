@@ -204,8 +204,14 @@
         align-items: center;
         justify-content: center;
         height: 70vh;
-        gap: 0vh 2vw;
 
+        a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+         text-decoration: none;   
+         gap: 0vh 2vw;
         img {
             width: 4vw;
         }
@@ -213,6 +219,7 @@
         h1 {
             color: #fff;
             font: 500 4rem "vikings";
+        }
         }
     }
 
@@ -310,7 +317,8 @@
 
         .secao-insta {
             height: 50vh;
-
+            a{
+                
             img {
                 width: 3vw;
             }
@@ -319,6 +327,7 @@
                 font-size: 3rem;
             }
 
+            }
             button {
                 font-size: 0.8rem;
             }
@@ -407,13 +416,15 @@
 
         .secao-insta {
             height: 45vh;
-
+            a{
+                
             h1 {
                 font-size: 2.5rem;
             }
 
             button {
                 font-size: 0.8rem;
+            }
             }
         }
     }
@@ -495,12 +506,14 @@
         .secao-insta {
             height: 40vh;
 
-            h1 {
-                font-size: 2rem;
-            }
-
-            button {
-                width: 25vw;
+            a{
+                h1 {
+                    font-size: 2rem;
+                }
+    
+                button {
+                    width: 25vw;
+                }
             }
         }
     }
@@ -806,7 +819,8 @@
 
         .secao-insta {
             gap: 0vh 1vw;
-
+            a{
+                
             img {
                 width: 10vw;
             }
@@ -815,6 +829,7 @@
                 font-size: 2rem;
                 text-align: center;
                 width: 60vw;
+            }
             }
         }
     }
