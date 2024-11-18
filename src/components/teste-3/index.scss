@@ -1,0 +1,75 @@
+/* Contêiner principal do gráfico */
+.chart-container {
+    background-color: #2c2c2c;
+    color: #ffffff;
+    padding: 3vh 3vw;
+    border-radius: 15px;
+    width: 60vw;
+    text-align: center;
+  }
+  .chart-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  
+  /* Título do gráfico */
+  /* Contêiner de inputs */
+  .input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Campos de input */
+  .input-campo {
+    padding: 8px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: #3a3a3a;
+    color: #ffffff;
+  }
+  
+  /* Botão de alternar gráfico */
+  .botao-alternar,
+  .botao-adicionar,
+  .botao-editar,
+  .botao-excluir {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 5px;
+    color: #ffffff;
+  }
+  
+  .botao-alternar {
+    background-color: #5a5a8a;
+  }
+  
+  .botao-adicionar {
+    background-color: #4a4a4a;
+  }
+  
+  .botao-editar {
+    background-color: #4a8a4a;
+  }
+  
+  .botao-excluir {
+    background-color: #8a4a4a;
+  }
+  
+  /* Estilo dos itens da lista de dados */
+  .lista-dados {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .item-dados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
