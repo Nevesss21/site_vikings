@@ -32,7 +32,7 @@ export default function InformacoesCliente() {
             "situacao": situacao
         }
         try {
-            const url = `http://4.172.207.208:5021/info-cliente/?x-access-token=${token}`
+            const url = `http://localhost:5021/info-cliente/?x-access-token=${token}`
             let resp = await axios.post(url, valores)
 
             alert("Anotacao feita com sucesso!" + resp.data.novoId)
@@ -45,7 +45,7 @@ export default function InformacoesCliente() {
         }
     }
     async function buscar() {
-        const url = `http://4.172.207.208:5021/secao/${data.id}`;
+        const url = `http://localhost:5021/secao/${data.id}`;
         let resp = await axios.get(url);
         setInformacao(resp.data);
     }
