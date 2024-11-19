@@ -20,7 +20,6 @@ export default function Teste({ dados }) { // Recebe dados via props
     function alternarGrafico() {
         setGraficoLinha(!graficoLinha);
     }
-
     return (
         <div className="grafico-1">
             <button className="botao-alternar" onClick={alternarGrafico}>
