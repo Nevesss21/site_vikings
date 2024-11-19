@@ -27,7 +27,7 @@ export default function Agendamento() {
             "email": email,
             "ideia": ideia
         }
-        const url = `http://4.172.207.208:5021/cliente/`
+        const url = `http://localhost:5021/cliente/`
 
         try {
 
@@ -35,7 +35,7 @@ export default function Agendamento() {
                 toast.error("Verifique o campo nome.")
                 return
             }
-            if (genero == "" || genero == "Selecionar") {
+            if (genero === "" || genero === "Selecionar") {
                 toast.error("Informe o gênero.")
                 return
             }
@@ -43,11 +43,11 @@ export default function Agendamento() {
                 toast.error("Verifique o campo email.")
                 return
             }
-            if (telefone == "") {
+            if (telefone === "") {
                 toast.error("Informe o número de telefone.")
                 return
             }
-            if (cpf == "") {
+            if (cpf === "") {
                 toast.error("Informe o CPF.")
                 return
             }
