@@ -3,14 +3,16 @@ import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 import { useLocation } from "react-router-dom";
 import axios from "axios";
+import { useState } from "react";
 
 export default function Confirmacao() {
+    const [id , setId]= useState('')
 
     const location = useLocation()
     const info = location.state
 
     async function marcar() {
-        const url = `http://4.172.207.208:5021/marcar/${info.id}`
+        const url = `http://4.172.207.208:5021/marcar/${id}`
         let finalizar = await axios.put(url)
         toast.success("Sessão confirmada com sucesso!")   
     }
