@@ -70,14 +70,15 @@ export default function AdmMarcar() {
       "preco": valor.replace(",", "."),
       "id": info.id
     }
-    
+
     const url = `http://4.172.207.208:5021/marcar/`
     const segundaUrl = `http://4.172.207.208:5021/secao/`
     const terceiraUrl = `http://4.172.207.208:5021/marcar/${info.id}`
     const quartaUrl = `http://4.172.207.208:5021/email/`
-   
+
     const Email = {
-      "email": email
+      "email": email,
+      "id": info.id
     }
 
 
@@ -116,9 +117,9 @@ export default function AdmMarcar() {
 
   return (
     <div className="adm-marcar">
-    <NavAdm/>
+      <NavAdm />
 
-     
+
       <div className="secao">
 
         <div className="secao-inserir">
