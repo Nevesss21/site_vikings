@@ -2,7 +2,7 @@ import "./index.scss";
 import { Link } from "react-router-dom";
 import toast from "react-hot-toast";
 import { useLocation } from "react-router-dom";
-
+import axios from "axios";
 
 export default function Confirmacao() {
 
@@ -12,7 +12,7 @@ export default function Confirmacao() {
     async function marcar() {
         const url = `http://4.172.207.208:5021/marcar/${info.id}`
         let finalizar = await axios.put(url)
-        toast.success("Consulta marcada com sucesso!")   
+        toast.success("Sessão confirmada com sucesso!")   
     }
 
     return (
