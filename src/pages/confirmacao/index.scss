@@ -14,11 +14,11 @@
         gap: 3vh 0vw;
 
         input {
-            height: 5vh;
+            height: 6vh;
             border: none;
-            padding: 0vh 3vw;
+            padding: 0vh 2vw;
             border-radius: 10px;
-            width: 25vw;
+            width: 15vw;
             font: 500 1rem 'vikings';
         }
 
@@ -154,6 +154,9 @@
 @media (max-width: 490px) {
     .confirmar {
         .centro {
+            input{
+                width: 45vw;
+            }
 
             h1 {
                 font-size: 2rem;
@@ -166,8 +169,9 @@
                         width: 30vw;
                     }
                 }
-
+                
                 button {
+                    width: 30vw;
                     font-size: 1rem;
                 }
             }
@@ -179,6 +183,9 @@
 @media (max-width:375px) {
     .confirmar {
         .centro {
+            input{
+                font-size: 0.8rem;
+            }
 
             h1 {
                 font-size: 1.5rem;
@@ -187,12 +194,12 @@
             div {
                 a {
                     button {
-                        width: 25vw;
+                       font-size: 0.8rem;
                     }
                 }
 
                 button {
-                    width: 25vw;
+                   font-size: 0.8rem;
                 }
             }
         }
