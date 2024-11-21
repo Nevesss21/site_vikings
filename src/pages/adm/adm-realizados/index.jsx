@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 import { useLocation, useNavigate } from "react-router-dom";
-
+import toast from "react-hot-toast";
 
 export default function AdmRealizados() {
 
@@ -28,7 +28,7 @@ export default function AdmRealizados() {
   async function deletarData(id) {
     const url = `http://4.172.207.208:5021/apagar-data/${id}?x-access-token=${token}`;
     let resp = await axios.delete(url);
-    alert("Deletado!" + resp.data)
+    toast.success("Deletado!" + resp.data)
     await buscar()
   }
 

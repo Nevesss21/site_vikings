@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import axios from "axios"
 import { useState, useEffect } from "react"
 import NavAdm from '../../../components/Nav-adm'
+import toast from "react-hot-toast";
 
 
 
@@ -63,11 +64,11 @@ export default function AdmRelatorio() {
     try {
       const url = `http://4.172.207.208:5021/relatorio/`
       let resp = await axios.post(url, valores)
-      alert("relatorio guardado com sucesso!" + resp.data.novoId)
+      toast.success("relatorio guardado com sucesso!" + resp.data.novoId)
 
     }
     catch (error) {
-      alert("Erro")
+      toast.error("Erro")
     }
   }
 
