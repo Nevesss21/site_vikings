@@ -73,7 +73,6 @@ export default function AdmMarcar() {
 
     const url = `http://4.172.207.208:5021/marcar/`
     const segundaUrl = `http://4.172.207.208:5021/secao/`
-    const terceiraUrl = `http://4.172.207.208:5021/marcar/${info.id}`
     const quartaUrl = `http://4.172.207.208:5021/email/`
 
     const Email = {
@@ -96,7 +95,6 @@ export default function AdmMarcar() {
         "idCliente": info.id
       }
       let resposta = await axios.post(segundaUrl, ids)
-      let finalizar = await axios.put(terceiraUrl)
 
       setData("")
       setHorario("")

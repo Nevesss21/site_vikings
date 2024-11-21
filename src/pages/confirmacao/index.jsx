@@ -29,7 +29,6 @@ export default function Confirmacao() {
                     </Link>
                     <button onClick={marcar}>CONFIRMAR</button>
                 </div>
-
             </div>
         </div>
     );
