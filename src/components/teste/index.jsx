@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react';
-import { useLocation } from "react-router-dom";
+import React, { useState } from 'react';
 import {
     BarChart,
     Bar,
@@ -14,7 +13,7 @@ import {
 } from 'recharts';
 import './index.scss';
 
-export default function Teste({ dados }) { // Recebe dados via props
+export default function Teste({ dados }) { 
     const [graficoLinha, setGraficoLinha] = useState(false);
 
     function alternarGrafico() {

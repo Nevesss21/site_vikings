@@ -24,6 +24,7 @@ import Colorido from './pages/vikings/vikings-colorido';
 import InformacoesSoliciacao from './pages/adm/adm-informacao-cliente';
 import AdmRelatorioRealizado from './pages/adm/adm-relatorio-realizado';
 import NotFound from './pages/not-found';
+import Confirmacao from './pages/confirmacao';
 
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -59,6 +60,7 @@ export default function Navegacao() {
         <Route path='/adm-informacao-solicitacao' element={<InformacoesSoliciacao />} />
         <Route path='/adm-relatorio-realizado' element={<AdmRelatorioRealizado />} />
         <Route path='*' element={<NotFound />} />
+        <Route path='/confirmar' element={<Confirmacao />} />
 
       </Routes>
     </BrowserRouter>

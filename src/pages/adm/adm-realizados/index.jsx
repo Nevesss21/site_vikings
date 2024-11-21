@@ -26,7 +26,7 @@ export default function AdmRealizados() {
   }, [])
 
   async function deletarData(id) {
-    const url = `http://localhost:5021/apagar-data/${id}?x-access-token=${token}`;
+    const url = `http://4.172.207.208:5021/apagar-data/${id}?x-access-token=${token}`;
     let resp = await axios.delete(url);
     alert("Deletado!" + resp.data)
     await buscar()
@@ -34,7 +34,7 @@ export default function AdmRealizados() {
 
 
   async function buscar() {
-    const url = `http://localhost:5021/relatorio-data/?x-access-token=${token}`;
+    const url = `http://4.172.207.208:5021/relatorio-data/?x-access-token=${token}`;
     let resp = await axios.get(url);
     setVerData(resp.data);
   }

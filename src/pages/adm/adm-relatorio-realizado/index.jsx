@@ -29,10 +29,10 @@ export default function AdmRelatorioRealizado() {
 
   async function buscar() {
 
-    const url = `http://localhost:5021/relatorio-id/${info.id}?x-access-token=${token}`;
-    const segundaUrl = `http://localhost:5021/relatorio-idade/`;
-    const terceiraUrl = `http://localhost:5021/relatorio-renda/`;
-    const quartaUrl = `http://localhost:5021/relatorio-genero/`;
+    const url = `http://4.172.207.208:5021/relatorio-id/${info.id}?x-access-token=${token}`;
+    const segundaUrl = `http://4.172.207.208:5021/relatorio-idade/`;
+    const terceiraUrl = `http://4.172.207.208:5021/relatorio-renda/`;
+    const quartaUrl = `http://4.172.207.208:5021/relatorio-genero/`;
     try {
 
       let resp = await axios.get(url);
