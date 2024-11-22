@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export default function Tattoo() {
     return (
         <div className='tattoos'>
-            <h1>CONHEÇA NOSSOS ESTILOS</h1>
+            <h1>CONHEÇA NOSSOS ESTÍLOS</h1>
 
             <div className='secao-losango'>
 

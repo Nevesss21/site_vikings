@@ -19,7 +19,6 @@ export default function AdmLogin() {
 
     async function entrar() {
 
-
         const usuario = {
             "cpf": cpf.replace("-", ""),
             "senha": senha
