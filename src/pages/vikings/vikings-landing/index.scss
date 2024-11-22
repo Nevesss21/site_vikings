@@ -885,3 +885,64 @@
         }
     }
 }
+@media (max-width:325px) {
+    .ladingpage {
+        .secao-inicial-landing {
+            height: 55vh;
+            .texto {
+                a {
+                    button {
+                        width: 55vw;
+                    }
+                }
+            }
+        }
+        .secao-estudio {
+            height: 180vh;
+            a {
+                button {
+                    width: 60vw;
+                    font-weight: 700;
+                }
+            }
+        }
+        .secao-carrossel {
+            .bot {
+                a {
+                    button {
+                        width: 60vw;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .estilo {
+            height: 220vh;
+        }
+        .secao-contato {
+            height: 30vh;
+            h1{
+                font-size: 1.2rem ;
+            }
+            a {
+                button {
+                    width: 60vw;
+                    font-weight: 700;
+                }
+            }
+        }
+        .secao-insta {
+        
+            a{
+                
+            img {
+                width: 8vw;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 /* Contêiner principal do gráfico */
-.grafico-1 {
+.grafico {
     background-color: #2c2c2c;
     color: #ffffff;
     padding: 3vh 3vw;
@@ -12,23 +12,6 @@
   }
   
   
-  /* Título do gráfico */
-  /* Contêiner de inputs */
-  .input-container {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Campos de input */
-  .input-campo {
-    padding: 8px;
-    border: 1px solid #555;
-    border-radius: 4px;
-    background-color: #3a3a3a;
-    color: #ffffff;
-  }
   
   /* Botão de alternar gráfico */
   .botao-alternar,
@@ -71,4 +54,5 @@
     align-items: center;
     margin: 5px 0;
   }
+  
   

@@ -20,7 +20,7 @@ export default function Teste({ dados }) {
         setGraficoLinha(!graficoLinha);
     }
     return (
-        <div className="grafico-1">
+        <div className="grafico">
             <button className="botao-alternar" onClick={alternarGrafico}>
                 Alternar para {graficoLinha ? 'Gráfico de Barras' : 'Gráfico de Linhas'}
             </button>

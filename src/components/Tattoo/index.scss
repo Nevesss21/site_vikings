@@ -203,11 +203,35 @@
         }
     }
 }
+
 @media (max-width:375px) {
     .tattoos{
         margin-top: 15vh;   
         .secao-losango{
             height: 150vh;
+            .coluna{
+                .neo, .new{
+                    padding: 8vh 0vw;
+                }
+                div{
+                    padding: 8vh 13vw;
+                    p{
+                        width: 22vw;
+                        font-size: 0.7rem;
+                    }
+                    img{
+                        width: 15vw;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width:325px) {
+    .tattoos{
+        margin-top: 15vh;   
+        .secao-losango{
+            height: 180vh;
             .coluna{
                 .neo, .new{
                     padding: 8vh 0vw;

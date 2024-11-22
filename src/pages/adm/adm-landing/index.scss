@@ -494,3 +494,39 @@
     }
   }
 }
+
+@media (max-width:325px) {
+  .conteiner-adm {
+    .imagens {
+
+      .sessoesInfo {
+        height: 30vh;
+
+        .infos {
+
+          h1 {
+            font-size: 0.8rem !important;
+            width: 50vw;
+          }
+        
+        }
+      }
+    }
+
+    .duvidas {
+      .rodape p {
+        width: 55vw;
+        font-size: 0.8rem !important;
+      }
+      .botao-valhalla {
+        button{
+          width: 50vw !important;
+        }
+        img {
+          width: 10vw !important;
+        }
+      }
+
+    }
+  }
+}
