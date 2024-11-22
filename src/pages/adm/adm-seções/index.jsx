@@ -29,7 +29,7 @@ export default function AdmSecoes() {
   }
 
   async function deletar(id) {
-    const url = `http://4.172.207.208:5021/secao/${id}?x-access-token=${token}`;
+    const url = `http://4.172.207.208:5021/secao/${id}`;
     let resp = await axios.delete(url);
     toast.success("Deletado!" + resp.data)
     await buscar()
